@@ -11,6 +11,7 @@ import UIKit
 class ArticlesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var articlesNames = [""]
+    var articlesURL = [""]
     
     @IBOutlet var tableView: UITableView!
 
@@ -23,6 +24,7 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         articlesNames.removeAtIndex(0)
+        articlesURL.removeAtIndex(0)
         
         let url = NSURL(string: "http://rss.cnn.com/rss/cnn_topstories.rss")
         
@@ -47,6 +49,23 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
                   
                     
                     var nounArray = [""]
+                    
+                    var urlContentArray2 = urlContent.componentsSeparatedByString("false\">")
+                    
+                    urlContentArray2.removeAtIndex(0)
+                    
+                    var arr3 = [""]
+                    arr3.removeAtIndex(0)
+                    
+                    for i in urlContentArray2 {
+                    
+                        var arr3 = i.componentsSeparatedByString("</guid>")
+                        self.articlesURL.append(arr3[0])
+                        
+                    
+                    }
+                    
+                    
                     
                     var urlContentArray = urlContent.componentsSeparatedByString("<item><title>")
                     
@@ -116,6 +135,9 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    var finalArticle = ""
+    var finalURL = ""
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -140,11 +162,23 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        print(self.articlesNames[indexPath.row])
+        self.finalArticle = self.articlesNames[indexPath.row]
+        self.finalURL = self.articlesURL[indexPath.row]
+        
+        performSegueWithIdentifier("article", sender: self)
         
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "article" {
+            var vc = segue.destinationViewController as! DisplayViewController
+            
+            vc.articleName = self.finalArticle
+            vc.articleURL = self.finalURL
+            
+        
+        }
+    }
     
     
     

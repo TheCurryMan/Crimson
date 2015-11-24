@@ -76,16 +76,74 @@
             </objects>
             <point key="canvasLocation" x="541" y="328"/>
         </scene>
-        <!--View Controller-->
+        <!--Display View Controller-->
         <scene sceneID="BVa-fp-Krv">
             <objects>
-                <viewController id="kab-Pw-QQw" sceneMemberID="viewController">
+                <viewController id="kab-Pw-QQw" customClass="DisplayViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NaT-Rs-V1t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jvr-Tw-3Yl">
+                                <rect key="frame" x="24" y="57" width="272" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H51-Sx-9pT">
+                                <rect key="frame" x="28" y="184" width="265" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nQc-FL-A0j">
+                                <rect key="frame" x="20" y="518" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="gmM-tj-B1Q" kind="modal" id="c8p-bt-qdA"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.34999999999999998" minValue="0.0" maxValue="0.69999999999999996" id="fT5-ue-uqY">
+                                <rect key="frame" x="26" y="430" width="269" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="kab-Pw-QQw" eventType="valueChanged" id="phq-Ux-0yc"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4fe-ii-hGU">
+                                <rect key="frame" x="249" y="518" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseSpeech:" destination="kab-Pw-QQw" eventType="touchUpInside" id="kQy-8Y-9uc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eIS-8s-N82">
+                                <rect key="frame" x="124" y="518" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Play Audio"/>
+                                <connections>
+                                    <action selector="textToSpeech:" destination="kab-Pw-QQw" eventType="touchUpInside" id="gec-Zs-0Ci"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="articleContent" destination="H51-Sx-9pT" id="30b-Nz-PxR"/>
+                        <outlet property="articleTitle" destination="jvr-Tw-3Yl" id="BK5-oN-w1F"/>
+                        <outlet property="rateSlider" destination="fT5-ue-uqY" id="8I1-ZS-9X4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4U-bc-Egx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,4 +153,7 @@
     <resources>
         <image name="cnn-icon" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="c8p-bt-qdA"/>
+    </inferredMetricsTieBreakers>
 </document>
