@@ -11,6 +11,7 @@ import UIKit
 class ArticlesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var source = ""
+    var link = ""
     
     var articlesNames = [""]
     var articlesURL = [""]
@@ -28,7 +29,9 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         articlesNames.removeAtIndex(0)
         articlesURL.removeAtIndex(0)
         
-        let url = NSURL(string: "http://rss.cnn.com/rss/cnn_topstories.rss")
+        print(link)
+        
+        let url = NSURL(string: link)
         
         var nounArr = [""]
         nounArr.removeAll()

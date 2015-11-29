@@ -55,7 +55,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gmM-tj-B1Q" kind="push" identifier="topstories" id="cEY-u6-ywM"/>
+                                    <action selector="topStories:" destination="jhL-aS-CoW" eventType="touchUpInside" id="6tV-xM-nMK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Vd-ek-bcz">
@@ -67,6 +67,9 @@
                                 <state key="normal" title="World">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="World:" destination="jhL-aS-CoW" eventType="touchUpInside" id="TH6-wS-foM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fPp-Gx-AuN">
                                 <rect key="frame" x="20" y="235" width="130" height="98"/>
@@ -77,6 +80,9 @@
                                 <state key="normal" title="Tech">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Tech:" destination="jhL-aS-CoW" eventType="touchUpInside" id="HZg-mb-iqM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q2G-Ac-XnI">
                                 <rect key="frame" x="170" y="235" width="130" height="98"/>
@@ -87,6 +93,9 @@
                                 <state key="normal" title="Business">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Business:" destination="jhL-aS-CoW" eventType="touchUpInside" id="74D-r9-h5q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0oe-on-Tet">
                                 <rect key="frame" x="170" y="379" width="130" height="98"/>
@@ -97,6 +106,9 @@
                                 <state key="normal" title="Health">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Health:" destination="jhL-aS-CoW" eventType="touchUpInside" id="pIZ-91-6ES"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cKr-m9-Wlv">
                                 <rect key="frame" x="20" y="379" width="130" height="98"/>
@@ -107,12 +119,18 @@
                                 <state key="normal" title="Politics">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Politics:" destination="jhL-aS-CoW" eventType="touchUpInside" id="A8T-B5-J5k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.87461451479999996" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="x8K-30-zBM"/>
+                    <connections>
+                        <segue destination="gmM-tj-B1Q" kind="push" identifier="getdata" id="XHh-1W-Zn0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljy-YS-m8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -296,6 +314,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="e2H-4W-9qw"/>
-        <segue reference="cEY-u6-ywM"/>
+        <segue reference="XHh-1W-Zn0"/>
     </inferredMetricsTieBreakers>
 </document>
