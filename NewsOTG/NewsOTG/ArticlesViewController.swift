@@ -10,6 +10,8 @@ import UIKit
 
 class ArticlesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var source = ""
+    
     var articlesNames = [""]
     var articlesURL = [""]
     
