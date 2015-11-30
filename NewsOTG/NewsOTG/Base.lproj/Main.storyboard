@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--NewsOTG-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NewsOTG" id="pj4-dk-RR7"/>
+                    <navigationItem key="navigationItem" title="Home" id="pj4-dk-RR7"/>
                     <connections>
                         <outlet property="tableView" destination="YHL-14-XcG" id="6pZ-Cm-uCA"/>
                         <segue destination="jhL-aS-CoW" kind="push" identifier="articles" id="e2H-4W-9qw"/>
@@ -37,17 +37,17 @@
             </objects>
             <point key="canvasLocation" x="582" y="328"/>
         </scene>
-        <!--Categories View Controller-->
+        <!--Categories-->
         <scene sceneID="ObD-YA-LBI">
             <objects>
-                <viewController id="jhL-aS-CoW" customClass="CategoriesViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Categories" id="jhL-aS-CoW" customClass="CategoriesViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFn-hg-RSt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gfC-r9-ESp">
                                 <rect key="frame" x="20" y="92" width="130" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2429913373" green="0.61299437199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -60,7 +60,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Vd-ek-bcz">
                                 <rect key="frame" x="170" y="92" width="130" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2429913373" green="0.61299437199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -73,7 +73,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fPp-Gx-AuN">
                                 <rect key="frame" x="20" y="235" width="130" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2429913373" green="0.61299437199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -86,7 +86,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q2G-Ac-XnI">
                                 <rect key="frame" x="170" y="235" width="130" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2429913373" green="0.61299437199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -99,7 +99,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0oe-on-Tet">
                                 <rect key="frame" x="170" y="379" width="130" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2429913373" green="0.61299437199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -112,7 +112,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cKr-m9-Wlv">
                                 <rect key="frame" x="20" y="379" width="130" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2429913373" green="0.61299437199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -127,7 +127,9 @@
                         <animations/>
                         <color key="backgroundColor" white="0.87461451479999996" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x8K-30-zBM"/>
+                    <navigationItem key="navigationItem" title="Categories" id="x8K-30-zBM">
+                        <barButtonItem key="backBarButtonItem" title="Categories" id="WSr-Nw-d5R"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="gmM-tj-B1Q" kind="push" identifier="getdata" id="XHh-1W-Zn0"/>
                     </connections>
@@ -136,17 +138,17 @@
             </objects>
             <point key="canvasLocation" x="1001" y="328"/>
         </scene>
-        <!--Articles View Controller-->
+        <!--Articles-->
         <scene sceneID="KuL-WM-QWw">
             <objects>
-                <viewController id="gmM-tj-B1Q" customClass="ArticlesViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Articles" id="gmM-tj-B1Q" customClass="ArticlesViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ucW-y3-fPl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o1o-i1-TDn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -171,7 +173,9 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uPl-Op-mko"/>
+                    <navigationItem key="navigationItem" title="Articles" id="uPl-Op-mko">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="4ec-70-uJc"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="o1o-i1-TDn" id="OdB-5o-huc"/>
                         <segue destination="kab-Pw-QQw" kind="modal" identifier="article" id="kfk-2C-h2C"/>

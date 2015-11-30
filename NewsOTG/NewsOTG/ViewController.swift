@@ -12,7 +12,7 @@ class SourceTableViewCell : UITableViewCell {
 
     @IBOutlet var sourceButton : UIButton!
     
-    @IBOutlet var sourceText: UILabel!
+
     
     @IBAction func sourceClick(sender: UIButton) {
         
@@ -76,8 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.sourceButton.setBackgroundImage(UIImage(named: sources[indexPath.row] + ".png"), forState: UIControlState.Normal)
         cell.sourceButton.tag = indexPath.row
-        cell.sourceText.text = sources[indexPath.row]
-        cell.sourceText.hidden = true
+        
         
         print(sources[indexPath.row]+".png")
         

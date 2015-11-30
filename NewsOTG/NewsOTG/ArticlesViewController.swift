@@ -8,23 +8,47 @@
 
 import UIKit
 
+class ArticlesTableViewCell: UITableViewCell {
+
+    
+    var onButtonTapped : (() -> Void)? = nil
+
+    @IBOutlet var articleText : UILabel!
+    
+    @IBOutlet var articleURL: UILabel!
+    
+    @IBOutlet var plusButton : UIButton!
+    
+    @IBAction func bluePress(sender: UIButton) {
+        
+        ArticlesViewController().addToPlaylist(sender.tag, info: articleText.text!, url: articleURL.text!)
+        
+        
+    }
+
+}
+
 class ArticlesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var source = ""
-    var link = ""
+    var link = "" 
     
     var articlesNames = [""]
     var articlesURL = [""]
     
     @IBOutlet var tableView: UITableView!
-
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        var nib = UINib(nibName: "ArticlesTableViewCell", bundle: nil)
+        
+        tableView.registerNib(nib, forCellReuseIdentifier: "articleCell")
         
         articlesNames.removeAtIndex(0)
         articlesURL.removeAtIndex(0)
@@ -118,6 +142,7 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
                             print("no error")
                             self.tableView.reloadData()
                             print("Why isnt this working")
+                            
                         }
                         
                         
@@ -140,6 +165,14 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    func addToPlaylist(num: Int, info : String, url: String) {
+        
+        print(num)
+        print(info)
+        print(url)
+        
+    }
+    
     var finalArticle = ""
     var finalURL = ""
     
@@ -153,12 +186,22 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
       
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        var cell:ArticlesTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("articleCell") as! ArticlesTableViewCell
         
         if self.articlesNames != [] {
         
+        cell.articleText.text = self.articlesNames[indexPath.row]
+            
+            cell.articleURL.text = self.articlesURL[indexPath.row]
         
-        cell.textLabel?.text = self.articlesNames[indexPath.row]
+            cell.articleURL.hidden = true
+            
+        cell.plusButton.setBackgroundImage(UIImage(named: "blueplus.png"), forState: .Normal)
+            
+        cell.plusButton.tag = indexPath.row
+            
+    
+        
             
         }
         
@@ -183,6 +226,10 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
             
         
         }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 75
     }
     
     
