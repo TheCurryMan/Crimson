@@ -23,7 +23,7 @@ class ArticlesTableViewCell: UITableViewCell {
     
     @IBAction func bluePress(sender: UIButton) {
         
-        ArticlesViewController().addToPlaylist(sender.tag, info: articleText.text!, url: articleURL.text!)
+        ArticlesViewController().getRecentPlaylist(sender.tag, info: articleText.text!, url: articleURL.text!)
         
         
     }
@@ -37,6 +37,7 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var articlesNames = [""]
     var articlesURL = [""]
+    var playlist = [["",""]]
     
     @IBOutlet var tableView: UITableView!
     
@@ -46,6 +47,7 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
         
         
         var nib = UINib(nibName: "ArticlesTableViewCell", bundle: nil)
@@ -169,7 +171,36 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //Adding to playlist function. This will store the data in the parse database
     
+    func getRecentPlaylist(num: Int, info : String, url: String) {
+        
+        PFUser.currentUser()!.fetchInBackgroundWithBlock({ (currentUser: PFObject?, error: NSError?) -> Void in
+            
+            // Update your data
+            
+            if let user = currentUser as? PFUser {
+                
+                self.playlist = user["playlist"] as! [Array<String>]
+                
+                print(self.playlist)
+                
+                self.addToPlaylist(num, info: info, url: url)
+                
+            }
+        })
+    
+    }
+    
     func addToPlaylist(num: Int, info : String, url: String) {
+        
+        if let currentUser = PFUser.currentUser() {
+            
+            self.playlist.append([info, url])
+            
+            currentUser["playlist"] = self.playlist
+            
+            currentUser.saveInBackground()
+        
+        }
         
         print(num)
         print(info)

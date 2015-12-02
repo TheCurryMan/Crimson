@@ -35,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1680" y="328"/>
+            <point key="canvasLocation" x="1658" y="328"/>
         </scene>
         <!--Categories-->
         <scene sceneID="ObD-YA-LBI">
@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljy-YS-m8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597" y="328"/>
+            <point key="canvasLocation" x="2065" y="328"/>
         </scene>
         <!--Articles-->
         <scene sceneID="KuL-WM-QWw">
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mk1-Ww-gpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2990" y="328"/>
+            <point key="canvasLocation" x="2458" y="328"/>
         </scene>
         <!--Display View Controller-->
         <scene sceneID="BVa-fp-Krv">
@@ -256,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4U-bc-Egx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3442" y="328"/>
+            <point key="canvasLocation" x="2910" y="328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8nf-eH-FLJ">
@@ -275,7 +275,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYI-SD-PxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1148" y="-418"/>
+            <point key="canvasLocation" x="1658" y="-404"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P5C-T6-FQt">
@@ -593,8 +593,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Dio-mR-Gqf"/>
-        <segue reference="MD5-XZ-Yxx"/>
+        <segue reference="QNl-JI-Mcw"/>
         <segue reference="e2H-4W-9qw"/>
-        <segue reference="ppV-NZ-Tfw"/>
+        <segue reference="XHh-1W-Zn0"/>
     </inferredMetricsTieBreakers>
 </document>

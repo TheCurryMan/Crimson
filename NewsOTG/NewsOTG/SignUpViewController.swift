@@ -52,7 +52,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         user.username = us
         user.password = pass
         user.email = em
-        user["playlist"] = []
+        user["playlist"] = [["", ""]]
         
         
         user.signUpInBackgroundWithBlock {
@@ -64,6 +64,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             } else {
                 print("Namaste")
                 self.performSegueWithIdentifier("main", sender: self)
+                print("performed")
             }
             
         }
