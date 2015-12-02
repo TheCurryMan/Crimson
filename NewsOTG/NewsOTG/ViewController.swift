@@ -50,6 +50,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.setHidesBackButton(true, animated: false)
+
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"CNN", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"BBC", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"Wiki", object: nil)

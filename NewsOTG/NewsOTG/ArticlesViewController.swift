@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Bolts
+import Parse
 
 class ArticlesTableViewCell: UITableViewCell {
 
@@ -165,6 +167,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    //Adding to playlist function. This will store the data in the parse database
+    
     func addToPlaylist(num: Int, info : String, url: String) {
         
         print(num)
@@ -172,6 +176,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         print(url)
         
     }
+    
+    // End adding function
     
     var finalArticle = ""
     var finalURL = ""
