@@ -31,7 +31,7 @@ class ArticlesTableViewCell: UITableViewCell {
 class ArticlesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var source = ""
-    var link = "" 
+    var link = ""
     
     var articlesNames = [""]
     var articlesURL = [""]
