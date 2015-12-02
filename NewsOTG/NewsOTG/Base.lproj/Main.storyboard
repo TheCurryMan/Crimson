@@ -175,6 +175,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Articles" id="uPl-Op-mko">
                         <barButtonItem key="backBarButtonItem" title="Back" id="4ec-70-uJc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="4ly-Z3-4LY">
+                            <connections>
+                                <segue destination="7Bs-Bo-Dnm" kind="push" id="6x4-KR-0ci"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="o1o-i1-TDn" id="OdB-5o-huc"/>
@@ -184,6 +189,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mk1-Ww-gpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2458" y="328"/>
+        </scene>
+        <!--Playlist View Controller-->
+        <scene sceneID="UPk-yd-IhR">
+            <objects>
+                <viewController id="7Bs-Bo-Dnm" customClass="PlaylistViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r5F-t9-5OV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hXS-ZV-eQw">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="X4U-Uq-TQr">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X4U-Uq-TQr" id="JJ2-AG-kRU">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Bs-Bo-Dnm" id="sAq-Bk-0aZ"/>
+                                    <outlet property="delegate" destination="7Bs-Bo-Dnm" id="YBg-gp-cdh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ci6-2r-l2K"/>
+                    <connections>
+                        <outlet property="tableView" destination="hXS-ZV-eQw" id="o4w-7I-bdo"/>
+                        <segue destination="kab-Pw-QQw" kind="modal" identifier="article2" id="Ltr-Es-nLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tpd-CM-sSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="1019"/>
         </scene>
         <!--Display View Controller-->
         <scene sceneID="BVa-fp-Krv">
@@ -586,6 +635,26 @@
             </objects>
             <point key="canvasLocation" x="286" y="328"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dbx-Ej-R6x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c4Z-cU-2Fw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="fvB-QS-hby"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UKZ-5X-FXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Bs-Bo-Dnm" kind="relationship" relationship="rootViewController" id="TK2-tD-3Zh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBk-Wz-IfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="1721"/>
+        </scene>
     </scenes>
     <resources>
         <image name="TempLogo" width="380" height="380"/>
@@ -595,6 +664,8 @@
         <segue reference="Dio-mR-Gqf"/>
         <segue reference="QNl-JI-Mcw"/>
         <segue reference="e2H-4W-9qw"/>
-        <segue reference="XHh-1W-Zn0"/>
+        <segue reference="Ltr-Es-nLE"/>
+        <segue reference="6x4-KR-0ci"/>
+        <segue reference="ppV-NZ-Tfw"/>
     </inferredMetricsTieBreakers>
 </document>

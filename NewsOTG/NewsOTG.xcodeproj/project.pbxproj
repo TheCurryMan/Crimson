@@ -32,6 +32,7 @@
 		E116F8DB1C04198300B95502 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116F8DA1C04198300B95502 /* AVFoundation.framework */; };
 		E1176AA21C0C0933009E792A /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */; };
 		E11994E21C0EBAA500F44ABE /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11994E11C0EBAA500F44ABE /* StartingViewController.swift */; };
+		E11994E41C0EC53100F44ABE /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */; };
 		E140CE161C0EB4DA00322747 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140CE151C0EB4DA00322747 /* SignUpViewController.swift */; };
 		E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		E116F8DA1C04198300B95502 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
 		E11994E11C0EBAA500F44ABE /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
+		E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		E140CE151C0EB4DA00322747 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				E116F8AA1C0288B600B95502 /* ViewController.swift */,
 				E1105A341C0AD9DF00D01905 /* CategoriesViewController.swift */,
 				E116F8D61C028D0500B95502 /* ArticlesViewController.swift */,
+				E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */,
 				E116F8D81C03DD0200B95502 /* DisplayViewController.swift */,
 				E116F8AC1C0288B600B95502 /* Main.storyboard */,
 				E116F8AF1C0288B600B95502 /* Assets.xcassets */,
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11994E41C0EC53100F44ABE /* PlaylistViewController.swift in Sources */,
 				E140CE161C0EB4DA00322747 /* SignUpViewController.swift in Sources */,
 				E116F8D71C028D0500B95502 /* ArticlesViewController.swift in Sources */,
 				E116F8AB1C0288B600B95502 /* ViewController.swift in Sources */,

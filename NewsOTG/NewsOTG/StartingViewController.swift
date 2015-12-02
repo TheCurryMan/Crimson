@@ -20,7 +20,7 @@ class StartingViewController: UIViewController {
         var currentUser = PFUser.currentUser()
         if currentUser != nil {
             // Do stuff with the user
-            performSegueWithIdentifier("there", sender: self)
+            //performSegueWithIdentifier("there", sender: self)
         } else {
             // Show the signup or login screen
             print("no user")
