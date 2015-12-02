@@ -47,10 +47,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var sources = ["CNN", "BBC", "Wikipedia"]
     
+    override func viewDidAppear(animated: Bool) {
+         self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.setHidesBackButton(true, animated: false)
+       
 
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"CNN", object: nil)
@@ -69,6 +79,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+   
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sources.count

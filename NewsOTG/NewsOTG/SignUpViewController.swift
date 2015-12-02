@@ -52,6 +52,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         user.username = us
         user.password = pass
         user.email = em
+        user["playlist"] = []
         
         
         user.signUpInBackgroundWithBlock {
