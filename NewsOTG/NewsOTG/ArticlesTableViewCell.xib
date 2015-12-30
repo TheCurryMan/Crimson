@@ -18,7 +18,6 @@
                         <rect key="frame" x="250" y="9" width="62" height="62"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <animations/>
-                        <state key="normal" backgroundImage="blueplus"/>
                         <connections>
                             <action selector="bluePress:" destination="1pO-52-AJT" eventType="touchUpInside" id="1GD-9K-LT8"/>
                         </connections>
@@ -51,7 +50,4 @@
             <point key="canvasLocation" x="421" y="229"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="blueplus" width="512" height="512"/>
-    </resources>
 </document>

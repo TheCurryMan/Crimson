@@ -53,9 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

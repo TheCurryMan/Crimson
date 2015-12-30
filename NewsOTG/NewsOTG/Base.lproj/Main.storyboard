@@ -183,7 +183,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="o1o-i1-TDn" id="OdB-5o-huc"/>
-                        <segue destination="kab-Pw-QQw" kind="modal" identifier="article" id="kfk-2C-h2C"/>
+                        <segue destination="kab-Pw-QQw" kind="push" identifier="article" id="50m-Wq-Q8e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mk1-Ww-gpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +200,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hXS-ZV-eQw">
                                 <rect key="frame" x="0.0" y="65" width="320" height="503"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -227,7 +227,7 @@
                     <navigationItem key="navigationItem" id="ci6-2r-l2K"/>
                     <connections>
                         <outlet property="tableView" destination="hXS-ZV-eQw" id="o4w-7I-bdo"/>
-                        <segue destination="kab-Pw-QQw" kind="modal" identifier="article2" id="Ltr-Es-nLE"/>
+                        <segue destination="kab-Pw-QQw" kind="push" identifier="article2" id="jDW-Dy-gwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpd-CM-sSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,9 +255,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="tpn-Ya-w9B" kind="modal" id="c8p-bt-qdA"/>
-                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.34999999999999998" minValue="0.0" maxValue="0.69999999999999996" id="fT5-ue-uqY">
                                 <rect key="frame" x="26" y="430" width="269" height="31"/>
@@ -297,6 +294,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Zw1-vm-Dhm"/>
                     <connections>
                         <outlet property="articleContent" destination="H51-Sx-9pT" id="30b-Nz-PxR"/>
                         <outlet property="articleTitle" destination="jvr-Tw-3Yl" id="BK5-oN-w1F"/>
@@ -305,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4U-bc-Egx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2910" y="328"/>
+            <point key="canvasLocation" x="2930" y="328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8nf-eH-FLJ">
@@ -655,6 +653,26 @@
             </objects>
             <point key="canvasLocation" x="2458" y="1721"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gap-fo-bYL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b1B-jW-hYS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NCR-G5-dfp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mMT-zY-brD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kab-Pw-QQw" kind="relationship" relationship="rootViewController" id="TuL-jR-RBv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gs-K2-Bcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930" y="-404"/>
+        </scene>
     </scenes>
     <resources>
         <image name="TempLogo" width="380" height="380"/>
@@ -664,8 +682,8 @@
         <segue reference="Dio-mR-Gqf"/>
         <segue reference="QNl-JI-Mcw"/>
         <segue reference="e2H-4W-9qw"/>
-        <segue reference="Ltr-Es-nLE"/>
-        <segue reference="6x4-KR-0ci"/>
         <segue reference="ppV-NZ-Tfw"/>
+        <segue reference="6x4-KR-0ci"/>
+        <segue reference="jDW-Dy-gwF"/>
     </inferredMetricsTieBreakers>
 </document>
