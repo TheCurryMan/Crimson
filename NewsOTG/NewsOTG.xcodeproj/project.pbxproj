@@ -35,6 +35,13 @@
 		E11994E41C0EC53100F44ABE /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */; };
 		E140CE161C0EB4DA00322747 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140CE151C0EB4DA00322747 /* SignUpViewController.swift */; };
 		E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */; };
+		E1F5ACE11C342C55000EAFFE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5ACE01C342C55000EAFFE /* TestViewController.swift */; };
+		E1F5ACE51C342D47000EAFFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5ACE41C342D47000EAFFE /* UIKit.framework */; };
+		E1F5ACEB1C342D93000EAFFE /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1F5ACE71C342D93000EAFFE /* AcousticModelEnglish.bundle */; };
+		E1F5ACEC1C342D93000EAFFE /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1F5ACE81C342D93000EAFFE /* AcousticModelSpanish.bundle */; };
+		E1F5ACED1C342D93000EAFFE /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5ACE91C342D93000EAFFE /* OpenEars.framework */; };
+		E1F5ACEE1C342D93000EAFFE /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5ACEA1C342D93000EAFFE /* Slt.framework */; };
+		E1F5AD2A1C382F14000EAFFE /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5AD291C382F14000EAFFE /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +96,14 @@
 		E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		E140CE151C0EB4DA00322747 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
+		E1F5ACE01C342C55000EAFFE /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		E1F5ACE41C342D47000EAFFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1F5ACE71C342D93000EAFFE /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		E1F5ACE81C342D93000EAFFE /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		E1F5ACE91C342D93000EAFFE /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		E1F5ACEA1C342D93000EAFFE /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		E1F5AD291C382F14000EAFFE /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F5ACE51C342D47000EAFFE /* UIKit.framework in Frameworks */,
 				E100F8011C0EACAB00590DDA /* libsqlite3.tbd in Frameworks */,
+				E1F5ACED1C342D93000EAFFE /* OpenEars.framework in Frameworks */,
 				E100F7FF1C0EACA400590DDA /* libz.tbd in Frameworks */,
 				E100F7FD1C0EAC9C00590DDA /* SystemConfiguration.framework in Frameworks */,
 				E100F7FB1C0EAC9600590DDA /* StoreKit.framework in Frameworks */,
@@ -106,6 +123,7 @@
 				E100F7F31C0EAC7E00590DDA /* CoreGraphics.framework in Frameworks */,
 				E100F7F11C0EAC7200590DDA /* CFNetwork.framework in Frameworks */,
 				E100F7EF1C0EAC6B00590DDA /* AudioToolbox.framework in Frameworks */,
+				E1F5ACEE1C342D93000EAFFE /* Slt.framework in Frameworks */,
 				E100F7ED1C0EAC4A00590DDA /* Bolts.framework in Frameworks */,
 				E100F7EB1C0EAC4300590DDA /* Parse.framework in Frameworks */,
 				E116F8DB1C04198300B95502 /* AVFoundation.framework in Frameworks */,
@@ -132,8 +150,10 @@
 		E116F89C1C0288B600B95502 = {
 			isa = PBXGroup;
 			children = (
+				E1F5ACE41C342D47000EAFFE /* UIKit.framework */,
 				E100F8001C0EACAB00590DDA /* libsqlite3.tbd */,
 				E100F7FE1C0EACA400590DDA /* libz.tbd */,
+				E1F5ACE61C342D93000EAFFE /* Framework */,
 				E100F7FC1C0EAC9C00590DDA /* SystemConfiguration.framework */,
 				E100F7FA1C0EAC9600590DDA /* StoreKit.framework */,
 				E100F7F81C0EAC9000590DDA /* Security.framework */,
@@ -165,6 +185,8 @@
 		E116F8A71C0288B600B95502 /* NewsOTG */ = {
 			isa = PBXGroup;
 			children = (
+				E1F5AD291C382F14000EAFFE /* LoadingViewController.swift */,
+				E1F5ACE01C342C55000EAFFE /* TestViewController.swift */,
 				E116F8A81C0288B600B95502 /* AppDelegate.swift */,
 				E11994E11C0EBAA500F44ABE /* StartingViewController.swift */,
 				E140CE151C0EB4DA00322747 /* SignUpViewController.swift */,
@@ -179,6 +201,7 @@
 				E116F8B41C0288B600B95502 /* Info.plist */,
 				E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */,
 				E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */,
+				E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */,
 			);
 			path = NewsOTG;
 			sourceTree = "<group>";
@@ -199,6 +222,17 @@
 				E116F8CA1C0288B600B95502 /* Info.plist */,
 			);
 			path = NewsOTGUITests;
+			sourceTree = "<group>";
+		};
+		E1F5ACE61C342D93000EAFFE /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E1F5ACE71C342D93000EAFFE /* AcousticModelEnglish.bundle */,
+				E1F5ACE81C342D93000EAFFE /* AcousticModelSpanish.bundle */,
+				E1F5ACE91C342D93000EAFFE /* OpenEars.framework */,
+				E1F5ACEA1C342D93000EAFFE /* Slt.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +342,8 @@
 				E1176AA21C0C0933009E792A /* ArticlesTableViewCell.xib in Resources */,
 				E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */,
 				E116F8B31C0288B600B95502 /* LaunchScreen.storyboard in Resources */,
+				E1F5ACEC1C342D93000EAFFE /* AcousticModelSpanish.bundle in Resources */,
+				E1F5ACEB1C342D93000EAFFE /* AcousticModelEnglish.bundle in Resources */,
 				E116F8B01C0288B600B95502 /* Assets.xcassets in Resources */,
 				E116F8AE1C0288B600B95502 /* Main.storyboard in Resources */,
 			);
@@ -341,6 +377,8 @@
 				E116F8A91C0288B600B95502 /* AppDelegate.swift in Sources */,
 				E116F8D91C03DD0200B95502 /* DisplayViewController.swift in Sources */,
 				E11994E21C0EBAA500F44ABE /* StartingViewController.swift in Sources */,
+				E1F5AD2A1C382F14000EAFFE /* LoadingViewController.swift in Sources */,
+				E1F5ACE11C342C55000EAFFE /* TestViewController.swift in Sources */,
 				E1105A351C0AD9DF00D01905 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,11 +522,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework",
 				);
 				INFOPLIST_FILE = NewsOTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CodeDay.NewsOTG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./NewsOTG/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -499,11 +539,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework",
 				);
 				INFOPLIST_FILE = NewsOTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CodeDay.NewsOTG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./NewsOTG/Bridging-Header.h";
 			};
 			name = Release;
 		};

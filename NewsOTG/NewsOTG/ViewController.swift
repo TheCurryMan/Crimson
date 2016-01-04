@@ -47,8 +47,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var sources = ["CNN", "BBC", "Wikipedia"]
     
-    override func viewDidAppear(animated: Bool) {
-         self.navigationItem.setHidesBackButton(true, animated: false)
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationItem.setHidesBackButton(false, animated: false)
         
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
