@@ -9,9 +9,8 @@
 import UIKit
 import AVFoundation
 
-class DisplayViewController: UIViewController {
+class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
-    @IBOutlet var rateSlider: UISlider!
     
     @IBOutlet var articleTitle: UILabel!
     
@@ -19,19 +18,42 @@ class DisplayViewController: UIViewController {
     var articleName = ""
     var articleURL = ""
     var articleText = ""
-    var synth = AVSpeechSynthesizer()
-    var myUtterance = AVSpeechUtterance(string: "")
+    
+    @IBOutlet var btnStop: UIButton!
+    
+    @IBOutlet var btnSpeak: UIButton!
+    
+    @IBOutlet var btnPause: UIButton!
+    
+    var totalUtterances: Int! = 0
+    
+    var currentUtterance: Int! = 0
+    
+    var totalTextLength: Int = 0
+    
+    var spokenTextLengths: Int = 0
+    
+    @IBOutlet var pvSpeechProgress: UIProgressView!
+    
+    
+    
+    //var synth = AVSpeechSynthesizer()
+    //var myUtterance = AVSpeechUtterance(string: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("asdasdasdasdaddadasdasdasd")
+        speechSynthesizer.delegate = self
+        
+        if !loadSettings() {
+            registerDefaultSettings()
+        }
         
         // Do any additional setup after loading the view.
         
         articleTitle.text = articleName
         
-        print("HELLO")
+        articleContent.text = "This is a very long paragraph. \n Very, very, very long. \n You better know who you're dealing with before you start playing this paragraph. "
         
         print(articleURL)
         
@@ -39,7 +61,7 @@ class DisplayViewController: UIViewController {
         let url = NSURL(string: articleURL)
         
         
-        
+    
         
         
         if url != nil {
@@ -135,7 +157,122 @@ class DisplayViewController: UIViewController {
         
         
     }
-
+    
+    var rate : Float!
+    var pitch : Float!
+    var volume : Float!
+    
+    let speechSynthesizer = AVSpeechSynthesizer()
+    
+    func registerDefaultSettings() {
+        rate = AVSpeechUtteranceDefaultSpeechRate
+        pitch = 1.0
+        volume = 1.0
+        
+        let defaultSpeechSettings: Dictionary<String, AnyObject> = ["rate": rate, "pitch": pitch, "volume": volume]
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaultSpeechSettings)
+        
+    }
+   
+    func loadSettings() -> Bool {
+        let userDefaults = NSUserDefaults.standardUserDefaults() as NSUserDefaults
+        
+        if let theRate: Float = userDefaults.valueForKey("rate") as? Float {
+            rate = theRate
+            pitch = userDefaults.valueForKey("pitch") as! Float
+            volume = userDefaults.valueForKey("volume") as! Float
+            
+            return true
+        }
+        
+        return false
+    }
+    
+    func animateActionButtonAppearance(shouldHideSpeakButton: Bool) {
+        var speakButtonAlphaValue: CGFloat = 1.0
+        var pauseStopButtonsAlphaValue: CGFloat = 0.0
+        
+        if shouldHideSpeakButton {
+            speakButtonAlphaValue = 0.0
+            pauseStopButtonsAlphaValue = 1.0
+        }
+        
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            self.btnSpeak.alpha = speakButtonAlphaValue
+            
+            self.btnPause.alpha = pauseStopButtonsAlphaValue
+            
+            self.btnStop.alpha = pauseStopButtonsAlphaValue
+            
+            self.pvSpeechProgress.alpha = pauseStopButtonsAlphaValue
+        })
+    }
+    
+    @IBAction func speak(sender: AnyObject) {
+        if !speechSynthesizer.speaking {
+            let textParagraphs = articleContent.text!.componentsSeparatedByString("\n")
+            
+            totalUtterances = textParagraphs.count
+            currentUtterance = 0
+            totalTextLength = 0
+            spokenTextLengths = 0
+            
+            for pieceOfText in textParagraphs {
+                let speechUtterance = AVSpeechUtterance(string: pieceOfText)
+                speechUtterance.rate = rate
+                speechUtterance.pitchMultiplier = pitch
+                speechUtterance.volume = volume
+                speechUtterance.postUtteranceDelay = 0.01
+                totalTextLength = totalTextLength + pieceOfText.characters.count
+                speechSynthesizer.speakUtterance(speechUtterance)
+            }
+            
+            
+        }
+        else{
+            speechSynthesizer.continueSpeaking()
+        }
+        
+        animateActionButtonAppearance(true)
+    }
+    
+    
+    
+    @IBAction func stopSpeech(sender: AnyObject) {
+        speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+          animateActionButtonAppearance(false)
+    }
+    
+    @IBAction func pauseSpeech(sender: AnyObject) {
+        speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+          animateActionButtonAppearance(false)
+       
+    }
+    
+    
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!) {
+        currentUtterance = currentUtterance + 1
+    }
+    
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!) {
+        spokenTextLengths = spokenTextLengths + utterance.speechString.characters.count + 1
+       
+        let progress:Float = (Float(spokenTextLengths) / Float(totalTextLength))
+        pvSpeechProgress.progress = progress
+        
+        if currentUtterance == totalUtterances {
+            animateActionButtonAppearance(false)
+        }    
+    }
+  
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!) {
+        let progress: Float = Float(spokenTextLengths + characterRange.location) * 100 / Float(totalTextLength)
+        pvSpeechProgress.progress = progress / 100
+    }
+   
+    
+/*
     
     @IBAction func textToSpeech(sender: UIButton) {
         
@@ -162,7 +299,7 @@ class DisplayViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    */
 
     /*
     // MARK: - Navigation

@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import Bolts
 
+
 class LoadingViewController: UIViewController {
 
     var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()

@@ -39,7 +39,7 @@ class SourceTableViewCell : UITableViewCell {
 
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, OEEventsObserverDelegate {
 
     @IBOutlet var tableView: UITableView!
     
@@ -61,13 +61,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-
+    
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-       
-
+        super.viewDidLoad()
+        loadOpenEars()
+        
+        startListening()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"CNN", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"BBC", object: nil)
@@ -139,6 +140,126 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         }
     }
+    
+    var lmPath: String!
+    var dicPath: String!
+    var words: Array<String> = []
+    var currentWord: String!
+    
+    var kLevelUpdatesPerSecond = 18
+    
+    
+        var openEarsEventsObserver = OEEventsObserver()
+        var startupFailedDueToLackOfPermissions = Bool()
+        
+    
+    
+        func loadOpenEars() {
+            
+            self.openEarsEventsObserver = OEEventsObserver()
+            self.openEarsEventsObserver.delegate = self
+            
+            var lmGenerator: OELanguageModelGenerator = OELanguageModelGenerator()
+            
+            addWords()
+            var name = "LanguageModelFileStarSaver"
+            lmGenerator.generateLanguageModelFromArray(words, withFilesNamed: name, forAcousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"))
+            
+            lmPath = lmGenerator.pathToSuccessfullyGeneratedLanguageModelWithRequestedName(name)
+            dicPath = lmGenerator.pathToSuccessfullyGeneratedDictionaryWithRequestedName(name)
+        }
+        
+    
+        func pocketsphinxDidChangeLanguageModelToFile(newLanguageModelPathAsString: String, newDictionaryPathAsString: String) {
+            print("Pocketsphinx is now using the following language model: \(newLanguageModelPathAsString) and the following dictionary: \(newDictionaryPathAsString)")
+        }
+        
+        func pocketSphinxContinuousSetupDidFailWithReason(reasonForFailure: String) {
+            print("Listening setup wasn't successful and returned the failure reason: \(reasonForFailure)")
+                    }
+        
+        func pocketSphinxContinuousTeardownDidFailWithReason(reasonForFailure: String) {
+            print("Listening teardown wasn't successful and returned the failure reason: \(reasonForFailure)")
+            
+        }
+        
+        func testRecognitionCompleted() {
+            print("A test file that was submitted for recognition is now complete.")
+                }
+        
+        func startListening() {
+            do{
+                try OEPocketsphinxController.sharedInstance().setActive(true)}
+            catch _ {
+                print("error")
+                print("asdasdasd")
+            }
+            OEPocketsphinxController.sharedInstance().startListeningWithLanguageModelAtPath(lmPath, dictionaryAtPath: dicPath, acousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"), languageModelIsJSGF: false)
+        }
+        
+        func stopListening() {
+            OEPocketsphinxController.sharedInstance().stopListening()
+        }
+        
+        func addWords() {
+            //add any thing here that you want to be recognized. Must be in capital letters
+            words.append("OKAYBLARB")
+            words.append("SELECTSEA")
+            words.append("SELECTWIKIPEDIA")
+            words.append("SELECTBEEBEESEA")
+            words.append("AN")
+            
+            
+            print("Added words")
+        }
+    
+        
+        func pocketsphinxFailedNoMicPermissions() {
+            
+            NSLog("Local callback: The user has never set mic permissions or denied permission to this app's mic, so listening will not start.")
+            self.startupFailedDueToLackOfPermissions = true
+            if OEPocketsphinxController.sharedInstance().isListening {
+                var error = OEPocketsphinxController.sharedInstance().stopListening() // Stop listening if we are listening.
+                if(error != nil) {
+                    NSLog("Error while stopping listening in micPermissionCheckCompleted: %@", error);
+                }
+            }
+        }
+        
+        func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
+            
+            print(hypothesis)
+            
+            if hypothesis == "OKAYBLARB"{
+                stopListening()
+                performSegueWithIdentifier("hometovoice", sender: self)
+            }
+                
+                
+            if hypothesis == "SELECTCNN" {
+                
+                finalSource = "CNN"
+                
+                self.performSegueWithIdentifier("articles", sender: self)
+
+            }
+            
+            else if hypothesis == "SELECT BBC" {
+                finalSource = "BBC"
+                
+                self.performSegueWithIdentifier("articles", sender: self)
+            }
+            
+            else if hypothesis == "SELECT WIKIPEDIA" {
+            
+                finalSource = "Wiki"
+                
+                self.performSegueWithIdentifier("articles", sender: self)
+                
+            }
+        }
+    
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "articles" {

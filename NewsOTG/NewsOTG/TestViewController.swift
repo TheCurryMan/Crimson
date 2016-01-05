@@ -148,26 +148,11 @@ class TestViewController: UIViewController, OEEventsObserverDelegate {
     
     func addWords() {
         //add any thing here that you want to be recognized. Must be in capital letters
-        words.append("OKAYBLARB")
-        words.append("MONDAY")
-        words.append("TUESDAY")
-        words.append("WEDNESDAY")
-        words.append("THURSDAY")
-        words.append("FRIDAY")
-        words.append("SATURDAY")
+        words.append("PAUSE")
+        words.append("PLAYARTICLE")
+        words.append("PLAYPLAYLIST")
+        words.append("SELECTC")
         
-        words.append("JANUARY")
-        words.append("FEBRUARY")
-        words.append("MARCH")
-        words.append("APRIL")
-        words.append("MAY")
-        words.append("JUNE")
-        words.append("JULY")
-        words.append("AUGUST")
-        words.append("SEPTEMBER")
-        words.append("OCTOBER")
-        words.append("NOVEMBER")
-        words.append("DECEMBER")
     }
     
     func getNewWord() {

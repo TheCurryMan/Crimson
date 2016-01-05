@@ -227,9 +227,9 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         
         if self.articlesNames != [] {
         
-        cell.articleText.text = self.articlesNames[indexPath.row]
+        cell.articleText.text = ""//self.articlesNames[indexPath.row]
             
-            cell.articleURL.text = self.articlesURL[indexPath.row]
+            cell.articleURL.text = ""// self.articlesURL[indexPath.row]
         
             cell.articleURL.hidden = true
             
@@ -247,22 +247,22 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        self.finalArticle = self.articlesNames[indexPath.row]
-        self.finalURL = self.articlesURL[indexPath.row]
+        //self.finalArticle = self.articlesNames[indexPath.row]
+        //self.finalURL = self.articlesURL[indexPath.row]
         
         performSegueWithIdentifier("article", sender: self)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "article" {
+        /*if segue.identifier == "article" {
             var vc = segue.destinationViewController as! DisplayViewController
             
             vc.articleName = self.finalArticle
             vc.articleURL = self.finalURL
             
         
-        }
+        } */
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
