@@ -310,7 +310,7 @@
                     <navigationItem key="navigationItem" id="Zw1-vm-Dhm">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="5iJ-Ax-Fy9">
                             <connections>
-                                <segue destination="2f1-gh-QS8" kind="push" id="nje-e0-C0B"/>
+                                <segue destination="6MM-MK-ZjL" kind="push" id="Fk4-4R-fC9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -326,22 +326,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4U-bc-Egx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3358" y="379"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="t8k-7Y-WBP">
-            <objects>
-                <viewController id="2f1-gh-QS8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Brl-YQ-A5M">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Settings" id="EWt-jz-v0K"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eoy-xf-HKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3795" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P5C-T6-FQt">
@@ -798,24 +782,173 @@
             </objects>
             <point key="canvasLocation" x="304" y="427"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="2PZ-tA-aEP">
+        <!--Settings View Controller-->
+        <scene sceneID="qzV-Xg-qdx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gxa-yx-aJk" sceneMemberID="viewController">
+                <viewController id="6MM-MK-ZjL" customClass="SettingsViewController" customModule="NewsOTG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7d4-b5-nDl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="zUO-2F-RoI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GV2-jg-s5y">
+                                        <rect key="frame" x="0.0" y="75" width="321" height="493"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellSlider" rowHeight="120" id="fUM-vr-QPe">
+                                                <rect key="frame" x="0.0" y="86" width="321" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUM-vr-QPe" id="QyC-qf-son">
+                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="119.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eMc-Lh-KNO">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <slider opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="ZFS-NN-y9Q" customClass="CustomSlider" customModule="NewsOTG" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <animations/>
+                                                            <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="maximumTrackTintColor" red="0.57647058819999997" green="0.53725490200000003" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="33" y="55.5" width="254" height="31"/>
+                                                            </variation>
+                                                        </slider>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FR3-jk-6Q5">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="223" y="22.5" width="62" height="25"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <variation key="default">
+                                                        <mask key="subviews">
+                                                            <exclude reference="eMc-Lh-KNO"/>
+                                                            <exclude reference="ZFS-NN-y9Q"/>
+                                                            <exclude reference="FR3-jk-6Q5"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="subviews">
+                                                            <include reference="eMc-Lh-KNO"/>
+                                                            <include reference="ZFS-NN-y9Q"/>
+                                                            <include reference="FR3-jk-6Q5"/>
+                                                        </mask>
+                                                    </variation>
+                                                </tableViewCellContentView>
+                                                <animations/>
+                                            </tableViewCell>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellVoicePicker" rowHeight="170" id="o1J-c5-nKL">
+                                                <rect key="frame" x="0.0" y="206" width="321" height="170"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o1J-c5-nKL" id="PrG-1z-mEx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="169.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <pickerView tag="10" contentMode="scaleToFill" id="fxF-iO-8hH">
+                                                            <rect key="frame" x="0.0" y="4" width="317" height="165.5"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <animations/>
+                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="4" width="320" height="216"/>
+                                                            </variation>
+                                                        </pickerView>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <variation key="default">
+                                                        <mask key="subviews">
+                                                            <exclude reference="fxF-iO-8hH"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="subviews">
+                                                            <include reference="fxF-iO-8hH"/>
+                                                        </mask>
+                                                    </variation>
+                                                </tableViewCellContentView>
+                                                <animations/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="GV2-jg-s5y"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="GV2-jg-s5y"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zUO-2F-RoI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zUO-2F-RoI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="PL8-Tf-nzO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="H2y-8D-1dl">
+                            <connections>
+                                <action selector="saveSettings:" destination="6MM-MK-ZjL" id="BGu-tc-Jn0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tbSettings" destination="GV2-jg-s5y" id="DIQ-AB-60Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEV-uQ-pkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3747" y="396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EIk-yk-sQF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xE9-qz-xet" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6a-v2-T7I">
+                    <navigationItem key="navigationItem" id="l0m-kh-u9a"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="flF-IY-ITG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2f1-gh-QS8" kind="relationship" relationship="rootViewController" id="e46-1D-JjL"/>
+                        <segue destination="6MM-MK-ZjL" kind="relationship" relationship="rootViewController" id="l4I-cx-nDP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XRg-nm-2GM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CN-eb-Fwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3795" y="-322"/>
+            <point key="canvasLocation" x="3747" y="-227"/>
         </scene>
     </scenes>
     <resources>
@@ -830,6 +963,6 @@
         <segue reference="XHh-1W-Zn0"/>
         <segue reference="6x4-KR-0ci"/>
         <segue reference="50m-Wq-Q8e"/>
-        <segue reference="nje-e0-C0B"/>
+        <segue reference="Fk4-4R-fC9"/>
     </inferredMetricsTieBreakers>
 </document>

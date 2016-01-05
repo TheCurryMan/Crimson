@@ -35,6 +35,7 @@
 		E11994E41C0EC53100F44ABE /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */; };
 		E140CE161C0EB4DA00322747 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140CE151C0EB4DA00322747 /* SignUpViewController.swift */; };
 		E1616D1E1C3BFEB7005E5FDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */; };
+		E1616D201C3C001B005E5FDD /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */; };
 		E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */; };
 		E1F5ACE11C342C55000EAFFE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5ACE01C342C55000EAFFE /* TestViewController.swift */; };
 		E1F5ACE51C342D47000EAFFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5ACE41C342D47000EAFFE /* UIKit.framework */; };
@@ -97,6 +98,7 @@
 		E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		E140CE151C0EB4DA00322747 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
 		E1F5ACE01C342C55000EAFFE /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -197,6 +199,8 @@
 				E116F8D61C028D0500B95502 /* ArticlesViewController.swift */,
 				E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */,
 				E116F8D81C03DD0200B95502 /* DisplayViewController.swift */,
+				E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */,
+				E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */,
 				E116F8AC1C0288B600B95502 /* Main.storyboard */,
 				E116F8AF1C0288B600B95502 /* Assets.xcassets */,
 				E116F8B11C0288B600B95502 /* LaunchScreen.storyboard */,
@@ -204,7 +208,6 @@
 				E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */,
 				E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */,
 				E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */,
-				E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */,
 			);
 			path = NewsOTG;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				E116F8AB1C0288B600B95502 /* ViewController.swift in Sources */,
 				E116F8A91C0288B600B95502 /* AppDelegate.swift in Sources */,
 				E116F8D91C03DD0200B95502 /* DisplayViewController.swift in Sources */,
+				E1616D201C3C001B005E5FDD /* CustomSlider.swift in Sources */,
 				E11994E21C0EBAA500F44ABE /* StartingViewController.swift in Sources */,
 				E1F5AD2A1C382F14000EAFFE /* LoadingViewController.swift in Sources */,
 				E1F5ACE11C342C55000EAFFE /* TestViewController.swift in Sources */,
