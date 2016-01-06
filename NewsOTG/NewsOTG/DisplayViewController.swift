@@ -9,8 +9,10 @@
 import UIKit
 import AVFoundation
 
-class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
+class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate
+ {
     
+    @IBOutlet var scrollView: UIScrollView!
     
     @IBOutlet var articleTitle: UILabel!
     
@@ -40,14 +42,24 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
     //var synth = AVSpeechSynthesizer()
     //var myUtterance = AVSpeechUtterance(string: "")
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
         
         speechSynthesizer.delegate = self
         
         if !loadSettings() {
             registerDefaultSettings()
         }
+        
+    }
+    
+    
+    
+   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
         
         // Do any additional setup after loading the view.
         
@@ -119,8 +131,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
                     finalContent.removeAtIndex(1)
                     
                     var finalStr = finalContent[0]
-                    
-                    let str = finalStr.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
+                    let newstr = finalStr.stringByReplacingOccurrencesOfString("<script(.+?)*</script>", withString: "", options: .RegularExpressionSearch, range: nil)
+                    let str = newstr.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
                     
                     print(str)
                     
@@ -140,6 +152,14 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
                             print("Why isnt this working")
                             
                             self.articleContent.text = self.articleText
+                            self.articleContent.sizeToFit()
+                            var contentRect:CGRect = CGRectZero;
+                            for view in self.scrollView.subviews {
+                                contentRect = CGRectUnion(contentRect, view.frame);
+                            }
+                            self.scrollView.contentSize = contentRect.size;
+                            
+                            print(self.articleText)
 
                         }
                         
@@ -183,6 +203,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
             pitch = userDefaults.valueForKey("pitch") as! Float
             volume = userDefaults.valueForKey("volume") as! Float
             
+            
+            
             return true
         }
         
@@ -210,8 +232,9 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
     }
     
     @IBAction func speak(sender: AnyObject) {
+        print(speechSynthesizer.speaking)
         if !speechSynthesizer.speaking {
-            let textParagraphs = articleContent.text!.componentsSeparatedByString("\n")
+            let textParagraphs = articleContent.text!.componentsSeparatedByString(". ")
             
             totalUtterances = textParagraphs.count
             currentUtterance = 0
@@ -223,7 +246,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
                 speechUtterance.rate = rate
                 speechUtterance.pitchMultiplier = pitch
                 speechUtterance.volume = volume
-                speechUtterance.postUtteranceDelay = 0.01
+                speechUtterance.postUtteranceDelay = 0.002
                 totalTextLength = totalTextLength + pieceOfText.characters.count
                 speechSynthesizer.speakUtterance(speechUtterance)
             }
@@ -231,6 +254,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
         }
         else{
+            
             speechSynthesizer.continueSpeaking()
         }
         
@@ -247,7 +271,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
     @IBAction func pauseSpeech(sender: AnyObject) {
         speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
-       
+      
     }
     
     
@@ -267,10 +291,25 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
     }
   
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!) {
+        let mutableAttributedString = NSMutableAttributedString(string: utterance.speechString)
+        
+        mutableAttributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: characterRange)
         let progress: Float = Float(spokenTextLengths + characterRange.location) * 100 / Float(totalTextLength)
         pvSpeechProgress.progress = progress / 100
     }
    
+    @IBAction func settingsPressed(sender: AnyObject) {
+        performSegueWithIdentifier("idSegueSettings", sender: self)
+    }
+    
+    
+    func didSaveSettings() {
+        let settings = NSUserDefaults.standardUserDefaults() as NSUserDefaults!
+        
+        rate = settings.valueForKey("rate") as! Float
+        pitch = settings.valueForKey("pitch") as! Float
+        volume = settings.valueForKey("volume") as! Float
+    }
     
 /*
     
@@ -310,5 +349,13 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+   
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "idSegueSettings" {
+            let settingsViewController = segue.destinationViewController as! SettingsViewController
+            settingsViewController.delegate = self
+        }    
+    }
 
 }

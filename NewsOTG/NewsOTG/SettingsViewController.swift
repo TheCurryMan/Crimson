@@ -13,7 +13,7 @@ protocol SettingsViewControllerDelegate {
 }
 
 
-class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tbSettings: UITableView!
     
@@ -53,7 +53,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         volume = speechSettings.valueForKey("volume") as! Float
         
         
-        prepareVoiceList()
+        //prepareVoiceList()
         
         //println(AVSpeechSynthesisVoice.speechVoices())
     }
@@ -83,7 +83,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
     
     
@@ -134,14 +134,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             if slider.value != value {
                 slider.value = value
             }
-        }
+        }/*
         else{
             cell = tableView.dequeueReusableCellWithIdentifier("idCellVoicePicker", forIndexPath: indexPath) as UITableViewCell
             
             let pickerView = cell.contentView.viewWithTag(10) as! UIPickerView
             pickerView.delegate = self
             pickerView.dataSource = self
-        }
+        } */
         
         return cell
     }
@@ -163,12 +163,13 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         NSUserDefaults.standardUserDefaults().setFloat(rate, forKey: "rate")
         NSUserDefaults.standardUserDefaults().setFloat(pitch, forKey: "pitch")
         NSUserDefaults.standardUserDefaults().setFloat(volume, forKey: "volume")
-        NSUserDefaults.standardUserDefaults().setObject(arrVoiceLanguages[selectedVoiceLanguage]["languageCode"], forKey: "languageCode")
+        //NSUserDefaults.standardUserDefaults().setObject(arrVoiceLanguages[selectedVoiceLanguage]["languageCode"], forKey: "languageCode")
         NSUserDefaults.standardUserDefaults().synchronize()
         
-        //self.delegate.didSaveSettings()
+        self.delegate.didSaveSettings()
         
         navigationController?.popViewControllerAnimated(true)
+
     }
     
     
@@ -189,7 +190,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         tbSettings.reloadData()
     }
-    
+    /*
     
     func prepareVoiceList() {
         for voice in AVSpeechSynthesisVoice.speechVoices() {
@@ -204,10 +205,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    
+    */
     // MARK: UIPickerView method implementation
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+  /*  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
@@ -226,7 +227,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedVoiceLanguage = row
-    }
+    } */
     
 }
 
