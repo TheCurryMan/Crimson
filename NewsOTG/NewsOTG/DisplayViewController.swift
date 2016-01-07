@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate
  {
     
@@ -16,7 +17,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     @IBOutlet var articleTitle: UILabel!
     
-    @IBOutlet var articleContent: UILabel!
+    @IBOutlet var articleContent: UITextView!
     var articleName = ""
     var articleURL = ""
     var articleText = ""
@@ -37,7 +38,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
-    
+    var previousSelectedRange: NSRange!
     
     //var synth = AVSpeechSynthesizer()
     //var myUtterance = AVSpeechUtterance(string: "")
@@ -65,7 +66,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
         articleTitle.text = articleName
         
-        articleContent.text = "This is a very long paragraph. \n Very, very, very long. \n You better know who you're dealing with before you start playing this paragraph. "
+        articleContent.text = "Loading Content... "
         
         print(articleURL)
         
@@ -152,14 +153,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             print("Why isnt this working")
                             
                             self.articleContent.text = self.articleText
-                            self.articleContent.sizeToFit()
-                            var contentRect:CGRect = CGRectZero;
-                            for view in self.scrollView.subviews {
-                                contentRect = CGRectUnion(contentRect, view.frame);
-                            }
-                            self.scrollView.contentSize = contentRect.size;
                             
                             print(self.articleText)
+                            
+                            self.setInitialFontAttribute()
 
                         }
                         
@@ -266,6 +263,9 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBAction func stopSpeech(sender: AnyObject) {
         speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
+        
+        unselectLastWord()
+        previousSelectedRange = nil
     }
     
     @IBAction func pauseSpeech(sender: AnyObject) {
@@ -284,9 +284,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
        
         let progress:Float = (Float(spokenTextLengths) / Float(totalTextLength))
         pvSpeechProgress.progress = progress
-        
+        unselectLastWord()
+        previousSelectedRange = nil
         if currentUtterance == totalUtterances {
             animateActionButtonAppearance(false)
+            unselectLastWord()
+            previousSelectedRange = nil
         }    
     }
   
@@ -296,6 +299,50 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         mutableAttributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: characterRange)
         let progress: Float = Float(spokenTextLengths + characterRange.location) * 100 / Float(totalTextLength)
         pvSpeechProgress.progress = progress / 100
+        
+        articleContent.textStorage.beginEditing()
+        
+        // Determine the current range in the whole text (all utterances), not just the current one.
+        let rangeInTotalText = NSMakeRange(spokenTextLengths + characterRange.location, characterRange.length)
+        
+        // Select the specified range in the textfield.
+        articleContent.selectedRange = rangeInTotalText
+        
+        // Store temporarily the current font attribute of the selected text.
+        let currentAttributes = articleContent.attributedText.attributesAtIndex(rangeInTotalText.location, effectiveRange: nil)
+        let fontAttribute: AnyObject? = currentAttributes[NSFontAttributeName]
+        
+        // Assign the selected text to a mutable attributed string.
+        let attributedString = NSMutableAttributedString(string: articleContent.attributedText.attributedSubstringFromRange(rangeInTotalText).string)
+        
+        
+                // Make the text of the selected area orange by specifying a new attribute.
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.orangeColor(), range: NSMakeRange(0, attributedString.length))
+            
+            // Make sure that the text will keep the original font by setting it as an attribute.
+            attributedString.addAttribute(NSFontAttributeName, value: fontAttribute!, range: NSMakeRange(0, attributedString.string.characters.count))
+        articleContent.scrollRangeToVisible(rangeInTotalText)
+    
+        
+        
+        
+        
+        // Replace the selected text with the new one having the orange color attribute.
+        articleContent.textStorage.replaceCharactersInRange(rangeInTotalText, withAttributedString: attributedString)
+        
+        // If there was another highlighted word previously (orange text color), then do exactly the same things as above and change the foreground color to black.
+        if let previousRange = previousSelectedRange {
+            let previousAttributedText = NSMutableAttributedString(string: articleContent.attributedText.attributedSubstringFromRange(previousRange).string)
+            previousAttributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.blackColor(), range: NSMakeRange(0, previousAttributedText.length))
+            previousAttributedText.addAttribute(NSFontAttributeName, value: fontAttribute!, range: NSMakeRange(0, previousAttributedText.length))
+            
+            articleContent.textStorage.replaceCharactersInRange(previousRange, withAttributedString: previousAttributedText)
+            
+            previousSelectedRange = rangeInTotalText
+        }
+        
+        // End editing the text storage.
+        articleContent.textStorage.endEditing()
     }
    
     @IBAction func settingsPressed(sender: AnyObject) {
@@ -311,6 +358,35 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         volume = settings.valueForKey("volume") as! Float
     }
     
+    func setInitialFontAttribute() {
+        let rangeOfWholeText = NSMakeRange(0, articleContent.text!.characters.count)
+        let attributedText = NSMutableAttributedString(string: articleContent.text!)
+        attributedText.addAttribute(NSFontAttributeName, value: UIFont(name: "Arial", size: 18.0)!, range: rangeOfWholeText)
+        articleContent.textStorage.beginEditing()
+        articleContent.textStorage.replaceCharactersInRange(rangeOfWholeText, withAttributedString: attributedText)
+        articleContent.textStorage.endEditing()
+    }
+    
+    func unselectLastWord() {
+        if let selectedRange = previousSelectedRange {
+            // Get the attributes of the last selected attributed word.
+            let currentAttributes = articleContent.attributedText.attributesAtIndex(selectedRange.location, effectiveRange: nil)
+            // Keep the font attribute.
+            let fontAttribute: AnyObject? = currentAttributes[NSFontAttributeName]
+            
+            // Create a new mutable attributed string using the last selected word.
+            let attributedWord = NSMutableAttributedString(string: articleContent.attributedText.attributedSubstringFromRange(selectedRange).string)
+            
+            // Set the previous font attribute, and make the foreground color black.
+            attributedWord.addAttribute(NSForegroundColorAttributeName, value: UIColor.blackColor(), range: NSMakeRange(0, attributedWord.length))
+            attributedWord.addAttribute(NSFontAttributeName, value: fontAttribute!, range: NSMakeRange(0, attributedWord.length))
+            
+            // Update the text storage property and replace the last selected word with the new attributed string.
+            articleContent.textStorage.beginEditing()
+            articleContent.textStorage.replaceCharactersInRange(selectedRange, withAttributedString: attributedWord)
+            articleContent.textStorage.endEditing()
+        }
+    }
 /*
     
     @IBAction func textToSpeech(sender: UIButton) {

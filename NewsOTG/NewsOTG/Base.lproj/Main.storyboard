@@ -297,16 +297,14 @@
                                 <rect key="frame" x="20" y="163" width="280" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H51-Sx-9pT">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Loading Content... " textAlignment="natural" selectable="NO" id="fnu-aO-j39">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="271"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <string key="text">This is a very long paragraph. Very, very, very long. You better know who you're dealing with before you start playing this paragraph. </string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <animations/>
                             </scrollView>
@@ -322,7 +320,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="articleContent" destination="H51-Sx-9pT" id="30b-Nz-PxR"/>
+                        <outlet property="articleContent" destination="fnu-aO-j39" id="LEi-aI-eQI"/>
                         <outlet property="articleTitle" destination="jvr-Tw-3Yl" id="BK5-oN-w1F"/>
                         <outlet property="btnPause" destination="qnl-fo-buw" id="Fnb-35-w9h"/>
                         <outlet property="btnSpeak" destination="eIS-8s-N82" id="ILH-2k-xVq"/>
