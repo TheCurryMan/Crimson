@@ -6,94 +6,99 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG21DisplayViewController", ""]
 provides-dynamic-lookup:
-- "articleTitle"
-- "audioPlayer"
-- "btnPause"
-- "animateActionButtonAppearance"
-- "settingsPressed"
-- "totalTextLength"
-- "stopSpeech"
-- "speak"
-- "viewDidLoad"
-- "articleName"
-- "registerDefaultSettings"
-- "setInitialFontAttribute"
-- "unselectLastWord"
-- "prepareForSegue"
-- "pvSpeechProgress"
-- "loadSettings"
-- "spokenTextLengths"
-- "articleContent"
-- "viewDidAppear"
-- "articleURL"
-- "btnSpeak"
-- "articleText"
-- "pauseSpeech"
-- "didSaveSettings"
 - "scrollView"
+- "currentTime"
+- "pvSpeechProgress"
+- "totalTextLength"
+- "btnSpeak"
+- "unselectLastWord"
+- "articleName"
+- "audioPlayer"
+- "setInitialFontAttribute"
 - "btnStop"
+- "totalTime"
+- "newVersion"
+- "articleContent"
+- "viewDidLoad"
+- "animateActionButtonAppearance"
+- "stopSpeech"
 - "speechSynthesizer"
 - "speechSynthesizer"
 - "speechSynthesizer"
 - "speechSynthesizer"
+- "pauseSpeech"
+- "settingsPressed"
+- "prepareForSegue"
+- "spokenTextLengths"
+- "viewDidAppear"
+- "btnPause"
+- "loadSettings"
+- "didSaveSettings"
+- "speak"
+- "articleURL"
+- "articleTitle"
+- "registerDefaultSettings"
+- "articleText"
 depends-top-level:
-- !private "NSUTF8StringEncoding"
-- "AVSpeechUtterance"
-- !private "UIFont"
-- !private "print"
-- "Bool"
-- !private "NSString"
-- "StringLiteralType"
-- !private "NSMutableAttributedString"
-- !private "Dictionary"
-- !private "UIColor"
-- "UnicodeScalarType"
-- !private "/"
-- !private "+"
-- !private "Void"
-- "UIProgressView"
-- "TextToSpeech"
-- !private "!="
-- !private "!"
-- !private "NSForegroundColorAttributeName"
-- "UIStoryboardSegue"
-- "AnyObject"
-- "AVSpeechSynthesizer"
-- !private "NSURL"
-- "UILabel"
-- "NSRange"
-- !private "NSURLSession"
-- "Float"
-- "AVAudioPlayer"
-- !private "=="
-- !private "AVSpeechBoundary"
-- "UIButton"
-- !private "AVSpeechUtteranceDefaultSpeechRate"
-- !private "NSUserDefaults"
-- !private "SettingsViewController"
-- "Int"
-- "UITextView"
-- "UIViewController"
-- !private "String"
-- "SettingsViewControllerDelegate"
-- "AVSpeechSynthesizerDelegate"
-- "Array"
-- "UIScrollView"
-- !private "dispatch_get_main_queue"
 - !private "*"
+- "UIScrollView"
+- !private "SettingsViewController"
+- "StringLiteralType"
+- "Float"
+- "UIButton"
+- "UIStoryboardSegue"
+- "NSRange"
+- !private "NSMutableAttributedString"
+- "AVSpeechSynthesizerDelegate"
+- !private "!="
+- !private "/"
+- "UILabel"
+- !private "Void"
+- !private "+"
+- !private "NSURL"
+- !private "NSForegroundColorAttributeName"
+- !private "NSURLSession"
+- !private "print"
 - !private "dispatch_async"
+- !private "NSString"
+- !private "NSUserDefaults"
+- !private "dispatch_get_main_queue"
+- !private "=="
+- "UIProgressView"
+- "UIViewController"
+- !private "AVSpeechBoundary"
+- !private "Dictionary"
 - !private "NSMakeRange"
+- !private "NSUTF8StringEncoding"
 - !private "UIView"
-- !private "NSFontAttributeName"
-- "BooleanLiteralType"
-- "DisplayViewController"
+- "UITextView"
+- !private "AVSpeechUtteranceDefaultSpeechRate"
+- "AVAudioPlayer"
+- "Bool"
+- "AVSpeechUtterance"
+- "AnyObject"
 - !private "CGFloat"
+- "DisplayViewController"
+- !private "String"
+- "Array"
+- "Int"
+- "TextToSpeech"
+- "AVSpeechSynthesizer"
+- !private "NSFontAttributeName"
+- !private "!"
+- !private "UIFont"
+- !private "UIColor"
+- "BooleanLiteralType"
+- "SettingsViewControllerDelegate"
+- "UnicodeScalarType"
 depends-member:
 - ["CSo13AVAudioPlayer", "init"]
-- !private ["CSo13AVAudioPlayer", "pitchMultiplier"]
+- !private ["CSo13AVAudioPlayer", "pause"]
 - !private ["CSo13AVAudioPlayer", "play"]
+- !private ["CSo13AVAudioPlayer", "playing"]
 - !private ["CSo13AVAudioPlayer", "prepareToPlay"]
 - !private ["CSo13AVAudioPlayer", "rate"]
+- !private ["CSo13AVAudioPlayer", "stop"]
 - !private ["CSo13AVAudioPlayer", "volume"]
 - !private ["OSC16AVSpeechBoundary", "Immediate"]
 - !private ["CSo19AVSpeechSynthesizer", "continueSpeaking"]
@@ -137,6 +142,7 @@ depends-member:
 - !private ["PSo27AVSpeechSynthesizerDelegate", "dispatch_async"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "loadSettings"]
+- !private ["PSo27AVSpeechSynthesizerDelegate", "newVersion"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "performSegueWithIdentifier"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "pitch"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "previousSelectedRange"]
@@ -146,6 +152,7 @@ depends-member:
 - !private ["PSo27AVSpeechSynthesizerDelegate", "registerDefaultSettings"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "service"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "setInitialFontAttribute"]
+- !private ["PSo27AVSpeechSynthesizerDelegate", "speak"]
 - ["PSo27AVSpeechSynthesizerDelegate", "speechSynthesizer"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "spokenTextLengths"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "totalTextLength"]
@@ -202,6 +209,7 @@ depends-member:
 - !private ["PSs9AnyObject", "characters"]
 - !private ["PSs9AnyObject", "componentsSeparatedByString"]
 - !private ["PSs9AnyObject", "continueSpeaking"]
+- ["PSs9AnyObject", "currentTime"]
 - ["PSs9AnyObject", "currentUtterance"]
 - !private ["PSs9AnyObject", "dataTaskWithURL"]
 - !private ["PSs9AnyObject", "delegate"]
@@ -214,13 +222,16 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "length"]
 - ["PSs9AnyObject", "loadSettings"]
+- ["PSs9AnyObject", "newVersion"]
 - !private ["PSs9AnyObject", "orangeColor"]
+- !private ["PSs9AnyObject", "pause"]
 - !private ["PSs9AnyObject", "pauseSpeakingAtBoundary"]
 - ["PSs9AnyObject", "pauseSpeech"]
 - !private ["PSs9AnyObject", "performSegueWithIdentifier"]
 - ["PSs9AnyObject", "pitch"]
 - !private ["PSs9AnyObject", "pitchMultiplier"]
 - !private ["PSs9AnyObject", "play"]
+- !private ["PSs9AnyObject", "playing"]
 - !private ["PSs9AnyObject", "postUtteranceDelay"]
 - ["PSs9AnyObject", "prepareForSegue"]
 - !private ["PSs9AnyObject", "prepareToPlay"]
@@ -248,6 +259,7 @@ depends-member:
 - ["PSs9AnyObject", "speechSynthesizer"]
 - ["PSs9AnyObject", "spokenTextLengths"]
 - !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "stop"]
 - !private ["PSs9AnyObject", "stopSpeakingAtBoundary"]
 - ["PSs9AnyObject", "stopSpeech"]
 - !private ["PSs9AnyObject", "string"]
@@ -256,6 +268,7 @@ depends-member:
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textStorage"]
 - ["PSs9AnyObject", "totalTextLength"]
+- ["PSs9AnyObject", "totalTime"]
 - ["PSs9AnyObject", "totalUtterances"]
 - ["PSs9AnyObject", "unselectLastWord"]
 - !private ["PSs9AnyObject", "valueForKey"]
@@ -340,6 +353,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "characters"]
 - !private ["PSs11CVarArgType", "componentsSeparatedByString"]
 - !private ["PSs11CVarArgType", "continueSpeaking"]
+- ["PSs11CVarArgType", "currentTime"]
 - ["PSs11CVarArgType", "currentUtterance"]
 - !private ["PSs11CVarArgType", "dataTaskWithURL"]
 - !private ["PSs11CVarArgType", "delegate"]
@@ -352,13 +366,16 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "length"]
 - ["PSs11CVarArgType", "loadSettings"]
+- ["PSs11CVarArgType", "newVersion"]
 - !private ["PSs11CVarArgType", "orangeColor"]
+- !private ["PSs11CVarArgType", "pause"]
 - !private ["PSs11CVarArgType", "pauseSpeakingAtBoundary"]
 - ["PSs11CVarArgType", "pauseSpeech"]
 - !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
 - ["PSs11CVarArgType", "pitch"]
 - !private ["PSs11CVarArgType", "pitchMultiplier"]
 - !private ["PSs11CVarArgType", "play"]
+- !private ["PSs11CVarArgType", "playing"]
 - !private ["PSs11CVarArgType", "postUtteranceDelay"]
 - ["PSs11CVarArgType", "prepareForSegue"]
 - !private ["PSs11CVarArgType", "prepareToPlay"]
@@ -386,6 +403,7 @@ depends-member:
 - ["PSs11CVarArgType", "speechSynthesizer"]
 - ["PSs11CVarArgType", "spokenTextLengths"]
 - !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "stop"]
 - !private ["PSs11CVarArgType", "stopSpeakingAtBoundary"]
 - ["PSs11CVarArgType", "stopSpeech"]
 - !private ["PSs11CVarArgType", "string"]
@@ -393,6 +411,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textStorage"]
 - ["PSs11CVarArgType", "totalTextLength"]
+- ["PSs11CVarArgType", "totalTime"]
 - ["PSs11CVarArgType", "totalUtterances"]
 - ["PSs11CVarArgType", "unselectLastWord"]
 - !private ["PSs11CVarArgType", "valueForKey"]
@@ -490,6 +509,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "componentsSeparatedByString"]
 - !private ["PSs23CustomStringConvertible", "continueSpeaking"]
 - !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "currentTime"]
 - ["PSs23CustomStringConvertible", "currentUtterance"]
 - !private ["PSs23CustomStringConvertible", "dataTaskWithURL"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
@@ -502,13 +522,16 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "length"]
 - ["PSs23CustomStringConvertible", "loadSettings"]
+- ["PSs23CustomStringConvertible", "newVersion"]
 - !private ["PSs23CustomStringConvertible", "orangeColor"]
+- !private ["PSs23CustomStringConvertible", "pause"]
 - !private ["PSs23CustomStringConvertible", "pauseSpeakingAtBoundary"]
 - ["PSs23CustomStringConvertible", "pauseSpeech"]
 - !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
 - ["PSs23CustomStringConvertible", "pitch"]
 - !private ["PSs23CustomStringConvertible", "pitchMultiplier"]
 - !private ["PSs23CustomStringConvertible", "play"]
+- !private ["PSs23CustomStringConvertible", "playing"]
 - !private ["PSs23CustomStringConvertible", "postUtteranceDelay"]
 - ["PSs23CustomStringConvertible", "prepareForSegue"]
 - !private ["PSs23CustomStringConvertible", "prepareToPlay"]
@@ -537,6 +560,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "speechSynthesizer"]
 - ["PSs23CustomStringConvertible", "spokenTextLengths"]
 - !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "stop"]
 - !private ["PSs23CustomStringConvertible", "stopSpeakingAtBoundary"]
 - ["PSs23CustomStringConvertible", "stopSpeech"]
 - !private ["PSs23CustomStringConvertible", "string"]
@@ -545,6 +569,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textStorage"]
 - ["PSs23CustomStringConvertible", "totalTextLength"]
+- ["PSs23CustomStringConvertible", "totalTime"]
 - ["PSs23CustomStringConvertible", "totalUtterances"]
 - ["PSs23CustomStringConvertible", "unselectLastWord"]
 - !private ["PSs23CustomStringConvertible", "valueForKey"]
@@ -605,6 +630,7 @@ depends-member:
 - ["C7NewsOTG21DisplayViewController", "btnPause"]
 - ["C7NewsOTG21DisplayViewController", "btnSpeak"]
 - ["C7NewsOTG21DisplayViewController", "btnStop"]
+- ["C7NewsOTG21DisplayViewController", "currentTime"]
 - ["C7NewsOTG21DisplayViewController", "currentUtterance"]
 - ["C7NewsOTG21DisplayViewController", "deinit"]
 - ["C7NewsOTG21DisplayViewController", "didSaveSettings"]
@@ -612,6 +638,7 @@ depends-member:
 - !private ["C7NewsOTG21DisplayViewController", "dispatch_get_main_queue"]
 - ["C7NewsOTG21DisplayViewController", "init"]
 - ["C7NewsOTG21DisplayViewController", "loadSettings"]
+- ["C7NewsOTG21DisplayViewController", "newVersion"]
 - ["C7NewsOTG21DisplayViewController", "pauseSpeech"]
 - !private ["C7NewsOTG21DisplayViewController", "performSegueWithIdentifier"]
 - ["C7NewsOTG21DisplayViewController", "pitch"]
@@ -630,6 +657,7 @@ depends-member:
 - ["C7NewsOTG21DisplayViewController", "spokenTextLengths"]
 - ["C7NewsOTG21DisplayViewController", "stopSpeech"]
 - ["C7NewsOTG21DisplayViewController", "totalTextLength"]
+- ["C7NewsOTG21DisplayViewController", "totalTime"]
 - ["C7NewsOTG21DisplayViewController", "totalUtterances"]
 - ["C7NewsOTG21DisplayViewController", "unselectLastWord"]
 - ["C7NewsOTG21DisplayViewController", "viewDidAppear"]
@@ -684,6 +712,7 @@ depends-member:
 - !private ["PSs9Equatable", "characters"]
 - !private ["PSs9Equatable", "componentsSeparatedByString"]
 - !private ["PSs9Equatable", "continueSpeaking"]
+- ["PSs9Equatable", "currentTime"]
 - ["PSs9Equatable", "currentUtterance"]
 - !private ["PSs9Equatable", "dataTaskWithURL"]
 - !private ["PSs9Equatable", "delegate"]
@@ -696,13 +725,16 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "length"]
 - ["PSs9Equatable", "loadSettings"]
+- ["PSs9Equatable", "newVersion"]
 - !private ["PSs9Equatable", "orangeColor"]
+- !private ["PSs9Equatable", "pause"]
 - !private ["PSs9Equatable", "pauseSpeakingAtBoundary"]
 - ["PSs9Equatable", "pauseSpeech"]
 - !private ["PSs9Equatable", "performSegueWithIdentifier"]
 - ["PSs9Equatable", "pitch"]
 - !private ["PSs9Equatable", "pitchMultiplier"]
 - !private ["PSs9Equatable", "play"]
+- !private ["PSs9Equatable", "playing"]
 - !private ["PSs9Equatable", "postUtteranceDelay"]
 - ["PSs9Equatable", "prepareForSegue"]
 - !private ["PSs9Equatable", "prepareToPlay"]
@@ -730,6 +762,7 @@ depends-member:
 - ["PSs9Equatable", "speechSynthesizer"]
 - ["PSs9Equatable", "spokenTextLengths"]
 - !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "stop"]
 - !private ["PSs9Equatable", "stopSpeakingAtBoundary"]
 - ["PSs9Equatable", "stopSpeech"]
 - !private ["PSs9Equatable", "string"]
@@ -737,6 +770,7 @@ depends-member:
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textStorage"]
 - ["PSs9Equatable", "totalTextLength"]
+- ["PSs9Equatable", "totalTime"]
 - ["PSs9Equatable", "totalUtterances"]
 - ["PSs9Equatable", "unselectLastWord"]
 - !private ["PSs9Equatable", "valueForKey"]
@@ -808,6 +842,7 @@ depends-member:
 - !private ["PSs8Hashable", "characters"]
 - !private ["PSs8Hashable", "componentsSeparatedByString"]
 - !private ["PSs8Hashable", "continueSpeaking"]
+- ["PSs8Hashable", "currentTime"]
 - ["PSs8Hashable", "currentUtterance"]
 - !private ["PSs8Hashable", "dataTaskWithURL"]
 - !private ["PSs8Hashable", "delegate"]
@@ -820,13 +855,16 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "length"]
 - ["PSs8Hashable", "loadSettings"]
+- ["PSs8Hashable", "newVersion"]
 - !private ["PSs8Hashable", "orangeColor"]
+- !private ["PSs8Hashable", "pause"]
 - !private ["PSs8Hashable", "pauseSpeakingAtBoundary"]
 - ["PSs8Hashable", "pauseSpeech"]
 - !private ["PSs8Hashable", "performSegueWithIdentifier"]
 - ["PSs8Hashable", "pitch"]
 - !private ["PSs8Hashable", "pitchMultiplier"]
 - !private ["PSs8Hashable", "play"]
+- !private ["PSs8Hashable", "playing"]
 - !private ["PSs8Hashable", "postUtteranceDelay"]
 - ["PSs8Hashable", "prepareForSegue"]
 - !private ["PSs8Hashable", "prepareToPlay"]
@@ -854,6 +892,7 @@ depends-member:
 - ["PSs8Hashable", "speechSynthesizer"]
 - ["PSs8Hashable", "spokenTextLengths"]
 - !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "stop"]
 - !private ["PSs8Hashable", "stopSpeakingAtBoundary"]
 - ["PSs8Hashable", "stopSpeech"]
 - !private ["PSs8Hashable", "string"]
@@ -861,6 +900,7 @@ depends-member:
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textStorage"]
 - ["PSs8Hashable", "totalTextLength"]
+- ["PSs8Hashable", "totalTime"]
 - ["PSs8Hashable", "totalUtterances"]
 - ["PSs8Hashable", "unselectLastWord"]
 - !private ["PSs8Hashable", "valueForKey"]
@@ -983,6 +1023,7 @@ depends-member:
 - ["PSo8NSCoding", "btnStop"]
 - !private ["PSo8NSCoding", "characters"]
 - !private ["PSo8NSCoding", "componentsSeparatedByString"]
+- ["PSo8NSCoding", "currentTime"]
 - ["PSo8NSCoding", "currentUtterance"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didSaveSettings"]
@@ -992,6 +1033,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "length"]
 - ["PSo8NSCoding", "loadSettings"]
+- ["PSo8NSCoding", "newVersion"]
 - !private ["PSo8NSCoding", "orangeColor"]
 - ["PSo8NSCoding", "pauseSpeech"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
@@ -1023,6 +1065,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textStorage"]
 - ["PSo8NSCoding", "totalTextLength"]
+- ["PSo8NSCoding", "totalTime"]
 - ["PSo8NSCoding", "totalUtterances"]
 - ["PSo8NSCoding", "unselectLastWord"]
 - ["PSo8NSCoding", "viewDidAppear"]
@@ -1079,6 +1122,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "btnPause"]
 - ["PSo26NSExtensionRequestHandling", "btnSpeak"]
 - ["PSo26NSExtensionRequestHandling", "btnStop"]
+- ["PSo26NSExtensionRequestHandling", "currentTime"]
 - ["PSo26NSExtensionRequestHandling", "currentUtterance"]
 - !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "didSaveSettings"]
@@ -1086,6 +1130,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "loadSettings"]
+- ["PSo26NSExtensionRequestHandling", "newVersion"]
 - ["PSo26NSExtensionRequestHandling", "pauseSpeech"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "pitch"]
@@ -1104,6 +1149,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "spokenTextLengths"]
 - ["PSo26NSExtensionRequestHandling", "stopSpeech"]
 - ["PSo26NSExtensionRequestHandling", "totalTextLength"]
+- ["PSo26NSExtensionRequestHandling", "totalTime"]
 - ["PSo26NSExtensionRequestHandling", "totalUtterances"]
 - ["PSo26NSExtensionRequestHandling", "unselectLastWord"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
@@ -1185,6 +1231,7 @@ depends-member:
 - !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "componentsSeparatedByString"]
 - !private ["CSo8NSObject", "continueSpeaking"]
+- ["CSo8NSObject", "currentTime"]
 - ["CSo8NSObject", "currentUtterance"]
 - !private ["CSo8NSObject", "dataTaskWithURL"]
 - !private ["CSo8NSObject", "delegate"]
@@ -1197,13 +1244,16 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "length"]
 - ["CSo8NSObject", "loadSettings"]
+- ["CSo8NSObject", "newVersion"]
 - !private ["CSo8NSObject", "orangeColor"]
+- !private ["CSo8NSObject", "pause"]
 - !private ["CSo8NSObject", "pauseSpeakingAtBoundary"]
 - ["CSo8NSObject", "pauseSpeech"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - ["CSo8NSObject", "pitch"]
 - !private ["CSo8NSObject", "pitchMultiplier"]
 - !private ["CSo8NSObject", "play"]
+- !private ["CSo8NSObject", "playing"]
 - !private ["CSo8NSObject", "postUtteranceDelay"]
 - ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "prepareToPlay"]
@@ -1231,6 +1281,7 @@ depends-member:
 - ["CSo8NSObject", "speechSynthesizer"]
 - ["CSo8NSObject", "spokenTextLengths"]
 - !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "stop"]
 - !private ["CSo8NSObject", "stopSpeakingAtBoundary"]
 - ["CSo8NSObject", "stopSpeech"]
 - !private ["CSo8NSObject", "string"]
@@ -1238,6 +1289,7 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textStorage"]
 - ["CSo8NSObject", "totalTextLength"]
+- ["CSo8NSObject", "totalTime"]
 - ["CSo8NSObject", "totalUtterances"]
 - ["CSo8NSObject", "unselectLastWord"]
 - !private ["CSo8NSObject", "valueForKey"]
@@ -1284,6 +1336,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "componentsSeparatedByString"]
 - !private ["PSo16NSObjectProtocol", "continueSpeaking"]
+- ["PSo16NSObjectProtocol", "currentTime"]
 - ["PSo16NSObjectProtocol", "currentUtterance"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -1296,13 +1349,16 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "length"]
 - ["PSo16NSObjectProtocol", "loadSettings"]
+- ["PSo16NSObjectProtocol", "newVersion"]
 - !private ["PSo16NSObjectProtocol", "orangeColor"]
+- !private ["PSo16NSObjectProtocol", "pause"]
 - !private ["PSo16NSObjectProtocol", "pauseSpeakingAtBoundary"]
 - ["PSo16NSObjectProtocol", "pauseSpeech"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - ["PSo16NSObjectProtocol", "pitch"]
 - !private ["PSo16NSObjectProtocol", "pitchMultiplier"]
 - !private ["PSo16NSObjectProtocol", "play"]
+- !private ["PSo16NSObjectProtocol", "playing"]
 - !private ["PSo16NSObjectProtocol", "postUtteranceDelay"]
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "prepareToPlay"]
@@ -1330,6 +1386,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "speechSynthesizer"]
 - ["PSo16NSObjectProtocol", "spokenTextLengths"]
 - !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "stop"]
 - !private ["PSo16NSObjectProtocol", "stopSpeakingAtBoundary"]
 - ["PSo16NSObjectProtocol", "stopSpeech"]
 - !private ["PSo16NSObjectProtocol", "string"]
@@ -1337,6 +1394,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textStorage"]
 - ["PSo16NSObjectProtocol", "totalTextLength"]
+- ["PSo16NSObjectProtocol", "totalTime"]
 - ["PSo16NSObjectProtocol", "totalUtterances"]
 - ["PSo16NSObjectProtocol", "unselectLastWord"]
 - !private ["PSo16NSObjectProtocol", "valueForKey"]
@@ -1448,6 +1506,7 @@ depends-member:
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "dispatch_async"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "dispatch_get_main_queue"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "loadSettings"]
+- !private ["P7NewsOTG30SettingsViewControllerDelegate", "newVersion"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "performSegueWithIdentifier"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "pitch"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "previousSelectedRange"]
@@ -1457,6 +1516,7 @@ depends-member:
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "registerDefaultSettings"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "service"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "setInitialFontAttribute"]
+- !private ["P7NewsOTG30SettingsViewControllerDelegate", "speak"]
 - ["P7NewsOTG30SettingsViewControllerDelegate", "speechSynthesizer"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "spokenTextLengths"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "totalTextLength"]
@@ -1544,6 +1604,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "btnPause"]
 - ["PSo21UIAppearanceContainer", "btnSpeak"]
 - ["PSo21UIAppearanceContainer", "btnStop"]
+- ["PSo21UIAppearanceContainer", "currentTime"]
 - ["PSo21UIAppearanceContainer", "currentUtterance"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didSaveSettings"]
@@ -1551,6 +1612,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "loadSettings"]
+- ["PSo21UIAppearanceContainer", "newVersion"]
 - ["PSo21UIAppearanceContainer", "pauseSpeech"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "pitch"]
@@ -1574,6 +1636,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textStorage"]
 - ["PSo21UIAppearanceContainer", "totalTextLength"]
+- ["PSo21UIAppearanceContainer", "totalTime"]
 - ["PSo21UIAppearanceContainer", "totalUtterances"]
 - ["PSo21UIAppearanceContainer", "unselectLastWord"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
@@ -1613,6 +1676,7 @@ depends-member:
 - ["PSo18UIContentContainer", "btnPause"]
 - ["PSo18UIContentContainer", "btnSpeak"]
 - ["PSo18UIContentContainer", "btnStop"]
+- ["PSo18UIContentContainer", "currentTime"]
 - ["PSo18UIContentContainer", "currentUtterance"]
 - !private ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didSaveSettings"]
@@ -1620,6 +1684,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "loadSettings"]
+- ["PSo18UIContentContainer", "newVersion"]
 - ["PSo18UIContentContainer", "pauseSpeech"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - ["PSo18UIContentContainer", "pitch"]
@@ -1638,6 +1703,7 @@ depends-member:
 - ["PSo18UIContentContainer", "spokenTextLengths"]
 - ["PSo18UIContentContainer", "stopSpeech"]
 - ["PSo18UIContentContainer", "totalTextLength"]
+- ["PSo18UIContentContainer", "totalTime"]
 - ["PSo18UIContentContainer", "totalUtterances"]
 - ["PSo18UIContentContainer", "unselectLastWord"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
@@ -1693,6 +1759,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "btnPause"]
 - ["PSo18UIFocusEnvironment", "btnSpeak"]
 - ["PSo18UIFocusEnvironment", "btnStop"]
+- ["PSo18UIFocusEnvironment", "currentTime"]
 - ["PSo18UIFocusEnvironment", "currentUtterance"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didSaveSettings"]
@@ -1700,6 +1767,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "loadSettings"]
+- ["PSo18UIFocusEnvironment", "newVersion"]
 - ["PSo18UIFocusEnvironment", "pauseSpeech"]
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "pitch"]
@@ -1723,6 +1791,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textStorage"]
 - ["PSo18UIFocusEnvironment", "totalTextLength"]
+- ["PSo18UIFocusEnvironment", "totalTime"]
 - ["PSo18UIFocusEnvironment", "totalUtterances"]
 - ["PSo18UIFocusEnvironment", "unselectLastWord"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
@@ -1785,6 +1854,7 @@ depends-member:
 - ["CSo11UIResponder", "btnPause"]
 - ["CSo11UIResponder", "btnSpeak"]
 - ["CSo11UIResponder", "btnStop"]
+- ["CSo11UIResponder", "currentTime"]
 - ["CSo11UIResponder", "currentUtterance"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didSaveSettings"]
@@ -1792,6 +1862,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "loadSettings"]
+- ["CSo11UIResponder", "newVersion"]
 - ["CSo11UIResponder", "pauseSpeech"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - ["CSo11UIResponder", "pitch"]
@@ -1815,6 +1886,7 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textStorage"]
 - ["CSo11UIResponder", "totalTextLength"]
+- ["CSo11UIResponder", "totalTime"]
 - ["CSo11UIResponder", "totalUtterances"]
 - ["CSo11UIResponder", "unselectLastWord"]
 - ["CSo11UIResponder", "viewDidAppear"]
@@ -1855,6 +1927,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "btnPause"]
 - ["PSo16UIStateRestoring", "btnSpeak"]
 - ["PSo16UIStateRestoring", "btnStop"]
+- ["PSo16UIStateRestoring", "currentTime"]
 - ["PSo16UIStateRestoring", "currentUtterance"]
 - !private ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "didSaveSettings"]
@@ -1862,6 +1935,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "loadSettings"]
+- ["PSo16UIStateRestoring", "newVersion"]
 - ["PSo16UIStateRestoring", "pauseSpeech"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - ["PSo16UIStateRestoring", "pitch"]
@@ -1880,6 +1954,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "spokenTextLengths"]
 - ["PSo16UIStateRestoring", "stopSpeech"]
 - ["PSo16UIStateRestoring", "totalTextLength"]
+- ["PSo16UIStateRestoring", "totalTime"]
 - ["PSo16UIStateRestoring", "totalUtterances"]
 - ["PSo16UIStateRestoring", "unselectLastWord"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
@@ -1937,6 +2012,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "btnPause"]
 - ["PSo18UITraitEnvironment", "btnSpeak"]
 - ["PSo18UITraitEnvironment", "btnStop"]
+- ["PSo18UITraitEnvironment", "currentTime"]
 - ["PSo18UITraitEnvironment", "currentUtterance"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didSaveSettings"]
@@ -1944,6 +2020,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "loadSettings"]
+- ["PSo18UITraitEnvironment", "newVersion"]
 - ["PSo18UITraitEnvironment", "pauseSpeech"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UITraitEnvironment", "pitch"]
@@ -1967,6 +2044,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textStorage"]
 - ["PSo18UITraitEnvironment", "totalTextLength"]
+- ["PSo18UITraitEnvironment", "totalTime"]
 - ["PSo18UITraitEnvironment", "totalUtterances"]
 - ["PSo18UITraitEnvironment", "unselectLastWord"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
@@ -2025,6 +2103,7 @@ depends-member:
 - ["CSo16UIViewController", "btnPause"]
 - ["CSo16UIViewController", "btnSpeak"]
 - ["CSo16UIViewController", "btnStop"]
+- ["CSo16UIViewController", "currentTime"]
 - ["CSo16UIViewController", "currentUtterance"]
 - !private ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "delegate"]
@@ -2033,6 +2112,7 @@ depends-member:
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "loadSettings"]
+- ["CSo16UIViewController", "newVersion"]
 - ["CSo16UIViewController", "pauseSpeech"]
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - ["CSo16UIViewController", "pitch"]
@@ -2051,6 +2131,7 @@ depends-member:
 - ["CSo16UIViewController", "spokenTextLengths"]
 - ["CSo16UIViewController", "stopSpeech"]
 - ["CSo16UIViewController", "totalTextLength"]
+- ["CSo16UIViewController", "totalTime"]
 - ["CSo16UIViewController", "totalUtterances"]
 - ["CSo16UIViewController", "unselectLastWord"]
 - ["CSo16UIViewController", "viewDidAppear"]
@@ -2517,4 +2598,4 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
-interface-hash: "63206971e1008cd9fb360552050cb5ce"
+interface-hash: "7eed29fb25090f12cd01d40ae8fff825"

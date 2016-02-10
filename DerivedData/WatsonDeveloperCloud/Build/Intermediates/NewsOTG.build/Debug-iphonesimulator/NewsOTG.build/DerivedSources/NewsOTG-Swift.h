@@ -206,6 +206,7 @@ SWIFT_CLASS("_TtC7NewsOTG12CustomSlider")
 @class UIScrollView;
 @class UITextView;
 @class UIProgressView;
+@class AVAudioPlayer;
 @class AVSpeechSynthesizer;
 @class AVSpeechUtterance;
 
@@ -220,9 +221,13 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnStop;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnSpeak;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnPause;
+@property (nonatomic) NSInteger totalTime;
+@property (nonatomic) NSInteger currentTime;
 @property (nonatomic) NSInteger totalTextLength;
 @property (nonatomic) NSInteger spokenTextLengths;
+@property (nonatomic) BOOL newVersion;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
+@property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, strong) AVSpeechSynthesizer * __nonnull speechSynthesizer;

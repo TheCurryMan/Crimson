@@ -28,6 +28,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     @IBOutlet var btnPause: UIButton!
     
+    var totalTime = 0
+    
+    var currentTime = 0
+    
     var totalUtterances: Int! = 0
     
     var currentUtterance: Int! = 0
@@ -35,6 +39,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     var totalTextLength: Int = 0
     
     var spokenTextLengths: Int = 0
+    
+    var newVersion = true
     
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
@@ -63,8 +69,6 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         // Do any additional setup after loading the view.
         
@@ -156,7 +160,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                         
                         print(str)
                     
-                        self.articleText = str
+                        self.articleText = str.stringByReplacingOccurrencesOfString(".", withString: ". ")
                     }
                         
                     dispatch_async(dispatch_get_main_queue()) {
@@ -253,6 +257,62 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     @IBAction func speak(sender: AnyObject) {
         print(speechSynthesizer.speaking)
+        
+        if newVersion{
+            
+            var content = articleContent.text!
+            content = content.stringByReplacingOccurrencesOfString(".", withString: ". ")
+            
+            var strings = content.componentsSeparatedByString(".")
+            
+            print(strings)
+            
+            for line in strings{
+            
+            //var strings = content.strin
+        
+                service.synthesize(content, voice: "en-US_AllisonVoice", completionHandler: {data, error in
+                
+                print(line)
+                
+                do {
+                    
+                    if (data != nil) {
+                        
+                        
+                        self.audioPlayer = try AVAudioPlayer(data:data!)
+                        self.audioPlayer.prepareToPlay()
+                        self.audioPlayer.volume = self.volume
+                        self.audioPlayer.rate = self.rate
+                        self.audioPlayer.play()
+                        
+                        while self.audioPlayer.playing {
+                        
+                            
+                        }
+                        
+                    }
+                        
+                    else {
+                        print("No data is coming")
+                        self.speak(self)
+                    }
+                    
+                    
+                } catch {
+                    print("Error!")
+                }
+                
+                
+                
+            })
+            
+        }
+        
+        }
+            
+        else {
+        
         if !speechSynthesizer.speaking {
             let textParagraphs = articleContent.text!.componentsSeparatedByString(". ")
             
@@ -261,41 +321,22 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             totalTextLength = 0
             spokenTextLengths = 0
             
+            print("Should play audio")
+            
             for pieceOfText in textParagraphs {
+            
+                print(articleContent.text)
                 
-                service.synthesize(pieceOfText, completionHandler: {data, error in
-                    
-                    
-                    do {
-                        
-                        self.audioPlayer = try AVAudioPlayer(data:data!)
-                        self.audioPlayer.prepareToPlay()
-                        self.audioPlayer.volume = self.volume
-                        self.audioPlayer.rate = self.rate
-                        self.audioPlayer.play()
+            //print(data)
+            let speechUtterance = AVSpeechUtterance(string: pieceOfText)
+            speechUtterance.rate = self.rate
+            speechUtterance.pitchMultiplier = self.pitch
+            speechUtterance.volume = 0.5
+            speechUtterance.postUtteranceDelay = 0.002
+            self.totalTextLength = self.totalTextLength + pieceOfText.characters.count
+            self.speechSynthesizer.speakUtterance(speechUtterance)
 
-                        
-                        
-                        
-                        
-                        //print(data)
-                        let speechUtterance = AVSpeechUtterance(string: pieceOfText)
-                        speechUtterance.rate = self.rate
-                        speechUtterance.pitchMultiplier = self.pitch
-                        speechUtterance.volume = 0
-                        speechUtterance.postUtteranceDelay = 0.002
-                        self.totalTextLength = self.totalTextLength + pieceOfText.characters.count
-                        self.speechSynthesizer.speakUtterance(speechUtterance)
-                        
-                    } catch {
-                        print("Error!")
-                    }
-                    
-                    
-                    
-                })
-
-                
+            
             }
             
             
@@ -305,24 +346,40 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             speechSynthesizer.continueSpeaking()
             self.audioPlayer.play()
         }
+            
+        }
         
         animateActionButtonAppearance(true)
     }
     
     
-    
     @IBAction func stopSpeech(sender: AnyObject) {
+        
+        if newVersion {
+        
+            self.audioPlayer.stop()
+            animateActionButtonAppearance(false)
+        }
+        
+        else {
+        
         speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
-        self.audioPlayer.stop()
+        
         unselectLastWord()
         previousSelectedRange = nil
+        }
     }
     
     @IBAction func pauseSpeech(sender: AnyObject) {
+        if newVersion{
+            self.audioPlayer.pause()
+            animateActionButtonAppearance(false)
+        } else {
         speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
-        self.audioPlayer.pause()
+        }
+        
       
     }
     
