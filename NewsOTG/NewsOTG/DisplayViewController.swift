@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-
+import WatsonDeveloperCloud
 
 class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate
  {
@@ -39,6 +39,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
     var previousSelectedRange: NSRange!
+    
+    let service = TextToSpeech(username: "d508639e-a16e-4153-a20e-bae38e58bd11", password: "wwGhyI4Vpbes")
+
+    var audioPlayer : AVAudioPlayer = AVAudioPlayer()
     
     //var synth = AVSpeechSynthesizer()
     //var myUtterance = AVSpeechUtterance(string: "")
@@ -258,13 +262,40 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             spokenTextLengths = 0
             
             for pieceOfText in textParagraphs {
-                let speechUtterance = AVSpeechUtterance(string: pieceOfText)
-                speechUtterance.rate = rate
-                speechUtterance.pitchMultiplier = pitch
-                speechUtterance.volume = volume
-                speechUtterance.postUtteranceDelay = 0.002
-                totalTextLength = totalTextLength + pieceOfText.characters.count
-                speechSynthesizer.speakUtterance(speechUtterance)
+                
+                service.synthesize(pieceOfText, completionHandler: {data, error in
+                    
+                    
+                    do {
+                        
+                        self.audioPlayer = try AVAudioPlayer(data:data!)
+                        self.audioPlayer.prepareToPlay()
+                        self.audioPlayer.volume = self.volume
+                        self.audioPlayer.rate = self.rate
+                        self.audioPlayer.play()
+
+                        
+                        
+                        
+                        
+                        //print(data)
+                        let speechUtterance = AVSpeechUtterance(string: pieceOfText)
+                        speechUtterance.rate = self.rate
+                        speechUtterance.pitchMultiplier = self.pitch
+                        speechUtterance.volume = 0
+                        speechUtterance.postUtteranceDelay = 0.002
+                        self.totalTextLength = self.totalTextLength + pieceOfText.characters.count
+                        self.speechSynthesizer.speakUtterance(speechUtterance)
+                        
+                    } catch {
+                        print("Error!")
+                    }
+                    
+                    
+                    
+                })
+
+                
             }
             
             
@@ -272,6 +303,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         else{
             
             speechSynthesizer.continueSpeaking()
+            self.audioPlayer.play()
         }
         
         animateActionButtonAppearance(true)
@@ -282,7 +314,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBAction func stopSpeech(sender: AnyObject) {
         speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
-        
+        self.audioPlayer.stop()
         unselectLastWord()
         previousSelectedRange = nil
     }
@@ -290,6 +322,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBAction func pauseSpeech(sender: AnyObject) {
         speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
+        self.audioPlayer.pause()
       
     }
     

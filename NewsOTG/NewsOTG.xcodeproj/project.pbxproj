@@ -29,13 +29,19 @@
 		E116F8C91C0288B600B95502 /* NewsOTGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116F8C81C0288B600B95502 /* NewsOTGUITests.swift */; };
 		E116F8D71C028D0500B95502 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116F8D61C028D0500B95502 /* ArticlesViewController.swift */; };
 		E116F8D91C03DD0200B95502 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116F8D81C03DD0200B95502 /* DisplayViewController.swift */; };
-		E116F8DB1C04198300B95502 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116F8DA1C04198300B95502 /* AVFoundation.framework */; };
 		E1176AA21C0C0933009E792A /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */; };
 		E11994E21C0EBAA500F44ABE /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11994E11C0EBAA500F44ABE /* StartingViewController.swift */; };
 		E11994E41C0EC53100F44ABE /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */; };
+		E1200C851C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */; };
+		E1200C861C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */; };
+		E1200C871C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */; };
+		E1200C9A1C6B1342007E01DB /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */; };
+		E1200D2A1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */; };
+		E1200D2B1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E140CE161C0EB4DA00322747 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140CE151C0EB4DA00322747 /* SignUpViewController.swift */; };
 		E1616D1E1C3BFEB7005E5FDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */; };
 		E1616D201C3C001B005E5FDD /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */; };
+		E1BC5D9F1C6B0DF4001E406C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116F8DA1C04198300B95502 /* AVFoundation.framework */; };
 		E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */; };
 		E1F5ACE11C342C55000EAFFE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5ACE01C342C55000EAFFE /* TestViewController.swift */; };
 		E1F5ACE51C342D47000EAFFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5ACE41C342D47000EAFFE /* UIKit.framework */; };
@@ -62,7 +68,42 @@
 			remoteGlobalIDString = E116F8A41C0288B600B95502;
 			remoteInfo = NewsOTG;
 		};
+		E1200C961C6B1338007E01DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A0F95B31C23288E004C01C0;
+			remoteInfo = WatsonDeveloperCloud;
+		};
+		E1200C981C6B1338007E01DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A0F95BD1C23288E004C01C0;
+			remoteInfo = WatsonDeveloperCloudTests;
+		};
+		E1200D2C1C6B14DD007E01DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0F95B21C23288E004C01C0;
+			remoteInfo = WatsonDeveloperCloud;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1200D2E1C6B14DD007E01DB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1200D2B1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E100F7EA1C0EAC4300590DDA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -97,6 +138,8 @@
 		E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
 		E11994E11C0EBAA500F44ABE /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		E11994E31C0EC53100F44ABE /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = WatsonDeveloperCloud.xcworkspace; path = ../WatsonDeveloperCloud.xcworkspace; sourceTree = "<group>"; };
+		E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WatsonDeveloperCloud.xcodeproj; sourceTree = "<group>"; };
 		E140CE151C0EB4DA00322747 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
@@ -117,9 +160,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1200C9A1C6B1342007E01DB /* WatsonDeveloperCloud.framework in Frameworks */,
+				E1BC5D9F1C6B0DF4001E406C /* AVFoundation.framework in Frameworks */,
 				E1F5ACE51C342D47000EAFFE /* UIKit.framework in Frameworks */,
 				E100F8011C0EACAB00590DDA /* libsqlite3.tbd in Frameworks */,
 				E1F5ACED1C342D93000EAFFE /* OpenEars.framework in Frameworks */,
+				E1200D2A1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Frameworks */,
 				E100F7FF1C0EACA400590DDA /* libz.tbd in Frameworks */,
 				E100F7FD1C0EAC9C00590DDA /* SystemConfiguration.framework in Frameworks */,
 				E100F7FB1C0EAC9600590DDA /* StoreKit.framework in Frameworks */,
@@ -132,7 +178,6 @@
 				E1F5ACEE1C342D93000EAFFE /* Slt.framework in Frameworks */,
 				E100F7ED1C0EAC4A00590DDA /* Bolts.framework in Frameworks */,
 				E100F7EB1C0EAC4300590DDA /* Parse.framework in Frameworks */,
-				E116F8DB1C04198300B95502 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +201,8 @@
 		E116F89C1C0288B600B95502 = {
 			isa = PBXGroup;
 			children = (
+				E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */,
+				E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */,
 				E1F5ACE41C342D47000EAFFE /* UIKit.framework */,
 				E100F8001C0EACAB00590DDA /* libsqlite3.tbd */,
 				E100F7FE1C0EACA400590DDA /* libz.tbd */,
@@ -233,6 +280,15 @@
 			path = NewsOTGUITests;
 			sourceTree = "<group>";
 		};
+		E1200C921C6B1338007E01DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */,
+				E1200C991C6B1338007E01DB /* WatsonDeveloperCloudTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E1F5ACE61C342D93000EAFFE /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,13 +307,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E116F8CD1C0288B600B95502 /* Build configuration list for PBXNativeTarget "NewsOTG" */;
 			buildPhases = (
-				E116F8A11C0288B600B95502 /* Sources */,
 				E116F8A21C0288B600B95502 /* Frameworks */,
 				E116F8A31C0288B600B95502 /* Resources */,
+				E1200D2E1C6B14DD007E01DB /* Embed Frameworks */,
+				E116F8A11C0288B600B95502 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1200D2D1C6B14DD007E01DB /* PBXTargetDependency */,
 			);
 			name = NewsOTG;
 			productName = NewsOTG;
@@ -334,6 +392,12 @@
 			mainGroup = E116F89C1C0288B600B95502;
 			productRefGroup = E116F8A61C0288B600B95502 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1200C921C6B1338007E01DB /* Products */;
+					ProjectRef = E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E116F8A41C0288B600B95502 /* NewsOTG */,
@@ -342,6 +406,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WatsonDeveloperCloud.framework;
+			remoteRef = E1200C961C6B1338007E01DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1200C991C6B1338007E01DB /* WatsonDeveloperCloudTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WatsonDeveloperCloudTests.xctest;
+			remoteRef = E1200C981C6B1338007E01DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E116F8A31C0288B600B95502 /* Resources */ = {
@@ -353,6 +434,7 @@
 				E116F8B31C0288B600B95502 /* LaunchScreen.storyboard in Resources */,
 				E1F5ACEC1C342D93000EAFFE /* AcousticModelSpanish.bundle in Resources */,
 				E1F5ACEB1C342D93000EAFFE /* AcousticModelEnglish.bundle in Resources */,
+				E1200C851C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */,
 				E1F5C5401C4D946000F93FA1 /* CategoriesTableViewCell.xib in Resources */,
 				E116F8B01C0288B600B95502 /* Assets.xcassets in Resources */,
 				E116F8AE1C0288B600B95502 /* Main.storyboard in Resources */,
@@ -363,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1200C861C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1200C871C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +507,11 @@
 			isa = PBXTargetDependency;
 			target = E116F8A41C0288B600B95502 /* NewsOTG */;
 			targetProxy = E116F8C51C0288B600B95502 /* PBXContainerItemProxy */;
+		};
+		E1200D2D1C6B14DD007E01DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WatsonDeveloperCloud;
+			targetProxy = E1200D2C1C6B14DD007E01DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -531,11 +620,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = NewsOTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -549,11 +640,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = NewsOTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -568,6 +661,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CONFIGURATION_TEMP_DIR = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NewsOTGTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,6 +681,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CONFIGURATION_TEMP_DIR = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NewsOTGTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -598,6 +699,10 @@
 		E116F8D41C0288B600B95502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NewsOTGUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CodeDay.NewsOTGUITests;
@@ -610,6 +715,10 @@
 		E116F8D51C0288B600B95502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NewsOTGUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CodeDay.NewsOTGUITests;

@@ -1,0 +1,381 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C7NewsOTG11AppDelegate"
+provides-member:
+- ["C7NewsOTG11AppDelegate", ""]
+provides-dynamic-lookup:
+- "applicationDidBecomeActive"
+- "window"
+- "applicationWillTerminate"
+- "application"
+- "applicationWillResignActive"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+depends-top-level:
+- !private "PFAnalytics"
+- !private "StringLiteralType"
+- "UIResponder"
+- "NSObject"
+- "UIApplicationDelegate"
+- "Bool"
+- !private "Parse"
+- !private "BooleanLiteralType"
+- "UIApplication"
+- "UIWindow"
+- "AnyObject"
+- "AppDelegate"
+depends-member:
+- !private ["PSs9AnyObject", "PFAnalytics"]
+- !private ["PSs9AnyObject", "Parse"]
+- ["PSs9AnyObject", "application"]
+- ["PSs9AnyObject", "applicationDidBecomeActive"]
+- ["PSs9AnyObject", "applicationDidEnterBackground"]
+- ["PSs9AnyObject", "applicationDidFinishLaunching"]
+- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9AnyObject", "applicationSignificantTimeChange"]
+- ["PSs9AnyObject", "applicationWillEnterForeground"]
+- ["PSs9AnyObject", "applicationWillResignActive"]
+- ["PSs9AnyObject", "applicationWillTerminate"]
+- !private ["PSs9AnyObject", "enableLocalDatastore"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "setApplicationId"]
+- !private ["PSs9AnyObject", "trackAppOpenedWithLaunchOptions"]
+- ["PSs9AnyObject", "window"]
+- ["PSs9AnyObject", ""]
+- ["C7NewsOTG11AppDelegate", "AnyObject"]
+- ["C7NewsOTG11AppDelegate", "Bool"]
+- ["C7NewsOTG11AppDelegate", "NSObject"]
+- !private ["C7NewsOTG11AppDelegate", "PFAnalytics"]
+- !private ["C7NewsOTG11AppDelegate", "Parse"]
+- ["C7NewsOTG11AppDelegate", "UIApplication"]
+- ["C7NewsOTG11AppDelegate", "UIWindow"]
+- ["C7NewsOTG11AppDelegate", "application"]
+- ["C7NewsOTG11AppDelegate", "applicationDidBecomeActive"]
+- ["C7NewsOTG11AppDelegate", "applicationDidEnterBackground"]
+- ["C7NewsOTG11AppDelegate", "applicationDidFinishLaunching"]
+- ["C7NewsOTG11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C7NewsOTG11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C7NewsOTG11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C7NewsOTG11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C7NewsOTG11AppDelegate", "applicationSignificantTimeChange"]
+- ["C7NewsOTG11AppDelegate", "applicationWillEnterForeground"]
+- ["C7NewsOTG11AppDelegate", "applicationWillResignActive"]
+- ["C7NewsOTG11AppDelegate", "applicationWillTerminate"]
+- ["C7NewsOTG11AppDelegate", "deinit"]
+- ["C7NewsOTG11AppDelegate", "init"]
+- ["C7NewsOTG11AppDelegate", "window"]
+- !private ["PSs11CVarArgType", "PFAnalytics"]
+- !private ["PSs11CVarArgType", "Parse"]
+- ["PSs11CVarArgType", "application"]
+- ["PSs11CVarArgType", "applicationDidBecomeActive"]
+- ["PSs11CVarArgType", "applicationDidEnterBackground"]
+- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
+- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
+- ["PSs11CVarArgType", "applicationWillEnterForeground"]
+- ["PSs11CVarArgType", "applicationWillResignActive"]
+- ["PSs11CVarArgType", "applicationWillTerminate"]
+- !private ["PSs11CVarArgType", "enableLocalDatastore"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "setApplicationId"]
+- !private ["PSs11CVarArgType", "trackAppOpenedWithLaunchOptions"]
+- ["PSs11CVarArgType", "window"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "PFAnalytics"]
+- !private ["PSs23CustomStringConvertible", "Parse"]
+- ["PSs23CustomStringConvertible", "application"]
+- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
+- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["PSs23CustomStringConvertible", "enableLocalDatastore"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "setApplicationId"]
+- !private ["PSs23CustomStringConvertible", "trackAppOpenedWithLaunchOptions"]
+- ["PSs23CustomStringConvertible", "window"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "PFAnalytics"]
+- !private ["PSs9Equatable", "Parse"]
+- ["PSs9Equatable", "application"]
+- ["PSs9Equatable", "applicationDidBecomeActive"]
+- ["PSs9Equatable", "applicationDidEnterBackground"]
+- ["PSs9Equatable", "applicationDidFinishLaunching"]
+- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9Equatable", "applicationSignificantTimeChange"]
+- ["PSs9Equatable", "applicationWillEnterForeground"]
+- ["PSs9Equatable", "applicationWillResignActive"]
+- ["PSs9Equatable", "applicationWillTerminate"]
+- !private ["PSs9Equatable", "enableLocalDatastore"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "setApplicationId"]
+- !private ["PSs9Equatable", "trackAppOpenedWithLaunchOptions"]
+- ["PSs9Equatable", "window"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "PFAnalytics"]
+- !private ["PSs8Hashable", "Parse"]
+- ["PSs8Hashable", "application"]
+- ["PSs8Hashable", "applicationDidBecomeActive"]
+- ["PSs8Hashable", "applicationDidEnterBackground"]
+- ["PSs8Hashable", "applicationDidFinishLaunching"]
+- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs8Hashable", "applicationSignificantTimeChange"]
+- ["PSs8Hashable", "applicationWillEnterForeground"]
+- ["PSs8Hashable", "applicationWillResignActive"]
+- ["PSs8Hashable", "applicationWillTerminate"]
+- !private ["PSs8Hashable", "enableLocalDatastore"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "setApplicationId"]
+- !private ["PSs8Hashable", "trackAppOpenedWithLaunchOptions"]
+- ["PSs8Hashable", "window"]
+- ["PSs8Hashable", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "PFAnalytics"]
+- !private ["CSo8NSObject", "Parse"]
+- ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "enableLocalDatastore"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "setApplicationId"]
+- !private ["CSo8NSObject", "trackAppOpenedWithLaunchOptions"]
+- ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "PFAnalytics"]
+- !private ["PSo16NSObjectProtocol", "Parse"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "enableLocalDatastore"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "setApplicationId"]
+- !private ["PSo16NSObjectProtocol", "trackAppOpenedWithLaunchOptions"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo11PFAnalytics", "trackAppOpenedWithLaunchOptions"]
+- !private ["CSo5Parse", "enableLocalDatastore"]
+- !private ["CSo5Parse", "setApplicationId"]
+- !private ["PSo21UIApplicationDelegate", "PFAnalytics"]
+- !private ["PSo21UIApplicationDelegate", "Parse"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "NSObject"]
+- !private ["CSo11UIResponder", "PFAnalytics"]
+- !private ["CSo11UIResponder", "Parse"]
+- ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "C7NewsOTG11AppDelegate"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo11PFAnalytics"
+- !private "CSo5Parse"
+- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/Bridging-Header.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OELanguageModelGenerator.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEGrammarDefinitions.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEGrammarGenerator.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEAcousticModel.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEPocketsphinxController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEEventsObserver.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEContinuousModel.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEContinuousAudioUnit.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OESmartCMN.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/prim_type.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/sphinx_config.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OENotification.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OELogging.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteController.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/flite.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_string.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_regex.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_file.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_val.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_error.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_alloc.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_val_defs.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_val_const.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_features.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_item.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_relation.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_utterance.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_wave.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_endian.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_track.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_cart.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_phoneset.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_voice.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_audio.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_hrg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_utt_utils.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_lexicon.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_lts.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_synth.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_tokenstream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_units.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_sts.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteVoice.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/Slt.framework/Headers/Slt.h"
+- "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "./Bolts.framework/Headers/BFURL.h"
+- "./Bolts.framework/Headers/BFMeasurementEvent.h"
+- "./Bolts.framework/Headers/BFAppLinkTarget.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "./Bolts.framework/Headers/BFAppLinkResolving.h"
+- "./Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "./Bolts.framework/Headers/BFAppLink.h"
+- "./Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "./Bolts.framework/Headers/BFTask.h"
+- "./Bolts.framework/Headers/BFExecutor.h"
+- "./Bolts.framework/Headers/BFDefines.h"
+- "./Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "./Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "./Bolts.framework/Headers/BFCancellationToken.h"
+- "./Bolts.framework/Headers/BoltsVersion.h"
+- "./Bolts.framework/Headers/Bolts.h"
+- "./Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFPurchase.h"
+- "./Parse.framework/Headers/PFProduct.h"
+- "./Parse.framework/Headers/PFPush.h"
+- "./Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "./Parse.framework/Headers/PFInstallation.h"
+- "./Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "./Parse.framework/Headers/PFSession.h"
+- "./Parse.framework/Headers/PFRole.h"
+- "./Parse.framework/Headers/PFRelation.h"
+- "./Parse.framework/Headers/PFQuery.h"
+- "./Parse.framework/Headers/PFObject+Subclass.h"
+- "./Parse.framework/Headers/PFGeoPoint.h"
+- "./Parse.framework/Headers/PFFile.h"
+- "./Parse.framework/Headers/PFConfig.h"
+- "./Parse.framework/Headers/PFCloud.h"
+- "./Parse.framework/Headers/PFSubclassing.h"
+- "./Parse.framework/Headers/PFObject.h"
+- "./Parse.framework/Headers/PFUser.h"
+- "./Parse.framework/Headers/PFAnonymousUtils.h"
+- "./Parse.framework/Headers/PFConstants.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFAnalytics.h"
+- "./Parse.framework/Headers/PFACL.h"
+- "./Parse.framework/Headers/Parse.h"
+- "./Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Modules/WatsonDeveloperCloud.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/WatsonDeveloperCloud-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+interface-hash: "3b1756543acb3b03d2bea19129483730"

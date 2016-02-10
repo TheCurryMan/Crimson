@@ -1,0 +1,313 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VisionConstants"
+provides-nominal:
+- "C20WatsonDeveloperCloud15VisionConstants"
+- "OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType"
+- "OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType"
+- "OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType"
+- "OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix"
+- "OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction"
+- "OC20WatsonDeveloperCloud15VisionConstants12ImageTagging"
+- "OC20WatsonDeveloperCloud15VisionConstants13FaceDetection"
+- "OC20WatsonDeveloperCloud15VisionConstants5Model"
+- "OC20WatsonDeveloperCloud15VisionConstants10OutputMode"
+- "OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode"
+- "OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll"
+- "OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph"
+- "OC20WatsonDeveloperCloud15VisionConstants9WatsonURI"
+- "OC20WatsonDeveloperCloud15VisionConstants9VisionURI"
+provides-member:
+- ["C20WatsonDeveloperCloud15VisionConstants", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "VisionConstants"
+- !private "FloatLiteralType"
+- "UnicodeScalarType"
+- !private "~="
+- "=="
+- "String"
+- !private "IntegerLiteralType"
+- "StringLiteralType"
+depends-member:
+- ["PSs9AnyObject", ""]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- ["PSs9Equatable", "RawValue"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "hashValue"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "rawValue"]
+- ["PSs9Equatable", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "ImageGetRankedImageFaceTags"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "URLGetRankedImageFaceTags"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "False"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "True"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll", "rawValue"]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- ["PSs8Hashable", "RawValue"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "hashValue"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "rawValue"]
+- ["PSs8Hashable", ""]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "UIImage"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "URL"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "UIImage"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "URL"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "HTMLGetImage"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "URLGetImage"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "HTML"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "URL"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "Not_Raw"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "Raw"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "ImageGetRankedImageKeywords"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "URLGetRankedImageKeywords"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "rawValue"]
+- !private ["Si", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs11IntegerType", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "False"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "True"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph", "rawValue"]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", "TotalTransactions"]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants5Model", "rawValue"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSString", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "HTML"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "JSON"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "RDF"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "XML"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "rawValue"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["VSs5Range", "deinit"]
+- ["PSs16RawRepresentable", "RawValue"]
+- ["PSs16RawRepresentable", "hashValue"]
+- ["PSs16RawRepresentable", "init"]
+- ["PSs16RawRepresentable", "rawValue"]
+- ["PSs16RawRepresentable", ""]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- !private ["PSs10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "FaceDetection"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ForceShowAll"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageFacesType"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageKeywordType"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageLinkExtraction"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageLinkType"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImagePostMode"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageTagging"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "KnowledgeGraph"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "Model"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "OutputMode"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "String"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "VisionPrefix"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "VisionURI"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "WatsonURI"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "deinit"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "init"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "visionServiceURL"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "HTML"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "Image"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "URL"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "ForceShowAll"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "ImagePostMode"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "KnowledgeGraph"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "OutputMode"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "APIKey"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "RawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "URL"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "hashValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "rawValue"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- !private "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "OC20WatsonDeveloperCloud15VisionConstants13FaceDetection"
+- "OC20WatsonDeveloperCloud15VisionConstants12ForceShowAll"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- "OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType"
+- "OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType"
+- "OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction"
+- "OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType"
+- "OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode"
+- "OC20WatsonDeveloperCloud15VisionConstants12ImageTagging"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- "OC20WatsonDeveloperCloud15VisionConstants14KnowledgeGraph"
+- !private "PSs14MirrorPathType"
+- "OC20WatsonDeveloperCloud15VisionConstants5Model"
+- !private "CSo8NSObject"
+- !private "CSo8NSString"
+- "OC20WatsonDeveloperCloud15VisionConstants10OutputMode"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- "PSs16RawRepresentable"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- "SS"
+- "C20WatsonDeveloperCloud15VisionConstants"
+- "OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix"
+- "OC20WatsonDeveloperCloud15VisionConstants9VisionURI"
+- "OC20WatsonDeveloperCloud15VisionConstants9WatsonURI"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "94ec7bb68acc1eb9c8b849b5c6145848"

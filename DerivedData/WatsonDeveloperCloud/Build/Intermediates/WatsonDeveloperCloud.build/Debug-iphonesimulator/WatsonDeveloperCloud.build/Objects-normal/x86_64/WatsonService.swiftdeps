@@ -1,0 +1,62 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "WatsonService"
+provides-nominal:
+- "P20WatsonDeveloperCloud13WatsonService"
+provides-member:
+- ["P20WatsonDeveloperCloud13WatsonService", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AuthenticationStrategy"
+- "String"
+- "WatsonService"
+- "WatsonGateway"
+depends-member:
+- ["P20WatsonDeveloperCloud13WatsonService", "AuthenticationStrategy"]
+- ["P20WatsonDeveloperCloud13WatsonService", "String"]
+- ["P20WatsonDeveloperCloud13WatsonService", "WatsonGateway"]
+- ["P20WatsonDeveloperCloud13WatsonService", "authStrategy"]
+- ["P20WatsonDeveloperCloud13WatsonService", "gateway"]
+- ["P20WatsonDeveloperCloud13WatsonService", "init"]
+depends-nominal:
+- "P20WatsonDeveloperCloud13WatsonService"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "5b9e7d98c4e711e374cc1c05d781e029"

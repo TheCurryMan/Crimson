@@ -1,0 +1,569 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LanguageTranslation"
+provides-nominal:
+- "C20WatsonDeveloperCloud19LanguageTranslation"
+provides-member:
+- ["C20WatsonDeveloperCloud19LanguageTranslation", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "AuthenticationStrategy"
+- !private "Mapper"
+- "Void"
+- "LanguageTranslation"
+- !private "BasicAuthenticationStrategy"
+- !private "Alamofire"
+- !private "Response"
+- "WatsonService"
+- !private "NSURLQueryItem"
+- "NSError"
+- "Dictionary"
+- "NSURL"
+- !private "validate"
+- !private "print"
+- "String"
+- !private "WatsonRequest"
+- "WatsonGateway"
+- !private "NSLocalizedDescriptionKey"
+- !private "Array"
+depends-member:
+- !private ["PSs9AnyObject", "Alamofire"]
+- !private ["PSs9AnyObject", "BasicAuthenticationStrategy"]
+- !private ["PSs9AnyObject", "Constants"]
+- !private ["PSs9AnyObject", "LanguageTranslationError"]
+- !private ["PSs9AnyObject", "Mapper"]
+- !private ["PSs9AnyObject", "NSError"]
+- !private ["PSs9AnyObject", "NSLocalizedDescriptionKey"]
+- !private ["PSs9AnyObject", "NSURLQueryItem"]
+- !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "TranslateRequest"]
+- ["PSs9AnyObject", "WatsonGateway"]
+- !private ["PSs9AnyObject", "WatsonRequest"]
+- !private ["PSs9AnyObject", "appendBodyPart"]
+- ["PSs9AnyObject", "authStrategy"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "gateway"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "mapData"]
+- !private ["PSs9AnyObject", "mapDataArray"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "request"]
+- !private ["PSs9AnyObject", "responseObject"]
+- ["PSs9AnyObject", "sharedInstance"]
+- !private ["PSs9AnyObject", "toJSONData"]
+- !private ["PSs9AnyObject", "translate"]
+- !private ["PSs9AnyObject", "validate"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "init"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "refreshToken"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "token"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "deinit"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "init"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "deinit"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "identifiableLanguages"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "identify"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "model"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "models"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "serviceURL"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "tokenURL"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation9Constants", "translate"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "JSON"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "responseObject"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation11CustomModel", "deinit"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation11CustomModel", "modelID"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "responseObject"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "init"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "init"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "DELETE"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "GET"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "JSON"]
+- !private ["PSs9Equatable", "POST"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9ErrorType", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "DELETE"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "GET"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "JSON"]
+- !private ["PSs8Hashable", "POST"]
+- !private ["PSs8Hashable", "init"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation20IdentifiableLanguage", "deinit"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation18IdentifiedLanguage", "deinit"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "Alamofire"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "AuthenticationStrategy"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "BasicAuthenticationStrategy"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "Bool"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "Constants"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "CustomModel"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "IdentifiableLanguage"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "IdentifiedLanguage"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "LanguageTranslationError"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "Mapper"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "NSError"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "NSLocalizedDescriptionKey"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "NSURL"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "NSURLQueryItem"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "Response"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "String"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "TranslateRequest"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "TranslateResponse"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "TranslationModel"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "Void"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "WatsonGateway"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "WatsonRequest"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "authStrategy"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "createModel"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "deinit"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "deleteModel"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "gateway"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "getIdentifiableLanguages"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "getModel"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "getModels"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "identify"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "init"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "print"]
+- ["C20WatsonDeveloperCloud19LanguageTranslation", "translate"]
+- !private ["C20WatsonDeveloperCloud19LanguageTranslation", "validate"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation24LanguageTranslationError", "deinit"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation24LanguageTranslationError", "init"]
+- !private ["P12ObjectMapper8Mappable", "init"]
+- !private ["P12ObjectMapper8Mappable", "modelID"]
+- !private ["P12ObjectMapper8Mappable", "translationStrings"]
+- !private ["C12ObjectMapper6Mapper", "init"]
+- !private ["C12ObjectMapper6Mapper", "mapData"]
+- !private ["C12ObjectMapper6Mapper", "mapDataArray"]
+- !private ["C12ObjectMapper6Mapper", "toJSONData"]
+- !private ["O20WatsonDeveloperCloud9MediaType", "JSON"]
+- !private ["O20WatsonDeveloperCloud6Method", "DELETE"]
+- !private ["O20WatsonDeveloperCloud6Method", "GET"]
+- !private ["O20WatsonDeveloperCloud6Method", "POST"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["C9Alamofire17MultipartFormData", "appendBodyPart"]
+- !private ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "Failure"]
+- !private ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "Success"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "init"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo7NSError", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo14NSURLQueryItem", "init"]
+- !private ["PSo20NSURLSessionDelegate", "init"]
+- !private ["PSo24NSURLSessionTaskDelegate", "init"]
+- !private ["PSs21NilLiteralConvertible", "JSON"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["Sq", "JSON"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs16RawRepresentable", "DELETE"]
+- !private ["PSs16RawRepresentable", "GET"]
+- !private ["PSs16RawRepresentable", "JSON"]
+- !private ["PSs16RawRepresentable", "POST"]
+- !private ["C9Alamofire7Request", "responseObject"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation16TranslateRequest", "deinit"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation16TranslateRequest", "init"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation17TranslateResponse", "deinit"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation17TranslateResponse", "translationStrings"]
+- !private ["VC20WatsonDeveloperCloud19LanguageTranslation16TranslationModel", "deinit"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["P9Alamofire21URLRequestConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "init"]
+- !private ["C20WatsonDeveloperCloud13WatsonGateway", "request"]
+- ["C20WatsonDeveloperCloud13WatsonGateway", "sharedInstance"]
+- !private ["C20WatsonDeveloperCloud13WatsonRequest", "deinit"]
+- !private ["C20WatsonDeveloperCloud13WatsonRequest", "init"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "Alamofire"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "BasicAuthenticationStrategy"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "Constants"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "LanguageTranslationError"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "Mapper"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "NSError"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "NSLocalizedDescriptionKey"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "NSURLQueryItem"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "String"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "TranslateRequest"]
+- ["P20WatsonDeveloperCloud13WatsonService", "WatsonGateway"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "WatsonRequest"]
+- ["P20WatsonDeveloperCloud13WatsonService", "authStrategy"]
+- ["P20WatsonDeveloperCloud13WatsonService", "gateway"]
+- ["P20WatsonDeveloperCloud13WatsonService", "init"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "print"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "translate"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "validate"]
+- ["P20WatsonDeveloperCloud13WatsonService", ""]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "JSON"]
+- !private ["PSs12_Reflectable", "Key"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "P20WatsonDeveloperCloud22AuthenticationStrategy"
+- !private "C20WatsonDeveloperCloud27BasicAuthenticationStrategy"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation9Constants"
+- "PSs28CustomDebugStringConvertible"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation11CustomModel"
+- !private "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- !private "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation20IdentifiableLanguage"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation18IdentifiedLanguage"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- "C20WatsonDeveloperCloud19LanguageTranslation"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation24LanguageTranslationError"
+- !private "P12ObjectMapper8Mappable"
+- !private "C12ObjectMapper6Mapper"
+- !private "O20WatsonDeveloperCloud9MediaType"
+- !private "O20WatsonDeveloperCloud6Method"
+- !private "PSs14MirrorPathType"
+- !private "C9Alamofire17MultipartFormData"
+- !private "OC9Alamofire7Manager31MultipartFormDataEncodingResult"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo14NSURLQueryItem"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "C9Alamofire7Request"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation16TranslateRequest"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation17TranslateResponse"
+- !private "VC20WatsonDeveloperCloud19LanguageTranslation16TranslationModel"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "P9Alamofire21URLRequestConvertible"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "P20WatsonDeveloperCloud11WatsonError"
+- "C20WatsonDeveloperCloud13WatsonGateway"
+- !private "C20WatsonDeveloperCloud13WatsonRequest"
+- "P20WatsonDeveloperCloud13WatsonService"
+- !private "PSs10_ArrayType"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "3418619bcb62ec85d7bd0895f9f834d9"

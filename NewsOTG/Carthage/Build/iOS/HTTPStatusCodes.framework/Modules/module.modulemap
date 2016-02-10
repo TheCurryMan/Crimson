@@ -1,0 +1,10 @@
+framework module HTTPStatusCodes {
+  umbrella header "HTTPStatusCodes.h"
+
+  export *
+  module * { export * }
+}
+
+module HTTPStatusCodes.Swift {
+    header "HTTPStatusCodes-Swift.h"
+}

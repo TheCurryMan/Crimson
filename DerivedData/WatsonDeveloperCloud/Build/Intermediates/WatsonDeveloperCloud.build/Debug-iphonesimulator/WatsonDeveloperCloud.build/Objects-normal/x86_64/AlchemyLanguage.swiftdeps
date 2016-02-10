@@ -1,0 +1,594 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AlchemyLanguage"
+provides-nominal:
+- "C20WatsonDeveloperCloud15AlchemyLanguage"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters"
+provides-member:
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", ""]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", ""]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetEntitiesParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getEntities"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetSentimentParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getSentiment"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetKeywordsParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRankedKeywords"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetRankedConceptsParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRankedConcepts"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetRelationsParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRelations"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetRankedTaxonomyParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRankedTaxonomy"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getAuthors"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetLanguageParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getLanguage"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetTextParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getText"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getMicroformatData"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getFeedLinks"]
+provides-dynamic-lookup:
+depends-top-level:
+- "DocumentTitle"
+- "SAORelations"
+- "DocumentText"
+- !private "Dictionary"
+- !private "APIKeyAuthenticationStrategy"
+- "Void"
+- "IntegerLiteralType"
+- !private "ParameterEncoding"
+- "Entities"
+- "Microformats"
+- !private "AlchemyCombineDictionaryUtil"
+- "AlchemyService"
+- "Feeds"
+- "AlchemyLanguageParameters"
+- "StringLiteralType"
+- !private "!="
+- "SentimentResponse"
+- "ConceptResponse"
+- !private "assert"
+- "AlchemyLanguageConstants"
+- "DocumentAuthors"
+- "Int"
+- "NSError"
+- !private "NetworkUtils"
+- !private "Mapper"
+- !private "??"
+- "Language"
+- "AlchemyLanguage"
+- "Taxonomies"
+- "AuthenticationStrategy"
+- "String"
+- !private "HTTPMethod"
+- "FloatLiteralType"
+- "Keywords"
+depends-member:
+- !private ["C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy", "deinit"]
+- !private ["C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy", "init"]
+- !private ["C20WatsonDeveloperCloud28AlchemyCombineDictionaryUtil", "combineParameterDictionary"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "APIKeyAuthenticationStrategy"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "AlchemyCombineDictionaryUtil"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "AlchemyLanguageConstants"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "AlchemyLanguageParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "AuthenticationStrategy"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "ConceptResponse"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "DocumentAuthors"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "DocumentText"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "DocumentTitle"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Entities"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Feeds"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetEntitiesParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetKeywordsParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetLanguageParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetRankedConceptsParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetRankedTaxonomyParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetRelationsParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetSentimentParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "GetTextParameters"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "HTTPMethod"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Int"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Keywords"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Language"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "Mapper"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Microformats"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "NSError"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "NetworkUtils"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "ParameterEncoding"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "SAORelations"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "SentimentResponse"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "String"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Taxonomies"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "Void"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "_apiKey"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "alcs"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "assert"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "authStrategy"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "commonParameters"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "deinit"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getAuthors"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "getEndpoint"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getEntities"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getFeedLinks"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getLanguage"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getMicroformatData"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRankedConcepts"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRankedKeywords"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRankedTaxonomy"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getRelations"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getSentiment"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "getText"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "init"]
+- ["C20WatsonDeveloperCloud15AlchemyLanguage", "luri"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "optm"]
+- !private ["C20WatsonDeveloperCloud15AlchemyLanguage", "wuri"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetAuthors"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetEntities"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetFeedLinks"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetLanguage"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetMicroformatData"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedConcepts"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedKeywords"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedTaxonomy"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRawText"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRelations"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTargetedSentiment"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetText"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTextSentiment"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTitle"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "LanguageURI"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "OutputMode"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "RequestType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "SentimentType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "TextType"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "WatsonURI"]
+- !private ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "asDictionary"]
+- !private ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "init"]
+- ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "luri"]
+- !private ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "targets"]
+- ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", ""]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "APIKeyAuthenticationStrategy"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "AlchemyCombineDictionaryUtil"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "AlchemyLanguageConstants"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetEntitiesParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetKeywordsParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetLanguageParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetRankedConceptsParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetRankedTaxonomyParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetRelationsParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetSentimentParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "GetTextParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "HTTPMethod"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "Mapper"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NetworkUtils"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "ParameterEncoding"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "alcs"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "assert"]
+- ["P20WatsonDeveloperCloud14AlchemyService", "authStrategy"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "commonParameters"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "getEndpoint"]
+- ["P20WatsonDeveloperCloud14AlchemyService", "init"]
+- ["P20WatsonDeveloperCloud14AlchemyService", "luri"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "optm"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "wuri"]
+- ["P20WatsonDeveloperCloud14AlchemyService", ""]
+- !private ["PSs9AnyObject", "APIKeyAuthenticationStrategy"]
+- !private ["PSs9AnyObject", "AlchemyCombineDictionaryUtil"]
+- !private ["PSs9AnyObject", "AlchemyLanguageConstants"]
+- !private ["PSs9AnyObject", "GetAuthors"]
+- !private ["PSs9AnyObject", "GetEntities"]
+- !private ["PSs9AnyObject", "GetEntitiesParameters"]
+- !private ["PSs9AnyObject", "GetFeedLinks"]
+- !private ["PSs9AnyObject", "GetKeywordsParameters"]
+- !private ["PSs9AnyObject", "GetLanguage"]
+- !private ["PSs9AnyObject", "GetLanguageParameters"]
+- !private ["PSs9AnyObject", "GetMicroformatData"]
+- !private ["PSs9AnyObject", "GetRankedConcepts"]
+- !private ["PSs9AnyObject", "GetRankedConceptsParameters"]
+- !private ["PSs9AnyObject", "GetRankedKeywords"]
+- !private ["PSs9AnyObject", "GetRankedTaxonomy"]
+- !private ["PSs9AnyObject", "GetRankedTaxonomyParameters"]
+- !private ["PSs9AnyObject", "GetRawText"]
+- !private ["PSs9AnyObject", "GetRelations"]
+- !private ["PSs9AnyObject", "GetRelationsParameters"]
+- !private ["PSs9AnyObject", "GetSentimentParameters"]
+- !private ["PSs9AnyObject", "GetTargetedSentiment"]
+- !private ["PSs9AnyObject", "GetText"]
+- !private ["PSs9AnyObject", "GetTextParameters"]
+- !private ["PSs9AnyObject", "GetTextSentiment"]
+- !private ["PSs9AnyObject", "GetTitle"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- !private ["PSs9AnyObject", "LanguageURI"]
+- !private ["PSs9AnyObject", "Mapper"]
+- !private ["PSs9AnyObject", "NetworkUtils"]
+- !private ["PSs9AnyObject", "OutputMode"]
+- !private ["PSs9AnyObject", "ParameterEncoding"]
+- ["PSs9AnyObject", "RequestType"]
+- ["PSs9AnyObject", "SentimentType"]
+- ["PSs9AnyObject", "TextType"]
+- !private ["PSs9AnyObject", "WatsonURI"]
+- !private ["PSs9AnyObject", "alcs"]
+- !private ["PSs9AnyObject", "assert"]
+- ["PSs9AnyObject", "authStrategy"]
+- !private ["PSs9AnyObject", "combineParameterDictionary"]
+- !private ["PSs9AnyObject", "commonParameters"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "getEndpoint"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "luri"]
+- !private ["PSs9AnyObject", "map"]
+- !private ["PSs9AnyObject", "optm"]
+- !private ["PSs9AnyObject", "performBasicAuthRequest"]
+- !private ["PSs9AnyObject", "wuri"]
+- ["PSs9AnyObject", ""]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "init"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "refreshToken"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "token"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["V20WatsonDeveloperCloud15ConceptResponse", "deinit"]
+- !private ["V20WatsonDeveloperCloud12CoreResponse", "data"]
+- !private ["V20WatsonDeveloperCloud12CoreResponse", "error"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "data"]
+- !private ["PSs23CustomStringConvertible", "error"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["V20WatsonDeveloperCloud15DocumentAuthors", "deinit"]
+- !private ["V20WatsonDeveloperCloud12DocumentText", "deinit"]
+- !private ["V20WatsonDeveloperCloud13DocumentTitle", "deinit"]
+- !private ["V20WatsonDeveloperCloud8Entities", "deinit"]
+- !private ["PSs9Equatable", "APIKey"]
+- !private ["PSs9Equatable", "JSON"]
+- ["PSs9Equatable", "KeywordExtractMode"]
+- ["PSs9Equatable", "Normal"]
+- !private ["PSs9Equatable", "OutputMode"]
+- !private ["PSs9Equatable", "POST"]
+- ["PSs9Equatable", "Raw"]
+- ["PSs9Equatable", "SourceText"]
+- ["PSs9Equatable", "Targeted"]
+- ["PSs9Equatable", "Title"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "cleaned_or_raw"]
+- ["PSs9Equatable", "normal"]
+- ["PSs9Equatable", "rawValue"]
+- !private ["V20WatsonDeveloperCloud5Feeds", "deinit"]
+- !private ["PSs13GeneratorType", "Element"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "Int"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "baseUrl"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "coreference"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "disambiguate"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "knowledgGraph"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "linkedData"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "maxRetrieve"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "quotations"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "sentiment"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "showSourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "stucturedEntities"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "Int"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "baseUrl"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "keywordExtractMode"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "knowledgGraph"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "maxRetrieve"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "sentiment"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "showSourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "Int"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "baseUrl"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "knowledgGraph"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "linkedData"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "maxRetrieve"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "showSourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "baseUrl"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "Int"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "baseUrl"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "coreference"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "disambiguate"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "entities"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "keywords"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "linkedData"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "maxRetrieve"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "requireEntities"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "sentiment"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "sentimentExcludeEntities"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "showSourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "Int"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "sentiment"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "showSourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "targets"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters", "xpath"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "Int"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "String"]
+- !private ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "asDictionary"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "cquery"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "deinit"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "extractLinks"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "init"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "luri"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "sourceText"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "useMetadata"]
+- ["VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters", "xpath"]
+- !private ["PSs8Hashable", "APIKey"]
+- !private ["PSs8Hashable", "JSON"]
+- ["PSs8Hashable", "KeywordExtractMode"]
+- ["PSs8Hashable", "Normal"]
+- !private ["PSs8Hashable", "OutputMode"]
+- !private ["PSs8Hashable", "POST"]
+- ["PSs8Hashable", "Raw"]
+- ["PSs8Hashable", "SourceText"]
+- ["PSs8Hashable", "Targeted"]
+- ["PSs8Hashable", "Title"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "cleaned_or_raw"]
+- ["PSs8Hashable", "normal"]
+- ["PSs8Hashable", "rawValue"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "deinit"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "normal"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "rawValue"]
+- !private ["V20WatsonDeveloperCloud8Keywords", "deinit"]
+- !private ["V20WatsonDeveloperCloud8Language", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "KeywordExtractMode"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "OutputMode"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "SourceText"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "deinit"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "rawValue"]
+- !private ["P12ObjectMapper8Mappable", "data"]
+- !private ["P12ObjectMapper8Mappable", "error"]
+- !private ["C12ObjectMapper6Mapper", "init"]
+- !private ["C12ObjectMapper6Mapper", "map"]
+- !private ["O9Alamofire6Method", "POST"]
+- !private ["V20WatsonDeveloperCloud12Microformats", "deinit"]
+- !private ["C20WatsonDeveloperCloud12NetworkUtils", "performBasicAuthRequest"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- ["Sq", "deinit"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "JSON"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "deinit"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "rawValue"]
+- !private ["O9Alamofire17ParameterEncoding", "URL"]
+- !private ["PSs16RawRepresentable", "APIKey"]
+- !private ["PSs16RawRepresentable", "JSON"]
+- ["PSs16RawRepresentable", "KeywordExtractMode"]
+- !private ["PSs16RawRepresentable", "OutputMode"]
+- !private ["PSs16RawRepresentable", "POST"]
+- ["PSs16RawRepresentable", "SourceText"]
+- ["PSs16RawRepresentable", "cleaned_or_raw"]
+- ["PSs16RawRepresentable", "normal"]
+- ["PSs16RawRepresentable", "rawValue"]
+- !private ["V20WatsonDeveloperCloud12SAORelations", "deinit"]
+- !private ["V20WatsonDeveloperCloud17SentimentResponse", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", "Normal"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", "Targeted"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "cleaned_or_raw"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "deinit"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "rawValue"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["V20WatsonDeveloperCloud10Taxonomies", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "Normal"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "Raw"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "Title"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "APIKey"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "deinit"]
+- !private ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "rawValue"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Key"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "subscript"]
+depends-nominal:
+- !private "C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy"
+- !private "C20WatsonDeveloperCloud28AlchemyCombineDictionaryUtil"
+- "C20WatsonDeveloperCloud15AlchemyLanguage"
+- "C20WatsonDeveloperCloud24AlchemyLanguageConstants"
+- "P20WatsonDeveloperCloud25AlchemyLanguageParameters"
+- "P20WatsonDeveloperCloud14AlchemyService"
+- "PSs9AnyObject"
+- !private "P20WatsonDeveloperCloud22AuthenticationStrategy"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs14CollectionType"
+- !private "V20WatsonDeveloperCloud15ConceptResponse"
+- !private "V20WatsonDeveloperCloud12CoreResponse"
+- "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "V20WatsonDeveloperCloud15DocumentAuthors"
+- !private "V20WatsonDeveloperCloud12DocumentText"
+- !private "V20WatsonDeveloperCloud13DocumentTitle"
+- !private "V20WatsonDeveloperCloud8Entities"
+- "PSs9Equatable"
+- !private "V20WatsonDeveloperCloud5Feeds"
+- !private "PSs13GeneratorType"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage21GetEntitiesParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage21GetKeywordsParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage21GetLanguageParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedConceptsParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage27GetRankedTaxonomyParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage22GetRelationsParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage22GetSentimentParameters"
+- "VC20WatsonDeveloperCloud15AlchemyLanguage17GetTextParameters"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- "OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode"
+- !private "V20WatsonDeveloperCloud8Keywords"
+- !private "V20WatsonDeveloperCloud8Language"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI"
+- !private "P12ObjectMapper8Mappable"
+- !private "C12ObjectMapper6Mapper"
+- !private "O9Alamofire6Method"
+- !private "V20WatsonDeveloperCloud12Microformats"
+- !private "C20WatsonDeveloperCloud12NetworkUtils"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode"
+- !private "O9Alamofire17ParameterEncoding"
+- "PSs16RawRepresentable"
+- !private "V20WatsonDeveloperCloud12SAORelations"
+- !private "V20WatsonDeveloperCloud17SentimentResponse"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType"
+- !private "PSs12SequenceType"
+- !private "VSs5Slice"
+- "OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText"
+- !private "VSs12StaticString"
+- !private "V20WatsonDeveloperCloud10Taxonomies"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType"
+- !private "OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "b28b4c0590780fedbc286260c4e17eff"

@@ -1,0 +1,371 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AlchemyLanguageConstants"
+provides-nominal:
+- "C20WatsonDeveloperCloud24AlchemyLanguageConstants"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI"
+- "OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText"
+- "OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType"
+provides-member:
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", ""]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", ""]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", ""]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "RequestType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "OutputMode"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "WatsonURI"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "LanguageURI"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "TextType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "SentimentType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetEntities"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTextSentiment"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTargetedSentiment"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedKeywords"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedConcepts"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRelations"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedTaxonomy"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetAuthors"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetLanguage"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetText"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRawText"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTitle"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetMicroformatData"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetFeedLinks"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "print"
+- !private "IntegerLiteralType"
+- "=="
+- !private "~="
+- "String"
+- !private "!="
+- !private "Bool"
+- "StringLiteralType"
+- !private "+"
+- "AlchemyLanguageConstants"
+- !private "FloatLiteralType"
+depends-member:
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "AlchemyLanguageConstants"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "Bool"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "Calls"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetAuthors"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetEntities"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetFeedLinks"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetLanguage"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetMicroformatData"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedConcepts"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedKeywords"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRankedTaxonomy"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRawText"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetRelations"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTargetedSentiment"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetText"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTextSentiment"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetTitle"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "LanguageURI"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "OutputMode"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "Prefix"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "RequestType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "SentimentType"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "String"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "TextType"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "TextUnsupported"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "WatsonURI"]
+- ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "deinit"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "init"]
+- !private ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "print"]
+- !private ["PSs9AnyObject", "AlchemyLanguageConstants"]
+- !private ["PSs9AnyObject", "Prefix"]
+- ["PSs9AnyObject", "RequestType"]
+- !private ["PSs9AnyObject", "TextUnsupported"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "HTML"]
+- ["PSs9Equatable", "RawValue"]
+- !private ["PSs9Equatable", "Text"]
+- !private ["PSs9Equatable", "URL"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "hashValue"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "rawValue"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- !private ["PSs8Hashable", "HTML"]
+- ["PSs8Hashable", "RawValue"]
+- !private ["PSs8Hashable", "Text"]
+- !private ["PSs8Hashable", "URL"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "hashValue"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "rawValue"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs11IntegerType", "hashValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "RawValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "deinit"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "hashValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "init"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "normal"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "rawValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode", "strict"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "KeywordExtractMode"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "KnowledgeGraph"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "OutputMode"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "RawValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "SourceText"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "String"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "hashValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "init"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI", "rawValue"]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "HTML"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "JSON"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "RDF"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "RawValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "XML"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "hashValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "init"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode", "rawValue"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["VSs5Range", "deinit"]
+- ["PSs16RawRepresentable", "RawValue"]
+- ["PSs16RawRepresentable", "hashValue"]
+- ["PSs16RawRepresentable", "init"]
+- ["PSs16RawRepresentable", "rawValue"]
+- ["PSs16RawRepresentable", ""]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType", "HTML"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType", "Text"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType", "URL"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType", "hashValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", "Normal"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", "Targeted"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType", "hashValue"]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "RawValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "cleaned"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "cleaned_and_xpath"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "cleaned_or_raw"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "cquery"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "deinit"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "hashValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "init"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "raw"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "rawValue"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "xpath"]
+- ["OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText", "xpath_or_raw"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "Normal"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "Raw"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "Title"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType", "hashValue"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "APIKey"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "RawValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "URL"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "deinit"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "hashValue"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "init"]
+- ["OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI", "rawValue"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+depends-nominal:
+- "C20WatsonDeveloperCloud24AlchemyLanguageConstants"
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- "OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI18KeywordExtractMode"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI"
+- !private "PSs14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants10OutputMode"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- "PSs16RawRepresentable"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants11RequestType"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants13SentimentType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- "OOC20WatsonDeveloperCloud24AlchemyLanguageConstants11LanguageURI10SourceText"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants8TextType"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "OC20WatsonDeveloperCloud24AlchemyLanguageConstants9WatsonURI"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "e4505f13b2899863c943c9928aef1222"

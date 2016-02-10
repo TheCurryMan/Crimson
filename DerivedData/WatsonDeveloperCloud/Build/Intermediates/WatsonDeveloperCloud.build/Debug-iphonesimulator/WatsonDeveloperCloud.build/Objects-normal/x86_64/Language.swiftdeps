@@ -1,0 +1,135 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Language"
+provides-nominal:
+- "V20WatsonDeveloperCloud8Language"
+provides-member:
+- ["V20WatsonDeveloperCloud8Language", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Map"
+- "String"
+- !private "Transformation"
+- !private "StringLiteralType"
+- "Int"
+- !private "<-"
+- "Language"
+- "Mappable"
+- "AlchemyLanguageGenericModel"
+depends-member:
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "ethnologue"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "init"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "iso6391"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "iso6392"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "iso6393"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "language"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "mapping"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "nativeSpeakers"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "totalTransactions"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "url"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "wikipedia"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", ""]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "Transformation"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "ethnologue"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "init"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "iso6391"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "iso6392"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "iso6393"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "language"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "mapping"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "nativeSpeakers"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "totalTransactions"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "url"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "wikipedia"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", ""]
+- !private ["PSs9AnyObject", "Object"]
+- !private ["PSs9AnyObject", "stringToInt"]
+- !private ["PSs9AnyObject", "subscript"]
+- ["V20WatsonDeveloperCloud8Language", "Int"]
+- ["V20WatsonDeveloperCloud8Language", "Map"]
+- ["V20WatsonDeveloperCloud8Language", "String"]
+- !private ["V20WatsonDeveloperCloud8Language", "Transformation"]
+- ["V20WatsonDeveloperCloud8Language", "deinit"]
+- ["V20WatsonDeveloperCloud8Language", "ethnologue"]
+- ["V20WatsonDeveloperCloud8Language", "init"]
+- ["V20WatsonDeveloperCloud8Language", "iso6391"]
+- ["V20WatsonDeveloperCloud8Language", "iso6392"]
+- ["V20WatsonDeveloperCloud8Language", "iso6393"]
+- ["V20WatsonDeveloperCloud8Language", "language"]
+- ["V20WatsonDeveloperCloud8Language", "mapping"]
+- ["V20WatsonDeveloperCloud8Language", "nativeSpeakers"]
+- ["V20WatsonDeveloperCloud8Language", "totalTransactions"]
+- ["V20WatsonDeveloperCloud8Language", "url"]
+- ["V20WatsonDeveloperCloud8Language", "wikipedia"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "Transformation"]
+- !private ["P12ObjectMapper8Mappable", "ethnologue"]
+- ["P12ObjectMapper8Mappable", "init"]
+- !private ["P12ObjectMapper8Mappable", "iso6391"]
+- !private ["P12ObjectMapper8Mappable", "iso6392"]
+- !private ["P12ObjectMapper8Mappable", "iso6393"]
+- ["P12ObjectMapper8Mappable", "language"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- !private ["P12ObjectMapper8Mappable", "nativeSpeakers"]
+- ["P12ObjectMapper8Mappable", "totalTransactions"]
+- ["P12ObjectMapper8Mappable", "url"]
+- !private ["P12ObjectMapper8Mappable", "wikipedia"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["Sq", "deinit"]
+- !private ["SS", "deinit"]
+- !private ["C12ObjectMapper11TransformOf", "Object"]
+- !private ["P12ObjectMapper13TransformType", "Object"]
+- !private ["C20WatsonDeveloperCloud14Transformation", "stringToInt"]
+depends-nominal:
+- "P20WatsonDeveloperCloud19AlchemyGenericModel"
+- "P20WatsonDeveloperCloud27AlchemyLanguageGenericModel"
+- !private "PSs9AnyObject"
+- "V20WatsonDeveloperCloud8Language"
+- !private "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "Sq"
+- !private "SS"
+- !private "C12ObjectMapper11TransformOf"
+- !private "P12ObjectMapper13TransformType"
+- !private "C20WatsonDeveloperCloud14Transformation"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/DerivedData/WatsonDeveloperCloud/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "66f1f1bf6b3902df00445a66669607f1"
