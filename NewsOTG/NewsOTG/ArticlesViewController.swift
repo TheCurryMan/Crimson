@@ -21,9 +21,15 @@ class ArticlesTableViewCell: UITableViewCell {
     
     @IBOutlet var plusButton : UIButton!
     
+    @IBOutlet var articleInfo: UILabel!
+    
+    @IBOutlet var articleDate: UILabel!
+    
+    
     @IBAction func bluePress(sender: UIButton) {
         
         ArticlesViewController().getRecentPlaylist(sender.tag, info: articleText.text!, url: articleURL.text!)
+        
         
         
     }
@@ -37,7 +43,11 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var articlesNames = [""]
     var articlesURL = [""]
+    var articlesInfo = [""]
+    var articlesDates = [""]
     var playlist = [["",""]]
+    
+    var data = false
     
     @IBOutlet var tableView: UITableView!
     
@@ -45,6 +55,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
 
         // Do any additional setup after loading the view.
 
@@ -57,7 +69,7 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         articlesNames.removeAtIndex(0)
         articlesURL.removeAtIndex(0)
         
-        print(link)
+        print("This is the link: " + link)
         
         let url = NSURL(string: link)
         
@@ -76,64 +88,74 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 if error == nil {
                     
-                    
-                    
                     let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
-                  
-                    
-                    var nounArray = [""]
                     
                     var urlContentArray2 = urlContent.componentsSeparatedByString("false\">")
-                    
                     urlContentArray2.removeAtIndex(0)
-                    
-                    var arr3 = [""]
-                    arr3.removeAtIndex(0)
                     
                     for i in urlContentArray2 {
                     
                         var arr3 = i.componentsSeparatedByString("</guid>")
                         self.articlesURL.append(arr3[0])
                         
-                    
                     }
-                    
                     
                     
                     var urlContentArray = urlContent.componentsSeparatedByString("<item><title>")
-                    
                     urlContentArray.removeAtIndex(0)
-                    
-                    var finalText = [""]
-                    
-                    finalText.removeAtIndex(0)
-                    
+                    var finalTitle = [""]
+                    finalTitle.removeAtIndex(0)
                     for i in urlContentArray {
-                        
                         var arr2 = i.componentsSeparatedByString("</title>")
-                        finalText.append(arr2[0])
-                        
+                        finalTitle.append(arr2[0])
                     }
+                    self.articlesNames = finalTitle
+
+                    //GETTING INFO VALUE
                     
-                    print(finalText)
-                    
-                    self.articlesNames = finalText
-                    /*
-                    
-                    print(nounArray)
-                    
-                    for (var i = 0; i < 4; i++) {
-                        
-                        
-                        
-                        nounArr.append(nounArray[i])
-                        
-                        
-                        
+                    var infoContentArray = urlContent.componentsSeparatedByString("</link><description>")
+                    infoContentArray.removeRange(0...2)
+                    var finalInfo = [""]
+                    finalInfo.removeAtIndex(0)
+                    for i in infoContentArray {
+                        var arr2 = i.componentsSeparatedByString("&lt;")
+                        print(arr2[0])
+                        finalInfo.append(arr2[0])
                     }
+                    self.articlesInfo = finalInfo
+                    
+                    //GETTING DATE VALUE
+                    
+                    var datesContentArray = urlContent.componentsSeparatedByString("<pubDate>")
+                    datesContentArray.removeRange(0...1)
+                    var finalDates = [""]
+                    finalDates.removeAtIndex(0)
+                    for i in datesContentArray {
+                        var arr2 = i.componentsSeparatedByString("</pubDate><guid isPermaLink=")
+                        finalDates.append(arr2[0])
+                    }
+                    print(finalDates)
+                    var trueDates = [""]
+                    trueDates.removeAtIndex(0)
+                    for date in finalDates {
+                        var str2 = ""
+                        var str = date.componentsSeparatedByString(" ")
+                        var finalDate = str[4]
+                        //print(finalDate)
+                        var num1 = finalDate.componentsSeparatedByString(":")
+                        //print(num1)
+                        if Int(num1[0]) >= 12 {
+                            str2 = String(Int(num1[0])!-12) + ":" + num1[1] + " PM"
+                        }
+                        else {
+                            str2 = String(num1[0]) + ":" + String(num1[1]) + " AM"
+                        }
+                        trueDates.append(str2)
+                    }
+                    self.articlesDates = trueDates
                     
                     
-                    */
+                    
                     
                     dispatch_async(dispatch_get_main_queue()) {
                         
@@ -142,10 +164,9 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
                             print("error")
                             
                         } else {
-                            
+                            self.data = true
                             print("no error")
                             self.tableView.reloadData()
-                            print("Why isnt this working")
                             
                         }
                         
@@ -163,7 +184,36 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
         
     }
-
+    
+    
+    
+    func getRectangle() {
+    
+        func addRectangle() {
+            
+            var DynamicView=UIView(frame: CGRectMake(100, 200, 100, 100))
+            DynamicView.backgroundColor=UIColor.greenColor()
+            DynamicView.layer.cornerRadius=25
+            DynamicView.layer.borderWidth=2
+            self.view.addSubview(DynamicView)
+        }
+    }
+    
+    func getSummaryOfArticle(url: String) {
+    
+        let url =  NSURL(string: link)
+        if url != nil {
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: {(data, response, error) -> Void in
+            
+                if error == nil {}
+                
+            
+            })
+        }
+    
+    }
+ 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -225,21 +275,23 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
       
         var cell:ArticlesTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("articleCell") as! ArticlesTableViewCell
         
-        if self.articlesNames != [] {
+        if self.data {
         
-        cell.articleText.text = self.articlesNames[indexPath.row]
+            cell.articleText.text = self.articlesNames[indexPath.row]
             
             cell.articleURL.text = self.articlesURL[indexPath.row]
         
             cell.articleURL.hidden = true
             
-        cell.plusButton.setBackgroundImage(UIImage(named: "blueplus.png"), forState: .Normal)
             
-        cell.plusButton.tag = indexPath.row
+            cell.articleInfo.text = self.articlesInfo[indexPath.row]
             
-    
-        
             
+            cell.articleDate.text = self.articlesDates[indexPath.row]
+            
+            cell.plusButton.setBackgroundImage(UIImage(named: "blueplus.png"), forState: .Normal)
+            
+            cell.plusButton.tag = indexPath.row
         }
         
         return cell
@@ -266,10 +318,9 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 75
+        return 120
     }
-    
-    
+   
     
     
 

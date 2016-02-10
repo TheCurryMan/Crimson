@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -30,7 +30,7 @@
             <connections>
                 <outlet property="sourceButton" destination="zsw-bO-u9x" id="RPg-rL-j8F"/>
             </connections>
-            <point key="canvasLocation" x="272" y="196.5"/>
+            <point key="canvasLocation" x="25" y="121"/>
         </tableViewCell>
     </objects>
     <resources>

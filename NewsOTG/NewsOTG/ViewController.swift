@@ -205,12 +205,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             //add any thing here that you want to be recognized. Must be in capital letters
             words.append("OKAYBLARB")
             words.append("SELECTSEA")
+            words.append("EN")
             words.append("SELECTWIKIPEDIA")
             words.append("SELECTBEEBEESEA")
-            words.append("AN")
-            
-            
-            print("Added words")
         }
     
         
@@ -229,14 +226,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
             
             print(hypothesis)
-            
+            /*
             if hypothesis == "OKAYBLARB"{
                 stopListening()
                 performSegueWithIdentifier("hometovoice", sender: self)
-            }
+            } */
                 
                 
-            if hypothesis == "SELECTCNN" {
+            if hypothesis == "SELECTSEA EN EN" || hypothesis == "SELECTSEA EN"{
                 
                 finalSource = "CNN"
                 
@@ -244,13 +241,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             }
             
-            else if hypothesis == "SELECT BBC" {
+            else if hypothesis == "SELECTBEEBEESEA" || hypothesis == "SELECTBEEBEESEA EN" {
                 finalSource = "BBC"
                 
                 self.performSegueWithIdentifier("articles", sender: self)
             }
             
-            else if hypothesis == "SELECT WIKIPEDIA" {
+            else if hypothesis == "SELECTWIKIPEDIA" {
             
                 finalSource = "Wiki"
                 
@@ -265,7 +262,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "articles" {
         
             var vc = segue.destinationViewController as! CategoriesViewController
-            
+            stopListening()
             vc.source = finalSource
             
         }

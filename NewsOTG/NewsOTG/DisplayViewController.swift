@@ -73,7 +73,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
         let url = NSURL(string: articleURL)
         
-        
+        print(url)
     
         
         
@@ -83,11 +83,11 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                 
                 let urlError = false
                 
-                
+                print("a")
                 
                 if error == nil {
                     
-                    
+                    print("b")
                     
                     let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
                     
@@ -119,25 +119,40 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                     
                     urlContentArray.removeAtIndex(0)
                     
-                    print(urlContentArray.count)
+                    
+                    
                     
                     if urlContentArray != [] {
                     
-                  
+                        print("Step 3")
                     
-                    var finalContent = urlContentArray[0].componentsSeparatedByString("<p class=\"zn-body__paragraph zn-body__footer\">")
+                        var finalContent = urlContentArray[0].componentsSeparatedByString("<p class=\"zn-body__paragraph zn-body__footer\">")
                     
+                        print("Step 4")
+                        
+                        finalContent.removeAtIndex(1)
+                        
+                        print("step 5")
                     
+                        var finalStr = finalContent[0]
+                        print ("Step6")
+                        
+                        //print(finalStr)
+                        
+                        let finalStr2 = finalStr.stringByReplacingOccurrencesOfString("{([^}]*)}", withString: "")
+                        
+                        print(finalStr2)
+                        
+                        let newstr = finalStr2.stringByReplacingOccurrencesOfString("<script(.+?)*</script>", withString: "")
+                        print("step 7")
+                        
+                        let str = newstr.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
                     
-                    finalContent.removeAtIndex(1)
+                        print("Step 8")
+                        
+                        print(str)
                     
-                    var finalStr = finalContent[0]
-                    let newstr = finalStr.stringByReplacingOccurrencesOfString("<script(.+?)*</script>", withString: "", options: .RegularExpressionSearch, range: nil)
-                    let str = newstr.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
-                    
-                    print(str)
-                    
-                    self.articleText = str
+                        self.articleText = str
                     }
                         
                     dispatch_async(dispatch_get_main_queue()) {
@@ -151,6 +166,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             print("no error")
                             
                             print("Why isnt this working")
+                            
+                            if self.articleText == ""{
+                                self.viewDidLoad()
+                            }
                             
                             self.articleContent.text = self.articleText
                             

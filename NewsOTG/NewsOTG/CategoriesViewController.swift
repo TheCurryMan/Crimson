@@ -8,21 +8,69 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class CategoriesTableViewCell : UITableViewCell {
+
+    @IBOutlet var bgimage: UIImageView!
+    
+    @IBOutlet var category: UILabel!
+
+}
+
+class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet var tableView: UITableView!
     
     var source = ""
     
     var link = ""
+    
+    var categories = ["World", "Top Stories", "Tech", "Business", "Politics", "Health"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var nib = UINib(nibName: "CategoriesTableViewCell", bundle: nil)
         
+        tableView.registerNib(nib, forCellReuseIdentifier: "category")
+
         // Do any additional setup after loading the view.
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:CategoriesTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("category") as! CategoriesTableViewCell!
+        
+        cell.category.text = categories[indexPath.row]
+        var str = self.categories[indexPath.row] + ".jpg"
+        cell.bgimage.image = UIImage(named: str)
+        cell.tag = indexPath.row
+        return cell
+    }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 140
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch indexPath.row{
+        case 0:
+            World(self)
+        case 1:
+            topStories(self)
+        case 2:
+            Tech(self)
+        case 3:
+            Business(self)
+        case 4:
+            Politics(self)
+        case 5:
+            Health(self)
+        default:
+            print("Didn't work")
+        }
+    }
     
 
     override func didReceiveMemoryWarning() {
