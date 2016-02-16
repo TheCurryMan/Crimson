@@ -1,0 +1,10 @@
+framework module WatsonDeveloperCloud {
+  umbrella header "WatsonDeveloperCloud.h"
+
+  export *
+  module * { export * }
+}
+
+module WatsonDeveloperCloud.Swift {
+    header "WatsonDeveloperCloud-Swift.h"
+}

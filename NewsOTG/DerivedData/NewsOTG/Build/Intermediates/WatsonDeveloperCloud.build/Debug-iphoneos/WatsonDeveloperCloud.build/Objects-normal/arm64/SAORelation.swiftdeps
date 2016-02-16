@@ -1,0 +1,182 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SAORelation"
+provides-nominal:
+- "V20WatsonDeveloperCloud11SAORelation"
+- "VV20WatsonDeveloperCloud11SAORelation6Action"
+- "VV20WatsonDeveloperCloud11SAORelation4Verb"
+- "VV20WatsonDeveloperCloud11SAORelation14RelationObject"
+- "VV20WatsonDeveloperCloud11SAORelation7Subject"
+provides-member:
+- ["V20WatsonDeveloperCloud11SAORelation", ""]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", ""]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", ""]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", ""]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", ""]
+- ["V20WatsonDeveloperCloud11SAORelation", "Action"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Verb"]
+- ["V20WatsonDeveloperCloud11SAORelation", "RelationObject"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Subject"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Keywords"
+- !private "Transformation"
+- "Map"
+- "Entity"
+- "String"
+- !private "<-"
+- !private "StringLiteralType"
+- "Int"
+- "SAORelation"
+- "Mappable"
+- "Sentiment"
+depends-member:
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "Map"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "String"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "Verb"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "deinit"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "init"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "lemmatized"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "mapping"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "text"]
+- ["VV20WatsonDeveloperCloud11SAORelation6Action", "verb"]
+- !private ["PSs9AnyObject", "Object"]
+- !private ["PSs9AnyObject", "stringToInt"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["V20WatsonDeveloperCloud6Entity", "deinit"]
+- !private ["V20WatsonDeveloperCloud8Keywords", "deinit"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "Transformation"]
+- !private ["P12ObjectMapper8Mappable", "action"]
+- !private ["P12ObjectMapper8Mappable", "entity"]
+- ["P12ObjectMapper8Mappable", "init"]
+- !private ["P12ObjectMapper8Mappable", "keywords"]
+- !private ["P12ObjectMapper8Mappable", "lemmatized"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- !private ["P12ObjectMapper8Mappable", "negated"]
+- !private ["P12ObjectMapper8Mappable", "object"]
+- !private ["P12ObjectMapper8Mappable", "sentence"]
+- !private ["P12ObjectMapper8Mappable", "sentiment"]
+- !private ["P12ObjectMapper8Mappable", "sentimentFromSubject"]
+- !private ["P12ObjectMapper8Mappable", "subject"]
+- !private ["P12ObjectMapper8Mappable", "tense"]
+- !private ["P12ObjectMapper8Mappable", "text"]
+- !private ["P12ObjectMapper8Mappable", "verb"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["Sq", "deinit"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "Entity"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "Keywords"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "Map"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "Sentiment"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "String"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "deinit"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "entity"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "init"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "keywords"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "mapping"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "sentiment"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "sentimentFromSubject"]
+- ["VV20WatsonDeveloperCloud11SAORelation14RelationObject", "text"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Action"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Entity"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Int"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Keywords"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Map"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Mappable"]
+- ["V20WatsonDeveloperCloud11SAORelation", "RelationObject"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Sentiment"]
+- ["V20WatsonDeveloperCloud11SAORelation", "String"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Subject"]
+- !private ["V20WatsonDeveloperCloud11SAORelation", "Transformation"]
+- ["V20WatsonDeveloperCloud11SAORelation", "Verb"]
+- ["V20WatsonDeveloperCloud11SAORelation", "action"]
+- ["V20WatsonDeveloperCloud11SAORelation", "deinit"]
+- ["V20WatsonDeveloperCloud11SAORelation", "init"]
+- ["V20WatsonDeveloperCloud11SAORelation", "mapping"]
+- ["V20WatsonDeveloperCloud11SAORelation", "object"]
+- ["V20WatsonDeveloperCloud11SAORelation", "sentence"]
+- ["V20WatsonDeveloperCloud11SAORelation", "subject"]
+- !private ["V20WatsonDeveloperCloud9Sentiment", "deinit"]
+- !private ["SS", "deinit"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "Entity"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "Keywords"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "Map"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "Sentiment"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "String"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "deinit"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "entity"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "init"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "keywords"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "mapping"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "sentiment"]
+- ["VV20WatsonDeveloperCloud11SAORelation7Subject", "text"]
+- !private ["C12ObjectMapper11TransformOf", "Object"]
+- !private ["P12ObjectMapper13TransformType", "Object"]
+- !private ["C20WatsonDeveloperCloud14Transformation", "stringToInt"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "Int"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "Map"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "String"]
+- !private ["VV20WatsonDeveloperCloud11SAORelation4Verb", "Transformation"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "deinit"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "init"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "mapping"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "negated"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "tense"]
+- ["VV20WatsonDeveloperCloud11SAORelation4Verb", "text"]
+depends-nominal:
+- "VV20WatsonDeveloperCloud11SAORelation6Action"
+- !private "PSs9AnyObject"
+- !private "V20WatsonDeveloperCloud6Entity"
+- !private "V20WatsonDeveloperCloud8Keywords"
+- !private "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "Sq"
+- "VV20WatsonDeveloperCloud11SAORelation14RelationObject"
+- "V20WatsonDeveloperCloud11SAORelation"
+- !private "V20WatsonDeveloperCloud9Sentiment"
+- !private "SS"
+- "VV20WatsonDeveloperCloud11SAORelation7Subject"
+- !private "C12ObjectMapper11TransformOf"
+- !private "P12ObjectMapper13TransformType"
+- !private "C20WatsonDeveloperCloud14Transformation"
+- "VV20WatsonDeveloperCloud11SAORelation4Verb"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "a97dd7b400342efef62a7214e0b4926d"

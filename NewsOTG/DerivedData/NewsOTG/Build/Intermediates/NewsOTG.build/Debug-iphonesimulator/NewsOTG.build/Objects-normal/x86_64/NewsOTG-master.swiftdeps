@@ -1,0 +1,16 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "ccf639a8d33c5ac2ed3750e2377772af"
+build_time: [508920014, 495877000]
+inputs:
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/LoadingViewController.swift": [505213903, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/CustomSlider.swift": [505316947, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/StartingViewController.swift": [505214387, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/DisplayViewController.swift": [508920013, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/AppDelegate.swift": [502349228, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/ArticlesViewController.swift": [508393395, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/ViewController.swift": [508743808, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/PlaylistViewController.swift": [508393395, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/SettingsViewController.swift": [508919564, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/CategoriesViewController.swift": [508393395, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/SignUpViewController.swift": [502351831, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/TestViewController.swift": [505300144, 0]

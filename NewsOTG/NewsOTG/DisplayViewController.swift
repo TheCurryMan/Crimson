@@ -21,6 +21,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     var articleName = ""
     var articleURL = ""
     var articleText = ""
+    var accent = ""
     
     @IBOutlet var btnStop: UIButton!
     
@@ -42,6 +43,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var newVersion = true
     
+    var content = ""
+    
+    var listOfData : [NSData] = []
+    
+    var audioData : NSData = NSData()
+    
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
     var previousSelectedRange: NSRange!
@@ -57,6 +64,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
         speechSynthesizer.delegate = self
         
+        let userDefaults = NSUserDefaults.standardUserDefaults() as NSUserDefaults
+        
+        accent = userDefaults.valueForKey("accent") as! String
+        
+        getData(content)
+        
         if !loadSettings() {
             registerDefaultSettings()
         }
@@ -69,6 +82,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         // Do any additional setup after loading the view.
         
@@ -171,36 +186,50 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             
                         } else {
                             
-                            print("no error")
+                            //print("no error")
                             
-                            print("Why isnt this working")
+                           // print("Why isnt this working")
                             
-                            if self.articleText == ""{
-                                self.viewDidLoad()
-                            }
+                           // print(self.articleText)
+                            
+                            
+                            self.setInitialFontAttribute()
+                            
                             
                             self.articleContent.text = self.articleText
                             
+                            if self.articleContent.text == ""{
+                                self.viewDidLoad()
+                            }
+                            
                             print(self.articleText)
                             
-                            self.setInitialFontAttribute()
-
-                        }
-                        
-                        
-                        
-                    }
-                }
-                
-            })
+                            
+                            
+                            self.content = self.articleContent.text!
+                            self.content = self.content.stringByReplacingOccurrencesOfString(".", withString: ". ")
+                            print("\n \n \n \n \n \n This is the article")
+                            print(self.content)
+                            self.getData(self.content)
+                        }}}})
             
-            task.resume()
-            
-            
-        }
+            task.resume()}}
+    
+    func getData(content:String) {
         
-        
+        var listOfStrings = content.componentsSeparatedByString(".")
+        print(listOfStrings)
+        listOfStrings.removeLast()
+        for i in listOfStrings {
+            print(i)
+            print(accent)
+        self.service.synthesize(i, voice: accent, completionHandler: {data, error in
+            self.listOfData.append(data!)
+    
+    })}
     }
+    
+    
     
     var rate : Float!
     var pitch : Float!
@@ -227,7 +256,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             pitch = userDefaults.valueForKey("pitch") as! Float
             volume = userDefaults.valueForKey("volume") as! Float
             
-            
+            accent = userDefaults.valueForKey("accent") as! String
+            print("SKDLSKDJLSDJLKSDJ \n\n\n\n\n\n THIS SHOULD WORK")
+            getData(content)
+            print(accent)
             
             return true
         }
@@ -258,58 +290,9 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBAction func speak(sender: AnyObject) {
         print(speechSynthesizer.speaking)
         
-        if newVersion{
-            
-            var content = articleContent.text!
-            content = content.stringByReplacingOccurrencesOfString(".", withString: ". ")
-            
-            var strings = content.componentsSeparatedByString(".")
-            
-            print(strings)
-            
-            for line in strings{
-            
-            //var strings = content.strin
         
-                service.synthesize(content, voice: "en-US_AllisonVoice", completionHandler: {data, error in
-                
-                print(line)
-                
-                do {
-                    
-                    if (data != nil) {
-                        
-                        
-                        self.audioPlayer = try AVAudioPlayer(data:data!)
-                        self.audioPlayer.prepareToPlay()
-                        self.audioPlayer.volume = self.volume
-                        self.audioPlayer.rate = self.rate
-                        self.audioPlayer.play()
-                        
-                        while self.audioPlayer.playing {
-                        
-                            
-                        }
-                        
-                    }
-                        
-                    else {
-                        print("No data is coming")
-                        self.speak(self)
-                    }
-                    
-                    
-                } catch {
-                    print("Error!")
-                }
-                
-                
-                
-            })
-            
-        }
         
-        }
+        if newVersion{playAudio()}
             
         else {
         
@@ -353,11 +336,45 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     }
     
     
+    func playAudio() {
+        
+        do {
+            
+            for i in listOfData {
+                
+                //print(i)
+            
+            //print("playAudio function")
+        
+        self.audioPlayer = try AVAudioPlayer(data:i)
+        self.audioPlayer.prepareToPlay()
+        self.audioPlayer.volume = self.volume
+        self.audioPlayer.rate = self.rate
+                self.audioPlayer.play()
+            
+                while audioPlayer.currentTime < audioPlayer.duration && audioPlayer.playing == true{
+                    //print(audioPlayer.currentTime)
+                    //print(audioPlayer.duration)
+                    //print(audioPlayer.playing)
+                }
+            
+            }}
+        
+        catch {
+            print("Error!")
+        }
+    }
+    
+    
     @IBAction func stopSpeech(sender: AnyObject) {
         
-        if newVersion {
+        //stop = true
         
+        if newVersion {
+            print(self.audioPlayer.playing)
             self.audioPlayer.stop()
+            
+            print(audioPlayer.playing)
             animateActionButtonAppearance(false)
         }
         
@@ -372,6 +389,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     }
     
     @IBAction func pauseSpeech(sender: AnyObject) {
+        
+        //pause = true
         if newVersion{
             self.audioPlayer.pause()
             animateActionButtonAppearance(false)
@@ -465,6 +484,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         rate = settings.valueForKey("rate") as! Float
         pitch = settings.valueForKey("pitch") as! Float
         volume = settings.valueForKey("volume") as! Float
+        accent = settings.valueForKey("accent") as! String
     }
     
     func setInitialFontAttribute() {
@@ -496,45 +516,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             articleContent.textStorage.endEditing()
         }
     }
-/*
-    
-    @IBAction func textToSpeech(sender: UIButton) {
-        
-        myUtterance = AVSpeechUtterance(string: self.articleText)
-        myUtterance.rate = 0.5
-        synth.speakUtterance(myUtterance)
-        
-        
-    }
-    
-    @IBAction func pauseSpeech(sender: UIButton) {
-        synth.pauseSpeakingAtBoundary(AVSpeechBoundary.Immediate)
-    }
-    
-    @IBAction func sliderChanged(sender: UISlider) {
-        print(sender.value)
-        myUtterance.rate = sender.value
-        synth.continueSpeaking()
-    }
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "idSegueSettings" {

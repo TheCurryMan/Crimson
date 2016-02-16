@@ -13,7 +13,7 @@ protocol SettingsViewControllerDelegate {
 }
 
 
-class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var tbSettings: UITableView!
     
@@ -28,15 +28,18 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     var volume: Float!
     
+    var picked = ""
+    
     var arrVoiceLanguages: [Dictionary<String, String>] = []
     
     var selectedVoiceLanguage = 0
+    
+    var pickerData = [["German (F)", "de-DE_BirgitVoice"],["German (M)", "de-DE_DieterVoice"],["British (F)", "en-GB_KateVoice"],["American (F)", "en-US_AllisonVoice"], ["American (M)", ""],["Spanish (F)", " es-ES_LauraVoice"],["Spanish (M)", "es-ES_EnriqueVoice"],["French (F)", "fr-FR_ReneeVoice"]]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         
         // Do any additional setup after loading the view.
         
@@ -77,14 +80,17 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: UITableView method implementation
     
+    
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
+    
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -96,7 +102,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             let keyLabel = cell.contentView.viewWithTag(10) as? UILabel
             let valueLabel = cell.contentView.viewWithTag(20) as? UILabel
             let slider = cell.contentView.viewWithTag(30) as! CustomSlider
-            
+            //let pickerview = cell.contentView.viewWithTag(40) as? UIPickerView
             var value: Float = 0.0
             switch indexPath.row {
             case 0:
@@ -119,6 +125,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                 slider.addTarget(self, action: "handleSliderValueChange:", forControlEvents: UIControlEvents.ValueChanged)
                 slider.sliderIdentifier = 200
                 
+            
             default:
                 value = volume
                 
@@ -131,17 +138,19 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             }
             
             
+                
+            
             if slider.value != value {
                 slider.value = value
             }
-        }/*
+        }
         else{
             cell = tableView.dequeueReusableCellWithIdentifier("idCellVoicePicker", forIndexPath: indexPath) as UITableViewCell
             
-            let pickerView = cell.contentView.viewWithTag(10) as! UIPickerView
+            var pickerView = cell.contentView.viewWithTag(10) as! UIPickerView
             pickerView.delegate = self
             pickerView.dataSource = self
-        } */
+        } 
         
         return cell
     }
@@ -163,6 +172,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         NSUserDefaults.standardUserDefaults().setFloat(rate, forKey: "rate")
         NSUserDefaults.standardUserDefaults().setFloat(pitch, forKey: "pitch")
         NSUserDefaults.standardUserDefaults().setFloat(volume, forKey: "volume")
+        NSUserDefaults.standardUserDefaults().setObject(picked, forKey: "accent")
         //NSUserDefaults.standardUserDefaults().setObject(arrVoiceLanguages[selectedVoiceLanguage]["languageCode"], forKey: "languageCode")
         NSUserDefaults.standardUserDefaults().synchronize()
         
@@ -190,44 +200,34 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         tbSettings.reloadData()
     }
-    /*
-    
-    func prepareVoiceList() {
-        for voice in AVSpeechSynthesisVoice.speechVoices() {
-            let voiceLanguageCode = (voice as AVSpeechSynthesisVoice).language
-            
-            let languageName = NSLocale.currentLocale().displayNameForKey(NSLocaleIdentifier, value: voiceLanguageCode)!
-            
-            let dictionary = ["languageName": languageName, "languageCode": voiceLanguageCode]
-            
-            arrVoiceLanguages.append(dictionary)
-        }
-    }
     
     
-    */
-    // MARK: UIPickerView method implementation
-    
-  /*  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
+        
     }
-    
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return arrVoiceLanguages.count
+        return pickerData.count
     }
     
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        let voiceLanguagesDictionary = arrVoiceLanguages[row] as Dictionary<String, String>
-        
-        return voiceLanguagesDictionary["languageName"]
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        print("namaste i am a god")
+        print(pickerData[row][0])
+        print(row)
+        return pickerData[row][0]
     }
-    
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedVoiceLanguage = row
-    } */
+        picked = (pickerData[row][1]) as String
+        print("Row selected")
+    }
+
+    
+    
+
+    // MARK: UIPickerView method implementation
+    
     
 }
 

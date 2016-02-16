@@ -1,0 +1,629 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BasicAuthenticationStrategy"
+provides-nominal:
+- "C20WatsonDeveloperCloud27BasicAuthenticationStrategy"
+provides-member:
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", ""]
+provides-dynamic-lookup:
+- "URLSession"
+- "retries"
+- "token"
+- "refreshToken"
+- "isRefreshing"
+depends-top-level:
+- !private "NSURLSessionConfiguration"
+- !private "=="
+- !private "~="
+- !private "NSURLQueryItem"
+- "NSURLAuthenticationChallenge"
+- "String"
+- !private "NSUTF8StringEncoding"
+- "NSObject"
+- "NSURLSession"
+- "NSURLSessionTaskDelegate"
+- !private "StringLiteralType"
+- "AuthenticationStrategy"
+- !private "NSHTTPURLResponse"
+- "NSError"
+- "NSURLSessionAuthChallengeDisposition"
+- "BasicAuthenticationStrategy"
+- "BooleanLiteralType"
+- "Void"
+- "NSURLSessionTask"
+- "NSURLCredential"
+- !private "NSURLComponents"
+- !private "Array"
+depends-member:
+- !private ["PSs9AnyObject", "NSError"]
+- !private ["PSs9AnyObject", "NSURLComponents"]
+- !private ["PSs9AnyObject", "NSURLCredential"]
+- !private ["PSs9AnyObject", "NSURLQueryItem"]
+- !private ["PSs9AnyObject", "NSURLSession"]
+- !private ["PSs9AnyObject", "NSURLSessionConfiguration"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "URL"]
+- ["PSs9AnyObject", "URLSession"]
+- ["PSs9AnyObject", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["PSs9AnyObject", "createWatsonError"]
+- !private ["PSs9AnyObject", "dataTaskWithURL"]
+- !private ["PSs9AnyObject", "defaultSessionConfiguration"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "isRefreshing"]
+- ["PSs9AnyObject", "password"]
+- !private ["PSs9AnyObject", "previousFailureCount"]
+- !private ["PSs9AnyObject", "queryItems"]
+- ["PSs9AnyObject", "refreshToken"]
+- !private ["PSs9AnyObject", "resume"]
+- ["PSs9AnyObject", "retries"]
+- ["PSs9AnyObject", "serviceURL"]
+- !private ["PSs9AnyObject", "statusCode"]
+- ["PSs9AnyObject", "token"]
+- ["PSs9AnyObject", "tokenURL"]
+- ["PSs9AnyObject", "username"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSError"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSURLComponents"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSURLCredential"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSURLQueryItem"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSURLSession"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSURLSessionConfiguration"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "NSUTF8StringEncoding"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "String"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", "URLSession"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", "isRefreshing"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "password"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", "refreshToken"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", "retries"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "serviceURL"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", "token"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "tokenURL"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "username"]
+- ["P20WatsonDeveloperCloud22AuthenticationStrategy", ""]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSError"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSHTTPURLResponse"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLAuthenticationChallenge"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLComponents"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLCredential"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLQueryItem"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLSession"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLSessionAuthChallengeDisposition"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLSessionConfiguration"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSURLSessionTask"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "NSUTF8StringEncoding"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "String"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "URLSession"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "Void"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "deinit"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "init"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "isRefreshing"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "password"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "refreshToken"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "retries"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "serviceURL"]
+- ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "token"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "tokenURL"]
+- !private ["C20WatsonDeveloperCloud27BasicAuthenticationStrategy", "username"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSError"]
+- !private ["PSs11CVarArgType", "NSURLComponents"]
+- !private ["PSs11CVarArgType", "NSURLCredential"]
+- !private ["PSs11CVarArgType", "NSURLQueryItem"]
+- !private ["PSs11CVarArgType", "NSURLSession"]
+- !private ["PSs11CVarArgType", "NSURLSessionConfiguration"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "URL"]
+- ["PSs11CVarArgType", "URLSession"]
+- ["PSs11CVarArgType", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["PSs11CVarArgType", "createWatsonError"]
+- !private ["PSs11CVarArgType", "dataTaskWithURL"]
+- !private ["PSs11CVarArgType", "defaultSessionConfiguration"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "isRefreshing"]
+- ["PSs11CVarArgType", "password"]
+- !private ["PSs11CVarArgType", "previousFailureCount"]
+- !private ["PSs11CVarArgType", "queryItems"]
+- ["PSs11CVarArgType", "refreshToken"]
+- !private ["PSs11CVarArgType", "resume"]
+- ["PSs11CVarArgType", "retries"]
+- ["PSs11CVarArgType", "serviceURL"]
+- !private ["PSs11CVarArgType", "statusCode"]
+- ["PSs11CVarArgType", "token"]
+- ["PSs11CVarArgType", "tokenURL"]
+- ["PSs11CVarArgType", "username"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSError"]
+- !private ["PSs23CustomStringConvertible", "NSURLComponents"]
+- !private ["PSs23CustomStringConvertible", "NSURLCredential"]
+- !private ["PSs23CustomStringConvertible", "NSURLQueryItem"]
+- !private ["PSs23CustomStringConvertible", "NSURLSession"]
+- !private ["PSs23CustomStringConvertible", "NSURLSessionConfiguration"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "String"]
+- !private ["PSs23CustomStringConvertible", "URL"]
+- ["PSs23CustomStringConvertible", "URLSession"]
+- ["PSs23CustomStringConvertible", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "createWatsonError"]
+- !private ["PSs23CustomStringConvertible", "dataTaskWithURL"]
+- !private ["PSs23CustomStringConvertible", "defaultSessionConfiguration"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "isRefreshing"]
+- ["PSs23CustomStringConvertible", "password"]
+- !private ["PSs23CustomStringConvertible", "previousFailureCount"]
+- !private ["PSs23CustomStringConvertible", "queryItems"]
+- ["PSs23CustomStringConvertible", "refreshToken"]
+- !private ["PSs23CustomStringConvertible", "resume"]
+- ["PSs23CustomStringConvertible", "retries"]
+- ["PSs23CustomStringConvertible", "serviceURL"]
+- !private ["PSs23CustomStringConvertible", "statusCode"]
+- ["PSs23CustomStringConvertible", "token"]
+- ["PSs23CustomStringConvertible", "tokenURL"]
+- ["PSs23CustomStringConvertible", "username"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "CancelAuthenticationChallenge"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSError"]
+- !private ["PSs9Equatable", "NSURLComponents"]
+- !private ["PSs9Equatable", "NSURLCredential"]
+- !private ["PSs9Equatable", "NSURLQueryItem"]
+- !private ["PSs9Equatable", "NSURLSession"]
+- !private ["PSs9Equatable", "NSURLSessionConfiguration"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- !private ["PSs9Equatable", "None"]
+- !private ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "URL"]
+- ["PSs9Equatable", "URLSession"]
+- ["PSs9Equatable", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["PSs9Equatable", "UseCredential"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "createWatsonError"]
+- !private ["PSs9Equatable", "dataTaskWithURL"]
+- !private ["PSs9Equatable", "defaultSessionConfiguration"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "isRefreshing"]
+- ["PSs9Equatable", "password"]
+- !private ["PSs9Equatable", "previousFailureCount"]
+- !private ["PSs9Equatable", "queryItems"]
+- ["PSs9Equatable", "refreshToken"]
+- !private ["PSs9Equatable", "resume"]
+- ["PSs9Equatable", "retries"]
+- ["PSs9Equatable", "serviceURL"]
+- !private ["PSs9Equatable", "statusCode"]
+- ["PSs9Equatable", "token"]
+- ["PSs9Equatable", "tokenURL"]
+- ["PSs9Equatable", "username"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "createWatsonError"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "CancelAuthenticationChallenge"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSError"]
+- !private ["PSs8Hashable", "NSURLComponents"]
+- !private ["PSs8Hashable", "NSURLCredential"]
+- !private ["PSs8Hashable", "NSURLQueryItem"]
+- !private ["PSs8Hashable", "NSURLSession"]
+- !private ["PSs8Hashable", "NSURLSessionConfiguration"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "None"]
+- !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "URL"]
+- ["PSs8Hashable", "URLSession"]
+- ["PSs8Hashable", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["PSs8Hashable", "UseCredential"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "createWatsonError"]
+- !private ["PSs8Hashable", "dataTaskWithURL"]
+- !private ["PSs8Hashable", "defaultSessionConfiguration"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "isRefreshing"]
+- ["PSs8Hashable", "password"]
+- !private ["PSs8Hashable", "previousFailureCount"]
+- !private ["PSs8Hashable", "queryItems"]
+- ["PSs8Hashable", "refreshToken"]
+- !private ["PSs8Hashable", "resume"]
+- ["PSs8Hashable", "retries"]
+- ["PSs8Hashable", "serviceURL"]
+- !private ["PSs8Hashable", "statusCode"]
+- ["PSs8Hashable", "token"]
+- ["PSs8Hashable", "tokenURL"]
+- ["PSs8Hashable", "username"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "createWatsonError"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "previousFailureCount"]
+- !private ["PSo8NSCoding", "statusCode"]
+- !private ["PSo9NSCopying", "URL"]
+- !private ["PSo9NSCopying", "createWatsonError"]
+- !private ["PSo9NSCopying", "defaultSessionConfiguration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "queryItems"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "statusCode"]
+- !private ["CSo7NSError", "createWatsonError"]
+- !private ["CSo17NSHTTPURLResponse", "statusCode"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSNumber", "deinit"]
+- ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSHTTPURLResponse"]
+- ["CSo8NSObject", "NSURLAuthenticationChallenge"]
+- !private ["CSo8NSObject", "NSURLComponents"]
+- ["CSo8NSObject", "NSURLCredential"]
+- !private ["CSo8NSObject", "NSURLQueryItem"]
+- ["CSo8NSObject", "NSURLSession"]
+- ["CSo8NSObject", "NSURLSessionAuthChallengeDisposition"]
+- !private ["CSo8NSObject", "NSURLSessionConfiguration"]
+- ["CSo8NSObject", "NSURLSessionTask"]
+- !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "URLSession"]
+- ["CSo8NSObject", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "createWatsonError"]
+- !private ["CSo8NSObject", "dataTaskWithURL"]
+- !private ["CSo8NSObject", "defaultSessionConfiguration"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isRefreshing"]
+- ["CSo8NSObject", "password"]
+- !private ["CSo8NSObject", "previousFailureCount"]
+- !private ["CSo8NSObject", "queryItems"]
+- ["CSo8NSObject", "refreshToken"]
+- !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "retries"]
+- ["CSo8NSObject", "serviceURL"]
+- !private ["CSo8NSObject", "statusCode"]
+- ["CSo8NSObject", "token"]
+- ["CSo8NSObject", "tokenURL"]
+- ["CSo8NSObject", "username"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "NSError"]
+- !private ["PSo16NSObjectProtocol", "NSURLComponents"]
+- !private ["PSo16NSObjectProtocol", "NSURLCredential"]
+- !private ["PSo16NSObjectProtocol", "NSURLQueryItem"]
+- !private ["PSo16NSObjectProtocol", "NSURLSession"]
+- !private ["PSo16NSObjectProtocol", "NSURLSessionConfiguration"]
+- !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- ["PSo16NSObjectProtocol", "URLSession"]
+- ["PSo16NSObjectProtocol", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- !private ["PSo16NSObjectProtocol", "createWatsonError"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
+- !private ["PSo16NSObjectProtocol", "defaultSessionConfiguration"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isRefreshing"]
+- ["PSo16NSObjectProtocol", "password"]
+- !private ["PSo16NSObjectProtocol", "previousFailureCount"]
+- !private ["PSo16NSObjectProtocol", "queryItems"]
+- ["PSo16NSObjectProtocol", "refreshToken"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "retries"]
+- ["PSo16NSObjectProtocol", "serviceURL"]
+- !private ["PSo16NSObjectProtocol", "statusCode"]
+- ["PSo16NSObjectProtocol", "token"]
+- ["PSo16NSObjectProtocol", "tokenURL"]
+- ["PSo16NSObjectProtocol", "username"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "createWatsonError"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "previousFailureCount"]
+- !private ["PSo14NSSecureCoding", "statusCode"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo28NSURLAuthenticationChallenge", "previousFailureCount"]
+- !private ["CSo15NSURLComponents", "URL"]
+- !private ["CSo15NSURLComponents", "init"]
+- !private ["CSo15NSURLComponents", "queryItems"]
+- !private ["CSo15NSURLCredential", "init"]
+- !private ["OSC26NSURLCredentialPersistence", "None"]
+- !private ["CSo14NSURLQueryItem", "init"]
+- !private ["CSo13NSURLResponse", "statusCode"]
+- !private ["CSo12NSURLSession", "dataTaskWithURL"]
+- !private ["CSo12NSURLSession", "init"]
+- !private ["OSC36NSURLSessionAuthChallengeDisposition", "CancelAuthenticationChallenge"]
+- !private ["OSC36NSURLSessionAuthChallengeDisposition", "UseCredential"]
+- !private ["CSo25NSURLSessionConfiguration", "defaultSessionConfiguration"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["PSo20NSURLSessionDelegate", "NSError"]
+- !private ["PSo20NSURLSessionDelegate", "NSURLComponents"]
+- !private ["PSo20NSURLSessionDelegate", "NSURLCredential"]
+- !private ["PSo20NSURLSessionDelegate", "NSURLQueryItem"]
+- !private ["PSo20NSURLSessionDelegate", "NSURLSession"]
+- !private ["PSo20NSURLSessionDelegate", "NSURLSessionConfiguration"]
+- !private ["PSo20NSURLSessionDelegate", "NSUTF8StringEncoding"]
+- !private ["PSo20NSURLSessionDelegate", "String"]
+- ["PSo20NSURLSessionDelegate", "URLSession"]
+- ["PSo20NSURLSessionDelegate", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["PSo20NSURLSessionDelegate", "isRefreshing"]
+- !private ["PSo20NSURLSessionDelegate", "password"]
+- ["PSo20NSURLSessionDelegate", "refreshToken"]
+- ["PSo20NSURLSessionDelegate", "retries"]
+- !private ["PSo20NSURLSessionDelegate", "serviceURL"]
+- ["PSo20NSURLSessionDelegate", "token"]
+- !private ["PSo20NSURLSessionDelegate", "tokenURL"]
+- !private ["PSo20NSURLSessionDelegate", "username"]
+- ["PSo20NSURLSessionDelegate", ""]
+- !private ["CSo16NSURLSessionTask", "resume"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSError"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSURLComponents"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSURLCredential"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSURLQueryItem"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSURLSession"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSURLSessionConfiguration"]
+- !private ["PSo24NSURLSessionTaskDelegate", "NSUTF8StringEncoding"]
+- !private ["PSo24NSURLSessionTaskDelegate", "String"]
+- ["PSo24NSURLSessionTaskDelegate", "URLSession"]
+- ["PSo24NSURLSessionTaskDelegate", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["PSo24NSURLSessionTaskDelegate", "isRefreshing"]
+- !private ["PSo24NSURLSessionTaskDelegate", "password"]
+- ["PSo24NSURLSessionTaskDelegate", "refreshToken"]
+- ["PSo24NSURLSessionTaskDelegate", "retries"]
+- !private ["PSo24NSURLSessionTaskDelegate", "serviceURL"]
+- ["PSo24NSURLSessionTaskDelegate", "token"]
+- !private ["PSo24NSURLSessionTaskDelegate", "tokenURL"]
+- !private ["PSo24NSURLSessionTaskDelegate", "username"]
+- ["PSo24NSURLSessionTaskDelegate", ""]
+- !private ["CSo7NSValue", "deinit"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs16RawRepresentable", "CancelAuthenticationChallenge"]
+- !private ["PSs16RawRepresentable", "None"]
+- !private ["PSs16RawRepresentable", "UseCredential"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "URL"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "queryItems"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- "P20WatsonDeveloperCloud22AuthenticationStrategy"
+- "C20WatsonDeveloperCloud27BasicAuthenticationStrategy"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "CSo17NSHTTPURLResponse"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo28NSURLAuthenticationChallenge"
+- !private "CSo15NSURLComponents"
+- !private "CSo15NSURLCredential"
+- !private "OSC26NSURLCredentialPersistence"
+- !private "CSo14NSURLQueryItem"
+- !private "CSo13NSURLResponse"
+- !private "CSo12NSURLSession"
+- !private "OSC36NSURLSessionAuthChallengeDisposition"
+- !private "CSo25NSURLSessionConfiguration"
+- !private "CSo20NSURLSessionDataTask"
+- "PSo20NSURLSessionDelegate"
+- !private "CSo16NSURLSessionTask"
+- "PSo24NSURLSessionTaskDelegate"
+- !private "CSo7NSValue"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs12StaticString"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "4f285101949bf7ead4a0b38a7f666057"

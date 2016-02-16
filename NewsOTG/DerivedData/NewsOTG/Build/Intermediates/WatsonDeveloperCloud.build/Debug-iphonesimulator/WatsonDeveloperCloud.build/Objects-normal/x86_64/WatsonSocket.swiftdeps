@@ -1,0 +1,678 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "WatsonSocket"
+- "AudioUploadOperation"
+provides-nominal:
+- "C20WatsonDeveloperCloud12WatsonSocket"
+- "C20WatsonDeveloperCloud20AudioUploadOperation"
+provides-member:
+- ["C20WatsonDeveloperCloud12WatsonSocket", ""]
+- ["C20WatsonDeveloperCloud20AudioUploadOperation", ""]
+provides-dynamic-lookup:
+- "main"
+depends-top-level:
+- !private "Mapper"
+- "WebSocketDelegate"
+- "AuthenticationStrategy"
+- !private "=="
+- "WatsonSocketDelegate"
+- "WatsonSocket"
+- "NSOperationQueue"
+- "WebSocket"
+- "StringLiteralType"
+- !private "SpeechToText"
+- "MediaType"
+- "AudioUploadOperation"
+- !private ">"
+- "NSError"
+- "NSData"
+- !private "Log"
+- "NSOperation"
+- "BooleanLiteralType"
+- "Bool"
+- "String"
+- !private "NSURL"
+depends-member:
+- !private ["PSs9AnyObject", "AudioUploadOperation"]
+- !private ["PSs9AnyObject", "Log"]
+- !private ["PSs9AnyObject", "Mapper"]
+- !private ["PSs9AnyObject", "NSOperationQueue"]
+- !private ["PSs9AnyObject", "NSURL"]
+- ["PSs9AnyObject", "SpeechToTextResponse"]
+- !private ["PSs9AnyObject", "WebSocket"]
+- !private ["PSs9AnyObject", "addOperation"]
+- !private ["PSs9AnyObject", "audioUploadQueue"]
+- !private ["PSs9AnyObject", "authStrategy"]
+- !private ["PSs9AnyObject", "cancelled"]
+- !private ["PSs9AnyObject", "code"]
+- !private ["PSs9AnyObject", "connect"]
+- !private ["PSs9AnyObject", "connectWebsocket"]
+- ["PSs9AnyObject", "data"]
+- !private ["PSs9AnyObject", "delegate"]
+- !private ["PSs9AnyObject", "disconnect"]
+- !private ["PSs9AnyObject", "error"]
+- !private ["PSs9AnyObject", "format"]
+- !private ["PSs9AnyObject", "headers"]
+- !private ["PSs9AnyObject", "info"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isListening"]
+- !private ["PSs9AnyObject", "length"]
+- !private ["PSs9AnyObject", "localizedDescription"]
+- ["PSs9AnyObject", "main"]
+- !private ["PSs9AnyObject", "map"]
+- !private ["PSs9AnyObject", "maxConcurrentOperationCount"]
+- !private ["PSs9AnyObject", "name"]
+- !private ["PSs9AnyObject", "sharedLogger"]
+- !private ["PSs9AnyObject", "socket"]
+- !private ["PSs9AnyObject", "suspended"]
+- !private ["PSs9AnyObject", "url"]
+- !private ["PSs9AnyObject", "warning"]
+- ["PSs9AnyObject", "watsonSocket"]
+- ["PSs9AnyObject", "websocketDidConnect"]
+- ["PSs9AnyObject", "websocketDidDisconnect"]
+- ["PSs9AnyObject", "websocketDidReceiveData"]
+- ["PSs9AnyObject", "websocketDidReceiveMessage"]
+- !private ["PSs9AnyObject", "writeData"]
+- !private ["PSs9AnyObject", "writeString"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["C20WatsonDeveloperCloud20AudioUploadOperation", "Log"]
+- ["C20WatsonDeveloperCloud20AudioUploadOperation", "NSData"]
+- ["C20WatsonDeveloperCloud20AudioUploadOperation", "WatsonSocket"]
+- !private ["C20WatsonDeveloperCloud20AudioUploadOperation", "cancelled"]
+- !private ["C20WatsonDeveloperCloud20AudioUploadOperation", "data"]
+- ["C20WatsonDeveloperCloud20AudioUploadOperation", "deinit"]
+- ["C20WatsonDeveloperCloud20AudioUploadOperation", "init"]
+- ["C20WatsonDeveloperCloud20AudioUploadOperation", "main"]
+- !private ["C20WatsonDeveloperCloud20AudioUploadOperation", "watsonSocket"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "refreshToken"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "token"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Log"]
+- !private ["PSs11CVarArgType", "addOperation"]
+- !private ["PSs11CVarArgType", "cancelled"]
+- !private ["PSs11CVarArgType", "code"]
+- !private ["PSs11CVarArgType", "connect"]
+- ["PSs11CVarArgType", "data"]
+- !private ["PSs11CVarArgType", "delegate"]
+- !private ["PSs11CVarArgType", "disconnect"]
+- !private ["PSs11CVarArgType", "headers"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "length"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
+- ["PSs11CVarArgType", "main"]
+- !private ["PSs11CVarArgType", "maxConcurrentOperationCount"]
+- !private ["PSs11CVarArgType", "name"]
+- !private ["PSs11CVarArgType", "suspended"]
+- ["PSs11CVarArgType", "watsonSocket"]
+- !private ["PSs11CVarArgType", "writeData"]
+- !private ["PSs11CVarArgType", "writeString"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "error"]
+- !private ["PSs28CustomDebugStringConvertible", "info"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "warning"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Log"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addOperation"]
+- !private ["PSs23CustomStringConvertible", "cancelled"]
+- !private ["PSs23CustomStringConvertible", "code"]
+- !private ["PSs23CustomStringConvertible", "connect"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "data"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- !private ["PSs23CustomStringConvertible", "disconnect"]
+- !private ["PSs23CustomStringConvertible", "headers"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "length"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- ["PSs23CustomStringConvertible", "main"]
+- !private ["PSs23CustomStringConvertible", "maxConcurrentOperationCount"]
+- !private ["PSs23CustomStringConvertible", "name"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "suspended"]
+- ["PSs23CustomStringConvertible", "watsonSocket"]
+- !private ["PSs23CustomStringConvertible", "writeData"]
+- !private ["PSs23CustomStringConvertible", "writeString"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "Log"]
+- ["PSs9Equatable", "OPUS"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addOperation"]
+- !private ["PSs9Equatable", "cancelled"]
+- !private ["PSs9Equatable", "code"]
+- !private ["PSs9Equatable", "connect"]
+- ["PSs9Equatable", "data"]
+- !private ["PSs9Equatable", "delegate"]
+- !private ["PSs9Equatable", "disconnect"]
+- !private ["PSs9Equatable", "headers"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "length"]
+- !private ["PSs9Equatable", "localizedDescription"]
+- ["PSs9Equatable", "main"]
+- !private ["PSs9Equatable", "maxConcurrentOperationCount"]
+- !private ["PSs9Equatable", "name"]
+- !private ["PSs9Equatable", "rawValue"]
+- !private ["PSs9Equatable", "suspended"]
+- ["PSs9Equatable", "watsonSocket"]
+- !private ["PSs9Equatable", "writeData"]
+- !private ["PSs9Equatable", "writeString"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "code"]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "Log"]
+- ["PSs8Hashable", "OPUS"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addOperation"]
+- !private ["PSs8Hashable", "cancelled"]
+- !private ["PSs8Hashable", "code"]
+- !private ["PSs8Hashable", "connect"]
+- ["PSs8Hashable", "data"]
+- !private ["PSs8Hashable", "delegate"]
+- !private ["PSs8Hashable", "disconnect"]
+- !private ["PSs8Hashable", "headers"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "length"]
+- !private ["PSs8Hashable", "localizedDescription"]
+- ["PSs8Hashable", "main"]
+- !private ["PSs8Hashable", "maxConcurrentOperationCount"]
+- !private ["PSs8Hashable", "name"]
+- !private ["PSs8Hashable", "rawValue"]
+- !private ["PSs8Hashable", "suspended"]
+- ["PSs8Hashable", "watsonSocket"]
+- !private ["PSs8Hashable", "writeData"]
+- !private ["PSs8Hashable", "writeString"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C20WatsonDeveloperCloud3Log", "sharedLogger"]
+- !private ["P12ObjectMapper8Mappable", "results"]
+- !private ["P12ObjectMapper8Mappable", "state"]
+- !private ["P12ObjectMapper8Mappable", "transcription"]
+- !private ["C12ObjectMapper6Mapper", "init"]
+- !private ["C12ObjectMapper6Mapper", "map"]
+- ["O20WatsonDeveloperCloud9MediaType", "OPUS"]
+- !private ["O20WatsonDeveloperCloud9MediaType", "deinit"]
+- !private ["O20WatsonDeveloperCloud9MediaType", "rawValue"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- !private ["PSo8NSCoding", "code"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "length"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo9NSCopying", "code"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "length"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["CSo6NSData", "length"]
+- !private ["CSo7NSError", "code"]
+- !private ["CSo7NSError", "localizedDescription"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "length"]
+- !private ["CSo8NSObject", "Log"]
+- ["CSo8NSObject", "NSData"]
+- ["CSo8NSObject", "WatsonSocket"]
+- !private ["CSo8NSObject", "addOperation"]
+- !private ["CSo8NSObject", "cancelled"]
+- !private ["CSo8NSObject", "code"]
+- !private ["CSo8NSObject", "connect"]
+- ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "disconnect"]
+- !private ["CSo8NSObject", "headers"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "length"]
+- !private ["CSo8NSObject", "localizedDescription"]
+- ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "maxConcurrentOperationCount"]
+- !private ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "suspended"]
+- ["CSo8NSObject", "watsonSocket"]
+- !private ["CSo8NSObject", "writeData"]
+- !private ["CSo8NSObject", "writeString"]
+- !private ["PSo16NSObjectProtocol", "Log"]
+- !private ["PSo16NSObjectProtocol", "addOperation"]
+- !private ["PSo16NSObjectProtocol", "cancelled"]
+- !private ["PSo16NSObjectProtocol", "code"]
+- !private ["PSo16NSObjectProtocol", "connect"]
+- ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "disconnect"]
+- !private ["PSo16NSObjectProtocol", "headers"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "length"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "maxConcurrentOperationCount"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "suspended"]
+- ["PSo16NSObjectProtocol", "watsonSocket"]
+- !private ["PSo16NSObjectProtocol", "writeData"]
+- !private ["PSo16NSObjectProtocol", "writeString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo11NSOperation", "Log"]
+- ["CSo11NSOperation", "NSData"]
+- ["CSo11NSOperation", "WatsonSocket"]
+- !private ["CSo11NSOperation", "cancelled"]
+- ["CSo11NSOperation", "data"]
+- ["CSo11NSOperation", "init"]
+- ["CSo11NSOperation", "main"]
+- ["CSo11NSOperation", "watsonSocket"]
+- ["CSo11NSOperation", ""]
+- !private ["CSo16NSOperationQueue", "addOperation"]
+- !private ["CSo16NSOperationQueue", "init"]
+- !private ["CSo16NSOperationQueue", "maxConcurrentOperationCount"]
+- !private ["CSo16NSOperationQueue", "name"]
+- !private ["CSo16NSOperationQueue", "suspended"]
+- !private ["PSo14NSSecureCoding", "code"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "length"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo16NSStreamDelegate", "connect"]
+- !private ["PSo16NSStreamDelegate", "delegate"]
+- !private ["PSo16NSStreamDelegate", "disconnect"]
+- !private ["PSo16NSStreamDelegate", "headers"]
+- !private ["PSo16NSStreamDelegate", "init"]
+- !private ["PSo16NSStreamDelegate", "writeData"]
+- !private ["PSo16NSStreamDelegate", "writeString"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- ["PSs16RawRepresentable", "OPUS"]
+- !private ["PSs16RawRepresentable", "rawValue"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- ["C20WatsonDeveloperCloud12SpeechToText", "SpeechToTextResponse"]
+- ["VC20WatsonDeveloperCloud12SpeechToText20SpeechToTextResponse", "deinit"]
+- !private ["VC20WatsonDeveloperCloud12SpeechToText20SpeechToTextResponse", "results"]
+- !private ["VC20WatsonDeveloperCloud12SpeechToText20SpeechToTextResponse", "state"]
+- !private ["VC20WatsonDeveloperCloud12SpeechToText20SpeechToTextResponse", "transcription"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- ["P20WatsonDeveloperCloud13WatsonService", "SpeechToTextResponse"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "AudioUploadOperation"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "AuthenticationStrategy"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "Bool"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "Log"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "Mapper"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "MediaType"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "NSData"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "NSError"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "NSOperationQueue"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "NSURL"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "SpeechToText"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "String"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "WatsonSocketDelegate"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "WebSocket"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "audioUploadQueue"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "authStrategy"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "connectWebsocket"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "deinit"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "delegate"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "disconnect"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "format"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "init"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "isListening"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "send"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "serviceURL"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "serviceURLFull"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "socket"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "tokenURL"]
+- !private ["C20WatsonDeveloperCloud12WatsonSocket", "url"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "websocketDidConnect"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "websocketDidDisconnect"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "websocketDidReceiveData"]
+- ["C20WatsonDeveloperCloud12WatsonSocket", "websocketDidReceiveMessage"]
+- ["P20WatsonDeveloperCloud20WatsonSocketDelegate", "SpeechToTextResponse"]
+- !private ["P20WatsonDeveloperCloud20WatsonSocketDelegate", "onConnected"]
+- !private ["P20WatsonDeveloperCloud20WatsonSocketDelegate", "onDisconnected"]
+- !private ["P20WatsonDeveloperCloud20WatsonSocketDelegate", "onListening"]
+- !private ["P20WatsonDeveloperCloud20WatsonSocketDelegate", "onMessageReceived"]
+- !private ["C10Starscream9WebSocket", "connect"]
+- !private ["C10Starscream9WebSocket", "delegate"]
+- !private ["C10Starscream9WebSocket", "disconnect"]
+- !private ["C10Starscream9WebSocket", "headers"]
+- !private ["C10Starscream9WebSocket", "init"]
+- !private ["C10Starscream9WebSocket", "writeData"]
+- !private ["C10Starscream9WebSocket", "writeString"]
+- !private ["P10Starscream17WebSocketDelegate", "AudioUploadOperation"]
+- !private ["P10Starscream17WebSocketDelegate", "Log"]
+- !private ["P10Starscream17WebSocketDelegate", "Mapper"]
+- !private ["P10Starscream17WebSocketDelegate", "NSOperationQueue"]
+- !private ["P10Starscream17WebSocketDelegate", "NSURL"]
+- !private ["P10Starscream17WebSocketDelegate", "WebSocket"]
+- !private ["P10Starscream17WebSocketDelegate", "audioUploadQueue"]
+- !private ["P10Starscream17WebSocketDelegate", "authStrategy"]
+- !private ["P10Starscream17WebSocketDelegate", "connectWebsocket"]
+- !private ["P10Starscream17WebSocketDelegate", "delegate"]
+- !private ["P10Starscream17WebSocketDelegate", "format"]
+- !private ["P10Starscream17WebSocketDelegate", "isListening"]
+- !private ["P10Starscream17WebSocketDelegate", "socket"]
+- !private ["P10Starscream17WebSocketDelegate", "url"]
+- ["P10Starscream17WebSocketDelegate", "websocketDidConnect"]
+- ["P10Starscream17WebSocketDelegate", "websocketDidDisconnect"]
+- ["P10Starscream17WebSocketDelegate", "websocketDidReceiveData"]
+- ["P10Starscream17WebSocketDelegate", "websocketDidReceiveMessage"]
+- ["P10Starscream17WebSocketDelegate", ""]
+- !private ["C9XCGLogger9XCGLogger", "error"]
+- !private ["C9XCGLogger9XCGLogger", "info"]
+- !private ["C9XCGLogger9XCGLogger", "warning"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- "C20WatsonDeveloperCloud20AudioUploadOperation"
+- !private "P20WatsonDeveloperCloud22AuthenticationStrategy"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C20WatsonDeveloperCloud3Log"
+- !private "P12ObjectMapper8Mappable"
+- !private "C12ObjectMapper6Mapper"
+- "O20WatsonDeveloperCloud9MediaType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo7NSError"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSOperation"
+- !private "CSo16NSOperationQueue"
+- !private "PSo14NSSecureCoding"
+- !private "PSo16NSStreamDelegate"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- "C20WatsonDeveloperCloud12SpeechToText"
+- "VC20WatsonDeveloperCloud12SpeechToText20SpeechToTextResponse"
+- !private "VSs12StaticString"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "P20WatsonDeveloperCloud13WatsonService"
+- "C20WatsonDeveloperCloud12WatsonSocket"
+- "P20WatsonDeveloperCloud20WatsonSocketDelegate"
+- !private "C10Starscream9WebSocket"
+- "P10Starscream17WebSocketDelegate"
+- !private "C9XCGLogger9XCGLogger"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "4b3561bd591b3e3058d36f9498c0b49c"

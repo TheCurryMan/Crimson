@@ -1,0 +1,1403 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CategoriesTableViewCell"
+- "CategoriesViewController"
+provides-nominal:
+- "C7NewsOTG23CategoriesTableViewCell"
+- "C7NewsOTG24CategoriesViewController"
+provides-member:
+- ["C7NewsOTG23CategoriesTableViewCell", ""]
+- ["C7NewsOTG24CategoriesViewController", ""]
+provides-dynamic-lookup:
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "topStories"
+- "didReceiveMemoryWarning"
+- "getData"
+- "categories"
+- "source"
+- "Business"
+- "Health"
+- "World"
+- "link"
+- "Tech"
+- "bgimage"
+- "category"
+- "Politics"
+- "prepareForSegue"
+- "viewDidLoad"
+depends-top-level:
+- "UITableViewCell"
+- !private "~="
+- "CategoriesTableViewCell"
+- !private "=="
+- "UILabel"
+- "UIImageView"
+- "AnyObject"
+- "CGFloat"
+- !private "UIImage"
+- !private "ArticlesViewController"
+- "UITableViewDelegate"
+- "UIViewController"
+- "UITableViewDataSource"
+- "Array"
+- "NSIndexPath"
+- "String"
+- "StringLiteralType"
+- "UIStoryboardSegue"
+- "CategoriesViewController"
+- !private "print"
+- "UITableView"
+- "Int"
+- !private "+"
+- !private "UINib"
+depends-member:
+- ["PSs9AnyObject", "Business"]
+- ["PSs9AnyObject", "Health"]
+- ["PSs9AnyObject", "Politics"]
+- ["PSs9AnyObject", "Tech"]
+- !private ["PSs9AnyObject", "UIImage"]
+- !private ["PSs9AnyObject", "UINib"]
+- ["PSs9AnyObject", "World"]
+- ["PSs9AnyObject", "bgimage"]
+- ["PSs9AnyObject", "categories"]
+- ["PSs9AnyObject", "category"]
+- !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs9AnyObject", "destinationViewController"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "getData"]
+- !private ["PSs9AnyObject", "identifier"]
+- !private ["PSs9AnyObject", "image"]
+- ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "link"]
+- ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
+- ["PSs9AnyObject", "prepareForSegue"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "registerNib"]
+- !private ["PSs9AnyObject", "row"]
+- ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
+- ["PSs9AnyObject", "scrollViewDidEndDragging"]
+- ["PSs9AnyObject", "scrollViewDidEndScrollingAnimation"]
+- ["PSs9AnyObject", "scrollViewDidEndZooming"]
+- ["PSs9AnyObject", "scrollViewDidScroll"]
+- ["PSs9AnyObject", "scrollViewDidScrollToTop"]
+- ["PSs9AnyObject", "scrollViewDidZoom"]
+- ["PSs9AnyObject", "scrollViewShouldScrollToTop"]
+- ["PSs9AnyObject", "scrollViewWillBeginDecelerating"]
+- ["PSs9AnyObject", "scrollViewWillBeginDragging"]
+- ["PSs9AnyObject", "scrollViewWillBeginZooming"]
+- ["PSs9AnyObject", "scrollViewWillEndDragging"]
+- ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
+- ["PSs9AnyObject", "source"]
+- ["PSs9AnyObject", "tableView"]
+- !private ["PSs9AnyObject", "tag"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "topStories"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", "viewForZoomingInScrollView"]
+- ["PSs9AnyObject", ""]
+- ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["C7NewsOTG22ArticlesViewController", "link"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- ["PSs11CVarArgType", "Business"]
+- !private ["PSs11CVarArgType", "Distance"]
+- ["PSs11CVarArgType", "Health"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- ["PSs11CVarArgType", "Politics"]
+- ["PSs11CVarArgType", "Tech"]
+- !private ["PSs11CVarArgType", "UIImage"]
+- !private ["PSs11CVarArgType", "UINib"]
+- ["PSs11CVarArgType", "World"]
+- ["PSs11CVarArgType", "bgimage"]
+- ["PSs11CVarArgType", "categories"]
+- ["PSs11CVarArgType", "category"]
+- !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs11CVarArgType", "destinationViewController"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "getData"]
+- !private ["PSs11CVarArgType", "identifier"]
+- !private ["PSs11CVarArgType", "image"]
+- ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "link"]
+- ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
+- ["PSs11CVarArgType", "prepareForSegue"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "registerNib"]
+- !private ["PSs11CVarArgType", "row"]
+- ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
+- ["PSs11CVarArgType", "scrollViewDidEndDragging"]
+- ["PSs11CVarArgType", "scrollViewDidEndScrollingAnimation"]
+- ["PSs11CVarArgType", "scrollViewDidEndZooming"]
+- ["PSs11CVarArgType", "scrollViewDidScroll"]
+- ["PSs11CVarArgType", "scrollViewDidScrollToTop"]
+- ["PSs11CVarArgType", "scrollViewDidZoom"]
+- ["PSs11CVarArgType", "scrollViewShouldScrollToTop"]
+- ["PSs11CVarArgType", "scrollViewWillBeginDecelerating"]
+- ["PSs11CVarArgType", "scrollViewWillBeginDragging"]
+- ["PSs11CVarArgType", "scrollViewWillBeginZooming"]
+- ["PSs11CVarArgType", "scrollViewWillEndDragging"]
+- ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
+- ["PSs11CVarArgType", "source"]
+- ["PSs11CVarArgType", "tableView"]
+- !private ["PSs11CVarArgType", "tag"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "topStories"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", "viewForZoomingInScrollView"]
+- ["PSs11CVarArgType", ""]
+- ["C7NewsOTG23CategoriesTableViewCell", "UIImageView"]
+- ["C7NewsOTG23CategoriesTableViewCell", "UILabel"]
+- ["C7NewsOTG23CategoriesTableViewCell", "bgimage"]
+- ["C7NewsOTG23CategoriesTableViewCell", "category"]
+- ["C7NewsOTG23CategoriesTableViewCell", "deinit"]
+- ["C7NewsOTG23CategoriesTableViewCell", "init"]
+- !private ["C7NewsOTG23CategoriesTableViewCell", "tag"]
+- ["C7NewsOTG24CategoriesViewController", "AnyObject"]
+- !private ["C7NewsOTG24CategoriesViewController", "ArticlesViewController"]
+- ["C7NewsOTG24CategoriesViewController", "Business"]
+- ["C7NewsOTG24CategoriesViewController", "CGFloat"]
+- !private ["C7NewsOTG24CategoriesViewController", "CategoriesTableViewCell"]
+- ["C7NewsOTG24CategoriesViewController", "Health"]
+- ["C7NewsOTG24CategoriesViewController", "Int"]
+- ["C7NewsOTG24CategoriesViewController", "NSIndexPath"]
+- ["C7NewsOTG24CategoriesViewController", "Politics"]
+- ["C7NewsOTG24CategoriesViewController", "String"]
+- ["C7NewsOTG24CategoriesViewController", "Tech"]
+- !private ["C7NewsOTG24CategoriesViewController", "UIImage"]
+- !private ["C7NewsOTG24CategoriesViewController", "UINib"]
+- ["C7NewsOTG24CategoriesViewController", "UIStoryboardSegue"]
+- ["C7NewsOTG24CategoriesViewController", "UITableView"]
+- ["C7NewsOTG24CategoriesViewController", "UITableViewCell"]
+- ["C7NewsOTG24CategoriesViewController", "World"]
+- ["C7NewsOTG24CategoriesViewController", "categories"]
+- ["C7NewsOTG24CategoriesViewController", "deinit"]
+- ["C7NewsOTG24CategoriesViewController", "didReceiveMemoryWarning"]
+- ["C7NewsOTG24CategoriesViewController", "getData"]
+- ["C7NewsOTG24CategoriesViewController", "indexPathForPreferredFocusedViewInTableView"]
+- ["C7NewsOTG24CategoriesViewController", "init"]
+- ["C7NewsOTG24CategoriesViewController", "link"]
+- ["C7NewsOTG24CategoriesViewController", "numberOfSectionsInTableView"]
+- !private ["C7NewsOTG24CategoriesViewController", "performSegueWithIdentifier"]
+- ["C7NewsOTG24CategoriesViewController", "prepareForSegue"]
+- !private ["C7NewsOTG24CategoriesViewController", "print"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidEndDecelerating"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidEndDragging"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidEndScrollingAnimation"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidEndZooming"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidScroll"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidScrollToTop"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewDidZoom"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewShouldScrollToTop"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewWillBeginDecelerating"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewWillBeginDragging"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewWillBeginZooming"]
+- ["C7NewsOTG24CategoriesViewController", "scrollViewWillEndDragging"]
+- ["C7NewsOTG24CategoriesViewController", "sectionIndexTitlesForTableView"]
+- ["C7NewsOTG24CategoriesViewController", "source"]
+- ["C7NewsOTG24CategoriesViewController", "tableView"]
+- ["C7NewsOTG24CategoriesViewController", "topStories"]
+- ["C7NewsOTG24CategoriesViewController", "viewDidLoad"]
+- ["C7NewsOTG24CategoriesViewController", "viewForZoomingInScrollView"]
+- ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "Business"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- ["PSs23CustomStringConvertible", "Health"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- ["PSs23CustomStringConvertible", "Politics"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- ["PSs23CustomStringConvertible", "Tech"]
+- !private ["PSs23CustomStringConvertible", "UIImage"]
+- !private ["PSs23CustomStringConvertible", "UINib"]
+- ["PSs23CustomStringConvertible", "World"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "bgimage"]
+- ["PSs23CustomStringConvertible", "categories"]
+- ["PSs23CustomStringConvertible", "category"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "destinationViewController"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "getData"]
+- !private ["PSs23CustomStringConvertible", "identifier"]
+- !private ["PSs23CustomStringConvertible", "image"]
+- ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "link"]
+- ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
+- ["PSs23CustomStringConvertible", "prepareForSegue"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "registerNib"]
+- !private ["PSs23CustomStringConvertible", "row"]
+- ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
+- ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
+- ["PSs23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
+- ["PSs23CustomStringConvertible", "scrollViewDidEndZooming"]
+- ["PSs23CustomStringConvertible", "scrollViewDidScroll"]
+- ["PSs23CustomStringConvertible", "scrollViewDidScrollToTop"]
+- ["PSs23CustomStringConvertible", "scrollViewDidZoom"]
+- ["PSs23CustomStringConvertible", "scrollViewShouldScrollToTop"]
+- ["PSs23CustomStringConvertible", "scrollViewWillBeginDecelerating"]
+- ["PSs23CustomStringConvertible", "scrollViewWillBeginDragging"]
+- ["PSs23CustomStringConvertible", "scrollViewWillBeginZooming"]
+- ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
+- ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- ["PSs23CustomStringConvertible", "source"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "tableView"]
+- !private ["PSs23CustomStringConvertible", "tag"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "topStories"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- ["PSs9Equatable", "Business"]
+- !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "Health"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- ["PSs9Equatable", "Politics"]
+- ["PSs9Equatable", "Tech"]
+- !private ["PSs9Equatable", "UIImage"]
+- !private ["PSs9Equatable", "UINib"]
+- ["PSs9Equatable", "World"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "bgimage"]
+- ["PSs9Equatable", "categories"]
+- ["PSs9Equatable", "category"]
+- !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs9Equatable", "destinationViewController"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "getData"]
+- !private ["PSs9Equatable", "identifier"]
+- !private ["PSs9Equatable", "image"]
+- ["PSs9Equatable", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "link"]
+- ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "performSegueWithIdentifier"]
+- ["PSs9Equatable", "prepareForSegue"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "registerNib"]
+- !private ["PSs9Equatable", "row"]
+- ["PSs9Equatable", "scrollViewDidEndDecelerating"]
+- ["PSs9Equatable", "scrollViewDidEndDragging"]
+- ["PSs9Equatable", "scrollViewDidEndScrollingAnimation"]
+- ["PSs9Equatable", "scrollViewDidEndZooming"]
+- ["PSs9Equatable", "scrollViewDidScroll"]
+- ["PSs9Equatable", "scrollViewDidScrollToTop"]
+- ["PSs9Equatable", "scrollViewDidZoom"]
+- ["PSs9Equatable", "scrollViewShouldScrollToTop"]
+- ["PSs9Equatable", "scrollViewWillBeginDecelerating"]
+- ["PSs9Equatable", "scrollViewWillBeginDragging"]
+- ["PSs9Equatable", "scrollViewWillBeginZooming"]
+- ["PSs9Equatable", "scrollViewWillEndDragging"]
+- ["PSs9Equatable", "sectionIndexTitlesForTableView"]
+- ["PSs9Equatable", "source"]
+- ["PSs9Equatable", "tableView"]
+- !private ["PSs9Equatable", "tag"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "topStories"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", "viewForZoomingInScrollView"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- ["PSs8Hashable", "Business"]
+- !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "Health"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- ["PSs8Hashable", "Politics"]
+- ["PSs8Hashable", "Tech"]
+- !private ["PSs8Hashable", "UIImage"]
+- !private ["PSs8Hashable", "UINib"]
+- ["PSs8Hashable", "World"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "bgimage"]
+- ["PSs8Hashable", "categories"]
+- ["PSs8Hashable", "category"]
+- !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs8Hashable", "destinationViewController"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "getData"]
+- !private ["PSs8Hashable", "identifier"]
+- !private ["PSs8Hashable", "image"]
+- ["PSs8Hashable", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "link"]
+- ["PSs8Hashable", "numberOfSectionsInTableView"]
+- !private ["PSs8Hashable", "performSegueWithIdentifier"]
+- ["PSs8Hashable", "prepareForSegue"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "registerNib"]
+- !private ["PSs8Hashable", "row"]
+- ["PSs8Hashable", "scrollViewDidEndDecelerating"]
+- ["PSs8Hashable", "scrollViewDidEndDragging"]
+- ["PSs8Hashable", "scrollViewDidEndScrollingAnimation"]
+- ["PSs8Hashable", "scrollViewDidEndZooming"]
+- ["PSs8Hashable", "scrollViewDidScroll"]
+- ["PSs8Hashable", "scrollViewDidScrollToTop"]
+- ["PSs8Hashable", "scrollViewDidZoom"]
+- ["PSs8Hashable", "scrollViewShouldScrollToTop"]
+- ["PSs8Hashable", "scrollViewWillBeginDecelerating"]
+- ["PSs8Hashable", "scrollViewWillBeginDragging"]
+- ["PSs8Hashable", "scrollViewWillBeginZooming"]
+- ["PSs8Hashable", "scrollViewWillEndDragging"]
+- ["PSs8Hashable", "sectionIndexTitlesForTableView"]
+- ["PSs8Hashable", "source"]
+- ["PSs8Hashable", "tableView"]
+- !private ["PSs8Hashable", "tag"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "topStories"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", "viewForZoomingInScrollView"]
+- ["PSs8Hashable", ""]
+- ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- ["PSo8NSCoding", "Business"]
+- ["PSo8NSCoding", "Health"]
+- ["PSo8NSCoding", "Politics"]
+- ["PSo8NSCoding", "Tech"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UINib"]
+- ["PSo8NSCoding", "World"]
+- ["PSo8NSCoding", "bgimage"]
+- ["PSo8NSCoding", "categories"]
+- ["PSo8NSCoding", "category"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "getData"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "link"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- ["PSo8NSCoding", "prepareForSegue"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "registerNib"]
+- !private ["PSo8NSCoding", "row"]
+- ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
+- ["PSo8NSCoding", "scrollViewDidEndDragging"]
+- ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
+- ["PSo8NSCoding", "scrollViewDidEndZooming"]
+- ["PSo8NSCoding", "scrollViewDidScroll"]
+- ["PSo8NSCoding", "scrollViewDidScrollToTop"]
+- ["PSo8NSCoding", "scrollViewDidZoom"]
+- ["PSo8NSCoding", "scrollViewShouldScrollToTop"]
+- ["PSo8NSCoding", "scrollViewWillBeginDecelerating"]
+- ["PSo8NSCoding", "scrollViewWillBeginDragging"]
+- ["PSo8NSCoding", "scrollViewWillBeginZooming"]
+- ["PSo8NSCoding", "scrollViewWillEndDragging"]
+- ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- ["PSo8NSCoding", "source"]
+- ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "tag"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "topStories"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewForZoomingInScrollView"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "row"]
+- ["PSo26NSExtensionRequestHandling", "Business"]
+- ["PSo26NSExtensionRequestHandling", "Health"]
+- ["PSo26NSExtensionRequestHandling", "Politics"]
+- ["PSo26NSExtensionRequestHandling", "Tech"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UINib"]
+- ["PSo26NSExtensionRequestHandling", "World"]
+- ["PSo26NSExtensionRequestHandling", "categories"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "getData"]
+- ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "link"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidEndZooming"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidScroll"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidScrollToTop"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewDidZoom"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewShouldScrollToTop"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginDecelerating"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginDragging"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginZooming"]
+- ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
+- ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- ["PSo26NSExtensionRequestHandling", "source"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "topStories"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo8NSNumber", "deinit"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "ArticlesViewController"]
+- ["CSo8NSObject", "Business"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CategoriesTableViewCell"]
+- ["CSo8NSObject", "Health"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "Politics"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Tech"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "World"]
+- ["CSo8NSObject", "bgimage"]
+- ["CSo8NSObject", "categories"]
+- ["CSo8NSObject", "category"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo8NSObject", "destinationViewController"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "getData"]
+- !private ["CSo8NSObject", "identifier"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "link"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- ["CSo8NSObject", "prepareForSegue"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "registerNib"]
+- !private ["CSo8NSObject", "row"]
+- ["CSo8NSObject", "scrollViewDidEndDecelerating"]
+- ["CSo8NSObject", "scrollViewDidEndDragging"]
+- ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
+- ["CSo8NSObject", "scrollViewDidEndZooming"]
+- ["CSo8NSObject", "scrollViewDidScroll"]
+- ["CSo8NSObject", "scrollViewDidScrollToTop"]
+- ["CSo8NSObject", "scrollViewDidZoom"]
+- ["CSo8NSObject", "scrollViewShouldScrollToTop"]
+- ["CSo8NSObject", "scrollViewWillBeginDecelerating"]
+- ["CSo8NSObject", "scrollViewWillBeginDragging"]
+- ["CSo8NSObject", "scrollViewWillBeginZooming"]
+- ["CSo8NSObject", "scrollViewWillEndDragging"]
+- ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- ["CSo8NSObject", "source"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "tag"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "topStories"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", "Business"]
+- ["PSo16NSObjectProtocol", "Health"]
+- ["PSo16NSObjectProtocol", "Politics"]
+- ["PSo16NSObjectProtocol", "Tech"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UINib"]
+- ["PSo16NSObjectProtocol", "World"]
+- ["PSo16NSObjectProtocol", "bgimage"]
+- ["PSo16NSObjectProtocol", "categories"]
+- ["PSo16NSObjectProtocol", "category"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "destinationViewController"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "getData"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "link"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "registerNib"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndZooming"]
+- ["PSo16NSObjectProtocol", "scrollViewDidScroll"]
+- ["PSo16NSObjectProtocol", "scrollViewDidScrollToTop"]
+- ["PSo16NSObjectProtocol", "scrollViewDidZoom"]
+- ["PSo16NSObjectProtocol", "scrollViewShouldScrollToTop"]
+- ["PSo16NSObjectProtocol", "scrollViewWillBeginDecelerating"]
+- ["PSo16NSObjectProtocol", "scrollViewWillBeginDragging"]
+- ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
+- ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
+- ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- ["PSo16NSObjectProtocol", "source"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "tag"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "topStories"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo7NSValue", "deinit"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- ["PSo29UIAccessibilityIdentification", "bgimage"]
+- ["PSo29UIAccessibilityIdentification", "category"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "registerNib"]
+- !private ["PSo29UIAccessibilityIdentification", "tag"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "bgimage"]
+- ["PSo12UIAppearance", "category"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "registerNib"]
+- !private ["PSo12UIAppearance", "tag"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "Business"]
+- ["PSo21UIAppearanceContainer", "Health"]
+- ["PSo21UIAppearanceContainer", "Politics"]
+- ["PSo21UIAppearanceContainer", "Tech"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UINib"]
+- ["PSo21UIAppearanceContainer", "World"]
+- ["PSo21UIAppearanceContainer", "bgimage"]
+- ["PSo21UIAppearanceContainer", "categories"]
+- ["PSo21UIAppearanceContainer", "category"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "getData"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "link"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "registerNib"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidEndZooming"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidScroll"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidScrollToTop"]
+- ["PSo21UIAppearanceContainer", "scrollViewDidZoom"]
+- ["PSo21UIAppearanceContainer", "scrollViewShouldScrollToTop"]
+- ["PSo21UIAppearanceContainer", "scrollViewWillBeginDecelerating"]
+- ["PSo21UIAppearanceContainer", "scrollViewWillBeginDragging"]
+- ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
+- ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
+- ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- ["PSo21UIAppearanceContainer", "source"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "tag"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "topStories"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Business"]
+- ["PSo18UIContentContainer", "Health"]
+- ["PSo18UIContentContainer", "Politics"]
+- ["PSo18UIContentContainer", "Tech"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UINib"]
+- ["PSo18UIContentContainer", "World"]
+- ["PSo18UIContentContainer", "categories"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "getData"]
+- ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "link"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
+- ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
+- ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
+- ["PSo18UIContentContainer", "scrollViewDidEndZooming"]
+- ["PSo18UIContentContainer", "scrollViewDidScroll"]
+- ["PSo18UIContentContainer", "scrollViewDidScrollToTop"]
+- ["PSo18UIContentContainer", "scrollViewDidZoom"]
+- ["PSo18UIContentContainer", "scrollViewShouldScrollToTop"]
+- ["PSo18UIContentContainer", "scrollViewWillBeginDecelerating"]
+- ["PSo18UIContentContainer", "scrollViewWillBeginDragging"]
+- ["PSo18UIContentContainer", "scrollViewWillBeginZooming"]
+- ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
+- ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- ["PSo18UIContentContainer", "source"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "topStories"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo17UICoordinateSpace", "bgimage"]
+- ["PSo17UICoordinateSpace", "category"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "registerNib"]
+- !private ["PSo17UICoordinateSpace", "tag"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "bgimage"]
+- ["PSo13UIDynamicItem", "category"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "registerNib"]
+- !private ["PSo13UIDynamicItem", "tag"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "Business"]
+- ["PSo18UIFocusEnvironment", "Health"]
+- ["PSo18UIFocusEnvironment", "Politics"]
+- ["PSo18UIFocusEnvironment", "Tech"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UINib"]
+- ["PSo18UIFocusEnvironment", "World"]
+- ["PSo18UIFocusEnvironment", "bgimage"]
+- ["PSo18UIFocusEnvironment", "categories"]
+- ["PSo18UIFocusEnvironment", "category"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "getData"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "link"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "registerNib"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndZooming"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidScroll"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidScrollToTop"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidZoom"]
+- ["PSo18UIFocusEnvironment", "scrollViewShouldScrollToTop"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginDecelerating"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginDragging"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
+- ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UIFocusEnvironment", "source"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "tag"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "topStories"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "bgimage"]
+- ["PSo27UIGestureRecognizerDelegate", "category"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "tag"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo5UINib", "init"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "ArticlesViewController"]
+- ["CSo11UIResponder", "Business"]
+- ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "CategoriesTableViewCell"]
+- ["CSo11UIResponder", "Health"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- ["CSo11UIResponder", "Politics"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "Tech"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "World"]
+- ["CSo11UIResponder", "bgimage"]
+- ["CSo11UIResponder", "categories"]
+- ["CSo11UIResponder", "category"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "getData"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "link"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- ["CSo11UIResponder", "prepareForSegue"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "registerNib"]
+- ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
+- ["CSo11UIResponder", "scrollViewDidEndDragging"]
+- ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
+- ["CSo11UIResponder", "scrollViewDidEndZooming"]
+- ["CSo11UIResponder", "scrollViewDidScroll"]
+- ["CSo11UIResponder", "scrollViewDidScrollToTop"]
+- ["CSo11UIResponder", "scrollViewDidZoom"]
+- ["CSo11UIResponder", "scrollViewShouldScrollToTop"]
+- ["CSo11UIResponder", "scrollViewWillBeginDecelerating"]
+- ["CSo11UIResponder", "scrollViewWillBeginDragging"]
+- ["CSo11UIResponder", "scrollViewWillBeginZooming"]
+- ["CSo11UIResponder", "scrollViewWillEndDragging"]
+- ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- ["CSo11UIResponder", "source"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "tag"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "topStories"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo12UIScrollView", "registerNib"]
+- !private ["PSo20UIScrollViewDelegate", "Business"]
+- !private ["PSo20UIScrollViewDelegate", "Health"]
+- !private ["PSo20UIScrollViewDelegate", "Politics"]
+- !private ["PSo20UIScrollViewDelegate", "Tech"]
+- !private ["PSo20UIScrollViewDelegate", "UIImage"]
+- !private ["PSo20UIScrollViewDelegate", "UINib"]
+- !private ["PSo20UIScrollViewDelegate", "World"]
+- !private ["PSo20UIScrollViewDelegate", "categories"]
+- !private ["PSo20UIScrollViewDelegate", "getData"]
+- ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "link"]
+- ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "performSegueWithIdentifier"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndZooming"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidScroll"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidScrollToTop"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidZoom"]
+- ["PSo20UIScrollViewDelegate", "scrollViewShouldScrollToTop"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillBeginDecelerating"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillBeginDragging"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
+- ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "source"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "topStories"]
+- ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
+- ["PSo20UIScrollViewDelegate", ""]
+- ["PSo16UIStateRestoring", "Business"]
+- ["PSo16UIStateRestoring", "Health"]
+- ["PSo16UIStateRestoring", "Politics"]
+- ["PSo16UIStateRestoring", "Tech"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UINib"]
+- ["PSo16UIStateRestoring", "World"]
+- ["PSo16UIStateRestoring", "categories"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "getData"]
+- ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "link"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
+- ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
+- ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
+- ["PSo16UIStateRestoring", "scrollViewDidEndZooming"]
+- ["PSo16UIStateRestoring", "scrollViewDidScroll"]
+- ["PSo16UIStateRestoring", "scrollViewDidScrollToTop"]
+- ["PSo16UIStateRestoring", "scrollViewDidZoom"]
+- ["PSo16UIStateRestoring", "scrollViewShouldScrollToTop"]
+- ["PSo16UIStateRestoring", "scrollViewWillBeginDecelerating"]
+- ["PSo16UIStateRestoring", "scrollViewWillBeginDragging"]
+- ["PSo16UIStateRestoring", "scrollViewWillBeginZooming"]
+- ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
+- ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- ["PSo16UIStateRestoring", "source"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "topStories"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo17UIStoryboardSegue", "destinationViewController"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UITableView", "registerNib"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "bgimage"]
+- ["CSo15UITableViewCell", "category"]
+- !private ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "init"]
+- !private ["CSo15UITableViewCell", "tag"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo21UITableViewDataSource", "Business"]
+- !private ["PSo21UITableViewDataSource", "Health"]
+- !private ["PSo21UITableViewDataSource", "Politics"]
+- !private ["PSo21UITableViewDataSource", "Tech"]
+- !private ["PSo21UITableViewDataSource", "UIImage"]
+- !private ["PSo21UITableViewDataSource", "UINib"]
+- !private ["PSo21UITableViewDataSource", "World"]
+- !private ["PSo21UITableViewDataSource", "categories"]
+- !private ["PSo21UITableViewDataSource", "getData"]
+- ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "link"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "performSegueWithIdentifier"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
+- ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
+- ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
+- ["PSo21UITableViewDataSource", "scrollViewDidEndZooming"]
+- ["PSo21UITableViewDataSource", "scrollViewDidScroll"]
+- ["PSo21UITableViewDataSource", "scrollViewDidScrollToTop"]
+- ["PSo21UITableViewDataSource", "scrollViewDidZoom"]
+- ["PSo21UITableViewDataSource", "scrollViewShouldScrollToTop"]
+- ["PSo21UITableViewDataSource", "scrollViewWillBeginDecelerating"]
+- ["PSo21UITableViewDataSource", "scrollViewWillBeginDragging"]
+- ["PSo21UITableViewDataSource", "scrollViewWillBeginZooming"]
+- ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
+- ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "source"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "topStories"]
+- ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "Business"]
+- !private ["PSo19UITableViewDelegate", "Health"]
+- !private ["PSo19UITableViewDelegate", "Politics"]
+- !private ["PSo19UITableViewDelegate", "Tech"]
+- !private ["PSo19UITableViewDelegate", "UIImage"]
+- !private ["PSo19UITableViewDelegate", "UINib"]
+- !private ["PSo19UITableViewDelegate", "World"]
+- !private ["PSo19UITableViewDelegate", "categories"]
+- !private ["PSo19UITableViewDelegate", "getData"]
+- ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "link"]
+- ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "performSegueWithIdentifier"]
+- !private ["PSo19UITableViewDelegate", "print"]
+- ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
+- ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
+- ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["PSo19UITableViewDelegate", "scrollViewDidEndZooming"]
+- ["PSo19UITableViewDelegate", "scrollViewDidScroll"]
+- ["PSo19UITableViewDelegate", "scrollViewDidScrollToTop"]
+- ["PSo19UITableViewDelegate", "scrollViewDidZoom"]
+- ["PSo19UITableViewDelegate", "scrollViewShouldScrollToTop"]
+- ["PSo19UITableViewDelegate", "scrollViewWillBeginDecelerating"]
+- ["PSo19UITableViewDelegate", "scrollViewWillBeginDragging"]
+- ["PSo19UITableViewDelegate", "scrollViewWillBeginZooming"]
+- ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
+- ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "source"]
+- ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "topStories"]
+- ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
+- ["PSo19UITableViewDelegate", ""]
+- ["PSo18UITraitEnvironment", "Business"]
+- ["PSo18UITraitEnvironment", "Health"]
+- ["PSo18UITraitEnvironment", "Politics"]
+- ["PSo18UITraitEnvironment", "Tech"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UINib"]
+- ["PSo18UITraitEnvironment", "World"]
+- ["PSo18UITraitEnvironment", "bgimage"]
+- ["PSo18UITraitEnvironment", "categories"]
+- ["PSo18UITraitEnvironment", "category"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "getData"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "link"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "registerNib"]
+- ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
+- ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
+- ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
+- ["PSo18UITraitEnvironment", "scrollViewDidEndZooming"]
+- ["PSo18UITraitEnvironment", "scrollViewDidScroll"]
+- ["PSo18UITraitEnvironment", "scrollViewDidScrollToTop"]
+- ["PSo18UITraitEnvironment", "scrollViewDidZoom"]
+- ["PSo18UITraitEnvironment", "scrollViewShouldScrollToTop"]
+- ["PSo18UITraitEnvironment", "scrollViewWillBeginDecelerating"]
+- ["PSo18UITraitEnvironment", "scrollViewWillBeginDragging"]
+- ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
+- ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
+- ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UITraitEnvironment", "source"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "tag"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "topStories"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "bgimage"]
+- ["CSo6UIView", "category"]
+- !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "registerNib"]
+- !private ["CSo6UIView", "tag"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "ArticlesViewController"]
+- ["CSo16UIViewController", "Business"]
+- ["CSo16UIViewController", "CGFloat"]
+- !private ["CSo16UIViewController", "CategoriesTableViewCell"]
+- ["CSo16UIViewController", "Health"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- ["CSo16UIViewController", "Politics"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "Tech"]
+- !private ["CSo16UIViewController", "UIImage"]
+- !private ["CSo16UIViewController", "UINib"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "World"]
+- ["CSo16UIViewController", "categories"]
+- !private ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "getData"]
+- ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "link"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- ["CSo16UIViewController", "prepareForSegue"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
+- ["CSo16UIViewController", "scrollViewDidEndDragging"]
+- ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
+- ["CSo16UIViewController", "scrollViewDidEndZooming"]
+- ["CSo16UIViewController", "scrollViewDidScroll"]
+- ["CSo16UIViewController", "scrollViewDidScrollToTop"]
+- ["CSo16UIViewController", "scrollViewDidZoom"]
+- ["CSo16UIViewController", "scrollViewShouldScrollToTop"]
+- ["CSo16UIViewController", "scrollViewWillBeginDecelerating"]
+- ["CSo16UIViewController", "scrollViewWillBeginDragging"]
+- ["CSo16UIViewController", "scrollViewWillBeginZooming"]
+- ["CSo16UIViewController", "scrollViewWillEndDragging"]
+- ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- ["CSo16UIViewController", "source"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "topStories"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewForZoomingInScrollView"]
+- ["CSo16UIViewController", ""]
+- ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs24_ImageLiteralConvertible", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "bgimage"]
+- ["PSs12_Reflectable", "category"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs12_Reflectable", "image"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "registerNib"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "tag"]
+- !private ["PSs12_Reflectable", "text"]
+- ["PSs12_Reflectable", ""]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "C7NewsOTG22ArticlesViewController"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- "C7NewsOTG23CategoriesTableViewCell"
+- "C7NewsOTG24CategoriesViewController"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSIndexPath"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo7NSValue"
+- !private "Sq"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "SS"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- !private "CSo5UINib"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo17UIStoryboardSegue"
+- !private "CSo11UITableView"
+- "CSo15UITableViewCell"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "CSo16UIViewController"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs24_ImageLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/Bridging-Header.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OELanguageModelGenerator.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEGrammarDefinitions.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEGrammarGenerator.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEAcousticModel.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEPocketsphinxController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEEventsObserver.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEContinuousModel.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEContinuousAudioUnit.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OESmartCMN.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/prim_type.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/sphinx_config.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OENotification.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OELogging.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteController.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/flite.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_string.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_regex.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_file.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_val.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_error.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_alloc.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_val_defs.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_val_const.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_features.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_item.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_relation.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_utterance.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_wave.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_endian.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_track.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_cart.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_phoneset.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_voice.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_audio.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_hrg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_utt_utils.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_lexicon.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_lts.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_synth.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_tokenstream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_units.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_sts.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteVoice.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/Slt.framework/Headers/Slt.h"
+- "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "./Bolts.framework/Headers/BFURL.h"
+- "./Bolts.framework/Headers/BFMeasurementEvent.h"
+- "./Bolts.framework/Headers/BFAppLinkTarget.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "./Bolts.framework/Headers/BFAppLinkResolving.h"
+- "./Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "./Bolts.framework/Headers/BFAppLink.h"
+- "./Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "./Bolts.framework/Headers/BFTask.h"
+- "./Bolts.framework/Headers/BFExecutor.h"
+- "./Bolts.framework/Headers/BFDefines.h"
+- "./Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "./Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "./Bolts.framework/Headers/BFCancellationToken.h"
+- "./Bolts.framework/Headers/BoltsVersion.h"
+- "./Bolts.framework/Headers/Bolts.h"
+- "./Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFPurchase.h"
+- "./Parse.framework/Headers/PFProduct.h"
+- "./Parse.framework/Headers/PFPush.h"
+- "./Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "./Parse.framework/Headers/PFInstallation.h"
+- "./Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "./Parse.framework/Headers/PFSession.h"
+- "./Parse.framework/Headers/PFRole.h"
+- "./Parse.framework/Headers/PFRelation.h"
+- "./Parse.framework/Headers/PFQuery.h"
+- "./Parse.framework/Headers/PFObject+Subclass.h"
+- "./Parse.framework/Headers/PFGeoPoint.h"
+- "./Parse.framework/Headers/PFFile.h"
+- "./Parse.framework/Headers/PFConfig.h"
+- "./Parse.framework/Headers/PFCloud.h"
+- "./Parse.framework/Headers/PFSubclassing.h"
+- "./Parse.framework/Headers/PFObject.h"
+- "./Parse.framework/Headers/PFUser.h"
+- "./Parse.framework/Headers/PFAnonymousUtils.h"
+- "./Parse.framework/Headers/PFConstants.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFAnalytics.h"
+- "./Parse.framework/Headers/PFACL.h"
+- "./Parse.framework/Headers/Parse.h"
+- "./Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Modules/WatsonDeveloperCloud.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/WatsonDeveloperCloud-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/x86_64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+interface-hash: "72a177bc7c4f747b31f6f83b306f21cc"

@@ -1,0 +1,696 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AlchemyVision"
+provides-nominal:
+- "C20WatsonDeveloperCloud13AlchemyVision"
+provides-member:
+- ["C20WatsonDeveloperCloud13AlchemyVision", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private ">"
+- "UIImage"
+- !private "UnicodeScalarType"
+- !private "AnyObject"
+- "AlchemyVision"
+- "VisionConstants"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "=="
+- !private "Dictionary"
+- "Int8"
+- "ImageLink"
+- !private "ParameterEncoding"
+- "ImageFaceTags"
+- "AlchemyService"
+- !private "!"
+- !private "StringLiteralType"
+- !private "HTTPMethod"
+- "NSError"
+- "ImageKeyWords"
+- "String"
+- !private "APIKeyAuthenticationStrategy"
+- !private "UIImagePNGRepresentation"
+- !private "NSURL"
+- !private "NSFileManager"
+- !private "NetworkUtils"
+- !private "ImageURL"
+- !private "Mapper"
+- !private "!="
+- !private "+"
+- "BooleanLiteralType"
+- !private "NSUUID"
+- "Void"
+- !private "Log"
+- "Bool"
+- "AuthenticationStrategy"
+depends-member:
+- !private ["C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy", "deinit"]
+- !private ["C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy", "init"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "APIKeyAuthenticationStrategy"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "Dictionary"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "HTTPMethod"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "ImageKeyWords"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "ImageURL"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "Log"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "Mapper"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NSError"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NSFileManager"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NSSearchPathForDirectoriesInDomains"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NSURL"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NSUUID"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "NetworkUtils"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "ParameterEncoding"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "UIImagePNGRepresentation"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "VisionConstants"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "_apiKey"]
+- ["P20WatsonDeveloperCloud14AlchemyService", "authStrategy"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "buildCommonParams"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "getEndpoint"]
+- !private ["P20WatsonDeveloperCloud14AlchemyService", "getImageURL"]
+- ["P20WatsonDeveloperCloud14AlchemyService", "init"]
+- ["P20WatsonDeveloperCloud14AlchemyService", ""]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "APIKeyAuthenticationStrategy"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "AnyObject"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "AuthenticationStrategy"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "Bool"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "Dictionary"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "HTTPMethod"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "ImageFaceTags"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "ImageKeyWords"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "ImageLink"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "ImageURL"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "Int8"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "Log"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "Mapper"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "NSError"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "NSFileManager"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "NSSearchPathForDirectoriesInDomains"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "NSURL"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "NSUUID"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "NetworkUtils"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "ParameterEncoding"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "String"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "UIImage"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "UIImagePNGRepresentation"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "VisionConstants"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "Void"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "_apiKey"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "authStrategy"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "buildCommonParams"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "deinit"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "getEndpoint"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "getImageKeywords"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "getImageLink"]
+- !private ["C20WatsonDeveloperCloud13AlchemyVision", "getImageURL"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "init"]
+- ["C20WatsonDeveloperCloud13AlchemyVision", "recognizeFaces"]
+- !private ["PSs9AnyObject", "APIKeyAuthenticationStrategy"]
+- !private ["PSs9AnyObject", "Dictionary"]
+- !private ["PSs9AnyObject", "FaceDetection"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- ["PSs9AnyObject", "ImageFacesType"]
+- !private ["PSs9AnyObject", "ImageKeyWords"]
+- ["PSs9AnyObject", "ImageKeywordType"]
+- !private ["PSs9AnyObject", "ImageLinkExtraction"]
+- ["PSs9AnyObject", "ImageLinkType"]
+- !private ["PSs9AnyObject", "ImagePostMode"]
+- !private ["PSs9AnyObject", "ImageTagging"]
+- !private ["PSs9AnyObject", "ImageURL"]
+- !private ["PSs9AnyObject", "Log"]
+- !private ["PSs9AnyObject", "Mapper"]
+- !private ["PSs9AnyObject", "NSError"]
+- !private ["PSs9AnyObject", "NSFileManager"]
+- !private ["PSs9AnyObject", "NSSearchPathForDirectoriesInDomains"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSUUID"]
+- !private ["PSs9AnyObject", "NetworkUtils"]
+- !private ["PSs9AnyObject", "OutputMode"]
+- !private ["PSs9AnyObject", "ParameterEncoding"]
+- !private ["PSs9AnyObject", "UIImagePNGRepresentation"]
+- !private ["PSs9AnyObject", "UUIDString"]
+- !private ["PSs9AnyObject", "VisionConstants"]
+- !private ["PSs9AnyObject", "VisionPrefix"]
+- !private ["PSs9AnyObject", "VisionURI"]
+- !private ["PSs9AnyObject", "WatsonURI"]
+- !private ["PSs9AnyObject", "_apiKey"]
+- ["PSs9AnyObject", "authStrategy"]
+- !private ["PSs9AnyObject", "buildCommonParams"]
+- !private ["PSs9AnyObject", "createWatsonError"]
+- !private ["PSs9AnyObject", "defaultManager"]
+- !private ["PSs9AnyObject", "error"]
+- !private ["PSs9AnyObject", "getEndpoint"]
+- !private ["PSs9AnyObject", "getImageURL"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isEmpty"]
+- !private ["PSs9AnyObject", "map"]
+- !private ["PSs9AnyObject", "performBasicAuthFileUpload"]
+- !private ["PSs9AnyObject", "performBasicAuthRequest"]
+- !private ["PSs9AnyObject", "performRequest"]
+- !private ["PSs9AnyObject", "removeItemAtPath"]
+- !private ["PSs9AnyObject", "sharedLogger"]
+- !private ["PSs9AnyObject", "writeToFile"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Index"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "UserDomainMask"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "init"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "refreshToken"]
+- !private ["P20WatsonDeveloperCloud22AuthenticationStrategy", "token"]
+- !private ["PSs22BidirectionalIndexType", "description"]
+- !private ["PSs21BitwiseOperationsType", "description"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Sb", "hashValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "hashValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "hashValue"]
+- !private ["PSs11CVarArgType", "UUIDString"]
+- !private ["PSs11CVarArgType", "createWatsonError"]
+- !private ["PSs11CVarArgType", "defaultManager"]
+- !private ["PSs11CVarArgType", "description"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isEmpty"]
+- !private ["PSs11CVarArgType", "removeItemAtPath"]
+- !private ["PSs11CVarArgType", "writeToFile"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs14CollectionType", "updateValue"]
+- !private ["PSs10Comparable", "description"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs10Comparable", "isEmpty"]
+- !private ["V20WatsonDeveloperCloud12CoreResponse", "data"]
+- !private ["V20WatsonDeveloperCloud12CoreResponse", "error"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "error"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "updateValue"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "UUIDString"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "createWatsonError"]
+- !private ["PSs23CustomStringConvertible", "data"]
+- !private ["PSs23CustomStringConvertible", "defaultManager"]
+- !private ["PSs23CustomStringConvertible", "description"]
+- !private ["PSs23CustomStringConvertible", "error"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isEmpty"]
+- !private ["PSs23CustomStringConvertible", "removeItemAtPath"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "updateValue"]
+- !private ["PSs23CustomStringConvertible", "writeToFile"]
+- !private ["VSs10Dictionary", "init"]
+- !private ["VSs10Dictionary", "updateValue"]
+- !private ["PSs28DictionaryLiteralConvertible", "init"]
+- !private ["PSs28DictionaryLiteralConvertible", "updateValue"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "APIKey"]
+- !private ["PSs9Equatable", "DocumentDirectory"]
+- !private ["PSs9Equatable", "ForceShowAll"]
+- ["PSs9Equatable", "HTML"]
+- !private ["PSs9Equatable", "HTMLGetImage"]
+- !private ["PSs9Equatable", "Image"]
+- !private ["PSs9Equatable", "ImageGetRankedImageFaceTags"]
+- !private ["PSs9Equatable", "ImageGetRankedImageKeywords"]
+- !private ["PSs9Equatable", "ImagePostMode"]
+- !private ["PSs9Equatable", "JSON"]
+- !private ["PSs9Equatable", "OutputMode"]
+- !private ["PSs9Equatable", "POST"]
+- !private ["PSs9Equatable", "Raw"]
+- ["PSs9Equatable", "UIImage"]
+- ["PSs9Equatable", "URL"]
+- !private ["PSs9Equatable", "URLGetImage"]
+- !private ["PSs9Equatable", "URLGetRankedImageFaceTags"]
+- !private ["PSs9Equatable", "URLGetRankedImageKeywords"]
+- !private ["PSs9Equatable", "UUIDString"]
+- !private ["PSs9Equatable", "UserDomainMask"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "createWatsonError"]
+- !private ["PSs9Equatable", "defaultManager"]
+- !private ["PSs9Equatable", "description"]
+- !private ["PSs9Equatable", "hashValue"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isEmpty"]
+- !private ["PSs9Equatable", "rawValue"]
+- !private ["PSs9Equatable", "removeItemAtPath"]
+- !private ["PSs9Equatable", "writeToFile"]
+- !private ["PSs9ErrorType", "createWatsonError"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "ImageGetRankedImageFaceTags"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "URLGetRankedImageFaceTags"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13FaceDetection", "rawValue"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "description"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "APIKey"]
+- !private ["PSs8Hashable", "DocumentDirectory"]
+- !private ["PSs8Hashable", "ForceShowAll"]
+- ["PSs8Hashable", "HTML"]
+- !private ["PSs8Hashable", "HTMLGetImage"]
+- !private ["PSs8Hashable", "Image"]
+- !private ["PSs8Hashable", "ImageGetRankedImageFaceTags"]
+- !private ["PSs8Hashable", "ImageGetRankedImageKeywords"]
+- !private ["PSs8Hashable", "ImagePostMode"]
+- !private ["PSs8Hashable", "JSON"]
+- !private ["PSs8Hashable", "OutputMode"]
+- !private ["PSs8Hashable", "POST"]
+- !private ["PSs8Hashable", "Raw"]
+- ["PSs8Hashable", "UIImage"]
+- ["PSs8Hashable", "URL"]
+- !private ["PSs8Hashable", "URLGetImage"]
+- !private ["PSs8Hashable", "URLGetRankedImageFaceTags"]
+- !private ["PSs8Hashable", "URLGetRankedImageKeywords"]
+- !private ["PSs8Hashable", "UUIDString"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "createWatsonError"]
+- !private ["PSs8Hashable", "defaultManager"]
+- !private ["PSs8Hashable", "description"]
+- !private ["PSs8Hashable", "hashValue"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isEmpty"]
+- !private ["PSs8Hashable", "rawValue"]
+- !private ["PSs8Hashable", "removeItemAtPath"]
+- !private ["PSs8Hashable", "writeToFile"]
+- !private ["V20WatsonDeveloperCloud13ImageFaceTags", "deinit"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "UIImage"]
+- ["OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType", "URL"]
+- !private ["V20WatsonDeveloperCloud13ImageKeyWords", "deinit"]
+- !private ["V20WatsonDeveloperCloud13ImageKeyWords", "init"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "UIImage"]
+- ["OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType", "URL"]
+- !private ["V20WatsonDeveloperCloud9ImageLink", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "HTMLGetImage"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "URLGetImage"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction", "rawValue"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "HTML"]
+- ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "URL"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType", "rawValue"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "Raw"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode", "rawValue"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "ImageGetRankedImageKeywords"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "URLGetRankedImageKeywords"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12ImageTagging", "rawValue"]
+- !private ["V20WatsonDeveloperCloud8ImageURL", "init"]
+- !private ["V20WatsonDeveloperCloud8ImageURL", "path"]
+- !private ["V20WatsonDeveloperCloud8ImageURL", "url"]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["PSs9Indexable", "updateValue"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["Si", "description"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["VSs4Int8", "description"]
+- !private ["PSs21IntegerArithmeticType", "description"]
+- !private ["PSs25IntegerLiteralConvertible", "description"]
+- !private ["PSs11IntegerType", "description"]
+- !private ["C20WatsonDeveloperCloud3Log", "sharedLogger"]
+- !private ["P12ObjectMapper8Mappable", "data"]
+- !private ["P12ObjectMapper8Mappable", "error"]
+- !private ["P12ObjectMapper8Mappable", "init"]
+- !private ["C12ObjectMapper6Mapper", "init"]
+- !private ["C12ObjectMapper6Mapper", "map"]
+- !private ["O9Alamofire6Method", "POST"]
+- !private ["PSs14MirrorPathType", "description"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs14MirrorPathType", "isEmpty"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "UUIDString"]
+- !private ["PSo8NSCoding", "createWatsonError"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEmpty"]
+- !private ["PSo8NSCoding", "writeToFile"]
+- !private ["PSo9NSCopying", "UUIDString"]
+- !private ["PSo9NSCopying", "createWatsonError"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "isEmpty"]
+- !private ["PSo9NSCopying", "writeToFile"]
+- !private ["CSo6NSData", "writeToFile"]
+- !private ["CSo7NSError", "createWatsonError"]
+- !private ["CSo13NSFileManager", "defaultManager"]
+- !private ["CSo13NSFileManager", "removeItemAtPath"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "isEmpty"]
+- !private ["PSo16NSMutableCopying", "writeToFile"]
+- !private ["CSo8NSObject", "UUIDString"]
+- !private ["CSo8NSObject", "createWatsonError"]
+- !private ["CSo8NSObject", "defaultManager"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isEmpty"]
+- !private ["CSo8NSObject", "removeItemAtPath"]
+- !private ["CSo8NSObject", "writeToFile"]
+- !private ["PSo16NSObjectProtocol", "UUIDString"]
+- !private ["PSo16NSObjectProtocol", "createWatsonError"]
+- !private ["PSo16NSObjectProtocol", "defaultManager"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isEmpty"]
+- !private ["PSo16NSObjectProtocol", "removeItemAtPath"]
+- !private ["PSo16NSObjectProtocol", "writeToFile"]
+- !private ["OSC21NSSearchPathDirectory", "DocumentDirectory"]
+- !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
+- !private ["PSo14NSSecureCoding", "UUIDString"]
+- !private ["PSo14NSSecureCoding", "createWatsonError"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "isEmpty"]
+- !private ["PSo14NSSecureCoding", "writeToFile"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "isEmpty"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo6NSUUID", "UUIDString"]
+- !private ["CSo6NSUUID", "init"]
+- !private ["C20WatsonDeveloperCloud12NetworkUtils", "performBasicAuthFileUpload"]
+- !private ["C20WatsonDeveloperCloud12NetworkUtils", "performBasicAuthRequest"]
+- !private ["C20WatsonDeveloperCloud12NetworkUtils", "performRequest"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs13OptionSetType", "UserDomainMask"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "JSON"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants10OutputMode", "rawValue"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs16OutputStreamType", "isEmpty"]
+- !private ["O9Alamofire17ParameterEncoding", "URL"]
+- !private ["PSs21RandomAccessIndexType", "description"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "APIKey"]
+- !private ["PSs16RawRepresentable", "DocumentDirectory"]
+- !private ["PSs16RawRepresentable", "ForceShowAll"]
+- ["PSs16RawRepresentable", "HTML"]
+- !private ["PSs16RawRepresentable", "HTMLGetImage"]
+- !private ["PSs16RawRepresentable", "Image"]
+- !private ["PSs16RawRepresentable", "ImageGetRankedImageFaceTags"]
+- !private ["PSs16RawRepresentable", "ImageGetRankedImageKeywords"]
+- !private ["PSs16RawRepresentable", "ImagePostMode"]
+- !private ["PSs16RawRepresentable", "JSON"]
+- !private ["PSs16RawRepresentable", "OutputMode"]
+- !private ["PSs16RawRepresentable", "POST"]
+- !private ["PSs16RawRepresentable", "Raw"]
+- ["PSs16RawRepresentable", "UIImage"]
+- ["PSs16RawRepresentable", "URL"]
+- !private ["PSs16RawRepresentable", "URLGetImage"]
+- !private ["PSs16RawRepresentable", "URLGetRankedImageFaceTags"]
+- !private ["PSs16RawRepresentable", "URLGetRankedImageKeywords"]
+- !private ["PSs16RawRepresentable", "UserDomainMask"]
+- !private ["PSs16RawRepresentable", "rawValue"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs12SequenceType", "updateValue"]
+- !private ["PSs14SetAlgebraType", "UserDomainMask"]
+- !private ["PSs17SignedIntegerType", "description"]
+- !private ["PSs16SignedNumberType", "description"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Streamable", "isEmpty"]
+- !private ["PSs10Strideable", "description"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["SS", "isEmpty"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs30StringInterpolationConvertible", "isEmpty"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "isEmpty"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "isEmpty"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "FaceDetection"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageFacesType"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageKeywordType"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "ImageLinkExtraction"]
+- ["C20WatsonDeveloperCloud15VisionConstants", "ImageLinkType"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "ImagePostMode"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "ImageTagging"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "OutputMode"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "VisionPrefix"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "VisionURI"]
+- !private ["C20WatsonDeveloperCloud15VisionConstants", "WatsonURI"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "HTML"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "Image"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "URL"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix", "rawValue"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "ForceShowAll"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "ImagePostMode"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "OutputMode"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", "rawValue"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "APIKey"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "URL"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "deinit"]
+- !private ["OC20WatsonDeveloperCloud15VisionConstants9WatsonURI", "rawValue"]
+- !private ["C9XCGLogger9XCGLogger", "error"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "hashValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "description"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "isEmpty"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "isEmpty"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs16_CocoaStringType", "isEmpty"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs14_Incrementable", "description"]
+- !private ["PSs22_IntegerArithmeticType", "description"]
+- !private ["PSs12_IntegerType", "description"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "description"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs21_ObjectiveCBridgeable", "updateValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "description"]
+- !private ["PSs12_Reflectable", "Index"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "description"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "isEmpty"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "updateValue"]
+- !private ["PSs18_SignedIntegerType", "description"]
+- !private ["PSs11_Strideable", "description"]
+depends-nominal:
+- !private "C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy"
+- "P20WatsonDeveloperCloud14AlchemyService"
+- "C20WatsonDeveloperCloud13AlchemyVision"
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "P20WatsonDeveloperCloud22AuthenticationStrategy"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "V20WatsonDeveloperCloud12CoreResponse"
+- "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "OC20WatsonDeveloperCloud15VisionConstants13FaceDetection"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "V20WatsonDeveloperCloud13ImageFaceTags"
+- "OC20WatsonDeveloperCloud15VisionConstants14ImageFacesType"
+- !private "V20WatsonDeveloperCloud13ImageKeyWords"
+- "OC20WatsonDeveloperCloud15VisionConstants16ImageKeywordType"
+- !private "V20WatsonDeveloperCloud9ImageLink"
+- !private "OC20WatsonDeveloperCloud15VisionConstants19ImageLinkExtraction"
+- "OC20WatsonDeveloperCloud15VisionConstants13ImageLinkType"
+- !private "OC20WatsonDeveloperCloud15VisionConstants13ImagePostMode"
+- !private "OC20WatsonDeveloperCloud15VisionConstants12ImageTagging"
+- !private "V20WatsonDeveloperCloud8ImageURL"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C20WatsonDeveloperCloud3Log"
+- !private "P12ObjectMapper8Mappable"
+- !private "C12ObjectMapper6Mapper"
+- !private "O9Alamofire6Method"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo7NSError"
+- !private "CSo13NSFileManager"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "OSC21NSSearchPathDirectory"
+- !private "VSC22NSSearchPathDomainMask"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo6NSUUID"
+- !private "C20WatsonDeveloperCloud12NetworkUtils"
+- "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- "Sq"
+- !private "OC20WatsonDeveloperCloud15VisionConstants10OutputMode"
+- !private "PSs16OutputStreamType"
+- !private "O9Alamofire17ParameterEncoding"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "C20WatsonDeveloperCloud15VisionConstants"
+- !private "OC20WatsonDeveloperCloud15VisionConstants12VisionPrefix"
+- !private "OC20WatsonDeveloperCloud15VisionConstants9VisionURI"
+- !private "OC20WatsonDeveloperCloud15VisionConstants9WatsonURI"
+- !private "C9XCGLogger9XCGLogger"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "f88752cdd627dac73145cc6b49632fb9"

@@ -1,0 +1,105 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "VC20WatsonDeveloperCloud19PersonalityInsights5Trait"
+provides-member:
+- ["C20WatsonDeveloperCloud19PersonalityInsights", ""]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", ""]
+- ["C20WatsonDeveloperCloud19PersonalityInsights", "Trait"]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- !private "<-"
+- "PersonalityInsights"
+- "Mappable"
+- "Map"
+- !private "StringLiteralType"
+- "Double"
+depends-member:
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["Sa", "deinit"]
+- !private ["Sd", "deinit"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "ID"]
+- !private ["P12ObjectMapper8Mappable", "category"]
+- !private ["P12ObjectMapper8Mappable", "children"]
+- ["P12ObjectMapper8Mappable", "init"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- !private ["P12ObjectMapper8Mappable", "name"]
+- !private ["P12ObjectMapper8Mappable", "percentage"]
+- !private ["P12ObjectMapper8Mappable", "rawSamplingError"]
+- !private ["P12ObjectMapper8Mappable", "rawScore"]
+- !private ["P12ObjectMapper8Mappable", "samplingError"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["Sq", "deinit"]
+- ["C20WatsonDeveloperCloud19PersonalityInsights", "Double"]
+- ["C20WatsonDeveloperCloud19PersonalityInsights", "Map"]
+- ["C20WatsonDeveloperCloud19PersonalityInsights", "Mappable"]
+- ["C20WatsonDeveloperCloud19PersonalityInsights", "String"]
+- ["C20WatsonDeveloperCloud19PersonalityInsights", "Trait"]
+- !private ["SS", "deinit"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "Double"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "ID"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "Map"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "String"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "Trait"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "category"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "children"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "deinit"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "init"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "mapping"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "name"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "percentage"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "rawSamplingError"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "rawScore"]
+- ["VC20WatsonDeveloperCloud19PersonalityInsights5Trait", "samplingError"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "Sa"
+- !private "Sd"
+- !private "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "Sq"
+- "C20WatsonDeveloperCloud19PersonalityInsights"
+- !private "SS"
+- "VC20WatsonDeveloperCloud19PersonalityInsights5Trait"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "e9d7c717e4e23632872d565fc5076f95"

@@ -1,0 +1,53 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "OggHelper.h",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "OpusHelper.h",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "WatsonDeveloperCloud-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Headers/WatsonDeveloperCloud-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "WatsonDeveloperCloud.h",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+        },
+        {
+          'type': 'file',
+          'name': "ogg.h",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+        },
+        {
+          'type': 'file',
+          'name': "os_types.h",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Products/Debug-iphonesimulator/WatsonDeveloperCloud.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphonesimulator/WatsonDeveloperCloud.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

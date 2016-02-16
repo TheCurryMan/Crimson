@@ -1,0 +1,169 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DisambiguatedLinks"
+provides-nominal:
+- "V20WatsonDeveloperCloud18DisambiguatedLinks"
+provides-member:
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "<-"
+- "Map"
+- "DisambiguatedLinks"
+- !private "Transformation"
+- !private "StringLiteralType"
+- "Mappable"
+- "AlchemyLanguageGenericModel"
+- "String"
+- "Int"
+depends-member:
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "census"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "ciaFactbook"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "crunchbase"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "dbpedia"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "freebase"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "geo"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "geonames"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "init"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "language"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "mapping"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "musicBrainz"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "name"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "opencyc"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "subType"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "totalTransactions"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "umbel"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", "url"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "website"]
+- !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "yago"]
+- ["P20WatsonDeveloperCloud19AlchemyGenericModel", ""]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "Transformation"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "census"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "ciaFactbook"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "crunchbase"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "dbpedia"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "freebase"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "geo"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "geonames"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "init"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "language"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "mapping"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "musicBrainz"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "name"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "opencyc"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "subType"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "totalTransactions"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "umbel"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "url"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "website"]
+- !private ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", "yago"]
+- ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", ""]
+- !private ["PSs9AnyObject", "Object"]
+- !private ["PSs9AnyObject", "stringToInt"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["Sa", "deinit"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "Int"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "Map"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "String"]
+- !private ["V20WatsonDeveloperCloud18DisambiguatedLinks", "Transformation"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "census"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "ciaFactbook"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "crunchbase"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "dbpedia"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "deinit"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "freebase"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "geo"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "geonames"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "init"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "language"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "mapping"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "musicBrainz"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "name"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "opencyc"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "subType"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "totalTransactions"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "umbel"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "url"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "website"]
+- ["V20WatsonDeveloperCloud18DisambiguatedLinks", "yago"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "Transformation"]
+- !private ["P12ObjectMapper8Mappable", "census"]
+- !private ["P12ObjectMapper8Mappable", "ciaFactbook"]
+- !private ["P12ObjectMapper8Mappable", "crunchbase"]
+- !private ["P12ObjectMapper8Mappable", "dbpedia"]
+- !private ["P12ObjectMapper8Mappable", "freebase"]
+- !private ["P12ObjectMapper8Mappable", "geo"]
+- !private ["P12ObjectMapper8Mappable", "geonames"]
+- ["P12ObjectMapper8Mappable", "init"]
+- ["P12ObjectMapper8Mappable", "language"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- !private ["P12ObjectMapper8Mappable", "musicBrainz"]
+- !private ["P12ObjectMapper8Mappable", "name"]
+- !private ["P12ObjectMapper8Mappable", "opencyc"]
+- !private ["P12ObjectMapper8Mappable", "subType"]
+- ["P12ObjectMapper8Mappable", "totalTransactions"]
+- !private ["P12ObjectMapper8Mappable", "umbel"]
+- ["P12ObjectMapper8Mappable", "url"]
+- !private ["P12ObjectMapper8Mappable", "website"]
+- !private ["P12ObjectMapper8Mappable", "yago"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["Sq", "deinit"]
+- !private ["SS", "deinit"]
+- !private ["C12ObjectMapper11TransformOf", "Object"]
+- !private ["P12ObjectMapper13TransformType", "Object"]
+- !private ["C20WatsonDeveloperCloud14Transformation", "stringToInt"]
+depends-nominal:
+- "P20WatsonDeveloperCloud19AlchemyGenericModel"
+- "P20WatsonDeveloperCloud27AlchemyLanguageGenericModel"
+- !private "PSs9AnyObject"
+- !private "Sa"
+- "V20WatsonDeveloperCloud18DisambiguatedLinks"
+- !private "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "Sq"
+- !private "SS"
+- !private "C12ObjectMapper11TransformOf"
+- !private "P12ObjectMapper13TransformType"
+- !private "C20WatsonDeveloperCloud14Transformation"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm64.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "cff80026c3050b66892a6e4d0a65b495"
