@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import WatsonDeveloperCloud
 
-class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate
+class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate, AVAudioPlayerDelegate
  {
     
     @IBOutlet var scrollView: UIScrollView!
@@ -45,9 +45,13 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var content = ""
     
+    var counter = 0
+    
     var listOfData : [NSData] = []
     
     var audioData : NSData = NSData()
+    
+    var startedPlaying = false
     
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
@@ -61,6 +65,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     //var myUtterance = AVSpeechUtterance(string: "")
     
     override func viewDidAppear(animated: Bool) {
+    
+        
         
         speechSynthesizer.delegate = self
         
@@ -290,9 +296,13 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBAction func speak(sender: AnyObject) {
         print(speechSynthesizer.speaking)
         
+        //print(listOfData)
+        print(listOfData.count)
+        print("THE LENGTH OF THE ARRAY OF DATA IS ABOVE \n\n\n\n\n\n\n")
         
-        
-        if newVersion{playAudio()}
+        if startedPlaying != true {playAudio()}
+            
+        else if startedPlaying == true {audioPlayer.play()}
             
         else {
         
@@ -335,30 +345,34 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         animateActionButtonAppearance(true)
     }
     
+    func audioPlayerDidFinishPlaying( audioPlayer: AVAudioPlayer,
+        successfully flag: Bool) {
+            counter = counter + 1
+            startedPlaying = false
+            playAudio()
+            
+    }
     
     func playAudio() {
         
         do {
+            //print(listOfData)
             
-            for i in listOfData {
-                
+            print(counter)
+            
+          var i = listOfData[counter]
                 //print(i)
             
             //print("playAudio function")
         
         self.audioPlayer = try AVAudioPlayer(data:i)
         self.audioPlayer.prepareToPlay()
+        self.audioPlayer.delegate = self
         self.audioPlayer.volume = self.volume
         self.audioPlayer.rate = self.rate
-                self.audioPlayer.play()
-            
-                while audioPlayer.currentTime < audioPlayer.duration && audioPlayer.playing == true{
-                    //print(audioPlayer.currentTime)
-                    //print(audioPlayer.duration)
-                    //print(audioPlayer.playing)
-                }
-            
-            }}
+        self.audioPlayer.play()
+        self.startedPlaying = true
+            }
         
         catch {
             print("Error!")

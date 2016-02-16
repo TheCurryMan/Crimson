@@ -212,7 +212,7 @@ SWIFT_CLASS("_TtC7NewsOTG12CustomSlider")
 @class AVSpeechUtterance;
 
 SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
-@interface DisplayViewController : UIViewController <AVSpeechSynthesizerDelegate>
+@interface DisplayViewController : UIViewController <AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate>
 @property (nonatomic, strong) IBOutlet UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) IBOutlet UILabel * __null_unspecified articleTitle;
 @property (nonatomic, strong) IBOutlet UITextView * __null_unspecified articleContent;
@@ -229,8 +229,10 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic) NSInteger spokenTextLengths;
 @property (nonatomic) BOOL newVersion;
 @property (nonatomic, copy) NSString * __nonnull content;
+@property (nonatomic) NSInteger counter;
 @property (nonatomic, copy) NSArray<NSData *> * __nonnull listOfData;
 @property (nonatomic, strong) NSData * __nonnull audioData;
+@property (nonatomic) BOOL startedPlaying;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
 @property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
 - (void)viewDidAppear:(BOOL)animated;
@@ -241,6 +243,7 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 - (BOOL)loadSettings;
 - (void)animateActionButtonAppearance:(BOOL)shouldHideSpeakButton;
 - (IBAction)speak:(id __nonnull)sender;
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer * __nonnull)audioPlayer successfully:(BOOL)flag;
 - (void)playAudio;
 - (IBAction)stopSpeech:(id __nonnull)sender;
 - (IBAction)pauseSpeech:(id __nonnull)sender;
