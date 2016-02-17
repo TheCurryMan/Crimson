@@ -167,6 +167,8 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" id="0AK-zA-DaM">
                                 <rect key="frame" x="20" y="458" width="280" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rVd-Pp-PrT">
                                 <rect key="frame" x="0.0" y="150" width="320" height="288"/>

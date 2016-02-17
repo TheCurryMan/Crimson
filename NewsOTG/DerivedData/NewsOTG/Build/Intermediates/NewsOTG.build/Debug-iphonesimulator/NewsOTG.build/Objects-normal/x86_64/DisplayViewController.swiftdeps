@@ -6,110 +6,111 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG21DisplayViewController", ""]
 provides-dynamic-lookup:
-- "settingsPressed"
-- "newVersion"
-- "setInitialFontAttribute"
 - "totalTime"
-- "playAudio"
-- "content"
-- "articleURL"
-- "currentTime"
-- "speechSynthesizer"
-- "speechSynthesizer"
-- "speechSynthesizer"
-- "speechSynthesizer"
-- "rewind"
-- "registerDefaultSettings"
-- "pause"
-- "counter"
-- "viewDidLoad"
-- "listOfData"
-- "accent"
-- "animateActionButtonAppearance"
-- "scrollView"
-- "btnStop"
-- "audioData"
-- "audioPlayer"
-- "speak"
-- "unselectLastWord"
 - "audioPlayerDidFinishPlaying"
-- "articleTitle"
-- "articleText"
+- "content"
+- "listOfText"
+- "currentTime"
+- "speak"
+- "audioPlayer"
+- "newVersion"
 - "startedPlaying"
-- "pauseSpeech"
-- "viewDidAppear"
-- "btnSpeak"
-- "articleName"
-- "totalTextLength"
-- "loadSettings"
-- "didSaveSettings"
-- "prepareForSegue"
-- "forward"
-- "articleContent"
 - "pvSpeechProgress"
-- "btnPause"
-- "spokenTextLengths"
+- "pauseSpeech"
+- "unselectLastWord"
+- "loadSettings"
+- "accent"
+- "playAudio"
+- "animateActionButtonAppearance"
 - "getData"
+- "viewDidAppear"
+- "articleText"
+- "counter"
+- "btnStop"
+- "listOfData"
+- "prepareForSegue"
+- "articleName"
+- "speechSynthesizer"
+- "speechSynthesizer"
+- "speechSynthesizer"
+- "speechSynthesizer"
+- "scrollView"
+- "pause"
+- "viewDidLoad"
+- "articleTitle"
+- "settingsPressed"
+- "forward"
+- "didSaveSettings"
+- "setInitialFontAttribute"
+- "spokenTextLengths"
+- "articleURL"
+- "registerDefaultSettings"
+- "rewind"
+- "btnSpeak"
+- "totalTextLength"
+- "btnPause"
+- "audioData"
+- "articleContent"
 depends-top-level:
-- !private "!="
-- !private "-"
-- "AnyObject"
-- "Bool"
-- !private "&&"
-- "AVSpeechSynthesizer"
-- "String"
-- "Array"
-- !private "NSMutableAttributedString"
-- "StringLiteralType"
-- "UITextView"
-- !private "print"
-- "TextToSpeech"
-- !private "AVSpeechUtteranceDefaultSpeechRate"
-- !private "UIFont"
-- !private "NSURLSession"
-- !private "<"
-- !private "NSForegroundColorAttributeName"
-- !private "UIColor"
-- "UIViewController"
-- "Float"
-- !private "dispatch_async"
-- !private "SettingsViewController"
-- !private "dispatch_get_main_queue"
-- "AVAudioPlayerDelegate"
-- "DisplayViewController"
-- "UILabel"
-- !private "CGFloat"
-- "AVSpeechSynthesizerDelegate"
-- !private "Void"
-- !private "=="
-- "SettingsViewControllerDelegate"
-- "Int"
-- !private "NSString"
-- !private "+"
-- !private "NSURL"
 - !private "/"
-- !private "Dictionary"
+- "UILabel"
+- !private "print"
+- !private "NSMakeRange"
+- !private "NSFontAttributeName"
+- "UIStoryboardSegue"
 - !private "NSObject"
-- !private "UIImage"
-- !private "UIView"
-- !private "NSUTF8StringEncoding"
-- "AVSpeechUtterance"
+- !private "UIColor"
+- !private "UIFont"
+- !private "=="
+- "UIScrollView"
+- !private "AVSpeechUtteranceDefaultSpeechRate"
+- "AnyObject"
+- "BooleanLiteralType"
+- "Float"
+- !private "NSForegroundColorAttributeName"
+- !private "CGFloat"
+- "Bool"
+- "NSData"
+- "DisplayViewController"
+- "UnicodeScalarType"
+- "String"
+- !private "!"
 - !private ">"
+- "Array"
+- "Int"
+- "AVSpeechSynthesizerDelegate"
+- !private "dispatch_async"
+- !private "NSUserDefaults"
 - !private "AVSpeechBoundary"
 - "NSRange"
-- "UnicodeScalarType"
-- "UIButton"
-- !private "*"
-- !private "!"
-- "UIScrollView"
-- !private "NSFontAttributeName"
-- !private "NSMakeRange"
-- "UIProgressView"
-- !private "NSUserDefaults"
-- "UIStoryboardSegue"
-- "BooleanLiteralType"
+- !private "dispatch_get_main_queue"
+- !private "SettingsViewController"
+- "UIViewController"
+- "AVAudioPlayerDelegate"
+- !private "<"
+- !private "NSMutableAttributedString"
+- "UITextView"
 - "AVAudioPlayer"
-- "NSData"
+- !private "&&"
+- "SettingsViewControllerDelegate"
+- !private "+"
+- "StringLiteralType"
+- !private "NSURLSession"
+- !private "Dictionary"
+- "AVSpeechSynthesizer"
+- !private "NSUTF8StringEncoding"
+- !private "NSString"
+- !private "NSURL"
+- !private "!="
+- !private "Void"
+- !private "*"
+- !private "UIImage"
+- !private "UIView"
+- "TextToSpeech"
+- "UIProgressView"
+- "AVSpeechUtterance"
+- "UIButton"
+- !private "-"
 depends-member:
 - !private ["CSo13AVAudioPlayer", "delegate"]
 - ["CSo13AVAudioPlayer", "init"]
@@ -135,6 +136,7 @@ depends-member:
 - !private ["PSo21AVAudioPlayerDelegate", "NSURLSession"]
 - !private ["PSo21AVAudioPlayerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo21AVAudioPlayerDelegate", "NSUserDefaults"]
+- !private ["PSo21AVAudioPlayerDelegate", "String"]
 - ["PSo21AVAudioPlayerDelegate", "TextToSpeech"]
 - !private ["PSo21AVAudioPlayerDelegate", "UIColor"]
 - !private ["PSo21AVAudioPlayerDelegate", "UIFont"]
@@ -163,6 +165,7 @@ depends-member:
 - !private ["PSo21AVAudioPlayerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo21AVAudioPlayerDelegate", "getData"]
 - !private ["PSo21AVAudioPlayerDelegate", "listOfData"]
+- !private ["PSo21AVAudioPlayerDelegate", "listOfText"]
 - !private ["PSo21AVAudioPlayerDelegate", "loadSettings"]
 - !private ["PSo21AVAudioPlayerDelegate", "newVersion"]
 - !private ["PSo21AVAudioPlayerDelegate", "pause"]
@@ -210,6 +213,7 @@ depends-member:
 - !private ["PSo27AVSpeechSynthesizerDelegate", "NSURLSession"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "NSUserDefaults"]
+- !private ["PSo27AVSpeechSynthesizerDelegate", "String"]
 - ["PSo27AVSpeechSynthesizerDelegate", "TextToSpeech"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "UIColor"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "UIFont"]
@@ -238,6 +242,7 @@ depends-member:
 - !private ["PSo27AVSpeechSynthesizerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "getData"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "listOfData"]
+- !private ["PSo27AVSpeechSynthesizerDelegate", "listOfText"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "loadSettings"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "newVersion"]
 - !private ["PSo27AVSpeechSynthesizerDelegate", "pause"]
@@ -268,6 +273,7 @@ depends-member:
 - !private ["CSo17AVSpeechUtterance", "rate"]
 - !private ["CSo17AVSpeechUtterance", "speechString"]
 - !private ["CSo17AVSpeechUtterance", "volume"]
+- !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
 - !private ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "AVAudioPlayer"]
@@ -286,6 +292,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "String"]
 - ["PSs9AnyObject", "TextToSpeech"]
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIFont"]
@@ -335,6 +342,7 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "length"]
 - ["PSs9AnyObject", "listOfData"]
+- ["PSs9AnyObject", "listOfText"]
 - ["PSs9AnyObject", "loadSettings"]
 - ["PSs9AnyObject", "newVersion"]
 - !private ["PSs9AnyObject", "orangeColor"]
@@ -366,6 +374,7 @@ depends-member:
 - ["PSs9AnyObject", "service"]
 - !private ["PSs9AnyObject", "setImage"]
 - ["PSs9AnyObject", "setInitialFontAttribute"]
+- !private ["PSs9AnyObject", "setProgress"]
 - ["PSs9AnyObject", "settingsPressed"]
 - !private ["PSs9AnyObject", "sharedSession"]
 - ["PSs9AnyObject", "speak"]
@@ -427,6 +436,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "IntegerLiteralType"]
 - !private ["V12CoreGraphics7CGFloat", "Stride"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - ["PSs11CVarArgType", "AVAudioPlayer"]
@@ -448,6 +458,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "Stride"]
+- !private ["PSs11CVarArgType", "String"]
 - ["PSs11CVarArgType", "TextToSpeech"]
 - !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIFont"]
@@ -498,6 +509,7 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "length"]
 - ["PSs11CVarArgType", "listOfData"]
+- ["PSs11CVarArgType", "listOfText"]
 - ["PSs11CVarArgType", "loadSettings"]
 - ["PSs11CVarArgType", "newVersion"]
 - !private ["PSs11CVarArgType", "orangeColor"]
@@ -529,6 +541,7 @@ depends-member:
 - ["PSs11CVarArgType", "service"]
 - !private ["PSs11CVarArgType", "setImage"]
 - ["PSs11CVarArgType", "setInitialFontAttribute"]
+- !private ["PSs11CVarArgType", "setProgress"]
 - ["PSs11CVarArgType", "settingsPressed"]
 - !private ["PSs11CVarArgType", "sharedSession"]
 - ["PSs11CVarArgType", "speak"]
@@ -589,6 +602,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "characters"]
 - !private ["PSs28CustomDebugStringConvertible", "componentsSeparatedByString"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "removeAtIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "removeLast"]
 - !private ["PSs28CustomDebugStringConvertible", "stringByReplacingOccurrencesOfString"]
@@ -617,6 +631,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - ["PSs23CustomStringConvertible", "Some"]
 - !private ["PSs23CustomStringConvertible", "Stride"]
+- !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - ["PSs23CustomStringConvertible", "TextToSpeech"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
@@ -673,6 +688,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "length"]
 - ["PSs23CustomStringConvertible", "listOfData"]
+- ["PSs23CustomStringConvertible", "listOfText"]
 - ["PSs23CustomStringConvertible", "loadSettings"]
 - ["PSs23CustomStringConvertible", "newVersion"]
 - !private ["PSs23CustomStringConvertible", "orangeColor"]
@@ -706,6 +722,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "service"]
 - !private ["PSs23CustomStringConvertible", "setImage"]
 - ["PSs23CustomStringConvertible", "setInitialFontAttribute"]
+- !private ["PSs23CustomStringConvertible", "setProgress"]
 - ["PSs23CustomStringConvertible", "settingsPressed"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
 - ["PSs23CustomStringConvertible", "speak"]
@@ -805,6 +822,7 @@ depends-member:
 - ["C7NewsOTG21DisplayViewController", "getData"]
 - ["C7NewsOTG21DisplayViewController", "init"]
 - ["C7NewsOTG21DisplayViewController", "listOfData"]
+- ["C7NewsOTG21DisplayViewController", "listOfText"]
 - ["C7NewsOTG21DisplayViewController", "loadSettings"]
 - ["C7NewsOTG21DisplayViewController", "newVersion"]
 - ["C7NewsOTG21DisplayViewController", "pause"]
@@ -834,6 +852,7 @@ depends-member:
 - ["C7NewsOTG21DisplayViewController", "viewDidAppear"]
 - ["C7NewsOTG21DisplayViewController", "viewDidLoad"]
 - ["C7NewsOTG21DisplayViewController", "volume"]
+- !private ["Sd", "IntegerLiteralType"]
 - !private ["Sd", "Stride"]
 - !private ["Sd", "deinit"]
 - ["PSs9Equatable", "AVAudioPlayer"]
@@ -858,6 +877,7 @@ depends-member:
 - !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "RegularExpressionSearch"]
 - !private ["PSs9Equatable", "Stride"]
+- !private ["PSs9Equatable", "String"]
 - ["PSs9Equatable", "TextToSpeech"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIFont"]
@@ -909,6 +929,7 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "length"]
 - ["PSs9Equatable", "listOfData"]
+- ["PSs9Equatable", "listOfText"]
 - ["PSs9Equatable", "loadSettings"]
 - ["PSs9Equatable", "newVersion"]
 - !private ["PSs9Equatable", "orangeColor"]
@@ -940,6 +961,7 @@ depends-member:
 - ["PSs9Equatable", "service"]
 - !private ["PSs9Equatable", "setImage"]
 - ["PSs9Equatable", "setInitialFontAttribute"]
+- !private ["PSs9Equatable", "setProgress"]
 - ["PSs9Equatable", "settingsPressed"]
 - !private ["PSs9Equatable", "sharedSession"]
 - ["PSs9Equatable", "speak"]
@@ -968,13 +990,17 @@ depends-member:
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["Sf", "IntegerLiteralType"]
 - !private ["Sf", "Stride"]
 - !private ["Sf", "deinit"]
 - !private ["Sf", "init"]
+- !private ["VSs7Float80", "IntegerLiteralType"]
 - !private ["VSs7Float80", "Stride"]
 - !private ["VSs7Float80", "deinit"]
+- !private ["PSs23FloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs23FloatLiteralConvertible", "Stride"]
 - !private ["PSs23FloatLiteralConvertible", "init"]
+- !private ["PSs17FloatingPointType", "IntegerLiteralType"]
 - !private ["PSs17FloatingPointType", "Stride"]
 - !private ["PSs17FloatingPointType", "init"]
 - !private ["PSs16ForwardIndexType", "Distance"]
@@ -1002,6 +1028,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "Stride"]
+- !private ["PSs8Hashable", "String"]
 - ["PSs8Hashable", "TextToSpeech"]
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIFont"]
@@ -1053,6 +1080,7 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "length"]
 - ["PSs8Hashable", "listOfData"]
+- ["PSs8Hashable", "listOfText"]
 - ["PSs8Hashable", "loadSettings"]
 - ["PSs8Hashable", "newVersion"]
 - !private ["PSs8Hashable", "orangeColor"]
@@ -1084,6 +1112,7 @@ depends-member:
 - ["PSs8Hashable", "service"]
 - !private ["PSs8Hashable", "setImage"]
 - ["PSs8Hashable", "setInitialFontAttribute"]
+- !private ["PSs8Hashable", "setProgress"]
 - ["PSs8Hashable", "settingsPressed"]
 - !private ["PSs8Hashable", "sharedSession"]
 - ["PSs8Hashable", "speak"]
@@ -1126,6 +1155,8 @@ depends-member:
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
 - !private ["VSs5Int16", "Stride"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "Stride"]
@@ -1152,6 +1183,7 @@ depends-member:
 - !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs14MirrorPathType", "characters"]
 - !private ["PSs14MirrorPathType", "componentsSeparatedByString"]
+- !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs14MirrorPathType", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
@@ -1208,6 +1240,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "String"]
 - ["PSo8NSCoding", "TextToSpeech"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
@@ -1253,6 +1286,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "length"]
 - ["PSo8NSCoding", "listOfData"]
+- ["PSo8NSCoding", "listOfText"]
 - ["PSo8NSCoding", "loadSettings"]
 - ["PSo8NSCoding", "newVersion"]
 - !private ["PSo8NSCoding", "orangeColor"]
@@ -1279,6 +1313,7 @@ depends-member:
 - ["PSo8NSCoding", "service"]
 - !private ["PSo8NSCoding", "setImage"]
 - ["PSo8NSCoding", "setInitialFontAttribute"]
+- !private ["PSo8NSCoding", "setProgress"]
 - ["PSo8NSCoding", "settingsPressed"]
 - ["PSo8NSCoding", "speak"]
 - !private ["PSo8NSCoding", "speechString"]
@@ -1335,6 +1370,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
 - ["PSo26NSExtensionRequestHandling", "TextToSpeech"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
@@ -1368,6 +1404,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getData"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "listOfData"]
+- ["PSo26NSExtensionRequestHandling", "listOfText"]
 - ["PSo26NSExtensionRequestHandling", "loadSettings"]
 - ["PSo26NSExtensionRequestHandling", "newVersion"]
 - ["PSo26NSExtensionRequestHandling", "pause"]
@@ -1499,6 +1536,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "length"]
 - ["CSo8NSObject", "listOfData"]
+- ["CSo8NSObject", "listOfText"]
 - ["CSo8NSObject", "loadSettings"]
 - ["CSo8NSObject", "newVersion"]
 - !private ["CSo8NSObject", "orangeColor"]
@@ -1530,6 +1568,7 @@ depends-member:
 - ["CSo8NSObject", "service"]
 - !private ["CSo8NSObject", "setImage"]
 - ["CSo8NSObject", "setInitialFontAttribute"]
+- !private ["CSo8NSObject", "setProgress"]
 - ["CSo8NSObject", "settingsPressed"]
 - !private ["CSo8NSObject", "sharedSession"]
 - ["CSo8NSObject", "speak"]
@@ -1569,6 +1608,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - ["PSo16NSObjectProtocol", "TextToSpeech"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
@@ -1618,6 +1658,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "length"]
 - ["PSo16NSObjectProtocol", "listOfData"]
+- ["PSo16NSObjectProtocol", "listOfText"]
 - ["PSo16NSObjectProtocol", "loadSettings"]
 - ["PSo16NSObjectProtocol", "newVersion"]
 - !private ["PSo16NSObjectProtocol", "orangeColor"]
@@ -1649,6 +1690,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "service"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - ["PSo16NSObjectProtocol", "setInitialFontAttribute"]
+- !private ["PSo16NSObjectProtocol", "setProgress"]
 - ["PSo16NSObjectProtocol", "settingsPressed"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
 - ["PSo16NSObjectProtocol", "speak"]
@@ -1717,6 +1759,7 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "characters"]
 - !private ["PSs16OutputStreamType", "componentsSeparatedByString"]
+- !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs16OutputStreamType", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1766,6 +1809,7 @@ depends-member:
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "NSURLSession"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "NSUTF8StringEncoding"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "NSUserDefaults"]
+- !private ["P7NewsOTG30SettingsViewControllerDelegate", "String"]
 - ["P7NewsOTG30SettingsViewControllerDelegate", "TextToSpeech"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "UIColor"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "UIFont"]
@@ -1794,6 +1838,7 @@ depends-member:
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "dispatch_get_main_queue"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "getData"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "listOfData"]
+- !private ["P7NewsOTG30SettingsViewControllerDelegate", "listOfText"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "loadSettings"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "newVersion"]
 - !private ["P7NewsOTG30SettingsViewControllerDelegate", "pause"]
@@ -1831,6 +1876,7 @@ depends-member:
 - !private ["VSs5Slice", "_Element"]
 - !private ["PSs10Streamable", "characters"]
 - !private ["PSs10Streamable", "componentsSeparatedByString"]
+- !private ["PSs10Streamable", "init"]
 - !private ["PSs10Streamable", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
@@ -1839,9 +1885,12 @@ depends-member:
 - !private ["PSs10Strideable", "init"]
 - !private ["SS", "characters"]
 - !private ["SS", "componentsSeparatedByString"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
 - !private ["SS", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs30StringInterpolationConvertible", "characters"]
 - !private ["PSs30StringInterpolationConvertible", "componentsSeparatedByString"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs30StringInterpolationConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs24StringLiteralConvertible", "characters"]
 - !private ["PSs24StringLiteralConvertible", "componentsSeparatedByString"]
@@ -1857,6 +1906,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "scrollRangeToVisible"]
 - !private ["PSo29UIAccessibilityIdentification", "selectedRange"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
+- !private ["PSo29UIAccessibilityIdentification", "setProgress"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textStorage"]
 - !private ["PSo12UIAppearance", "alpha"]
@@ -1866,6 +1916,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "scrollRangeToVisible"]
 - !private ["PSo12UIAppearance", "selectedRange"]
 - !private ["PSo12UIAppearance", "setImage"]
+- !private ["PSo12UIAppearance", "setProgress"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textStorage"]
 - ["PSo21UIAppearanceContainer", "AVAudioPlayer"]
@@ -1884,6 +1935,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "String"]
 - ["PSo21UIAppearanceContainer", "TextToSpeech"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -1920,6 +1972,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "getData"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "listOfData"]
+- ["PSo21UIAppearanceContainer", "listOfText"]
 - ["PSo21UIAppearanceContainer", "loadSettings"]
 - ["PSo21UIAppearanceContainer", "newVersion"]
 - ["PSo21UIAppearanceContainer", "pause"]
@@ -1941,6 +1994,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "service"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - ["PSo21UIAppearanceContainer", "setInitialFontAttribute"]
+- !private ["PSo21UIAppearanceContainer", "setProgress"]
 - ["PSo21UIAppearanceContainer", "settingsPressed"]
 - ["PSo21UIAppearanceContainer", "speak"]
 - ["PSo21UIAppearanceContainer", "speechSynthesizer"]
@@ -1978,6 +2032,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "String"]
 - ["PSo18UIContentContainer", "TextToSpeech"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
@@ -2011,6 +2066,7 @@ depends-member:
 - ["PSo18UIContentContainer", "getData"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "listOfData"]
+- ["PSo18UIContentContainer", "listOfText"]
 - ["PSo18UIContentContainer", "loadSettings"]
 - ["PSo18UIContentContainer", "newVersion"]
 - ["PSo18UIContentContainer", "pause"]
@@ -2051,6 +2107,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "scrollRangeToVisible"]
 - !private ["PSo17UICoordinateSpace", "selectedRange"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
+- !private ["PSo17UICoordinateSpace", "setProgress"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textStorage"]
 - !private ["PSo13UIDynamicItem", "alpha"]
@@ -2060,6 +2117,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "scrollRangeToVisible"]
 - !private ["PSo13UIDynamicItem", "selectedRange"]
 - !private ["PSo13UIDynamicItem", "setImage"]
+- !private ["PSo13UIDynamicItem", "setProgress"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textStorage"]
 - ["PSo18UIFocusEnvironment", "AVAudioPlayer"]
@@ -2078,6 +2136,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "String"]
 - ["PSo18UIFocusEnvironment", "TextToSpeech"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -2114,6 +2173,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "getData"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "listOfData"]
+- ["PSo18UIFocusEnvironment", "listOfText"]
 - ["PSo18UIFocusEnvironment", "loadSettings"]
 - ["PSo18UIFocusEnvironment", "newVersion"]
 - ["PSo18UIFocusEnvironment", "pause"]
@@ -2135,6 +2195,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "service"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - ["PSo18UIFocusEnvironment", "setInitialFontAttribute"]
+- !private ["PSo18UIFocusEnvironment", "setProgress"]
 - ["PSo18UIFocusEnvironment", "settingsPressed"]
 - ["PSo18UIFocusEnvironment", "speak"]
 - ["PSo18UIFocusEnvironment", "speechSynthesizer"]
@@ -2162,6 +2223,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "delegate"]
 - !private ["CSo14UIProgressView", "alpha"]
 - !private ["CSo14UIProgressView", "progress"]
+- !private ["CSo14UIProgressView", "setProgress"]
 - ["CSo11UIResponder", "AVAudioPlayer"]
 - !private ["CSo11UIResponder", "AVSpeechBoundary"]
 - ["CSo11UIResponder", "AVSpeechSynthesizer"]
@@ -2230,6 +2292,7 @@ depends-member:
 - ["CSo11UIResponder", "getData"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "listOfData"]
+- ["CSo11UIResponder", "listOfText"]
 - ["CSo11UIResponder", "loadSettings"]
 - ["CSo11UIResponder", "newVersion"]
 - ["CSo11UIResponder", "pause"]
@@ -2251,6 +2314,7 @@ depends-member:
 - ["CSo11UIResponder", "service"]
 - !private ["CSo11UIResponder", "setImage"]
 - ["CSo11UIResponder", "setInitialFontAttribute"]
+- !private ["CSo11UIResponder", "setProgress"]
 - ["CSo11UIResponder", "settingsPressed"]
 - ["CSo11UIResponder", "speak"]
 - ["CSo11UIResponder", "speechSynthesizer"]
@@ -2287,6 +2351,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "String"]
 - ["PSo16UIStateRestoring", "TextToSpeech"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
@@ -2320,6 +2385,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "getData"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "listOfData"]
+- ["PSo16UIStateRestoring", "listOfText"]
 - ["PSo16UIStateRestoring", "loadSettings"]
 - ["PSo16UIStateRestoring", "newVersion"]
 - ["PSo16UIStateRestoring", "pause"]
@@ -2385,6 +2451,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "String"]
 - ["PSo18UITraitEnvironment", "TextToSpeech"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -2421,6 +2488,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "getData"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "listOfData"]
+- ["PSo18UITraitEnvironment", "listOfText"]
 - ["PSo18UITraitEnvironment", "loadSettings"]
 - ["PSo18UITraitEnvironment", "newVersion"]
 - ["PSo18UITraitEnvironment", "pause"]
@@ -2442,6 +2510,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "service"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - ["PSo18UITraitEnvironment", "setInitialFontAttribute"]
+- !private ["PSo18UITraitEnvironment", "setProgress"]
 - ["PSo18UITraitEnvironment", "settingsPressed"]
 - ["PSo18UITraitEnvironment", "speak"]
 - ["PSo18UITraitEnvironment", "speechSynthesizer"]
@@ -2464,6 +2533,7 @@ depends-member:
 - !private ["CSo6UIView", "scrollRangeToVisible"]
 - !private ["CSo6UIView", "selectedRange"]
 - !private ["CSo6UIView", "setImage"]
+- !private ["CSo6UIView", "setProgress"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textStorage"]
 - ["CSo16UIViewController", "AVAudioPlayer"]
@@ -2532,6 +2602,7 @@ depends-member:
 - ["CSo16UIViewController", "getData"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "listOfData"]
+- ["CSo16UIViewController", "listOfText"]
 - ["CSo16UIViewController", "loadSettings"]
 - ["CSo16UIViewController", "newVersion"]
 - ["CSo16UIViewController", "pause"]
@@ -2595,6 +2666,8 @@ depends-member:
 - !private ["PSs31UnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["VSs20UnsafeMutablePointer", "deinit"]
+- !private ["VSs13UnsafePointer", "deinit"]
 - !private ["PSs19UnsignedIntegerType", "Distance"]
 - !private ["PSs19UnsignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs19UnsignedIntegerType", "Stride"]
@@ -2614,7 +2687,9 @@ depends-member:
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -2624,18 +2699,22 @@ depends-member:
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "characters"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "componentsSeparatedByString"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "characters"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "componentsSeparatedByString"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs19_CVarArgAlignedType", "Distance"]
 - !private ["PSs19_CVarArgAlignedType", "IntegerLiteralType"]
 - !private ["PSs19_CVarArgAlignedType", "Stride"]
 - !private ["PSs19_CVarArgAlignedType", "_DisallowMixedSignArithmetic"]
 - !private ["PSs19_CVarArgAlignedType", "init"]
+- !private ["PSs22_CVarArgPassedAsDouble", "IntegerLiteralType"]
 - !private ["PSs22_CVarArgPassedAsDouble", "Stride"]
 - !private ["PSs22_CVarArgPassedAsDouble", "init"]
 - !private ["PSs16_CocoaStringType", "characters"]
@@ -2733,6 +2812,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "scrollRangeToVisible"]
 - !private ["PSs12_Reflectable", "selectedRange"]
 - !private ["PSs12_Reflectable", "setImage"]
+- !private ["PSs12_Reflectable", "setProgress"]
 - !private ["PSs12_Reflectable", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
@@ -2879,6 +2959,8 @@ depends-nominal:
 - !private "VSs5UInt8"
 - !private "P9Alamofire20URLStringConvertible"
 - !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "VSs20UnsafeMutablePointer"
+- !private "VSs13UnsafePointer"
 - !private "PSs19UnsignedIntegerType"
 - "P20WatsonDeveloperCloud13WatsonService"
 - !private "PSs10_ArrayType"
@@ -3039,4 +3121,4 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
-interface-hash: "db6106f8fa6046cf0df905e8210feef3"
+interface-hash: "b096ae5713bc0372d8e11f65dcf3fd6e"

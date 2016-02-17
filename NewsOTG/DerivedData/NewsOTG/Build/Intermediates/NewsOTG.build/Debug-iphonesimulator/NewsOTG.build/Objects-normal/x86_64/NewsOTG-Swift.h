@@ -234,6 +234,7 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic, copy) NSArray<NSData *> * __nonnull listOfData;
 @property (nonatomic, strong) NSData * __nonnull audioData;
 @property (nonatomic) BOOL startedPlaying;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfText;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
 @property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
 - (void)viewDidAppear:(BOOL)animated;

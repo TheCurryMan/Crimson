@@ -55,6 +55,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var startedPlaying = false
     
+    var listOfText : [String] = []
+    
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
     var previousSelectedRange: NSRange!
@@ -228,13 +230,16 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         var listOfStrings = content.componentsSeparatedByString(".")
         print(listOfStrings)
         listOfStrings.removeLast()
+        listOfText = listOfStrings
         for i in listOfStrings {
             print(i)
             print(accent)
         self.service.synthesize(i, voice: accent, completionHandler: {data, error in
             self.listOfData.append(data!)
     
-    })}
+    })
+        self.pvSpeechProgress.setProgress(0.0, animated: false)
+        }
     }
     
     
@@ -300,7 +305,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
         print(sender)
         
-        pvSpeechProgress.progress = Float((counter+1)/(listOfData.count))
+        print("Value of bar: " + String(Float((counter+1)/(listOfText.count))))
+        
+        print(counter + 1)
+        print(listOfText.count)
+        
+        self.pvSpeechProgress.setProgress(Float(counter+1)/Float(listOfText.count), animated: true)
         
         //print(listOfData)
         print(listOfData.count)
@@ -381,6 +391,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             counter = counter + 1
             startedPlaying = false
             speak(self)
+            }
+            
+            else {
+                pauseSpeech(self)
+                counter = 0
+                startedPlaying = false
             }
             
     }
