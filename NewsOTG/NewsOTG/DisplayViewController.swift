@@ -47,6 +47,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var counter = 0
     
+    var pause = false
+    
     var listOfData : [NSData] = []
     
     var audioData : NSData = NSData()
@@ -199,7 +201,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                            // print(self.articleText)
                             
                             
-                            self.setInitialFontAttribute()
+                            
                             
                             
                             self.articleContent.text = self.articleText
@@ -210,7 +212,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             
                             print(self.articleText)
                             
-                            
+                            self.setInitialFontAttribute()
                             
                             self.content = self.articleContent.text!
                             self.content = self.content.stringByReplacingOccurrencesOfString(".", withString: ". ")
@@ -296,11 +298,27 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     @IBAction func speak(sender: AnyObject) {
         print(speechSynthesizer.speaking)
         
+        print(sender)
+        
+        pvSpeechProgress.progress = Float((counter+1)/(listOfData.count))
+        
         //print(listOfData)
         print(listOfData.count)
         print("THE LENGTH OF THE ARRAY OF DATA IS ABOVE \n\n\n\n\n\n\n")
         
-        if startedPlaying != true {playAudio()}
+        if sender as! NSObject == btnSpeak as! NSObject &&  pause == true && startedPlaying == true{
+            self.pauseSpeech(self)
+        }
+        
+        else {
+        
+        if pause == false {
+            btnSpeak.setImage(UIImage(named: "pause1"), forState: .Normal)
+            pause = true }
+        
+        print(startedPlaying)
+        
+        if startedPlaying == false {playAudio()}
             
         else if startedPlaying == true {audioPlayer.play()}
             
@@ -334,6 +352,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             
             
         }
+            
+            
         else{
             
             speechSynthesizer.continueSpeaking()
@@ -341,20 +361,33 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         }
             
         }
+            
+        }
         
-        animateActionButtonAppearance(true)
+        
+        
+        
+        
+        //animateActionButtonAppearance(true)
+            
+            
     }
     
     func audioPlayerDidFinishPlaying( audioPlayer: AVAudioPlayer,
         successfully flag: Bool) {
+            if counter < listOfData.count - 1 {
+                
+            
             counter = counter + 1
             startedPlaying = false
-            playAudio()
+            speak(self)
+            }
             
     }
     
     func playAudio() {
         
+
         do {
             //print(listOfData)
             
@@ -379,35 +412,14 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         }
     }
     
-    
-    @IBAction func stopSpeech(sender: AnyObject) {
-        
-        //stop = true
-        
-        if newVersion {
-            print(self.audioPlayer.playing)
-            self.audioPlayer.stop()
-            
-            print(audioPlayer.playing)
-            animateActionButtonAppearance(false)
-        }
-        
-        else {
-        
-        speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
-          animateActionButtonAppearance(false)
-        
-        unselectLastWord()
-        previousSelectedRange = nil
-        }
-    }
-    
     @IBAction func pauseSpeech(sender: AnyObject) {
         
         //pause = true
         if newVersion{
+            btnSpeak.setImage(UIImage(named: "play1"), forState: .Normal)
+            pause = false
             self.audioPlayer.pause()
-            animateActionButtonAppearance(false)
+            //animateActionButtonAppearance(false)
         } else {
         speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Immediate)
           animateActionButtonAppearance(false)
@@ -415,6 +427,55 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
       
     }
+    
+    
+    @IBAction func forward(sender: AnyObject) {
+        pauseSpeech(self)
+        if counter < listOfData.count-1{
+            counter = counter + 1
+            startedPlaying = false
+            speak(self)
+        }
+        
+        else {
+            counter = listOfData.count
+            //pauseSpeech(self)
+        }
+        
+        
+    }
+    
+    
+    @IBAction func rewind(sender: AnyObject) {
+        pauseSpeech(self)
+        if counter > 0 {
+            counter = counter - 1
+            startedPlaying = false
+            speak(self)
+        }
+        else {
+            counter = 0
+            audioPlayer.stop()
+            startedPlaying = false
+            //pauseSpeech(self)
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //CODE WE REALLY DON'T CARE ABOUT AND WILL BE REMOVED SOON ->
     
     
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!) {
@@ -504,7 +565,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     func setInitialFontAttribute() {
         let rangeOfWholeText = NSMakeRange(0, articleContent.text!.characters.count)
         let attributedText = NSMutableAttributedString(string: articleContent.text!)
-        attributedText.addAttribute(NSFontAttributeName, value: UIFont(name: "Arial", size: 18.0)!, range: rangeOfWholeText)
+        
+        attributedText.addAttribute(NSFontAttributeName, value: UIFont(name: "Avenir", size: 16.0)!, range: rangeOfWholeText)
         articleContent.textStorage.beginEditing()
         articleContent.textStorage.replaceCharactersInRange(rangeOfWholeText, withAttributedString: attributedText)
         articleContent.textStorage.endEditing()

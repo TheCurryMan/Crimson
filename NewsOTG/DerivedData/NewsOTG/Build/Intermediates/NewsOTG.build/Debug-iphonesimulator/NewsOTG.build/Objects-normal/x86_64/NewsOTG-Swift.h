@@ -230,6 +230,7 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic) BOOL newVersion;
 @property (nonatomic, copy) NSString * __nonnull content;
 @property (nonatomic) NSInteger counter;
+@property (nonatomic) BOOL pause;
 @property (nonatomic, copy) NSArray<NSData *> * __nonnull listOfData;
 @property (nonatomic, strong) NSData * __nonnull audioData;
 @property (nonatomic) BOOL startedPlaying;
@@ -245,8 +246,9 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 - (IBAction)speak:(id __nonnull)sender;
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer * __nonnull)audioPlayer successfully:(BOOL)flag;
 - (void)playAudio;
-- (IBAction)stopSpeech:(id __nonnull)sender;
 - (IBAction)pauseSpeech:(id __nonnull)sender;
+- (IBAction)forward:(id __nonnull)sender;
+- (IBAction)rewind:(id __nonnull)sender;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer didStartSpeechUtterance:(AVSpeechUtterance * __null_unspecified)utterance;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance * __null_unspecified)utterance;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance * __null_unspecified)utterance;
