@@ -73,6 +73,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var listOfText : [String] = []
     
+    var wiki = false
+    
     var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
     
     @IBOutlet var pvSpeechProgress: UIProgressView!
@@ -185,27 +187,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                     let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
                     
                     
-                    /*
-                    
-                    var nounArray = [""]
-                    
-                    
-                    var urlContentArray2 = urlContent.componentsSeparatedByString("false\">")
-                    
-                    urlContentArray2.removeAtIndex(0)
-                    
-                    var arr3 = [""]
-                    arr3.removeAtIndex(0)
-                    
-                    for i in urlContentArray2 {
-                        
-                        var arr3 = i.componentsSeparatedByString("</guid>")
-                        self.articlesURL.append(arr3[0])
-                        
-                        
-                    }
-                    
-*/
+                    if self.wiki == false {
                     
                    
                     var urlContentArray = urlContent.componentsSeparatedByString("el-editorial-source\">")
@@ -246,6 +228,32 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                         print(str)
                     
                         self.articleText = str.stringByReplacingOccurrencesOfString(".", withString: ". ")
+                        }
+                        
+                    
+                    }
+                    
+                    else {
+                        
+                        var wikiContent = urlContent.componentsSeparatedByString("<p></p>")
+                        
+                        var wikiHTML = wikiContent[0]
+                        
+                        var wikiPtags = wikiHTML.componentsSeparatedByString("<p>")
+                        
+                        wikiPtags.removeFirst()
+                        
+                        var wikiString = ""
+                        
+                        for i in wikiPtags {
+                            var str = i.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
+                            str = str.stringByReplacingOccurrencesOfString("{([^}]*)}", withString: "")
+                
+                            wikiString = wikiString + str
+                        }
+                        
+                        self.articleText = wikiString
+                        
                     }
                         
                     dispatch_async(dispatch_get_main_queue()) {

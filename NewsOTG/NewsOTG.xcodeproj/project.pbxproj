@@ -41,6 +41,9 @@
 		E1616D1E1C3BFEB7005E5FDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */; };
 		E1616D201C3C001B005E5FDD /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */; };
 		E1B433EE1C759FDD0076915B /* WikiSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B433ED1C759FDD0076915B /* WikiSearchViewController.swift */; };
+		E1B433F31C75AAE30076915B /* listOfBusinesses.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1B433F01C75AAE30076915B /* listOfBusinesses.txt */; };
+		E1B433F41C75AAE30076915B /* listOfCountries.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1B433F11C75AAE30076915B /* listOfCountries.txt */; };
+		E1B433F51C75AAE30076915B /* listOfFruits.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1B433F21C75AAE30076915B /* listOfFruits.txt */; };
 		E1BC5D9F1C6B0DF4001E406C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116F8DA1C04198300B95502 /* AVFoundation.framework */; };
 		E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */; };
 		E1F5ACE11C342C55000EAFFE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5ACE01C342C55000EAFFE /* TestViewController.swift */; };
@@ -144,6 +147,9 @@
 		E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		E1B433ED1C759FDD0076915B /* WikiSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiSearchViewController.swift; sourceTree = "<group>"; };
+		E1B433F01C75AAE30076915B /* listOfBusinesses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = listOfBusinesses.txt; sourceTree = "<group>"; };
+		E1B433F11C75AAE30076915B /* listOfCountries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = listOfCountries.txt; sourceTree = "<group>"; };
+		E1B433F21C75AAE30076915B /* listOfFruits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = listOfFruits.txt; sourceTree = "<group>"; };
 		E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
 		E1F5ACE01C342C55000EAFFE /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -257,6 +263,9 @@
 				E116F8B41C0288B600B95502 /* Info.plist */,
 				E1C71B591C0AA08A0007521E /* SourceTableViewCell.xib */,
 				E1176AA11C0C0933009E792A /* ArticlesTableViewCell.xib */,
+				E1B433F01C75AAE30076915B /* listOfBusinesses.txt */,
+				E1B433F11C75AAE30076915B /* listOfCountries.txt */,
+				E1B433F21C75AAE30076915B /* listOfFruits.txt */,
 				E116F8AF1C0288B600B95502 /* Assets.xcassets */,
 				E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */,
 			);
@@ -433,12 +442,15 @@
 				E1176AA21C0C0933009E792A /* ArticlesTableViewCell.xib in Resources */,
 				E1C71B5A1C0AA08A0007521E /* SourceTableViewCell.xib in Resources */,
 				E116F8B31C0288B600B95502 /* LaunchScreen.storyboard in Resources */,
+				E1B433F41C75AAE30076915B /* listOfCountries.txt in Resources */,
+				E1B433F51C75AAE30076915B /* listOfFruits.txt in Resources */,
 				E1F5ACEC1C342D93000EAFFE /* AcousticModelSpanish.bundle in Resources */,
 				E1F5ACEB1C342D93000EAFFE /* AcousticModelEnglish.bundle in Resources */,
 				E1200C851C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */,
 				E1F5C5401C4D946000F93FA1 /* CategoriesTableViewCell.xib in Resources */,
 				E116F8B01C0288B600B95502 /* Assets.xcassets in Resources */,
 				E116F8AE1C0288B600B95502 /* Main.storyboard in Resources */,
+				E1B433F31C75AAE30076915B /* listOfBusinesses.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

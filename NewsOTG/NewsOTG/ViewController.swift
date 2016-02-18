@@ -136,7 +136,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             finalSource = "Wiki"
             
-            self.performSegueWithIdentifier("articles", sender: self)
+            self.performSegueWithIdentifier("wiki", sender: self)
         
         }
     }
@@ -205,7 +205,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             //add any thing here that you want to be recognized. Must be in capital letters
             words.append("OKAYBLARB")
             words.append("SELECTSEA")
-            words.append("EN")
+            //words.append("EN")
             words.append("SELECTWIKIPEDIA")
             words.append("SELECTBEEBEESEA")
         }

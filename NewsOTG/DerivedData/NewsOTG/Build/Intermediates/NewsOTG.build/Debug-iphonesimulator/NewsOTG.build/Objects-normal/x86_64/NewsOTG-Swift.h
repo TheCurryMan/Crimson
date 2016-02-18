@@ -244,6 +244,7 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic, strong) NSData * __nonnull audioData;
 @property (nonatomic) BOOL startedPlaying;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfText;
+@property (nonatomic) BOOL wiki;
 @property (nonatomic, strong) UIActivityIndicatorView * __nonnull activityIndicator;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
 @property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
@@ -449,11 +450,29 @@ SWIFT_CLASS("_TtC7NewsOTG14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISearchController;
+@class UIFont;
+@class UIColor;
+@class UISearchBar;
 
 SWIFT_CLASS("_TtC7NewsOTG24WikiSearchViewController")
-@interface WikiSearchViewController : UIViewController
+@interface WikiSearchViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
+@property (nonatomic, strong) UISearchController * __null_unspecified searchController;
+@property (nonatomic, strong) UIFont * __null_unspecified preferredFont;
+@property (nonatomic, strong) UIColor * __null_unspecified preferredTextColor;
+@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
+- (void)loadLists;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)configureSearchController;
+- (void)searchBarTextDidBeginEditing:(UISearchBar * __nonnull)searchBar;
+- (void)searchBarCancelButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)searchBarSearchButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)updateSearchResultsForSearchController:(UISearchController * __nonnull)searchController;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
