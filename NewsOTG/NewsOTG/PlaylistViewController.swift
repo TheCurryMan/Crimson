@@ -19,7 +19,9 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var articlesNames = [""]
     var articlesURL = [""]
-    var playlist = [["",""]]
+    var playlist = [["","","",""]]
+    
+    var all = false
     
     @IBOutlet var tableView: UITableView!
     
@@ -43,6 +45,17 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 self.playlist = user["playlist"] as! [Array<String>]
                 self.playlist.removeAtIndex(0)
+                
+                for i in self.playlist {
+                    self.articlesNames.append(i[0])
+                    self.articlesURL.append(i[2])
+                }
+                
+                self.articlesNames.removeFirst()
+                self.articlesURL.removeFirst()
+                
+                print("article names: \n\n")
+                print(self.articlesNames)
                 
                 print(self.playlist)
                 
@@ -90,9 +103,13 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
             
             cell.articleText.text = text1[0]
         
-        print(cell.articleText.text)
+            print(cell.articleText.text)
             
-            cell.articleURL.text = text1[1]
+            cell.articleInfo.text = text1[1]
+            
+            cell.articleURL.text = text1[2]
+            
+            cell.articleDate.text = text1[3]
             
             cell.articleURL.hidden = true
             
@@ -115,17 +132,33 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "article2" {
+            
             var vc = segue.destinationViewController as! DisplayViewController
+            
+            if all == true {
+                print(self.articlesNames)
+                vc.listOfArticles = self.articlesNames
+                vc.listOfUrls = self.articlesURL
+                
+            }
+            
+            else {
+            
+            
+            print(self.finalURL)
+            print(self.finalArticle)
             
             vc.articleName = self.finalArticle
             vc.articleURL = self.finalURL
+                
+            }
             
             
         }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 75
+        return 120
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -147,14 +180,18 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    @IBAction func playAll(sender: AnyObject) {
+        
+           all = true
+        
+        performSegueWithIdentifier("article2", sender: self)
+        
+     
     }
-    */
+    
+    
+    
+    
+    
     
 }

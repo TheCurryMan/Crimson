@@ -18,19 +18,19 @@ class SourceTableViewCell : UITableViewCell {
         
         if sender.tag == 0 {
         
-             NSNotificationCenter.defaultCenter().postNotificationName("CNN", object: nil)
+             NSNotificationCenter.defaultCenter().postNotificationName("Wiki", object: nil)
             
         }
         
         else if sender.tag == 1 {
             
-            NSNotificationCenter.defaultCenter().postNotificationName("BBC", object: nil)
+            NSNotificationCenter.defaultCenter().postNotificationName("CNN", object: nil)
         
         }
         
         else if sender.tag == 2 {
         
-            NSNotificationCenter.defaultCenter().postNotificationName("Wiki", object: nil)
+            NSNotificationCenter.defaultCenter().postNotificationName("BBC", object: nil)
         
         }
         
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var finalSource = ""
     
-    var sources = ["CNN", "BBC", "Wikipedia"]
+    var sources = ["Wikipedia", "CNN", "BBC"]
     
     
     override func viewWillAppear(animated: Bool) {
@@ -70,9 +70,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         startListening()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"Wiki", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"CNN", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"BBC", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"Wiki", object: nil)
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         // Do any additional setup after loading the view, typically from a nib.

@@ -149,8 +149,8 @@ SWIFT_CLASS("_TtC7NewsOTG22ArticlesViewController")
 - (void)getRectangle;
 - (void)getSummaryOfArticle:(NSString * __nonnull)url;
 - (void)didReceiveMemoryWarning;
-- (void)getRecentPlaylist:(NSInteger)num info:(NSString * __nonnull)info url:(NSString * __nonnull)url;
-- (void)addToPlaylist:(NSInteger)num info:(NSString * __nonnull)info url:(NSString * __nonnull)url;
+- (void)getRecentPlaylist:(NSInteger)num info:(NSString * __nonnull)info body:(NSString * __nonnull)body date:(NSString * __nonnull)date url:(NSString * __nonnull)url;
+- (void)addToPlaylist:(NSInteger)num info:(NSString * __nonnull)info body:(NSString * __nonnull)body date:(NSString * __nonnull)date url:(NSString * __nonnull)url;
 @property (nonatomic, copy) NSString * __nonnull finalArticle;
 @property (nonatomic, copy) NSString * __nonnull finalURL;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -206,6 +206,7 @@ SWIFT_CLASS("_TtC7NewsOTG12CustomSlider")
 @class UIScrollView;
 @class UITextView;
 @class NSData;
+@class UIActivityIndicatorView;
 @class UIProgressView;
 @class AVAudioPlayer;
 @class AVSpeechSynthesizer;
@@ -223,6 +224,8 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnStop;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnSpeak;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnPause;
+@property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnRewind;
+@property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnForward;
 @property (nonatomic) NSInteger totalTime;
 @property (nonatomic) NSInteger currentTime;
 @property (nonatomic) NSInteger totalTextLength;
@@ -230,16 +233,24 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic) BOOL newVersion;
 @property (nonatomic, copy) NSString * __nonnull content;
 @property (nonatomic) NSInteger counter;
+@property (nonatomic) NSInteger counter1;
+@property (nonatomic) NSInteger counterForArticle;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfArticles;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfUrls;
+@property (nonatomic) BOOL all;
+@property (nonatomic) BOOL multiple;
 @property (nonatomic) BOOL pause;
 @property (nonatomic, copy) NSArray<NSData *> * __nonnull listOfData;
 @property (nonatomic, strong) NSData * __nonnull audioData;
 @property (nonatomic) BOOL startedPlaying;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfText;
+@property (nonatomic, strong) UIActivityIndicatorView * __nonnull activityIndicator;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
 @property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)getData:(NSString * __nonnull)content;
+- (void)getAudioData;
 @property (nonatomic, readonly, strong) AVSpeechSynthesizer * __nonnull speechSynthesizer;
 - (void)registerDefaultSettings;
 - (BOOL)loadSettings;
@@ -250,6 +261,7 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 - (IBAction)pauseSpeech:(id __nonnull)sender;
 - (IBAction)forward:(id __nonnull)sender;
 - (IBAction)rewind:(id __nonnull)sender;
+- (void)viewDidDisappear:(BOOL)animated;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer didStartSpeechUtterance:(AVSpeechUtterance * __null_unspecified)utterance;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance * __null_unspecified)utterance;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance * __null_unspecified)utterance;
@@ -262,7 +274,6 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC7NewsOTG21LoadingViewController")
 @interface LoadingViewController : UIViewController
@@ -282,6 +293,7 @@ SWIFT_CLASS("_TtC7NewsOTG22PlaylistViewController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull articlesNames;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull articlesURL;
 @property (nonatomic, copy) NSArray<NSArray<NSString *> *> * __nonnull playlist;
+@property (nonatomic) BOOL all;
 @property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -294,6 +306,7 @@ SWIFT_CLASS("_TtC7NewsOTG22PlaylistViewController")
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (BOOL)tableView:(UITableView * __nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (IBAction)playAll:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -432,6 +445,15 @@ SWIFT_CLASS("_TtC7NewsOTG14ViewController")
 - (void)pocketsphinxFailedNoMicPermissions;
 - (void)pocketsphinxDidReceiveHypothesis:(NSString * __null_unspecified)hypothesis recognitionScore:(NSString * __null_unspecified)recognitionScore utteranceID:(NSString * __null_unspecified)utteranceID;
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7NewsOTG24WikiSearchViewController")
+@interface WikiSearchViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

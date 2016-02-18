@@ -29,6 +29,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     @IBOutlet var btnPause: UIButton!
     
+    @IBOutlet var btnRewind: UIButton!
+    
+    @IBOutlet var btnForward: UIButton!
+    
     var totalTime = 0
     
     var currentTime = 0
@@ -47,6 +51,18 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var counter = 0
     
+    var counter1 = 0
+    
+    var counterForArticle = 0
+    
+    var listOfArticles = [""]
+    
+    var listOfUrls = [""]
+    
+    var all = false
+    
+    var multiple = false
+    
     var pause = false
     
     var listOfData : [NSData] = []
@@ -56,6 +72,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     var startedPlaying = false
     
     var listOfText : [String] = []
+    
+    var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
     
     @IBOutlet var pvSpeechProgress: UIProgressView!
     
@@ -69,14 +87,29 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     //var myUtterance = AVSpeechUtterance(string: "")
     
     override func viewDidAppear(animated: Bool) {
-    
         
+        /*
+        
+        print(all)
+        
+        print(listOfArticles)
+        
+        if listOfArticles != [""] {
+            all = true
+            viewDidLoad()
+        } */
         
         speechSynthesizer.delegate = self
         
         let userDefaults = NSUserDefaults.standardUserDefaults() as NSUserDefaults
         
-        accent = userDefaults.valueForKey("accent") as! String
+        if var i = userDefaults.valueForKey("accent") {
+            accent = userDefaults.valueForKey("accent") as! String
+        }
+        
+        else {accent = ""}
+        
+        
         
         getData(content)
         
@@ -93,26 +126,53 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var url = NSURL()
+        
+        activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 100))
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
+        activityIndicator.color = UIColor.blackColor()
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
         
         
-        // Do any additional setup after loading the view.
         
-        articleTitle.text = articleName
+        counter = 0
+        
+        print(all)
+        
+        if listOfArticles == [""] {
+        
+            articleTitle.text = articleName
+        
+            url = NSURL(string: articleURL)!}
+        
+        else {
+            self.all = true
+            
+            print(listOfArticles)
+            
+            articleTitle.text = listOfArticles[counterForArticle]
+            
+            url = NSURL(string: listOfUrls[counterForArticle])!
+            
+        }
         
         articleContent.text = "Loading Content... "
         
         print(articleURL)
         
         
-        let url = NSURL(string: articleURL)
+        
         
         print(url)
     
         
         
-        if url != nil {
+        //if url != nil {
             
-            let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
                 
                 let urlError = false
                 
@@ -204,7 +264,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             
                             
                             
-                            
+                            self.articleContent.hidden = true
                             
                             self.articleContent.text = self.articleText
                             
@@ -223,24 +283,50 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             self.getData(self.content)
                         }}}})
             
-            task.resume()}}
+            task.resume()}
     
     func getData(content:String) {
+        
+        
         
         var listOfStrings = content.componentsSeparatedByString(".")
         print(listOfStrings)
         listOfStrings.removeLast()
         listOfText = listOfStrings
-        for i in listOfStrings {
-            print(i)
-            print(accent)
-        self.service.synthesize(i, voice: accent, completionHandler: {data, error in
-            self.listOfData.append(data!)
-    
-    })
-        self.pvSpeechProgress.setProgress(0.0, animated: false)
+        getAudioData()
+            }
+        
+        
+        func getAudioData() {
+            
+            do {
+                self.activityIndicator.stopAnimating()
+                self.articleContent.hidden = false
+                
+                var i = listOfText[counter1]
+                self.service.synthesize(i, voice: accent, completionHandler: {data, error in
+                    
+                    
+
+                    
+                    print("Line converting: " + i)
+                    if data != nil {
+                        
+                        self.listOfData.append(data!)
+                        if self.counter1 < self.listOfText.count - 1 {
+                            self.counter1 = self.counter1 + 1
+                            self.getAudioData()
+                        }
+                        
+                    }})
+                self.pvSpeechProgress.setProgress(0.0, animated: false)
+            }
+        catch {
+            self.btnSpeak.enabled = false
+            self.btnRewind.enabled = false
+            self.btnForward.enabled = false
+            }
         }
-    }
     
     
     
@@ -269,7 +355,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             pitch = userDefaults.valueForKey("pitch") as! Float
             volume = userDefaults.valueForKey("volume") as! Float
             
-            accent = userDefaults.valueForKey("accent") as! String
+            
+            if var i = userDefaults.valueForKey("accent") {
+                accent = userDefaults.valueForKey("accent") as! String
+            }
+                
+            else {accent = ""}
             print("SKDLSKDJLSDJLKSDJ \n\n\n\n\n\n THIS SHOULD WORK")
             getData(content)
             print(accent)
@@ -306,9 +397,6 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         print(sender)
         
         print("Value of bar: " + String(Float((counter+1)/(listOfText.count))))
-        
-        print(counter + 1)
-        print(listOfText.count)
         
         self.pvSpeechProgress.setProgress(Float(counter+1)/Float(listOfText.count), animated: true)
         
@@ -385,7 +473,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     func audioPlayerDidFinishPlaying( audioPlayer: AVAudioPlayer,
         successfully flag: Bool) {
-            if counter < listOfData.count - 1 {
+            if counter < listOfData.count - 1 && all == false{
                 
             
             counter = counter + 1
@@ -394,9 +482,27 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             }
             
             else {
+                if all == false {
                 pauseSpeech(self)
                 counter = 0
-                startedPlaying = false
+                    startedPlaying = false }
+                else {
+                    if counterForArticle < listOfArticles.count - 1 {
+                    counterForArticle = counterForArticle + 1
+                    counter = 0
+                    startedPlaying = false
+                    self.audioPlayer.stop()
+                    listOfData = []
+                    listOfText = [""]
+                        btnSpeak.setImage(UIImage(named: "play1"), forState: .Normal)
+
+                    viewDidLoad()
+                    }
+                    else {
+                        all = false
+                        pauseSpeech(self)
+                    }
+                }
             }
             
     }
@@ -407,7 +513,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         do {
             //print(listOfData)
             
-            print(counter)
+            print("This is the counter: \n\n\\n" + String(counter))
             
           var i = listOfData[counter]
                 //print(i)
@@ -479,7 +585,10 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
     }
     
-    
+    override func viewDidDisappear(animated: Bool) {
+        if startedPlaying == true {
+            audioPlayer.stop() }
+    }
     
     
     
