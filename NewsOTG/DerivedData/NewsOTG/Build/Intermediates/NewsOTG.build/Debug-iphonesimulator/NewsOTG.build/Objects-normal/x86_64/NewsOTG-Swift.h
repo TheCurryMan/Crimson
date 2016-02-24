@@ -90,6 +90,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import AVFoundation;
 @import Foundation;
+@import SpeechKit;
 #endif
 
 #import "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/Bridging-Header.h"
@@ -245,9 +246,11 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 @property (nonatomic) BOOL startedPlaying;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfText;
 @property (nonatomic) BOOL wiki;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull convertedStrings;
 @property (nonatomic, strong) UIActivityIndicatorView * __nonnull activityIndicator;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
 @property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)getData:(NSString * __nonnull)content;
@@ -415,7 +418,7 @@ SWIFT_CLASS("_TtC7NewsOTG18TestViewController")
 @class NSNotification;
 
 SWIFT_CLASS("_TtC7NewsOTG14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, OEEventsObserverDelegate, UITableViewDelegate>
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, SKTransactionDelegate, OEEventsObserverDelegate, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, copy) NSString * __nonnull finalSource;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull sources;
@@ -456,7 +459,7 @@ SWIFT_CLASS("_TtC7NewsOTG14ViewController")
 @class UISearchBar;
 
 SWIFT_CLASS("_TtC7NewsOTG24WikiSearchViewController")
-@interface WikiSearchViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
+@interface WikiSearchViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate, OEEventsObserverDelegate, UIScrollViewDelegate, UITableViewDelegate>
 @property (nonatomic, strong) UISearchController * __null_unspecified searchController;
 @property (nonatomic, strong) UIFont * __null_unspecified preferredFont;
 @property (nonatomic, strong) UIColor * __null_unspecified preferredTextColor;
@@ -473,6 +476,23 @@ SWIFT_CLASS("_TtC7NewsOTG24WikiSearchViewController")
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+@property (nonatomic, copy) NSString * __null_unspecified lmPath;
+@property (nonatomic, copy) NSString * __null_unspecified dicPath;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull words;
+@property (nonatomic, copy) NSString * __null_unspecified currentWord;
+@property (nonatomic) NSInteger kLevelUpdatesPerSecond;
+@property (nonatomic, strong) OEEventsObserver * __nonnull openEarsEventsObserver;
+@property (nonatomic) BOOL startupFailedDueToLackOfPermissions;
+- (void)loadOpenEars;
+- (void)pocketsphinxDidChangeLanguageModelToFile:(NSString * __nonnull)newLanguageModelPathAsString newDictionaryPathAsString:(NSString * __nonnull)newDictionaryPathAsString;
+- (void)pocketSphinxContinuousSetupDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)pocketSphinxContinuousTeardownDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)testRecognitionCompleted;
+- (void)startListening;
+- (void)stopListening;
+- (void)addWords;
+- (void)pocketsphinxFailedNoMicPermissions;
+- (void)pocketsphinxDidReceiveHypothesis:(NSString * __null_unspecified)hypothesis recognitionScore:(NSString * __null_unspecified)recognitionScore utteranceID:(NSString * __null_unspecified)utteranceID;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

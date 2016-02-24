@@ -8,12 +8,12 @@ provides-member:
 - ["C20WatsonDeveloperCloud6Dialog", "DialogError"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Dictionary"
 - "Int"
-- "String"
 - !private "<-"
 - "WatsonError"
+- !private "Dictionary"
 - "Map"
+- "String"
 - "NSError"
 - "Dialog"
 - !private "NSLocalizedDescriptionKey"

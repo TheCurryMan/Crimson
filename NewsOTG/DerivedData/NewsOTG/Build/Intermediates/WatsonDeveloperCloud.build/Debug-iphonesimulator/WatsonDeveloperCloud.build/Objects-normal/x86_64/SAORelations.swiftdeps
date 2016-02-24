@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud12SAORelations", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "SAORelations"
-- !private "Transformation"
-- !private "StringLiteralType"
-- "String"
-- "SAORelation"
-- "Mappable"
-- "Map"
-- "AlchemyLanguageGenericModel"
 - "Int"
+- "String"
 - !private "<-"
+- "AlchemyLanguageGenericModel"
+- "Map"
+- "Mappable"
+- !private "StringLiteralType"
+- !private "Transformation"
+- "SAORelation"
+- "SAORelations"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - ["P20WatsonDeveloperCloud19AlchemyGenericModel", "init"]

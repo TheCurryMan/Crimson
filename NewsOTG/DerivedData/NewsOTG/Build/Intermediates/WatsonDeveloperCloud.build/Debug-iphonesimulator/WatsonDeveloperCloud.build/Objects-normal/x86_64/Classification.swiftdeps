@@ -9,14 +9,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
-- !private "=="
-- "String"
-- !private "StringLiteralType"
 - "Double"
-- "Mappable"
-- !private "FloatLiteralType"
+- !private "StringLiteralType"
+- "String"
 - "NaturalLanguageClassifier"
 - "Map"
+- !private "FloatLiteralType"
+- !private "=="
+- "Mappable"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sa", "Generator"]

@@ -7,17 +7,17 @@ provides-member:
 - ["C20WatsonDeveloperCloud30FacebookAuthenticationStrategy", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Alamofire"
+- "String"
 - "IntegerLiteralType"
-- "FacebookAuthenticationStrategy"
-- "AuthenticationStrategy"
+- "Void"
+- !private "NSDictionary"
 - !private "StringLiteralType"
 - "NSError"
-- !private "NSDictionary"
 - "BooleanLiteralType"
-- "Void"
-- "String"
+- "AuthenticationStrategy"
+- !private "Alamofire"
 - "FloatLiteralType"
+- "FacebookAuthenticationStrategy"
 depends-member:
 - !private ["PSs9AnyObject", "Alamofire"]
 - !private ["PSs9AnyObject", "NSError"]

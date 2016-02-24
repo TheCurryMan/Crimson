@@ -14,7 +14,7 @@ var shouldShowSearchResults = false
 
 
 
-class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
+class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate, OEEventsObserverDelegate {
     
     var searchController: UISearchController!
 
@@ -25,8 +25,12 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet var tableView: UITableView!
     
     
-    func loadLists() {
     
+    
+    func loadLists() {
+        
+        
+        
         let path1 = NSBundle.mainBundle().pathForResource("listOfBusinesses", ofType: "txt")
         let path2 = NSBundle.mainBundle().pathForResource("listOfFruits", ofType: "txt")
         let path3 = NSBundle.mainBundle().pathForResource("listOfCountries", ofType: "txt")
@@ -37,6 +41,11 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
         var data3 = try String(contentsOfFile: path3!, encoding: NSUTF8StringEncoding)
             
         dataArray = data1.componentsSeparatedByString(",") + data2.componentsSeparatedByString(",") + data3.componentsSeparatedByString(",")
+        
+            for i in dataArray {
+                words.append(i.uppercaseString)
+            }
+
         }
         
         catch {
@@ -100,6 +109,7 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
             tableView.reloadData()
         }
         
+        //searchController.searchBar.
         print(searchController.searchBar.text)
         
         searchController.searchBar.resignFirstResponder()
@@ -146,7 +156,7 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
             
         }
         else {
-            cell.textLabel?.text = "Recent Searches"
+            cell.textLabel?.text = ""
         }
         cell.textLabel?.textColor = UIColor.whiteColor()
         
@@ -161,20 +171,108 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var vc = segue.destinationViewController as! DisplayViewController
-        
-        vc.articleName = searchController.searchBar.text!
-        vc.articleURL = ("https://en.wikipedia.org/wiki/" + vc.articleName)
+        var finalstr = searchController.searchBar.text!.stringByReplacingOccurrencesOfString(" ", withString: "_")
+        vc.articleName = (finalstr)
+        vc.articleURL = ("https://en.wikipedia.org/wiki/" + (finalstr))
         vc.wiki = true
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //Open Ears Code Starts
+    
+    //Code In the Beginning
+    
+    //loadOpenEars()
+    
+    //startListening()
+    
+    //End beginning code
+    
+    var lmPath: String!
+    var dicPath: String!
+    var words: Array<String> = []
+    var currentWord: String!
+    
+    var kLevelUpdatesPerSecond = 18
+    
+    
+    var openEarsEventsObserver = OEEventsObserver()
+    var startupFailedDueToLackOfPermissions = Bool()
+    
+    
+    
+    func loadOpenEars() {
+        
+        self.openEarsEventsObserver = OEEventsObserver()
+        self.openEarsEventsObserver.delegate = self
+        
+        var lmGenerator: OELanguageModelGenerator = OELanguageModelGenerator()
+        
+        addWords()
+        var name = "LanguageModelFileStarSaver"
+        lmGenerator.generateLanguageModelFromArray(words, withFilesNamed: name, forAcousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"))
+        
+        lmPath = lmGenerator.pathToSuccessfullyGeneratedLanguageModelWithRequestedName(name)
+        dicPath = lmGenerator.pathToSuccessfullyGeneratedDictionaryWithRequestedName(name)
     }
-    */
+    
+    
+    func pocketsphinxDidChangeLanguageModelToFile(newLanguageModelPathAsString: String, newDictionaryPathAsString: String) {
+        print("Pocketsphinx is now using the following language model: \(newLanguageModelPathAsString) and the following dictionary: \(newDictionaryPathAsString)")
+    }
+    
+    func pocketSphinxContinuousSetupDidFailWithReason(reasonForFailure: String) {
+        print("Listening setup wasn't successful and returned the failure reason: \(reasonForFailure)")
+    }
+    
+    func pocketSphinxContinuousTeardownDidFailWithReason(reasonForFailure: String) {
+        print("Listening teardown wasn't successful and returned the failure reason: \(reasonForFailure)")
+        
+    }
+    
+    func testRecognitionCompleted() {
+        print("A test file that was submitted for recognition is now complete.")
+    }
+    
+    func startListening() {
+        do{
+            try OEPocketsphinxController.sharedInstance().setActive(true)}
+        catch _ {
+            print("error")
+            print("asdasdasd")
+        }
+        OEPocketsphinxController.sharedInstance().startListeningWithLanguageModelAtPath(lmPath, dictionaryAtPath: dicPath, acousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"), languageModelIsJSGF: false)
+    }
+    
+    func stopListening() {
+        OEPocketsphinxController.sharedInstance().stopListening()
+    }
+    
+    func addWords() {
+        //add any thing here that you want to be recognized. Must be in capital letters
+        words.append("BACK")
+    }
+    
+    
+    func pocketsphinxFailedNoMicPermissions() {
+        
+        NSLog("Local callback: The user has never set mic permissions or denied permission to this app's mic, so listening will not start.")
+        self.startupFailedDueToLackOfPermissions = true
+        if OEPocketsphinxController.sharedInstance().isListening {
+            var error = OEPocketsphinxController.sharedInstance().stopListening() // Stop listening if we are listening.
+            if(error != nil) {
+                NSLog("Error while stopping listening in micPermissionCheckCompleted: %@", error);
+            }
+        }
+    }
+    
+    func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
+        
+        print(hypothesis)
+        
+        
+        
+        
+    }
+
 
 }

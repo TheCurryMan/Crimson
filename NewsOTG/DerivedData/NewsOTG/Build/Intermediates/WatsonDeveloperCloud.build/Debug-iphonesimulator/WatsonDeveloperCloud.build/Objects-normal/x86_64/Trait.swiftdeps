@@ -11,10 +11,10 @@ depends-top-level:
 - !private "<-"
 - !private "StringLiteralType"
 - "Double"
+- "Map"
+- "PersonalityInsights"
 - "String"
 - "Mappable"
-- "PersonalityInsights"
-- "Map"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sa", "deinit"]

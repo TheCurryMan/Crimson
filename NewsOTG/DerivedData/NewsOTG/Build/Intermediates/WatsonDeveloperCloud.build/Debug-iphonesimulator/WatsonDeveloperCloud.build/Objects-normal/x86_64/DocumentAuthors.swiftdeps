@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud15DocumentAuthors", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<-"
 - "DocumentAuthors"
-- !private "StringLiteralType"
-- "Mappable"
-- "String"
-- "Int"
-- "AlchemyLanguageGenericModel"
-- "Authors"
 - !private "Transformation"
+- "String"
+- "AlchemyLanguageGenericModel"
 - "Map"
+- "Mappable"
+- !private "StringLiteralType"
+- "Int"
+- "Authors"
+- !private "<-"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "authors"]

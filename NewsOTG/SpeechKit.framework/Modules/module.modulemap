@@ -1,0 +1,6 @@
+framework module SpeechKit {
+  umbrella header "SpeechKit.h"
+
+  export *
+  module * { export * }
+}

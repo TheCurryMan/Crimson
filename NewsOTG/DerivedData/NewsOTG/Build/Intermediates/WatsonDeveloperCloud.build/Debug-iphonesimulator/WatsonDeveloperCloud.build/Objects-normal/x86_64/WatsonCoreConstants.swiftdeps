@@ -7,8 +7,8 @@ provides-member:
 - ["C20WatsonDeveloperCloud19WatsonCoreConstants", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
 - "WatsonCoreConstants"
+- "StringLiteralType"
 depends-member:
 - ["PSs9AnyObject", ""]
 - ["C20WatsonDeveloperCloud19WatsonCoreConstants", "defaultErrorDomain"]

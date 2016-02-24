@@ -9,76 +9,76 @@ provides-member:
 - ["C7NewsOTG19SourceTableViewCell", ""]
 - ["C7NewsOTG14ViewController", ""]
 provides-dynamic-lookup:
-- "currentWord"
-- "pocketSphinxContinuousTeardownDidFailWithReason"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "words"
-- "loadOpenEars"
 - "sourceClick"
-- "stopListening"
-- "viewWillAppear"
-- "pocketSphinxContinuousSetupDidFailWithReason"
-- "dicPath"
-- "sourceButton"
-- "startListening"
-- "addWords"
-- "pocketsphinxDidChangeLanguageModelToFile"
-- "startupFailedDueToLackOfPermissions"
-- "sources"
-- "testRecognitionCompleted"
-- "pocketsphinxDidReceiveHypothesis"
-- "lmPath"
-- "viewWillDisappear"
-- "prepareForSegue"
-- "openEarsEventsObserver"
-- "pocketsphinxFailedNoMicPermissions"
-- "methodOFReceivedNotication"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "kLevelUpdatesPerSecond"
 - "finalSource"
+- "viewDidLoad"
+- "stopListening"
+- "sourceButton"
+- "addWords"
+- "startupFailedDueToLackOfPermissions"
+- "pocketsphinxFailedNoMicPermissions"
+- "lmPath"
+- "openEarsEventsObserver"
+- "pocketSphinxContinuousTeardownDidFailWithReason"
+- "startListening"
+- "words"
+- "testRecognitionCompleted"
+- "loadOpenEars"
+- "viewWillAppear"
+- "methodOFReceivedNotication"
+- "pocketsphinxDidChangeLanguageModelToFile"
+- "prepareForSegue"
+- "dicPath"
+- "sources"
+- "pocketSphinxContinuousSetupDidFailWithReason"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "currentWord"
+- "viewWillDisappear"
+- "pocketsphinxDidReceiveHypothesis"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "NSIndexPath"
-- "Bool"
-- !private "||"
-- "UIViewController"
-- "ViewController"
-- "UIStoryboardSegue"
-- "SourceTableViewCell"
-- !private "print"
-- !private "!="
-- "OEEventsObserver"
 - !private "UINib"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- !private "NSNotificationCenter"
-- "OEEventsObserverDelegate"
-- "UITableViewCell"
-- "CGFloat"
-- "AnyObject"
-- !private "BooleanLiteralType"
+- "StringLiteralType"
 - !private "UITableViewCellSeparatorStyle"
+- !private "UnicodeScalarType"
+- "UITableViewDataSource"
+- "Int"
+- "UITableViewDelegate"
+- !private "OEPocketsphinxController"
+- "Bool"
+- "UITableView"
 - !private "UIImage"
+- "CGFloat"
 - !private "OELanguageModelGenerator"
-- !private "OEAcousticModel"
-- "UIButton"
-- !private "+"
+- !private "NSLog"
+- "UIViewController"
+- "OEEventsObserverDelegate"
 - "String"
 - "Array"
-- !private "UIControlState"
-- "StringLiteralType"
-- !private "UnicodeScalarType"
+- "ViewController"
 - !private "=="
-- !private "OEPocketsphinxController"
-- "Int"
-- !private "NSLog"
-- "UITableView"
+- "UIButton"
+- "AnyObject"
 - !private "CategoriesViewController"
+- "NSIndexPath"
+- !private "BooleanLiteralType"
+- "UITableViewCell"
 - "NSNotification"
+- !private "UIControlState"
+- !private "print"
+- "SourceTableViewCell"
+- "SKTransactionDelegate"
+- !private "OEAcousticModel"
+- !private "+"
+- !private "!="
+- "OEEventsObserver"
+- "UIStoryboardSegue"
+- !private "NSNotificationCenter"
 depends-member:
 - ["PSs9AnyObject", "Bool"]
 - !private ["PSs9AnyObject", "NSLog"]
@@ -177,6 +177,9 @@ depends-member:
 - ["PSs9AnyObject", "tableView"]
 - !private ["PSs9AnyObject", "tag"]
 - ["PSs9AnyObject", "testRecognitionCompleted"]
+- ["PSs9AnyObject", "transaction"]
+- ["PSs9AnyObject", "transactionDidBeginRecording"]
+- ["PSs9AnyObject", "transactionDidFinishRecording"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", "viewWillAppear"]
@@ -314,6 +317,9 @@ depends-member:
 - ["PSs11CVarArgType", "tableView"]
 - !private ["PSs11CVarArgType", "tag"]
 - ["PSs11CVarArgType", "testRecognitionCompleted"]
+- ["PSs11CVarArgType", "transaction"]
+- ["PSs11CVarArgType", "transactionDidBeginRecording"]
+- ["PSs11CVarArgType", "transactionDidFinishRecording"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", "viewWillAppear"]
@@ -450,6 +456,9 @@ depends-member:
 - ["PSs23CustomStringConvertible", "tableView"]
 - !private ["PSs23CustomStringConvertible", "tag"]
 - ["PSs23CustomStringConvertible", "testRecognitionCompleted"]
+- ["PSs23CustomStringConvertible", "transaction"]
+- ["PSs23CustomStringConvertible", "transactionDidBeginRecording"]
+- ["PSs23CustomStringConvertible", "transactionDidFinishRecording"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", "viewWillAppear"]
@@ -559,6 +568,9 @@ depends-member:
 - ["PSs9Equatable", "tableView"]
 - !private ["PSs9Equatable", "tag"]
 - ["PSs9Equatable", "testRecognitionCompleted"]
+- ["PSs9Equatable", "transaction"]
+- ["PSs9Equatable", "transactionDidBeginRecording"]
+- ["PSs9Equatable", "transactionDidFinishRecording"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", "viewWillAppear"]
@@ -671,6 +683,9 @@ depends-member:
 - ["PSs8Hashable", "tableView"]
 - !private ["PSs8Hashable", "tag"]
 - ["PSs8Hashable", "testRecognitionCompleted"]
+- ["PSs8Hashable", "transaction"]
+- ["PSs8Hashable", "transactionDidBeginRecording"]
+- ["PSs8Hashable", "transactionDidFinishRecording"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", "viewWillAppear"]
@@ -810,6 +825,9 @@ depends-member:
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "tag"]
 - ["PSo8NSCoding", "testRecognitionCompleted"]
+- ["PSo8NSCoding", "transaction"]
+- ["PSo8NSCoding", "transactionDidBeginRecording"]
+- ["PSo8NSCoding", "transactionDidFinishRecording"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "viewWillAppear"]
@@ -892,6 +910,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "stopListening"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "testRecognitionCompleted"]
+- ["PSo26NSExtensionRequestHandling", "transaction"]
+- ["PSo26NSExtensionRequestHandling", "transactionDidBeginRecording"]
+- ["PSo26NSExtensionRequestHandling", "transactionDidFinishRecording"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
@@ -1015,6 +1036,9 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "tag"]
 - ["CSo8NSObject", "testRecognitionCompleted"]
+- ["CSo8NSObject", "transaction"]
+- ["CSo8NSObject", "transactionDidBeginRecording"]
+- ["CSo8NSObject", "transactionDidFinishRecording"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "viewWillAppear"]
@@ -1117,6 +1141,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "tag"]
 - ["PSo16NSObjectProtocol", "testRecognitionCompleted"]
+- ["PSo16NSObjectProtocol", "transaction"]
+- ["PSo16NSObjectProtocol", "transactionDidBeginRecording"]
+- ["PSo16NSObjectProtocol", "transactionDidFinishRecording"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
@@ -1197,6 +1224,9 @@ depends-member:
 - !private ["PSo24OEEventsObserverDelegate", "startupFailedDueToLackOfPermissions"]
 - !private ["PSo24OEEventsObserverDelegate", "stopListening"]
 - ["PSo24OEEventsObserverDelegate", "tableView"]
+- ["PSo24OEEventsObserverDelegate", "transaction"]
+- ["PSo24OEEventsObserverDelegate", "transactionDidBeginRecording"]
+- ["PSo24OEEventsObserverDelegate", "transactionDidFinishRecording"]
 - ["PSo24OEEventsObserverDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo24OEEventsObserverDelegate", "words"]
 - ["PSo24OEEventsObserverDelegate", ""]
@@ -1228,6 +1258,75 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "None"]
 - !private ["PSs16RawRepresentable", "Normal"]
+- ["PSo21SKTransactionDelegate", "Bool"]
+- !private ["PSo21SKTransactionDelegate", "NSLog"]
+- !private ["PSo21SKTransactionDelegate", "NSNotificationCenter"]
+- !private ["PSo21SKTransactionDelegate", "OEAcousticModel"]
+- ["PSo21SKTransactionDelegate", "OEEventsObserver"]
+- !private ["PSo21SKTransactionDelegate", "OELanguageModelGenerator"]
+- !private ["PSo21SKTransactionDelegate", "OEPocketsphinxController"]
+- !private ["PSo21SKTransactionDelegate", "UIControlState"]
+- !private ["PSo21SKTransactionDelegate", "UIImage"]
+- !private ["PSo21SKTransactionDelegate", "UINib"]
+- !private ["PSo21SKTransactionDelegate", "UITableViewCellSeparatorStyle"]
+- !private ["PSo21SKTransactionDelegate", "addWords"]
+- ["PSo21SKTransactionDelegate", "audioInputDidBecomeAvailable"]
+- ["PSo21SKTransactionDelegate", "audioInputDidBecomeUnavailable"]
+- ["PSo21SKTransactionDelegate", "audioRouteDidChangeToRoute"]
+- ["PSo21SKTransactionDelegate", "audioSessionInterruptionDidBegin"]
+- ["PSo21SKTransactionDelegate", "audioSessionInterruptionDidEnd"]
+- !private ["PSo21SKTransactionDelegate", "dicPath"]
+- !private ["PSo21SKTransactionDelegate", "finalSource"]
+- ["PSo21SKTransactionDelegate", "fliteDidFinishSpeaking"]
+- ["PSo21SKTransactionDelegate", "fliteDidStartSpeaking"]
+- ["PSo21SKTransactionDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21SKTransactionDelegate", "lmPath"]
+- !private ["PSo21SKTransactionDelegate", "loadOpenEars"]
+- ["PSo21SKTransactionDelegate", "micPermissionCheckCompleted"]
+- !private ["PSo21SKTransactionDelegate", "navigationController"]
+- !private ["PSo21SKTransactionDelegate", "navigationItem"]
+- ["PSo21SKTransactionDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo21SKTransactionDelegate", "openEarsEventsObserver"]
+- !private ["PSo21SKTransactionDelegate", "performSegueWithIdentifier"]
+- ["PSo21SKTransactionDelegate", "pocketSphinxContinuousSetupDidFailWithReason"]
+- ["PSo21SKTransactionDelegate", "pocketSphinxContinuousTeardownDidFailWithReason"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidChangeLanguageModelToFile"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidDetectFinishedSpeech"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidDetectSpeech"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidReceiveHypothesis"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidReceiveNBestHypothesisArray"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidResumeRecognition"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidStartListening"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidStopListening"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxDidSuspendRecognition"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxFailedNoMicPermissions"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxRecognitionLoopDidStart"]
+- ["PSo21SKTransactionDelegate", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo21SKTransactionDelegate", "print"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidEndDecelerating"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidEndDragging"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidEndZooming"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidScroll"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidScrollToTop"]
+- ["PSo21SKTransactionDelegate", "scrollViewDidZoom"]
+- ["PSo21SKTransactionDelegate", "scrollViewShouldScrollToTop"]
+- ["PSo21SKTransactionDelegate", "scrollViewWillBeginDecelerating"]
+- ["PSo21SKTransactionDelegate", "scrollViewWillBeginDragging"]
+- ["PSo21SKTransactionDelegate", "scrollViewWillBeginZooming"]
+- ["PSo21SKTransactionDelegate", "scrollViewWillEndDragging"]
+- ["PSo21SKTransactionDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo21SKTransactionDelegate", "sources"]
+- !private ["PSo21SKTransactionDelegate", "startListening"]
+- !private ["PSo21SKTransactionDelegate", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo21SKTransactionDelegate", "stopListening"]
+- ["PSo21SKTransactionDelegate", "tableView"]
+- ["PSo21SKTransactionDelegate", "transaction"]
+- ["PSo21SKTransactionDelegate", "transactionDidBeginRecording"]
+- ["PSo21SKTransactionDelegate", "transactionDidFinishRecording"]
+- ["PSo21SKTransactionDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo21SKTransactionDelegate", "words"]
+- ["PSo21SKTransactionDelegate", ""]
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
@@ -1360,6 +1459,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - ["PSo21UIAppearanceContainer", "testRecognitionCompleted"]
+- ["PSo21UIAppearanceContainer", "transaction"]
+- ["PSo21UIAppearanceContainer", "transactionDidBeginRecording"]
+- ["PSo21UIAppearanceContainer", "transactionDidFinishRecording"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
@@ -1440,6 +1542,9 @@ depends-member:
 - ["PSo18UIContentContainer", "stopListening"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "testRecognitionCompleted"]
+- ["PSo18UIContentContainer", "transaction"]
+- ["PSo18UIContentContainer", "transactionDidBeginRecording"]
+- ["PSo18UIContentContainer", "transactionDidFinishRecording"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
@@ -1551,6 +1656,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - ["PSo18UIFocusEnvironment", "testRecognitionCompleted"]
+- ["PSo18UIFocusEnvironment", "transaction"]
+- ["PSo18UIFocusEnvironment", "transactionDidBeginRecording"]
+- ["PSo18UIFocusEnvironment", "transactionDidFinishRecording"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
@@ -1659,6 +1767,9 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "tag"]
 - ["CSo11UIResponder", "testRecognitionCompleted"]
+- ["CSo11UIResponder", "transaction"]
+- ["CSo11UIResponder", "transactionDidBeginRecording"]
+- ["CSo11UIResponder", "transactionDidFinishRecording"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewWillAppear"]
@@ -1732,6 +1843,9 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "startupFailedDueToLackOfPermissions"]
 - !private ["PSo20UIScrollViewDelegate", "stopListening"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "transaction"]
+- ["PSo20UIScrollViewDelegate", "transactionDidBeginRecording"]
+- ["PSo20UIScrollViewDelegate", "transactionDidFinishRecording"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "words"]
 - ["PSo20UIScrollViewDelegate", ""]
@@ -1807,6 +1921,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "stopListening"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "testRecognitionCompleted"]
+- ["PSo16UIStateRestoring", "transaction"]
+- ["PSo16UIStateRestoring", "transactionDidBeginRecording"]
+- ["PSo16UIStateRestoring", "transactionDidFinishRecording"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
@@ -1890,6 +2007,9 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "startupFailedDueToLackOfPermissions"]
 - !private ["PSo21UITableViewDataSource", "stopListening"]
 - ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "transaction"]
+- ["PSo21UITableViewDataSource", "transactionDidBeginRecording"]
+- ["PSo21UITableViewDataSource", "transactionDidFinishRecording"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo21UITableViewDataSource", "words"]
 - ["PSo21UITableViewDataSource", ""]
@@ -1957,6 +2077,9 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "startupFailedDueToLackOfPermissions"]
 - !private ["PSo19UITableViewDelegate", "stopListening"]
 - ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "transaction"]
+- ["PSo19UITableViewDelegate", "transactionDidBeginRecording"]
+- ["PSo19UITableViewDelegate", "transactionDidFinishRecording"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo19UITableViewDelegate", "words"]
 - ["PSo19UITableViewDelegate", ""]
@@ -2040,6 +2163,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - ["PSo18UITraitEnvironment", "testRecognitionCompleted"]
+- ["PSo18UITraitEnvironment", "transaction"]
+- ["PSo18UITraitEnvironment", "transactionDidBeginRecording"]
+- ["PSo18UITraitEnvironment", "transactionDidFinishRecording"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
@@ -2142,6 +2268,9 @@ depends-member:
 - ["CSo16UIViewController", "stopListening"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "testRecognitionCompleted"]
+- ["CSo16UIViewController", "transaction"]
+- ["CSo16UIViewController", "transactionDidBeginRecording"]
+- ["CSo16UIViewController", "transactionDidFinishRecording"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "viewWillAppear"]
@@ -2239,6 +2368,9 @@ depends-member:
 - ["C7NewsOTG14ViewController", "stopListening"]
 - ["C7NewsOTG14ViewController", "tableView"]
 - ["C7NewsOTG14ViewController", "testRecognitionCompleted"]
+- ["C7NewsOTG14ViewController", "transaction"]
+- ["C7NewsOTG14ViewController", "transactionDidBeginRecording"]
+- ["C7NewsOTG14ViewController", "transactionDidFinishRecording"]
 - ["C7NewsOTG14ViewController", "viewDidLoad"]
 - ["C7NewsOTG14ViewController", "viewForZoomingInScrollView"]
 - ["C7NewsOTG14ViewController", "viewWillAppear"]
@@ -2381,6 +2513,7 @@ depends-nominal:
 - !private "PSs21RandomAccessIndexType"
 - "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
+- "PSo21SKTransactionDelegate"
 - !private "V10ObjectiveC8Selector"
 - "PSs12SequenceType"
 - !private "PSs14SetAlgebraType"
@@ -2507,6 +2640,15 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_sts.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteVoice.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/Slt.framework/Headers/Slt.h"
+- "./SpeechKit.framework/Headers/SKTransaction.h"
+- "./SpeechKit.framework/Headers/SKSession.h"
+- "./SpeechKit.framework/Headers/SKRecognition.h"
+- "./SpeechKit.framework/Headers/SKOptions.h"
+- "./SpeechKit.framework/Headers/SKInterpretation.h"
+- "./SpeechKit.framework/Headers/SKAudioPlayer.h"
+- "./SpeechKit.framework/Headers/SKAudio.h"
+- "./SpeechKit.framework/Headers/SpeechKit.h"
+- "./SpeechKit.framework/Modules/module.modulemap"
 - "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "./Bolts.framework/Headers/BFURL.h"
 - "./Bolts.framework/Headers/BFMeasurementEvent.h"
@@ -2580,4 +2722,4 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
-interface-hash: "669631b804eb411188d79a19e4112fd4"
+interface-hash: "fe0362b08730d80eccb9753515407c0c"

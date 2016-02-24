@@ -10,10 +10,10 @@ depends-top-level:
 - !private "StringLiteralType"
 - "Sentiment"
 - "DocumentSentiment"
-- "Map"
-- "String"
 - !private "<-"
 - "Mappable"
+- "String"
+- "Map"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - ["V20WatsonDeveloperCloud17DocumentSentiment", "Map"]

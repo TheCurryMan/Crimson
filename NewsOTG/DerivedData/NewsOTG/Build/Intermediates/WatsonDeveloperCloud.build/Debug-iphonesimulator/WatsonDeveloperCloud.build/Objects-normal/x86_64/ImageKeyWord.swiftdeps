@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
-- "ImageKeyWord"
-- "Double"
-- "String"
 - !private "StringLiteralType"
 - "Map"
+- "ImageKeyWord"
+- "Double"
 - "Mappable"
+- "String"
 - !private "Transformation"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]

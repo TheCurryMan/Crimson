@@ -7,14 +7,14 @@ provides-member:
 - ["V20WatsonDeveloperCloud4Feed", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Map"
-- "Mappable"
 - !private "Transformation"
-- "String"
-- !private "StringLiteralType"
 - "AlchemyGenericModel"
-- "Int"
+- "Map"
+- "String"
+- "Mappable"
+- !private "StringLiteralType"
 - "Feed"
+- "Int"
 - !private "<-"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]

@@ -36,12 +36,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "StringLiteralType"
-- !private "IntegerLiteralType"
-- !private "~="
-- "=="
-- !private "FloatLiteralType"
-- "UnicodeScalarType"
 - "VisionConstants"
+- "UnicodeScalarType"
+- !private "IntegerLiteralType"
+- !private "FloatLiteralType"
+- "=="
+- !private "~="
 - "String"
 depends-member:
 - ["PSs9AnyObject", ""]

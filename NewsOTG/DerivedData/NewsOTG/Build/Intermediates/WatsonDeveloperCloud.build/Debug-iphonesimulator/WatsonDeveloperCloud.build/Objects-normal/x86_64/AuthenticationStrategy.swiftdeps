@@ -7,12 +7,12 @@ provides-member:
 - ["P20WatsonDeveloperCloud22AuthenticationStrategy", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Void"
-- "Bool"
-- "String"
-- "AuthenticationStrategy"
 - "Int"
+- "String"
+- "Void"
 - "NSError"
+- "Bool"
+- "AuthenticationStrategy"
 depends-member:
 - ["P20WatsonDeveloperCloud22AuthenticationStrategy", "Bool"]
 - ["P20WatsonDeveloperCloud22AuthenticationStrategy", "Int"]

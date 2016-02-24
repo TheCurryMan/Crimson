@@ -7,11 +7,11 @@ provides-member:
 - ["V20WatsonDeveloperCloud11Microformat", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Mappable"
 - "String"
+- "Microformat"
+- "Mappable"
 - "Map"
 - !private "StringLiteralType"
-- "Microformat"
 - !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]

@@ -11,13 +11,13 @@ provides-member:
 - ["C20WatsonDeveloperCloud6Dialog", "Parameter"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<-"
 - "String"
-- !private "StringLiteralType"
 - "Int"
 - "Map"
-- "Mappable"
+- !private "StringLiteralType"
 - "Dialog"
+- "Mappable"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "Parameter"]
 - !private ["PSs9AnyObject", "subscript"]

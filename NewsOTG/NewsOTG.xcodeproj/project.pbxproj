@@ -36,8 +36,10 @@
 		E1200C861C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */; };
 		E1200C871C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */; };
 		E1200D2A1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */; };
-		E1200D2B1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1200D2B1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Embed Frameworks (2 items) */ = {isa = PBXBuildFile; fileRef = E1200C971C6B1338007E01DB /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E140CE161C0EB4DA00322747 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140CE151C0EB4DA00322747 /* SignUpViewController.swift */; };
+		E157E1041C7D418200EA250D /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E157E1031C7D418200EA250D /* SpeechKit.framework */; };
+		E157E1051C7D421500EA250D /* SpeechKit.framework in Embed Frameworks (2 items) */ = {isa = PBXBuildFile; fileRef = E157E1031C7D418200EA250D /* SpeechKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1616D1E1C3BFEB7005E5FDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */; };
 		E1616D201C3C001B005E5FDD /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */; };
 		E1B433EE1C759FDD0076915B /* WikiSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B433ED1C759FDD0076915B /* WikiSearchViewController.swift */; };
@@ -95,15 +97,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E1200D2E1C6B14DD007E01DB /* Embed Frameworks */ = {
+		E1200D2E1C6B14DD007E01DB /* Embed Frameworks (2 items) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E1200D2B1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Embed Frameworks */,
+				E157E1051C7D421500EA250D /* SpeechKit.framework in Embed Frameworks (2 items) */,
+				E1200D2B1C6B14DD007E01DB /* WatsonDeveloperCloud.framework in Embed Frameworks (2 items) */,
 			);
-			name = "Embed Frameworks";
+			name = "Embed Frameworks (2 items)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -144,6 +147,8 @@
 		E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = WatsonDeveloperCloud.xcworkspace; path = ../WatsonDeveloperCloud.xcworkspace; sourceTree = "<group>"; };
 		E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WatsonDeveloperCloud.xcodeproj; sourceTree = "<group>"; };
 		E140CE151C0EB4DA00322747 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E157E1031C7D418200EA250D /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = ../../../Downloads/DragonMobileSDK_2.1.2/SpeechKit.framework; sourceTree = "<group>"; };
+		E157E1061C7D44CF00EA250D /* NewsOTG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsOTG-Bridging-Header.h"; sourceTree = "<group>"; };
 		E1616D1D1C3BFEB7005E5FDD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E1616D1F1C3C001B005E5FDD /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		E1B433ED1C759FDD0076915B /* WikiSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiSearchViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E157E1041C7D418200EA250D /* SpeechKit.framework in Frameworks */,
 				E1BC5D9F1C6B0DF4001E406C /* AVFoundation.framework in Frameworks */,
 				E1F5ACE51C342D47000EAFFE /* UIKit.framework in Frameworks */,
 				E100F8011C0EACAB00590DDA /* libsqlite3.tbd in Frameworks */,
@@ -207,6 +213,7 @@
 		E116F89C1C0288B600B95502 = {
 			isa = PBXGroup;
 			children = (
+				E157E1031C7D418200EA250D /* SpeechKit.framework */,
 				E1200C911C6B1338007E01DB /* WatsonDeveloperCloud.xcodeproj */,
 				E1200C841C6B1300007E01DB /* WatsonDeveloperCloud.xcworkspace */,
 				E1F5ACE41C342D47000EAFFE /* UIKit.framework */,
@@ -268,6 +275,7 @@
 				E1B433F21C75AAE30076915B /* listOfFruits.txt */,
 				E116F8AF1C0288B600B95502 /* Assets.xcassets */,
 				E1F5ACE21C342CA4000EAFFE /* Bridging-Header.h */,
+				E157E1061C7D44CF00EA250D /* NewsOTG-Bridging-Header.h */,
 			);
 			path = NewsOTG;
 			sourceTree = "<group>";
@@ -319,7 +327,7 @@
 			buildPhases = (
 				E116F8A21C0288B600B95502 /* Frameworks */,
 				E116F8A31C0288B600B95502 /* Resources */,
-				E1200D2E1C6B14DD007E01DB /* Embed Frameworks */,
+				E1200D2E1C6B14DD007E01DB /* Embed Frameworks (2 items) */,
 				E116F8A11C0288B600B95502 /* Sources */,
 			);
 			buildRules = (
@@ -642,7 +650,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Framework",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = NewsOTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -662,7 +669,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Framework",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = NewsOTG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,11 +7,11 @@ provides-member:
 - ["V20WatsonDeveloperCloud7Authors", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - !private "<-"
+- "String"
 - !private "StringLiteralType"
-- "Map"
 - "Mappable"
+- "Map"
 - "Authors"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]

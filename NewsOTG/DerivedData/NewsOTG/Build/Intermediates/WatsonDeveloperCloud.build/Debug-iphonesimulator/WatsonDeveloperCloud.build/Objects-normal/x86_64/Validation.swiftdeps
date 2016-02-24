@@ -7,24 +7,24 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "IntegerLiteralType"
+- !private "~="
 - !private "NSLocalizedDescriptionKey"
-- !private "Dictionary"
+- "NSHTTPURLResponse"
 - "validate"
 - "Int"
-- "IntegerLiteralType"
-- !private "+"
-- !private "~="
 - !private "StringLiteralType"
-- "NSData"
-- !private "String"
 - !private "Mapper"
-- "NSHTTPURLResponse"
-- "Response"
-- "NSError"
+- !private "+"
 - !private "NSUTF8StringEncoding"
-- "Void"
-- "FloatLiteralType"
+- "NSError"
 - !private "WatsonError"
+- "Void"
+- "Response"
+- "NSData"
+- "FloatLiteralType"
+- !private "String"
+- !private "Dictionary"
 depends-member:
 - !private ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "map"]

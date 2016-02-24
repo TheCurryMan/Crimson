@@ -8,12 +8,12 @@ provides-member:
 - ["C20WatsonDeveloperCloud19LanguageTranslation", "IdentifiedLanguage"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- !private "<-"
-- "LanguageTranslation"
-- "Double"
 - "Map"
 - "Mappable"
+- "Double"
+- !private "StringLiteralType"
+- "LanguageTranslation"
+- !private "<-"
 - "String"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]

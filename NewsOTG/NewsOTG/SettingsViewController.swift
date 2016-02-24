@@ -110,8 +110,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                 
                 keyLabel?.text = "Rate"
                 valueLabel?.text = NSString(format: "%.2f", rate) as String
-                slider.minimumValue = AVSpeechUtteranceMinimumSpeechRate
-                slider.maximumValue = AVSpeechUtteranceMaximumSpeechRate
+                slider.minimumValue = 0
+                slider.maximumValue = 2
                 slider.addTarget(self, action: "handleSliderValueChange:", forControlEvents: UIControlEvents.ValueChanged)
                 slider.sliderIdentifier = 100
                 

@@ -9,12 +9,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "IntegerLiteralType"
-- "MediaType"
 - "=="
 - !private "~="
-- "Dialog"
 - "StringLiteralType"
+- "MediaType"
 - "String"
+- "Dialog"
 - !private "FloatLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "MediaType"]

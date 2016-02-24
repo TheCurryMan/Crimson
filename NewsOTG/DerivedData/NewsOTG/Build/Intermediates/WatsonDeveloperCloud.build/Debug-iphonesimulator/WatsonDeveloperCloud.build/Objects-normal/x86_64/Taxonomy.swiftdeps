@@ -7,15 +7,15 @@ provides-member:
 - ["V20WatsonDeveloperCloud8Taxonomy", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Int"
 - "Double"
+- "String"
+- !private "<-"
 - !private "StringLiteralType"
 - "Map"
-- "Mappable"
-- "String"
-- !private "Transformation"
 - "Taxonomy"
-- "Int"
-- !private "<-"
+- "Mappable"
+- !private "Transformation"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]
 - !private ["PSs9AnyObject", "stringToDouble"]

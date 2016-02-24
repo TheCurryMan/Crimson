@@ -43,16 +43,16 @@ provides-member:
 - ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "GetFeedLinks"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "+"
-- "String"
-- !private "IntegerLiteralType"
-- !private "~="
-- "=="
-- !private "print"
 - "AlchemyLanguageConstants"
+- !private "IntegerLiteralType"
+- "=="
+- !private "~="
 - !private "Bool"
-- "StringLiteralType"
 - !private "!="
+- "String"
+- "StringLiteralType"
+- !private "+"
+- !private "print"
 - !private "FloatLiteralType"
 depends-member:
 - ["C20WatsonDeveloperCloud24AlchemyLanguageConstants", "AlchemyLanguageConstants"]

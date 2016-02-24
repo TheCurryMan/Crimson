@@ -8,10 +8,10 @@ provides-member:
 - ["C20WatsonDeveloperCloud12TextToSpeech", "Voice"]
 provides-dynamic-lookup:
 depends-top-level:
-- "TextToSpeech"
-- !private "<-"
 - "String"
+- "TextToSpeech"
 - !private "StringLiteralType"
+- !private "<-"
 - "Mappable"
 - "Map"
 depends-member:

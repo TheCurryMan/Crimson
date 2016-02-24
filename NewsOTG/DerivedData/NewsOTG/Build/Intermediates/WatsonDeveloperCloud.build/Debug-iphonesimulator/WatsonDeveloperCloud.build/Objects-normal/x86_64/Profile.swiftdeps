@@ -8,13 +8,13 @@ provides-member:
 - ["C20WatsonDeveloperCloud19PersonalityInsights", "Profile"]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "StringLiteralType"
-- "Map"
-- !private "<-"
-- "Int"
 - "Mappable"
+- !private "<-"
+- "String"
+- "Int"
+- !private "StringLiteralType"
 - "PersonalityInsights"
+- "Map"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Si", "deinit"]

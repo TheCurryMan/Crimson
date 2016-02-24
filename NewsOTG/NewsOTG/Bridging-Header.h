@@ -14,3 +14,11 @@
 #import <OpenEars/OEFliteController.h>
 #import <Slt/Slt.h>
 
+#import <SpeechKit/SKAudio.h>
+#import <SpeechKit/SKAudioPlayer.h>
+#import <SpeechKit/SKInterpretation.h>
+#import <SpeechKit/SKOptions.h>
+#import <SpeechKit/SKRecognition.h>
+#import <SpeechKit/SKSession.h>
+#import <SpeechKit/SKTransaction.h>
+#import <SpeechKit/SpeechKit.h>

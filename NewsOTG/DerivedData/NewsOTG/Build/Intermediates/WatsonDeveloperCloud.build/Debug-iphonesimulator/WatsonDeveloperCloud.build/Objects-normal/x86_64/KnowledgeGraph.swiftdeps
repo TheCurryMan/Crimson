@@ -7,14 +7,14 @@ provides-member:
 - ["V20WatsonDeveloperCloud14KnowledgeGraph", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Transformation"
-- !private "StringLiteralType"
-- "KnowledgeGraph"
-- "Mappable"
-- "Map"
-- "AlchemyGenericModel"
 - "String"
+- "KnowledgeGraph"
+- "AlchemyGenericModel"
+- !private "Transformation"
 - "Int"
+- "Mappable"
+- !private "StringLiteralType"
+- "Map"
 - !private "<-"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpeechKit
 
 class SourceTableViewCell : UITableViewCell {
 
@@ -39,13 +40,25 @@ class SourceTableViewCell : UITableViewCell {
 
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, OEEventsObserverDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SKTransactionDelegate,OEEventsObserverDelegate  {
 
     @IBOutlet var tableView: UITableView!
     
     var finalSource = ""
     
     var sources = ["Wikipedia", "CNN", "BBC"]
+    
+    //var session = SKSession()
+    
+    //var transaction = SKTransaction()
+    
+    
+    
+    /*SKTransaction* transaction = [session recognizeWithType:SKTransactionSpeechTypeDictation
+    detection:SKTransactionEndOfSpeechDetectionShort
+    language:@"eng-USA"
+    delegate:self]; */
+
     
     
     override func viewWillAppear(animated: Bool) {
@@ -66,6 +79,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        /*session = SKSession(URL: NSURL(string: "sslsandbox.nmdp.nuancemobility.net"), appToken: "0x20, 0xe6, 0xf4, 0xcf, 0x46, 0x34, 0x5c, 0xfd, 0x51, 0xe5, 0x5e, 0xf4, 0xda, 0x46, 0xcd, 0x56, 0xa7, 0x04, 0x1a, 0xee, 0x2d, 0x8a, 0x43, 0x86, 0x09, 0x77, 0x4e, 0x16, 0xae, 0xbe, 0x29, 0xce, 0xa4, 0x1d, 0x9d, 0xea, 0x51, 0xf9, 0xe8, 0xa2, 0xde, 0x46, 0x96, 0xb8, 0x8c, 0x63, 0x0f, 0x33, 0x67, 0x29, 0x21, 0x95, 0xb3, 0x64, 0x1b, 0xbc, 0xdc, 0x69, 0xd3, 0x8a, 0x27, 0xfc, 0x58, 0xcb")
+        
+        transaction = session.recognizeWithType(SKTransactionSpeechTypeDictation, detection: UInt(SKTransactionEndOfSpeechDetectionShort), language:"eng-USA", delegate: self) */
+        
         loadOpenEars()
         
         startListening()
@@ -141,6 +159,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    //Open Ears Code Starts
+    
+    //Code In the Beginning
+    
+        //loadOpenEars()
+    
+        //startListening()
+    
+    //End beginning code
+    
     var lmPath: String!
     var dicPath: String!
     var words: Array<String> = []
@@ -205,9 +233,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             //add any thing here that you want to be recognized. Must be in capital letters
             words.append("OKAYBLARB")
             words.append("SELECTSEA")
-            //words.append("EN")
             words.append("SELECTWIKIPEDIA")
-            words.append("SELECTBEEBEESEA")
+            words.append("SELECTBEE")
         }
     
         
@@ -233,7 +260,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             } */
                 
                 
-            if hypothesis == "SELECTSEA EN EN" || hypothesis == "SELECTSEA EN"{
+            if hypothesis == "SELECTSEA"{
                 
                 finalSource = "CNN"
                 
@@ -241,7 +268,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             }
             
-            else if hypothesis == "SELECTBEEBEESEA" || hypothesis == "SELECTBEEBEESEA EN" {
+            else if hypothesis == "SELECTBEE"{
                 finalSource = "BBC"
                 
                 self.performSegueWithIdentifier("articles", sender: self)
@@ -251,7 +278,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
                 finalSource = "Wiki"
                 
-                self.performSegueWithIdentifier("articles", sender: self)
+                self.performSegueWithIdentifier("wiki", sender: self)
                 
             }
         }
@@ -259,10 +286,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        stopListening()
         if segue.identifier == "articles" {
         
             var vc = segue.destinationViewController as! CategoriesViewController
-            stopListening()
+            
             vc.source = finalSource
             
         }

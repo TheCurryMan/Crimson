@@ -9,10 +9,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AuthenticationStrategy"
-- !private "StringLiteralType"
 - !private "+"
-- "String"
 - "AlchemyService"
+- "String"
+- !private "StringLiteralType"
 depends-member:
 - ["P20WatsonDeveloperCloud14AlchemyService", "AuthenticationStrategy"]
 - ["P20WatsonDeveloperCloud14AlchemyService", "String"]

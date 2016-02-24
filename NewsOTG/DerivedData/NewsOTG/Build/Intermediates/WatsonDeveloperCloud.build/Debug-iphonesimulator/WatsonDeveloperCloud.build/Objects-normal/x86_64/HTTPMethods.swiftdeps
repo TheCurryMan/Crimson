@@ -7,13 +7,13 @@ provides-member:
 - ["O20WatsonDeveloperCloud6Method", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
+- "Method"
+- "String"
 - !private "IntegerLiteralType"
-- !private "FloatLiteralType"
 - "=="
 - !private "~="
-- "String"
-- "Method"
+- "StringLiteralType"
+- !private "FloatLiteralType"
 depends-member:
 - !private ["PSs22BidirectionalIndexType", "hashValue"]
 - !private ["PSs21BitwiseOperationsType", "hashValue"]

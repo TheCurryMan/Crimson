@@ -7,19 +7,19 @@ provides-member:
 - ["C20WatsonDeveloperCloud19PersonalityInsights", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSUTF8StringEncoding"
-- !private "WatsonRequest"
-- !private "BasicAuthenticationStrategy"
-- !private "NSURLQueryItem"
 - !private "Mapper"
-- "WatsonService"
-- "PersonalityInsights"
-- "Bool"
 - "Void"
-- "NSError"
-- "String"
-- "WatsonGateway"
 - "AuthenticationStrategy"
+- "WatsonService"
+- "Bool"
+- !private "NSURLQueryItem"
+- "NSError"
+- !private "NSUTF8StringEncoding"
+- "PersonalityInsights"
+- !private "WatsonRequest"
+- "String"
+- !private "BasicAuthenticationStrategy"
+- "WatsonGateway"
 depends-member:
 - !private ["PSs9AnyObject", "BasicAuthenticationStrategy"]
 - !private ["PSs9AnyObject", "Constants"]

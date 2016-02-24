@@ -7,24 +7,24 @@ provides-member:
 - ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Array"
-- !private "Mapper"
 - "Void"
-- !private "BasicAuthenticationStrategy"
-- "String"
-- !private "Response"
 - !private "NSURLQueryItem"
-- "WatsonService"
-- "NSURL"
 - "AuthenticationStrategy"
-- "NSError"
 - !private "Alamofire"
-- "NaturalLanguageClassifier"
-- "Dictionary"
-- !private "NSLocalizedDescriptionKey"
-- "WatsonGateway"
 - !private "WatsonRequest"
+- "WatsonGateway"
+- !private "Array"
+- !private "Response"
+- "Dictionary"
+- "NSURL"
+- !private "Mapper"
+- "NSError"
+- "String"
+- !private "BasicAuthenticationStrategy"
+- !private "NSLocalizedDescriptionKey"
+- "WatsonService"
 - !private "validate"
+- "NaturalLanguageClassifier"
 depends-member:
 - !private ["PSs9AnyObject", "Alamofire"]
 - !private ["PSs9AnyObject", "BasicAuthenticationStrategy"]

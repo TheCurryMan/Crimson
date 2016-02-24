@@ -6,6 +6,35 @@
 //  Copyright © 2015 Avinash Jain. All rights reserved.
 //
 
+extension String {
+    
+    subscript (i: Int) -> Character {
+        return self[self.startIndex.advancedBy(i)]
+    }
+    
+    subscript (i: Int) -> String {
+        return String(self[i] as Character)
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        let start = startIndex.advancedBy(r.startIndex)
+        let end = start.advancedBy(r.endIndex - r.startIndex)
+        return self[Range(start: start, end: end)]
+    }
+}
+
+func uniq<S : SequenceType, T : Hashable where S.Generator.Element == T>(source: S) -> [T] {
+    var buffer = [T]()
+    var added = Set<T>()
+    for elem in source {
+        if !added.contains(elem) {
+            buffer.append(elem)
+            added.insert(elem)
+        }
+    }
+    return buffer
+}
+
 import UIKit
 import AVFoundation
 import WatsonDeveloperCloud
@@ -75,6 +104,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     var wiki = false
     
+    var convertedStrings = [""]
+    
     var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView()
     
     @IBOutlet var pvSpeechProgress: UIProgressView!
@@ -88,18 +119,35 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     //var synth = AVSpeechSynthesizer()
     //var myUtterance = AVSpeechUtterance(string: "")
     
+    override func viewWillDisappear(animated: Bool) {
+        print("View had disappeared!")
+        if startedPlaying == true {
+            audioPlayer.stop()
+
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
         
-        /*
+        
+        
+        if startedPlaying == true {
+            audioPlayer.stop()
+            print("Audio Player should stop")
+            counter = 0
+            startedPlaying = false
+            listOfData = []
+        }
+        
+        if !loadSettings() {
+            registerDefaultSettings()
+        }
         
         print(all)
         
         print(listOfArticles)
         
-        if listOfArticles != [""] {
-            all = true
-            viewDidLoad()
-        } */
+        
         
         speechSynthesizer.delegate = self
         
@@ -111,13 +159,18 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
         else {accent = ""}
         
+        if listOfArticles != [""] {
+            all = true
+            viewDidLoad()
+        }
         
+        
+        
+        
+        
+        print(self.rate)
         
         getData(content)
-        
-        if !loadSettings() {
-            registerDefaultSettings()
-        }
         
     }
     
@@ -241,11 +294,19 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                         
                         var wikiPtags = wikiHTML.componentsSeparatedByString("<p>")
                         
-                        wikiPtags.removeFirst()
+                        var finalWiki : [String] = [""]
+                        
+                        for i in wikiPtags {
+                            if i[i.startIndex] != "<" || i[0...1] == "<b"{
+                                print("This is the wiki paragraph: \n\n\n\n")
+                                print(i)
+                                finalWiki.append(i)
+                            }
+                        }
                         
                         var wikiString = ""
                         
-                        for i in wikiPtags {
+                        for i in finalWiki {
                             var str = i.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
                             str = str.stringByReplacingOccurrencesOfString("{([^}]*)}", withString: "")
                 
@@ -295,12 +356,18 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     func getData(content:String) {
         
-        
+        listOfData = []
+        counter1 = 0
         
         var listOfStrings = content.componentsSeparatedByString(".")
         print(listOfStrings)
         listOfStrings.removeLast()
         listOfText = listOfStrings
+        self.activityIndicator.stopAnimating()
+        self.articleContent.hidden = false
+        
+        print(listOfData)
+        print(convertedStrings)
         getAudioData()
             }
         
@@ -308,21 +375,25 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         func getAudioData() {
             
             do {
-                self.activityIndicator.stopAnimating()
-                self.articleContent.hidden = false
+                
                 
                 var i = listOfText[counter1]
-                self.service.synthesize(i, voice: accent, completionHandler: {data, error in
+                
+                
+                self.service.synthesize(i, voice: self.accent, completionHandler: {data, error in
+                    print("THIS IS THE ACCENT: " + self.accent)
+                    
+                        print("Line converting: " + i)
                     
                     
-
-                    
-                    print("Line converting: " + i)
                     if data != nil {
                         
                         self.listOfData.append(data!)
                         if self.counter1 < self.listOfText.count - 1 {
                             self.counter1 = self.counter1 + 1
+                            self.convertedStrings.append(i)
+                            print("Converted strings so far.... \n\n\n")
+                            print(self.convertedStrings)
                             self.getAudioData()
                         }
                         
@@ -363,6 +434,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             pitch = userDefaults.valueForKey("pitch") as! Float
             volume = userDefaults.valueForKey("volume") as! Float
             
+            print("THIS is the rate \n")
+            print(rate)
             
             if var i = userDefaults.valueForKey("accent") {
                 accent = userDefaults.valueForKey("accent") as! String
@@ -370,8 +443,9 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                 
             else {accent = ""}
             print("SKDLSKDJLSDJLKSDJ \n\n\n\n\n\n THIS SHOULD WORK")
-            getData(content)
             print(accent)
+            getData(content)
+            
             
             return true
         }
@@ -400,6 +474,8 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     }
     
     @IBAction func speak(sender: AnyObject) {
+        listOfData = uniq(listOfData)
+        
         print(speechSynthesizer.speaking)
         
         print(sender)
@@ -521,7 +597,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         do {
             //print(listOfData)
             
-            print("This is the counter: \n\n\\n" + String(counter))
+            print("This is the counter: \n\n\n" + String(counter))
             
           var i = listOfData[counter]
                 //print(i)
@@ -531,6 +607,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         self.audioPlayer = try AVAudioPlayer(data:i)
         self.audioPlayer.prepareToPlay()
         self.audioPlayer.delegate = self
+        self.audioPlayer.enableRate = true
         self.audioPlayer.volume = self.volume
         self.audioPlayer.rate = self.rate
         self.audioPlayer.play()
@@ -733,5 +810,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             settingsViewController.delegate = self
         }    
     }
+    
+    
 
 }

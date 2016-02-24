@@ -9,22 +9,22 @@ provides-member:
 - ["O20WatsonDeveloperCloud11ServiceType", ""]
 - ["C20WatsonDeveloperCloud7Service", ""]
 provides-dynamic-lookup:
-- "setUsernameAndPassword"
 - "getEndpoint"
+- "setUsernameAndPassword"
 - "_apiKey"
 depends-top-level:
-- "String"
-- !private "NSDataBase64EncodingOptions"
-- "ServiceType"
-- "Service"
-- "StringLiteralType"
-- !private "Log"
-- "NSObject"
 - !private "+"
-- !private "NSASCIIStringEncoding"
+- "StringLiteralType"
+- !private "NSDataBase64EncodingOptions"
+- "String"
+- !private "Log"
 - !private "UnicodeScalarType"
 - "=="
 - !private "~="
+- "ServiceType"
+- "Service"
+- !private "NSASCIIStringEncoding"
+- "NSObject"
 depends-member:
 - !private ["PSs9AnyObject", "Log"]
 - !private ["PSs9AnyObject", "NSASCIIStringEncoding"]

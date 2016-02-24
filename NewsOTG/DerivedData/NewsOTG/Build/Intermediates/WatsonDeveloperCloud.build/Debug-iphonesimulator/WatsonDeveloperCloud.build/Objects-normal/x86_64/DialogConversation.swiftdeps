@@ -14,15 +14,15 @@ provides-member:
 - ["C20WatsonDeveloperCloud6Dialog", "Message"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
 - !private "<-"
-- "Dialog"
-- !private "StringLiteralType"
 - "String"
-- "Mappable"
-- "NSDate"
+- "Dialog"
 - !private "ISO8601DateTransform"
+- "Int"
+- "NSDate"
 - "Map"
+- "Mappable"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "ISO8601DateTransform"]
 - !private ["PSs9AnyObject", "Object"]

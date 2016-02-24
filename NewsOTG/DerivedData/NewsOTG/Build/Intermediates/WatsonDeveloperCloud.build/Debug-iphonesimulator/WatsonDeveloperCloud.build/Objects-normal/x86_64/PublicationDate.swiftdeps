@@ -7,17 +7,17 @@ provides-member:
 - ["V20WatsonDeveloperCloud15PublicationDate", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Bool"
 - "Int"
 - !private "<-"
-- "NSDate"
 - !private "StringLiteralType"
 - "PublicationDate"
+- "NSDate"
+- !private "Transformation"
 - "Map"
+- "Mappable"
 - "String"
 - "AlchemyLanguageGenericModel"
-- !private "Transformation"
-- "Mappable"
-- "Bool"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "confident"]
