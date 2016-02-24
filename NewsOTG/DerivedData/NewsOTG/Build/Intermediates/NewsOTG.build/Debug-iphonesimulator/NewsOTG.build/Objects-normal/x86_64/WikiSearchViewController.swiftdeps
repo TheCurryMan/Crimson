@@ -9,83 +9,87 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG24WikiSearchViewController", ""]
 provides-dynamic-lookup:
-- "searchBarCancelButtonClicked"
-- "preferredFont"
-- "viewDidLoad"
-- "currentWord"
-- "searchController"
-- "pocketSphinxContinuousTeardownDidFailWithReason"
-- "pocketsphinxFailedNoMicPermissions"
-- "startListening"
-- "kLevelUpdatesPerSecond"
-- "testRecognitionCompleted"
-- "updateSearchResultsForSearchController"
-- "preferredTextColor"
-- "pocketSphinxContinuousSetupDidFailWithReason"
-- "loadLists"
-- "startupFailedDueToLackOfPermissions"
-- "lmPath"
-- "addWords"
-- "openEarsEventsObserver"
 - "numberOfSectionsInTableView"
-- "pocketsphinxDidReceiveHypothesis"
-- "words"
-- "searchBarSearchButtonClicked"
-- "prepareForSegue"
-- "loadOpenEars"
-- "configureSearchController"
 - "pocketsphinxDidChangeLanguageModelToFile"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "stopListening"
-- "searchBarTextDidBeginEditing"
+- "wikiText"
+- "searchBarSearchButtonClicked"
+- "words"
 - "dicPath"
+- "pocketsphinxFailedNoMicPermissions"
+- "loadOpenEars"
+- "testRecognitionCompleted"
+- "startedListening"
+- "searchBarTextDidBeginEditing"
+- "lmPath"
+- "currentWord"
+- "viewDidLoad"
+- "updateSearchResultsForSearchController"
+- "pocketsphinxDidReceiveHypothesis"
+- "configureSearchController"
+- "kLevelUpdatesPerSecond"
+- "stopListening"
+- "prepareForSegue"
+- "viewDidAppear"
+- "searchController"
+- "searchBarCancelButtonClicked"
+- "openEarsEventsObserver"
+- "preferredFont"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "pocketSphinxContinuousTeardownDidFailWithReason"
+- "startupFailedDueToLackOfPermissions"
+- "preferredTextColor"
+- "loadLists"
+- "pocketSphinxContinuousSetupDidFailWithReason"
+- "startListening"
+- "addWords"
 depends-top-level:
-- !private "StringLiteralType"
-- "dataArray"
-- !private "print"
-- !private "UIBarStyle"
-- !private "!="
-- "Array"
-- "shouldShowSearchResults"
-- !private "NSUTF8StringEncoding"
-- "String"
-- "UIFont"
-- "UITableView"
-- "UIViewController"
-- "UIColor"
-- !private "NSBundle"
-- "UIStoryboardSegue"
-- !private "+"
-- "CGFloat"
-- "AnyObject"
-- "WikiSearchViewController"
-- "Bool"
-- !private "NSStringCompareOptions"
-- !private "OELanguageModelGenerator"
-- "OEEventsObserver"
-- !private "OEAcousticModel"
-- "Int"
-- !private "!"
-- "UITableViewDelegate"
-- "filteredArray"
 - !private "OEPocketsphinxController"
-- "BooleanLiteralType"
-- "UITableViewDataSource"
+- "shouldShowSearchResults"
+- "UITableViewCell"
+- "UIStoryboardSegue"
+- !private "UIBarStyle"
+- !private "NSStringCompareOptions"
+- !private "=="
+- !private "UnicodeScalarType"
+- "UISearchBar"
+- "StringLiteralType"
+- "OEEventsObserver"
+- "filteredArray"
+- !private "!"
+- "WikiSearchViewController"
+- "String"
+- "Array"
+- !private "OELanguageModelGenerator"
+- !private "print"
+- !private "NSString"
+- "UISearchController"
+- !private "NSUTF8StringEncoding"
+- "UITableView"
 - !private "NSLog"
 - "NSIndexPath"
-- "UITableViewCell"
-- !private "DisplayViewController"
-- "UISearchBar"
-- "UISearchController"
-- "OEEventsObserverDelegate"
-- "UISearchBarDelegate"
+- "CGFloat"
+- !private "OEAcousticModel"
+- !private "!="
 - !private "NSNotFound"
-- !private "NSString"
+- "UIColor"
+- "AnyObject"
+- "dataArray"
+- "UITableViewDataSource"
+- !private "DisplayViewController"
 - "UISearchResultsUpdating"
-- !private "UnicodeScalarType"
+- "UISearchBarDelegate"
+- !private "NSBundle"
+- "UIViewController"
+- "BooleanLiteralType"
+- "OEEventsObserverDelegate"
+- "UIFont"
+- !private "+"
+- "Bool"
+- "UITableViewDelegate"
+- "Int"
 depends-member:
 - !private ["PSo21AVAudioPlayerDelegate", "articleName"]
 - !private ["PSo21AVAudioPlayerDelegate", "articleURL"]
@@ -139,6 +143,7 @@ depends-member:
 - ["PSs9AnyObject", "loadOpenEars"]
 - !private ["PSs9AnyObject", "mainBundle"]
 - ["PSs9AnyObject", "micPermissionCheckCompleted"]
+- !private ["PSs9AnyObject", "navigationController"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - ["PSs9AnyObject", "openEarsEventsObserver"]
 - !private ["PSs9AnyObject", "pathForResource"]
@@ -161,6 +166,8 @@ depends-member:
 - ["PSs9AnyObject", "pocketsphinxFailedNoMicPermissions"]
 - ["PSs9AnyObject", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSs9AnyObject", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSs9AnyObject", "popToRootViewControllerAnimated"]
+- !private ["PSs9AnyObject", "popViewControllerAnimated"]
 - ["PSs9AnyObject", "positionForBar"]
 - ["PSs9AnyObject", "preferredFont"]
 - ["PSs9AnyObject", "preferredTextColor"]
@@ -200,6 +207,7 @@ depends-member:
 - !private ["PSs9AnyObject", "sizeToFit"]
 - ["PSs9AnyObject", "startListening"]
 - !private ["PSs9AnyObject", "startListeningWithLanguageModelAtPath"]
+- ["PSs9AnyObject", "startedListening"]
 - ["PSs9AnyObject", "startupFailedDueToLackOfPermissions"]
 - ["PSs9AnyObject", "stopListening"]
 - !private ["PSs9AnyObject", "stringByReplacingOccurrencesOfString"]
@@ -211,10 +219,12 @@ depends-member:
 - !private ["PSs9AnyObject", "textLabel"]
 - ["PSs9AnyObject", "updateSearchResultsForSearchController"]
 - !private ["PSs9AnyObject", "uppercaseString"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - !private ["PSs9AnyObject", "wiki"]
+- ["PSs9AnyObject", "wikiText"]
 - ["PSs9AnyObject", "words"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Generator"]
@@ -299,6 +309,7 @@ depends-member:
 - ["PSs11CVarArgType", "loadOpenEars"]
 - !private ["PSs11CVarArgType", "mainBundle"]
 - ["PSs11CVarArgType", "micPermissionCheckCompleted"]
+- !private ["PSs11CVarArgType", "navigationController"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - ["PSs11CVarArgType", "openEarsEventsObserver"]
 - !private ["PSs11CVarArgType", "pathForResource"]
@@ -321,6 +332,8 @@ depends-member:
 - ["PSs11CVarArgType", "pocketsphinxFailedNoMicPermissions"]
 - ["PSs11CVarArgType", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSs11CVarArgType", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSs11CVarArgType", "popToRootViewControllerAnimated"]
+- !private ["PSs11CVarArgType", "popViewControllerAnimated"]
 - ["PSs11CVarArgType", "positionForBar"]
 - ["PSs11CVarArgType", "preferredFont"]
 - ["PSs11CVarArgType", "preferredTextColor"]
@@ -360,6 +373,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "sizeToFit"]
 - ["PSs11CVarArgType", "startListening"]
 - !private ["PSs11CVarArgType", "startListeningWithLanguageModelAtPath"]
+- ["PSs11CVarArgType", "startedListening"]
 - ["PSs11CVarArgType", "startupFailedDueToLackOfPermissions"]
 - ["PSs11CVarArgType", "stopListening"]
 - !private ["PSs11CVarArgType", "stringByReplacingOccurrencesOfString"]
@@ -371,10 +385,12 @@ depends-member:
 - !private ["PSs11CVarArgType", "textLabel"]
 - ["PSs11CVarArgType", "updateSearchResultsForSearchController"]
 - !private ["PSs11CVarArgType", "uppercaseString"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - !private ["PSs11CVarArgType", "wiki"]
+- ["PSs11CVarArgType", "wikiText"]
 - ["PSs11CVarArgType", "words"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
@@ -461,6 +477,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "loadOpenEars"]
 - !private ["PSs23CustomStringConvertible", "mainBundle"]
 - ["PSs23CustomStringConvertible", "micPermissionCheckCompleted"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["PSs23CustomStringConvertible", "openEarsEventsObserver"]
 - !private ["PSs23CustomStringConvertible", "pathForResource"]
@@ -483,6 +500,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "pocketsphinxFailedNoMicPermissions"]
 - ["PSs23CustomStringConvertible", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSs23CustomStringConvertible", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSs23CustomStringConvertible", "popToRootViewControllerAnimated"]
+- !private ["PSs23CustomStringConvertible", "popViewControllerAnimated"]
 - ["PSs23CustomStringConvertible", "positionForBar"]
 - ["PSs23CustomStringConvertible", "preferredFont"]
 - ["PSs23CustomStringConvertible", "preferredTextColor"]
@@ -522,6 +541,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "sizeToFit"]
 - ["PSs23CustomStringConvertible", "startListening"]
 - !private ["PSs23CustomStringConvertible", "startListeningWithLanguageModelAtPath"]
+- ["PSs23CustomStringConvertible", "startedListening"]
 - ["PSs23CustomStringConvertible", "startupFailedDueToLackOfPermissions"]
 - ["PSs23CustomStringConvertible", "stopListening"]
 - !private ["PSs23CustomStringConvertible", "stringByReplacingOccurrencesOfString"]
@@ -534,10 +554,12 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "textLabel"]
 - ["PSs23CustomStringConvertible", "updateSearchResultsForSearchController"]
 - !private ["PSs23CustomStringConvertible", "uppercaseString"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - !private ["PSs23CustomStringConvertible", "wiki"]
+- ["PSs23CustomStringConvertible", "wikiText"]
 - ["PSs23CustomStringConvertible", "words"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["C7NewsOTG21DisplayViewController", "articleName"]
@@ -595,6 +617,7 @@ depends-member:
 - ["PSs9Equatable", "loadOpenEars"]
 - !private ["PSs9Equatable", "mainBundle"]
 - ["PSs9Equatable", "micPermissionCheckCompleted"]
+- !private ["PSs9Equatable", "navigationController"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - ["PSs9Equatable", "openEarsEventsObserver"]
 - !private ["PSs9Equatable", "pathForResource"]
@@ -617,6 +640,8 @@ depends-member:
 - ["PSs9Equatable", "pocketsphinxFailedNoMicPermissions"]
 - ["PSs9Equatable", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSs9Equatable", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSs9Equatable", "popToRootViewControllerAnimated"]
+- !private ["PSs9Equatable", "popViewControllerAnimated"]
 - ["PSs9Equatable", "positionForBar"]
 - ["PSs9Equatable", "preferredFont"]
 - ["PSs9Equatable", "preferredTextColor"]
@@ -656,6 +681,7 @@ depends-member:
 - !private ["PSs9Equatable", "sizeToFit"]
 - ["PSs9Equatable", "startListening"]
 - !private ["PSs9Equatable", "startListeningWithLanguageModelAtPath"]
+- ["PSs9Equatable", "startedListening"]
 - ["PSs9Equatable", "startupFailedDueToLackOfPermissions"]
 - ["PSs9Equatable", "stopListening"]
 - !private ["PSs9Equatable", "stringByReplacingOccurrencesOfString"]
@@ -667,10 +693,12 @@ depends-member:
 - !private ["PSs9Equatable", "textLabel"]
 - ["PSs9Equatable", "updateSearchResultsForSearchController"]
 - !private ["PSs9Equatable", "uppercaseString"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "wiki"]
+- ["PSs9Equatable", "wikiText"]
 - ["PSs9Equatable", "words"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
@@ -732,6 +760,7 @@ depends-member:
 - ["PSs8Hashable", "loadOpenEars"]
 - !private ["PSs8Hashable", "mainBundle"]
 - ["PSs8Hashable", "micPermissionCheckCompleted"]
+- !private ["PSs8Hashable", "navigationController"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - ["PSs8Hashable", "openEarsEventsObserver"]
 - !private ["PSs8Hashable", "pathForResource"]
@@ -754,6 +783,8 @@ depends-member:
 - ["PSs8Hashable", "pocketsphinxFailedNoMicPermissions"]
 - ["PSs8Hashable", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSs8Hashable", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSs8Hashable", "popToRootViewControllerAnimated"]
+- !private ["PSs8Hashable", "popViewControllerAnimated"]
 - ["PSs8Hashable", "positionForBar"]
 - ["PSs8Hashable", "preferredFont"]
 - ["PSs8Hashable", "preferredTextColor"]
@@ -793,6 +824,7 @@ depends-member:
 - !private ["PSs8Hashable", "sizeToFit"]
 - ["PSs8Hashable", "startListening"]
 - !private ["PSs8Hashable", "startListeningWithLanguageModelAtPath"]
+- ["PSs8Hashable", "startedListening"]
 - ["PSs8Hashable", "startupFailedDueToLackOfPermissions"]
 - ["PSs8Hashable", "stopListening"]
 - !private ["PSs8Hashable", "stringByReplacingOccurrencesOfString"]
@@ -804,10 +836,12 @@ depends-member:
 - !private ["PSs8Hashable", "textLabel"]
 - ["PSs8Hashable", "updateSearchResultsForSearchController"]
 - !private ["PSs8Hashable", "uppercaseString"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - !private ["PSs8Hashable", "whiteColor"]
 - !private ["PSs8Hashable", "wiki"]
+- ["PSs8Hashable", "wikiText"]
 - ["PSs8Hashable", "words"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -911,6 +945,7 @@ depends-member:
 - ["PSo8NSCoding", "loadLists"]
 - ["PSo8NSCoding", "loadOpenEars"]
 - ["PSo8NSCoding", "micPermissionCheckCompleted"]
+- !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "openEarsEventsObserver"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
@@ -929,6 +964,8 @@ depends-member:
 - ["PSo8NSCoding", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo8NSCoding", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo8NSCoding", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo8NSCoding", "popToRootViewControllerAnimated"]
+- !private ["PSo8NSCoding", "popViewControllerAnimated"]
 - ["PSo8NSCoding", "positionForBar"]
 - ["PSo8NSCoding", "preferredFont"]
 - ["PSo8NSCoding", "preferredTextColor"]
@@ -965,6 +1002,7 @@ depends-member:
 - !private ["PSo8NSCoding", "shouldShowSearchResults"]
 - !private ["PSo8NSCoding", "sizeToFit"]
 - ["PSo8NSCoding", "startListening"]
+- ["PSo8NSCoding", "startedListening"]
 - ["PSo8NSCoding", "startupFailedDueToLackOfPermissions"]
 - ["PSo8NSCoding", "stopListening"]
 - !private ["PSo8NSCoding", "stringByReplacingOccurrencesOfString"]
@@ -976,10 +1014,12 @@ depends-member:
 - !private ["PSo8NSCoding", "textLabel"]
 - ["PSo8NSCoding", "updateSearchResultsForSearchController"]
 - !private ["PSo8NSCoding", "uppercaseString"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - !private ["PSo8NSCoding", "wiki"]
+- ["PSo8NSCoding", "wikiText"]
 - ["PSo8NSCoding", "words"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "componentsSeparatedByString"]
@@ -1027,6 +1067,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "loadLists"]
 - ["PSo26NSExtensionRequestHandling", "loadOpenEars"]
 - ["PSo26NSExtensionRequestHandling", "micPermissionCheckCompleted"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "openEarsEventsObserver"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
@@ -1044,6 +1085,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo26NSExtensionRequestHandling", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo26NSExtensionRequestHandling", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo26NSExtensionRequestHandling", "popToRootViewControllerAnimated"]
+- !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
 - ["PSo26NSExtensionRequestHandling", "positionForBar"]
 - ["PSo26NSExtensionRequestHandling", "preferredFont"]
 - ["PSo26NSExtensionRequestHandling", "preferredTextColor"]
@@ -1075,14 +1118,17 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "shouldShowSearchResults"]
 - ["PSo26NSExtensionRequestHandling", "startListening"]
+- ["PSo26NSExtensionRequestHandling", "startedListening"]
 - ["PSo26NSExtensionRequestHandling", "startupFailedDueToLackOfPermissions"]
 - ["PSo26NSExtensionRequestHandling", "stopListening"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "testRecognitionCompleted"]
 - ["PSo26NSExtensionRequestHandling", "updateSearchResultsForSearchController"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - !private ["PSo26NSExtensionRequestHandling", "wiki"]
+- ["PSo26NSExtensionRequestHandling", "wikiText"]
 - ["PSo26NSExtensionRequestHandling", "words"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
@@ -1150,6 +1196,7 @@ depends-member:
 - ["CSo8NSObject", "loadOpenEars"]
 - !private ["CSo8NSObject", "mainBundle"]
 - ["CSo8NSObject", "micPermissionCheckCompleted"]
+- !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "openEarsEventsObserver"]
 - !private ["CSo8NSObject", "pathForResource"]
@@ -1172,6 +1219,8 @@ depends-member:
 - ["CSo8NSObject", "pocketsphinxFailedNoMicPermissions"]
 - ["CSo8NSObject", "pocketsphinxRecognitionLoopDidStart"]
 - ["CSo8NSObject", "pocketsphinxTestRecognitionCompleted"]
+- !private ["CSo8NSObject", "popToRootViewControllerAnimated"]
+- !private ["CSo8NSObject", "popViewControllerAnimated"]
 - ["CSo8NSObject", "positionForBar"]
 - ["CSo8NSObject", "preferredFont"]
 - ["CSo8NSObject", "preferredTextColor"]
@@ -1211,6 +1260,7 @@ depends-member:
 - !private ["CSo8NSObject", "sizeToFit"]
 - ["CSo8NSObject", "startListening"]
 - !private ["CSo8NSObject", "startListeningWithLanguageModelAtPath"]
+- ["CSo8NSObject", "startedListening"]
 - ["CSo8NSObject", "startupFailedDueToLackOfPermissions"]
 - ["CSo8NSObject", "stopListening"]
 - !private ["CSo8NSObject", "stringByReplacingOccurrencesOfString"]
@@ -1222,10 +1272,12 @@ depends-member:
 - !private ["CSo8NSObject", "textLabel"]
 - ["CSo8NSObject", "updateSearchResultsForSearchController"]
 - !private ["CSo8NSObject", "uppercaseString"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["CSo8NSObject", "wiki"]
+- ["CSo8NSObject", "wikiText"]
 - ["CSo8NSObject", "words"]
 - ["PSo16NSObjectProtocol", "Bool"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
@@ -1273,6 +1325,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "loadOpenEars"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - ["PSo16NSObjectProtocol", "micPermissionCheckCompleted"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "openEarsEventsObserver"]
 - !private ["PSo16NSObjectProtocol", "pathForResource"]
@@ -1295,6 +1348,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo16NSObjectProtocol", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo16NSObjectProtocol", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo16NSObjectProtocol", "popToRootViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
 - ["PSo16NSObjectProtocol", "positionForBar"]
 - ["PSo16NSObjectProtocol", "preferredFont"]
 - ["PSo16NSObjectProtocol", "preferredTextColor"]
@@ -1334,6 +1389,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
 - ["PSo16NSObjectProtocol", "startListening"]
 - !private ["PSo16NSObjectProtocol", "startListeningWithLanguageModelAtPath"]
+- ["PSo16NSObjectProtocol", "startedListening"]
 - ["PSo16NSObjectProtocol", "startupFailedDueToLackOfPermissions"]
 - ["PSo16NSObjectProtocol", "stopListening"]
 - !private ["PSo16NSObjectProtocol", "stringByReplacingOccurrencesOfString"]
@@ -1345,10 +1401,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textLabel"]
 - ["PSo16NSObjectProtocol", "updateSearchResultsForSearchController"]
 - !private ["PSo16NSObjectProtocol", "uppercaseString"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "wiki"]
+- ["PSo16NSObjectProtocol", "wikiText"]
 - ["PSo16NSObjectProtocol", "words"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "componentsSeparatedByString"]
@@ -1383,6 +1441,8 @@ depends-member:
 - !private ["PSo24OEEventsObserverDelegate", "UIColor"]
 - !private ["PSo24OEEventsObserverDelegate", "UISearchController"]
 - !private ["PSo24OEEventsObserverDelegate", "addWords"]
+- !private ["PSo24OEEventsObserverDelegate", "articleName"]
+- !private ["PSo24OEEventsObserverDelegate", "articleURL"]
 - ["PSo24OEEventsObserverDelegate", "audioInputDidBecomeAvailable"]
 - ["PSo24OEEventsObserverDelegate", "audioInputDidBecomeUnavailable"]
 - ["PSo24OEEventsObserverDelegate", "audioRouteDidChangeToRoute"]
@@ -1398,7 +1458,9 @@ depends-member:
 - !private ["PSo24OEEventsObserverDelegate", "isListening"]
 - !private ["PSo24OEEventsObserverDelegate", "lmPath"]
 - !private ["PSo24OEEventsObserverDelegate", "loadLists"]
+- !private ["PSo24OEEventsObserverDelegate", "loadOpenEars"]
 - ["PSo24OEEventsObserverDelegate", "micPermissionCheckCompleted"]
+- !private ["PSo24OEEventsObserverDelegate", "navigationController"]
 - ["PSo24OEEventsObserverDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo24OEEventsObserverDelegate", "openEarsEventsObserver"]
 - !private ["PSo24OEEventsObserverDelegate", "performSegueWithIdentifier"]
@@ -1444,12 +1506,16 @@ depends-member:
 - !private ["PSo24OEEventsObserverDelegate", "setActive"]
 - !private ["PSo24OEEventsObserverDelegate", "sharedInstance"]
 - !private ["PSo24OEEventsObserverDelegate", "shouldShowSearchResults"]
+- !private ["PSo24OEEventsObserverDelegate", "startListening"]
 - !private ["PSo24OEEventsObserverDelegate", "startListeningWithLanguageModelAtPath"]
+- !private ["PSo24OEEventsObserverDelegate", "startedListening"]
 - !private ["PSo24OEEventsObserverDelegate", "startupFailedDueToLackOfPermissions"]
 - !private ["PSo24OEEventsObserverDelegate", "stopListening"]
 - ["PSo24OEEventsObserverDelegate", "tableView"]
 - ["PSo24OEEventsObserverDelegate", "updateSearchResultsForSearchController"]
 - ["PSo24OEEventsObserverDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo24OEEventsObserverDelegate", "wiki"]
+- !private ["PSo24OEEventsObserverDelegate", "wikiText"]
 - !private ["PSo24OEEventsObserverDelegate", "words"]
 - ["PSo24OEEventsObserverDelegate", ""]
 - !private ["PSo26OEGrammarGeneratorDelegate", "generateLanguageModelFromArray"]
@@ -1590,6 +1656,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "loadLists"]
 - ["PSo21UIAppearanceContainer", "loadOpenEars"]
 - ["PSo21UIAppearanceContainer", "micPermissionCheckCompleted"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "openEarsEventsObserver"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
@@ -1608,6 +1675,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo21UIAppearanceContainer", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo21UIAppearanceContainer", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo21UIAppearanceContainer", "popToRootViewControllerAnimated"]
+- !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
 - ["PSo21UIAppearanceContainer", "positionForBar"]
 - ["PSo21UIAppearanceContainer", "preferredFont"]
 - ["PSo21UIAppearanceContainer", "preferredTextColor"]
@@ -1642,6 +1711,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "shouldShowSearchResults"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
 - ["PSo21UIAppearanceContainer", "startListening"]
+- ["PSo21UIAppearanceContainer", "startedListening"]
 - ["PSo21UIAppearanceContainer", "startupFailedDueToLackOfPermissions"]
 - ["PSo21UIAppearanceContainer", "stopListening"]
 - !private ["PSo21UIAppearanceContainer", "tableHeaderView"]
@@ -1651,9 +1721,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - ["PSo21UIAppearanceContainer", "updateSearchResultsForSearchController"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - !private ["PSo21UIAppearanceContainer", "wiki"]
+- ["PSo21UIAppearanceContainer", "wikiText"]
 - ["PSo21UIAppearanceContainer", "words"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "barStyle"]
@@ -1691,7 +1763,9 @@ depends-member:
 - ["PSo24UIBarPositioningDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo24UIBarPositioningDelegate", "lmPath"]
 - !private ["PSo24UIBarPositioningDelegate", "loadLists"]
+- !private ["PSo24UIBarPositioningDelegate", "loadOpenEars"]
 - ["PSo24UIBarPositioningDelegate", "micPermissionCheckCompleted"]
+- !private ["PSo24UIBarPositioningDelegate", "navigationController"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo24UIBarPositioningDelegate", "openEarsEventsObserver"]
 - !private ["PSo24UIBarPositioningDelegate", "performSegueWithIdentifier"]
@@ -1735,10 +1809,14 @@ depends-member:
 - !private ["PSo24UIBarPositioningDelegate", "searchController"]
 - ["PSo24UIBarPositioningDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo24UIBarPositioningDelegate", "shouldShowSearchResults"]
+- !private ["PSo24UIBarPositioningDelegate", "startListening"]
+- !private ["PSo24UIBarPositioningDelegate", "startedListening"]
 - !private ["PSo24UIBarPositioningDelegate", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo24UIBarPositioningDelegate", "stopListening"]
 - ["PSo24UIBarPositioningDelegate", "tableView"]
 - ["PSo24UIBarPositioningDelegate", "updateSearchResultsForSearchController"]
 - ["PSo24UIBarPositioningDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo24UIBarPositioningDelegate", "wikiText"]
 - !private ["PSo24UIBarPositioningDelegate", "words"]
 - ["PSo24UIBarPositioningDelegate", ""]
 - !private ["OSC10UIBarStyle", "Default"]
@@ -1780,6 +1858,7 @@ depends-member:
 - ["PSo18UIContentContainer", "loadLists"]
 - ["PSo18UIContentContainer", "loadOpenEars"]
 - ["PSo18UIContentContainer", "micPermissionCheckCompleted"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "openEarsEventsObserver"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
@@ -1797,6 +1876,8 @@ depends-member:
 - ["PSo18UIContentContainer", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo18UIContentContainer", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo18UIContentContainer", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo18UIContentContainer", "popToRootViewControllerAnimated"]
+- !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
 - ["PSo18UIContentContainer", "positionForBar"]
 - ["PSo18UIContentContainer", "preferredFont"]
 - ["PSo18UIContentContainer", "preferredTextColor"]
@@ -1828,14 +1909,17 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UIContentContainer", "shouldShowSearchResults"]
 - ["PSo18UIContentContainer", "startListening"]
+- ["PSo18UIContentContainer", "startedListening"]
 - ["PSo18UIContentContainer", "startupFailedDueToLackOfPermissions"]
 - ["PSo18UIContentContainer", "stopListening"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "testRecognitionCompleted"]
 - ["PSo18UIContentContainer", "updateSearchResultsForSearchController"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - !private ["PSo18UIContentContainer", "wiki"]
+- ["PSo18UIContentContainer", "wikiText"]
 - ["PSo18UIContentContainer", "words"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "barStyle"]
@@ -1903,6 +1987,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "loadLists"]
 - ["PSo18UIFocusEnvironment", "loadOpenEars"]
 - ["PSo18UIFocusEnvironment", "micPermissionCheckCompleted"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "openEarsEventsObserver"]
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
@@ -1921,6 +2006,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo18UIFocusEnvironment", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo18UIFocusEnvironment", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo18UIFocusEnvironment", "popToRootViewControllerAnimated"]
+- !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
 - ["PSo18UIFocusEnvironment", "positionForBar"]
 - ["PSo18UIFocusEnvironment", "preferredFont"]
 - ["PSo18UIFocusEnvironment", "preferredTextColor"]
@@ -1955,6 +2042,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "shouldShowSearchResults"]
 - !private ["PSo18UIFocusEnvironment", "sizeToFit"]
 - ["PSo18UIFocusEnvironment", "startListening"]
+- ["PSo18UIFocusEnvironment", "startedListening"]
 - ["PSo18UIFocusEnvironment", "startupFailedDueToLackOfPermissions"]
 - ["PSo18UIFocusEnvironment", "stopListening"]
 - !private ["PSo18UIFocusEnvironment", "tableHeaderView"]
@@ -1964,14 +2052,18 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - ["PSo18UIFocusEnvironment", "updateSearchResultsForSearchController"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - !private ["PSo18UIFocusEnvironment", "wiki"]
+- ["PSo18UIFocusEnvironment", "wikiText"]
 - ["PSo18UIFocusEnvironment", "words"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
+- !private ["CSo22UINavigationController", "popToRootViewControllerAnimated"]
+- !private ["CSo22UINavigationController", "popViewControllerAnimated"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
@@ -2025,6 +2117,7 @@ depends-member:
 - ["CSo11UIResponder", "loadLists"]
 - ["CSo11UIResponder", "loadOpenEars"]
 - ["CSo11UIResponder", "micPermissionCheckCompleted"]
+- !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "openEarsEventsObserver"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
@@ -2043,6 +2136,8 @@ depends-member:
 - ["CSo11UIResponder", "pocketsphinxFailedNoMicPermissions"]
 - ["CSo11UIResponder", "pocketsphinxRecognitionLoopDidStart"]
 - ["CSo11UIResponder", "pocketsphinxTestRecognitionCompleted"]
+- !private ["CSo11UIResponder", "popToRootViewControllerAnimated"]
+- !private ["CSo11UIResponder", "popViewControllerAnimated"]
 - ["CSo11UIResponder", "positionForBar"]
 - ["CSo11UIResponder", "preferredFont"]
 - ["CSo11UIResponder", "preferredTextColor"]
@@ -2077,6 +2172,7 @@ depends-member:
 - !private ["CSo11UIResponder", "shouldShowSearchResults"]
 - !private ["CSo11UIResponder", "sizeToFit"]
 - ["CSo11UIResponder", "startListening"]
+- ["CSo11UIResponder", "startedListening"]
 - ["CSo11UIResponder", "startupFailedDueToLackOfPermissions"]
 - ["CSo11UIResponder", "stopListening"]
 - !private ["CSo11UIResponder", "tableHeaderView"]
@@ -2086,9 +2182,11 @@ depends-member:
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "textLabel"]
 - ["CSo11UIResponder", "updateSearchResultsForSearchController"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo11UIResponder", "wiki"]
+- ["CSo11UIResponder", "wikiText"]
 - ["CSo11UIResponder", "words"]
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
@@ -2124,7 +2222,9 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "lmPath"]
 - !private ["PSo20UIScrollViewDelegate", "loadLists"]
+- !private ["PSo20UIScrollViewDelegate", "loadOpenEars"]
 - ["PSo20UIScrollViewDelegate", "micPermissionCheckCompleted"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "openEarsEventsObserver"]
 - !private ["PSo20UIScrollViewDelegate", "performSegueWithIdentifier"]
@@ -2168,10 +2268,14 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "searchController"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo20UIScrollViewDelegate", "shouldShowSearchResults"]
+- !private ["PSo20UIScrollViewDelegate", "startListening"]
+- !private ["PSo20UIScrollViewDelegate", "startedListening"]
 - !private ["PSo20UIScrollViewDelegate", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo20UIScrollViewDelegate", "stopListening"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "updateSearchResultsForSearchController"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo20UIScrollViewDelegate", "wikiText"]
 - !private ["PSo20UIScrollViewDelegate", "words"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["CSo11UISearchBar", "barStyle"]
@@ -2209,7 +2313,9 @@ depends-member:
 - ["PSo19UISearchBarDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UISearchBarDelegate", "lmPath"]
 - !private ["PSo19UISearchBarDelegate", "loadLists"]
+- !private ["PSo19UISearchBarDelegate", "loadOpenEars"]
 - ["PSo19UISearchBarDelegate", "micPermissionCheckCompleted"]
+- !private ["PSo19UISearchBarDelegate", "navigationController"]
 - ["PSo19UISearchBarDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UISearchBarDelegate", "openEarsEventsObserver"]
 - !private ["PSo19UISearchBarDelegate", "performSegueWithIdentifier"]
@@ -2253,10 +2359,14 @@ depends-member:
 - !private ["PSo19UISearchBarDelegate", "searchController"]
 - ["PSo19UISearchBarDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UISearchBarDelegate", "shouldShowSearchResults"]
+- !private ["PSo19UISearchBarDelegate", "startListening"]
+- !private ["PSo19UISearchBarDelegate", "startedListening"]
 - !private ["PSo19UISearchBarDelegate", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo19UISearchBarDelegate", "stopListening"]
 - ["PSo19UISearchBarDelegate", "tableView"]
 - ["PSo19UISearchBarDelegate", "updateSearchResultsForSearchController"]
 - ["PSo19UISearchBarDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo19UISearchBarDelegate", "wikiText"]
 - !private ["PSo19UISearchBarDelegate", "words"]
 - ["PSo19UISearchBarDelegate", ""]
 - !private ["CSo18UISearchController", "dimsBackgroundDuringPresentation"]
@@ -2292,7 +2402,9 @@ depends-member:
 - ["PSo23UISearchResultsUpdating", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo23UISearchResultsUpdating", "lmPath"]
 - !private ["PSo23UISearchResultsUpdating", "loadLists"]
+- !private ["PSo23UISearchResultsUpdating", "loadOpenEars"]
 - ["PSo23UISearchResultsUpdating", "micPermissionCheckCompleted"]
+- !private ["PSo23UISearchResultsUpdating", "navigationController"]
 - ["PSo23UISearchResultsUpdating", "numberOfSectionsInTableView"]
 - !private ["PSo23UISearchResultsUpdating", "openEarsEventsObserver"]
 - !private ["PSo23UISearchResultsUpdating", "performSegueWithIdentifier"]
@@ -2336,10 +2448,14 @@ depends-member:
 - !private ["PSo23UISearchResultsUpdating", "searchController"]
 - ["PSo23UISearchResultsUpdating", "sectionIndexTitlesForTableView"]
 - !private ["PSo23UISearchResultsUpdating", "shouldShowSearchResults"]
+- !private ["PSo23UISearchResultsUpdating", "startListening"]
+- !private ["PSo23UISearchResultsUpdating", "startedListening"]
 - !private ["PSo23UISearchResultsUpdating", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo23UISearchResultsUpdating", "stopListening"]
 - ["PSo23UISearchResultsUpdating", "tableView"]
 - ["PSo23UISearchResultsUpdating", "updateSearchResultsForSearchController"]
 - ["PSo23UISearchResultsUpdating", "viewForZoomingInScrollView"]
+- !private ["PSo23UISearchResultsUpdating", "wikiText"]
 - !private ["PSo23UISearchResultsUpdating", "words"]
 - ["PSo23UISearchResultsUpdating", ""]
 - ["PSo16UIStateRestoring", "Bool"]
@@ -2379,6 +2495,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "loadLists"]
 - ["PSo16UIStateRestoring", "loadOpenEars"]
 - ["PSo16UIStateRestoring", "micPermissionCheckCompleted"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "openEarsEventsObserver"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
@@ -2396,6 +2513,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo16UIStateRestoring", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo16UIStateRestoring", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo16UIStateRestoring", "popToRootViewControllerAnimated"]
+- !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
 - ["PSo16UIStateRestoring", "positionForBar"]
 - ["PSo16UIStateRestoring", "preferredFont"]
 - ["PSo16UIStateRestoring", "preferredTextColor"]
@@ -2427,14 +2546,17 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - !private ["PSo16UIStateRestoring", "shouldShowSearchResults"]
 - ["PSo16UIStateRestoring", "startListening"]
+- ["PSo16UIStateRestoring", "startedListening"]
 - ["PSo16UIStateRestoring", "startupFailedDueToLackOfPermissions"]
 - ["PSo16UIStateRestoring", "stopListening"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "testRecognitionCompleted"]
 - ["PSo16UIStateRestoring", "updateSearchResultsForSearchController"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - !private ["PSo16UIStateRestoring", "wiki"]
+- ["PSo16UIStateRestoring", "wikiText"]
 - ["PSo16UIStateRestoring", "words"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
@@ -2473,7 +2595,9 @@ depends-member:
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "lmPath"]
 - !private ["PSo21UITableViewDataSource", "loadLists"]
+- !private ["PSo21UITableViewDataSource", "loadOpenEars"]
 - ["PSo21UITableViewDataSource", "micPermissionCheckCompleted"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "openEarsEventsObserver"]
 - !private ["PSo21UITableViewDataSource", "performSegueWithIdentifier"]
@@ -2517,10 +2641,14 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "searchController"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UITableViewDataSource", "shouldShowSearchResults"]
+- !private ["PSo21UITableViewDataSource", "startListening"]
+- !private ["PSo21UITableViewDataSource", "startedListening"]
 - !private ["PSo21UITableViewDataSource", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo21UITableViewDataSource", "stopListening"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "updateSearchResultsForSearchController"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
+- !private ["PSo21UITableViewDataSource", "wikiText"]
 - !private ["PSo21UITableViewDataSource", "words"]
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "Bool"]
@@ -2552,7 +2680,9 @@ depends-member:
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "lmPath"]
 - !private ["PSo19UITableViewDelegate", "loadLists"]
+- !private ["PSo19UITableViewDelegate", "loadOpenEars"]
 - ["PSo19UITableViewDelegate", "micPermissionCheckCompleted"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "openEarsEventsObserver"]
 - !private ["PSo19UITableViewDelegate", "performSegueWithIdentifier"]
@@ -2596,10 +2726,14 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "searchController"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UITableViewDelegate", "shouldShowSearchResults"]
+- !private ["PSo19UITableViewDelegate", "startListening"]
+- !private ["PSo19UITableViewDelegate", "startedListening"]
 - !private ["PSo19UITableViewDelegate", "startupFailedDueToLackOfPermissions"]
+- !private ["PSo19UITableViewDelegate", "stopListening"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "updateSearchResultsForSearchController"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo19UITableViewDelegate", "wikiText"]
 - !private ["PSo19UITableViewDelegate", "words"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo17UITextInputTraits", "barStyle"]
@@ -2649,6 +2783,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "loadLists"]
 - ["PSo18UITraitEnvironment", "loadOpenEars"]
 - ["PSo18UITraitEnvironment", "micPermissionCheckCompleted"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "openEarsEventsObserver"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
@@ -2667,6 +2802,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pocketsphinxFailedNoMicPermissions"]
 - ["PSo18UITraitEnvironment", "pocketsphinxRecognitionLoopDidStart"]
 - ["PSo18UITraitEnvironment", "pocketsphinxTestRecognitionCompleted"]
+- !private ["PSo18UITraitEnvironment", "popToRootViewControllerAnimated"]
+- !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
 - ["PSo18UITraitEnvironment", "positionForBar"]
 - ["PSo18UITraitEnvironment", "preferredFont"]
 - ["PSo18UITraitEnvironment", "preferredTextColor"]
@@ -2701,6 +2838,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "shouldShowSearchResults"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
 - ["PSo18UITraitEnvironment", "startListening"]
+- ["PSo18UITraitEnvironment", "startedListening"]
 - ["PSo18UITraitEnvironment", "startupFailedDueToLackOfPermissions"]
 - ["PSo18UITraitEnvironment", "stopListening"]
 - !private ["PSo18UITraitEnvironment", "tableHeaderView"]
@@ -2710,9 +2848,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - ["PSo18UITraitEnvironment", "updateSearchResultsForSearchController"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - !private ["PSo18UITraitEnvironment", "wiki"]
+- ["PSo18UITraitEnvironment", "wikiText"]
 - ["PSo18UITraitEnvironment", "words"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "barStyle"]
@@ -2777,6 +2917,7 @@ depends-member:
 - ["CSo16UIViewController", "loadLists"]
 - ["CSo16UIViewController", "loadOpenEars"]
 - ["CSo16UIViewController", "micPermissionCheckCompleted"]
+- !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "openEarsEventsObserver"]
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
@@ -2794,6 +2935,8 @@ depends-member:
 - ["CSo16UIViewController", "pocketsphinxFailedNoMicPermissions"]
 - ["CSo16UIViewController", "pocketsphinxRecognitionLoopDidStart"]
 - ["CSo16UIViewController", "pocketsphinxTestRecognitionCompleted"]
+- !private ["CSo16UIViewController", "popToRootViewControllerAnimated"]
+- !private ["CSo16UIViewController", "popViewControllerAnimated"]
 - ["CSo16UIViewController", "positionForBar"]
 - ["CSo16UIViewController", "preferredFont"]
 - ["CSo16UIViewController", "preferredTextColor"]
@@ -2825,14 +2968,17 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - !private ["CSo16UIViewController", "shouldShowSearchResults"]
 - ["CSo16UIViewController", "startListening"]
+- ["CSo16UIViewController", "startedListening"]
 - ["CSo16UIViewController", "startupFailedDueToLackOfPermissions"]
 - ["CSo16UIViewController", "stopListening"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "testRecognitionCompleted"]
 - ["CSo16UIViewController", "updateSearchResultsForSearchController"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - !private ["CSo16UIViewController", "wiki"]
+- ["CSo16UIViewController", "wikiText"]
 - ["CSo16UIViewController", "words"]
 - ["CSo16UIViewController", ""]
 - !private ["PSo37UIViewControllerAnimatedTransitioning", "dimsBackgroundDuringPresentation"]
@@ -2905,6 +3051,7 @@ depends-member:
 - ["C7NewsOTG24WikiSearchViewController", "loadLists"]
 - ["C7NewsOTG24WikiSearchViewController", "loadOpenEars"]
 - ["C7NewsOTG24WikiSearchViewController", "micPermissionCheckCompleted"]
+- !private ["C7NewsOTG24WikiSearchViewController", "navigationController"]
 - ["C7NewsOTG24WikiSearchViewController", "numberOfSectionsInTableView"]
 - ["C7NewsOTG24WikiSearchViewController", "openEarsEventsObserver"]
 - !private ["C7NewsOTG24WikiSearchViewController", "performSegueWithIdentifier"]
@@ -2952,13 +3099,16 @@ depends-member:
 - ["C7NewsOTG24WikiSearchViewController", "sectionIndexTitlesForTableView"]
 - !private ["C7NewsOTG24WikiSearchViewController", "shouldShowSearchResults"]
 - ["C7NewsOTG24WikiSearchViewController", "startListening"]
+- ["C7NewsOTG24WikiSearchViewController", "startedListening"]
 - ["C7NewsOTG24WikiSearchViewController", "startupFailedDueToLackOfPermissions"]
 - ["C7NewsOTG24WikiSearchViewController", "stopListening"]
 - ["C7NewsOTG24WikiSearchViewController", "tableView"]
 - ["C7NewsOTG24WikiSearchViewController", "testRecognitionCompleted"]
 - ["C7NewsOTG24WikiSearchViewController", "updateSearchResultsForSearchController"]
+- ["C7NewsOTG24WikiSearchViewController", "viewDidAppear"]
 - ["C7NewsOTG24WikiSearchViewController", "viewDidLoad"]
 - ["C7NewsOTG24WikiSearchViewController", "viewForZoomingInScrollView"]
+- ["C7NewsOTG24WikiSearchViewController", "wikiText"]
 - ["C7NewsOTG24WikiSearchViewController", "words"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
@@ -3153,6 +3303,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UILabel"
+- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
@@ -3341,4 +3492,4 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
-interface-hash: "9b819cb0b82995f1324d32ec2950d7b6"
+interface-hash: "e99d0140b1c43976f6b6a74e31c5b84c"

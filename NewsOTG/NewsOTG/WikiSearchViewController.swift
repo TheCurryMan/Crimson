@@ -22,9 +22,19 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var preferredTextColor: UIColor!
     
+    var wikiText = ""
+    
+    var startedListening = false
+    
     @IBOutlet var tableView: UITableView!
     
-    
+    override func viewDidAppear(animated: Bool) {
+        
+        //if startedListening == false {
+            //viewDidLoad()
+        //}
+        
+    }
     
     
     func loadLists() {
@@ -43,8 +53,13 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
         dataArray = data1.componentsSeparatedByString(",") + data2.componentsSeparatedByString(",") + data3.componentsSeparatedByString(",")
         
             for i in dataArray {
-                words.append(i.uppercaseString)
+                var arr = i.uppercaseString.componentsSeparatedByString(" ")
+                for j in arr {
+                words.append(j)
+                }
             }
+            
+            print(words)
 
         }
         
@@ -67,6 +82,10 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        loadOpenEars()
+        
+        startListening()
 
         // Do any additional setup after loading the view.
     }
@@ -113,6 +132,8 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
         print(searchController.searchBar.text)
         
         searchController.searchBar.resignFirstResponder()
+        
+        self.wikiText = searchController.searchBar.text!
         
         performSegueWithIdentifier("gowiki", sender: self)
     }
@@ -170,8 +191,9 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        stopListening()
         var vc = segue.destinationViewController as! DisplayViewController
-        var finalstr = searchController.searchBar.text!.stringByReplacingOccurrencesOfString(" ", withString: "_")
+        var finalstr = wikiText.stringByReplacingOccurrencesOfString(" ", withString: "_")
         vc.articleName = (finalstr)
         vc.articleURL = ("https://en.wikipedia.org/wiki/" + (finalstr))
         vc.wiki = true
@@ -180,10 +202,6 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     //Open Ears Code Starts
     
     //Code In the Beginning
-    
-    //loadOpenEars()
-    
-    //startListening()
     
     //End beginning code
     
@@ -199,11 +217,13 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     var startupFailedDueToLackOfPermissions = Bool()
     
     
-    
     func loadOpenEars() {
+        
+        startedListening = true
         
         self.openEarsEventsObserver = OEEventsObserver()
         self.openEarsEventsObserver.delegate = self
+    
         
         var lmGenerator: OELanguageModelGenerator = OELanguageModelGenerator()
         
@@ -244,12 +264,14 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func stopListening() {
+        startedListening = false
         OEPocketsphinxController.sharedInstance().stopListening()
     }
     
     func addWords() {
         //add any thing here that you want to be recognized. Must be in capital letters
-        words.append("BACK")
+        words.append("GOBACK")
+        //words.append("HOME")
     }
     
     
@@ -269,8 +291,21 @@ class WikiSearchViewController: UIViewController, UITableViewDelegate, UITableVi
         
         print(hypothesis)
         
+        if hypothesis == "GOBACK" {
+            navigationController?.popViewControllerAnimated(true)
+        }
         
+        else if hypothesis == "HOME" {
+            navigationController?.popToRootViewControllerAnimated(true)
+        }
         
+        else {
+        
+        wikiText = hypothesis
+        
+        performSegueWithIdentifier("gowiki", sender: self)
+            
+        }
         
     }
 

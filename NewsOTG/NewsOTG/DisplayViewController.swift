@@ -39,7 +39,7 @@ import UIKit
 import AVFoundation
 import WatsonDeveloperCloud
 
-class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate, AVAudioPlayerDelegate
+class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, SettingsViewControllerDelegate, AVAudioPlayerDelegate, OEEventsObserverDelegate
  {
     
     @IBOutlet var scrollView: UIScrollView!
@@ -129,7 +129,9 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     override func viewDidAppear(animated: Bool) {
         
+        loadOpenEars()
         
+        startListening()
         
         if startedPlaying == true {
             audioPlayer.stop()
@@ -671,11 +673,136 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     }
     
     override func viewDidDisappear(animated: Bool) {
+        stopListening()
         if startedPlaying == true {
             audioPlayer.stop() }
     }
     
+    // OPEN EARS CODE
     
+    var lmPath: String!
+    var dicPath: String!
+    var words: Array<String> = []
+    var currentWord: String!
+    
+    var kLevelUpdatesPerSecond = 18
+    
+    
+    var openEarsEventsObserver = OEEventsObserver()
+    var startupFailedDueToLackOfPermissions = Bool()
+    
+    
+    
+    func loadOpenEars() {
+        
+        self.openEarsEventsObserver = OEEventsObserver()
+        self.openEarsEventsObserver.delegate = self
+        
+        var lmGenerator: OELanguageModelGenerator = OELanguageModelGenerator()
+        
+        addWords()
+        var name = "LanguageModelFileStarSaver"
+        lmGenerator.generateLanguageModelFromArray(words, withFilesNamed: name, forAcousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"))
+        
+        lmPath = lmGenerator.pathToSuccessfullyGeneratedLanguageModelWithRequestedName(name)
+        dicPath = lmGenerator.pathToSuccessfullyGeneratedDictionaryWithRequestedName(name)
+    }
+    
+    
+    func pocketsphinxDidChangeLanguageModelToFile(newLanguageModelPathAsString: String, newDictionaryPathAsString: String) {
+        print("Pocketsphinx is now using the following language model: \(newLanguageModelPathAsString) and the following dictionary: \(newDictionaryPathAsString)")
+    }
+    
+    func pocketSphinxContinuousSetupDidFailWithReason(reasonForFailure: String) {
+        print("Listening setup wasn't successful and returned the failure reason: \(reasonForFailure)")
+    }
+    
+    func pocketSphinxContinuousTeardownDidFailWithReason(reasonForFailure: String) {
+        print("Listening teardown wasn't successful and returned the failure reason: \(reasonForFailure)")
+        
+    }
+    
+    func testRecognitionCompleted() {
+        print("A test file that was submitted for recognition is now complete.")
+    }
+    
+    func startListening() {
+        do{
+            try OEPocketsphinxController.sharedInstance().setActive(true)}
+        catch _ {
+            print("error")
+            print("asdasdasd")
+        }
+        OEPocketsphinxController.sharedInstance().startListeningWithLanguageModelAtPath(lmPath, dictionaryAtPath: dicPath, acousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"), languageModelIsJSGF: false)
+    }
+    
+    func stopListening() {
+        OEPocketsphinxController.sharedInstance().stopListening()
+    }
+    
+    func addWords() {
+        //add any thing here that you want to be recognized. Must be in capital letters
+        words.append("PLAY")
+        words.append("PAUSE")
+        words.append("BACK")
+        words.append("HOME")
+        words.append("SETTINGS")
+    }
+    
+    
+    func pocketsphinxFailedNoMicPermissions() {
+        
+        NSLog("Local callback: The user has never set mic permissions or denied permission to this app's mic, so listening will not start.")
+        self.startupFailedDueToLackOfPermissions = true
+        if OEPocketsphinxController.sharedInstance().isListening {
+            var error = OEPocketsphinxController.sharedInstance().stopListening() // Stop listening if we are listening.
+            if(error != nil) {
+                NSLog("Error while stopping listening in micPermissionCheckCompleted: %@", error);
+            }
+        }
+    }
+    
+    func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
+        
+        print(hypothesis)
+        /*
+        if hypothesis == "OKAYBLARB"{
+        stopListening()
+        performSegueWithIdentifier("hometovoice", sender: self)
+        } */
+        
+        
+        if hypothesis == "PLAY"{
+            speak(self)
+        }
+            
+        else if hypothesis == "PAUSE"{
+            pauseSpeech(self)
+            
+        }
+        else if hypothesis == "GOBACK" {
+            navigationController?.popViewControllerAnimated(true)
+            
+        }
+            
+        else if hypothesis == "AUDIOREWIND" {
+            rewind(self)
+        }
+            
+        else if hypothesis == "AUDIOFORWARD" {
+            forward(self)
+        }
+        
+        else if hypothesis == "GOHOME" {
+            
+        }
+        
+        else if hypothesis == "SETTINGS" {
+                print("Settings")
+                //TODO - ADD SETTINGS COMMAND
+        }
+    }
+
     
     
     
@@ -686,7 +813,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     
     //CODE WE REALLY DON'T CARE ABOUT AND WILL BE REMOVED SOON ->
-    
+   
     
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!) {
         currentUtterance = currentUtterance + 1
