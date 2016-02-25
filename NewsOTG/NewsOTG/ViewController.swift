@@ -235,6 +235,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             words.append("SELECTSEA")
             words.append("SELECTWIKIPEDIA")
             words.append("SELECTBEE")
+            //words.append("A")
         }
     
         
