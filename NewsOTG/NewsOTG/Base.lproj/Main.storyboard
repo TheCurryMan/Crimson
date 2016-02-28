@@ -672,19 +672,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blarb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZSV-w4-r2b">
-                                <rect key="frame" x="52" y="54" width="217" height="139"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crimson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZSV-w4-r2b">
+                                <rect key="frame" x="0.0" y="46" width="319" height="161"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                <color key="textColor" red="0.96946808785267546" green="1" blue="0.93045599402144852" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TempLogo" id="9dO-Bh-72c">
-                                <rect key="frame" x="85" y="326" width="150" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Revolutionizing Online Reading with Audio and Voice Control&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="edg-uS-f3d">
+                                <rect key="frame" x="1" y="145" width="319" height="161"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="0.96946808790000005" green="1" blue="0.93045599400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoCrimson" id="9dO-Bh-72c">
+                                <rect key="frame" x="85" y="361" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96946808790000005" green="1" blue="0.93045599400000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.8169763094646465" green="0.0" blue="0.14367630647571519" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="xcW-bc-ApE"/>
                     <connections>
@@ -728,7 +736,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellVoicePicker" rowHeight="170" id="8AF-S1-5hW">
-                                        <rect key="frame" x="0.0" y="109" width="321" height="170"/>
+                                        <rect key="frame" x="0.0" y="45" width="321" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8AF-S1-5hW" id="dCS-id-KpG">
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="169.5"/>
@@ -755,7 +763,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellSlider" id="fUM-vr-QPe">
-                                        <rect key="frame" x="0.0" y="279" width="321" height="130"/>
+                                        <rect key="frame" x="0.0" y="215" width="321" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUM-vr-QPe" id="QyC-qf-son">
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="129.5"/>
@@ -845,6 +853,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LogoCrimson" width="750" height="750"/>
         <image name="TempLogo" width="380" height="380"/>
         <image name="Wikipedia" width="1058" height="1058"/>
         <image name="forward" width="128" height="128"/>
@@ -854,9 +863,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="XHh-1W-Zn0"/>
         <segue reference="e2H-4W-9qw"/>
-        <segue reference="cjI-Bj-swv"/>
-        <segue reference="Dio-mR-Gqf"/>
+        <segue reference="oc9-Ud-9cc"/>
         <segue reference="kEH-3d-2Lg"/>
+        <segue reference="Dio-mR-Gqf"/>
         <segue reference="xHt-dc-NmS"/>
         <segue reference="iVM-Oz-xo8"/>
         <segue reference="TK2-tD-3Zh"/>

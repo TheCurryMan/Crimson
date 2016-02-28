@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG21LoadingViewController", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "activityIndicator"
 - "nextpage"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 depends-top-level:
-- !private "CGRectMake"
-- !private "StringLiteralType"
-- !private "Selector"
-- !private "!="
-- !private "BooleanLiteralType"
-- !private "PFUser"
-- !private "NSTimer"
-- "UIViewController"
 - !private "UIActivityIndicatorViewStyle"
-- "UIActivityIndicatorView"
-- !private "UIColor"
-- !private "print"
+- !private "StringLiteralType"
+- "UIViewController"
 - "LoadingViewController"
+- !private "NSTimer"
+- !private "print"
+- "UIActivityIndicatorView"
+- !private "!="
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- !private "CGRectMake"
+- !private "PFUser"
+- !private "Selector"
 depends-member:
 - !private ["PSs9AnyObject", "CGRectMake"]
 - !private ["PSs9AnyObject", "NSTimer"]
@@ -35,7 +35,6 @@ depends-member:
 - ["PSs9AnyObject", "activityIndicator"]
 - !private ["PSs9AnyObject", "activityIndicatorViewStyle"]
 - !private ["PSs9AnyObject", "addSubview"]
-- !private ["PSs9AnyObject", "blackColor"]
 - !private ["PSs9AnyObject", "center"]
 - !private ["PSs9AnyObject", "color"]
 - !private ["PSs9AnyObject", "currentUser"]
@@ -53,6 +52,7 @@ depends-member:
 - !private ["PSs9AnyObject", "startAnimating"]
 - !private ["PSs9AnyObject", "view"]
 - ["PSs9AnyObject", "viewDidLoad"]
+- !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -68,7 +68,6 @@ depends-member:
 - ["PSs11CVarArgType", "activityIndicator"]
 - !private ["PSs11CVarArgType", "activityIndicatorViewStyle"]
 - !private ["PSs11CVarArgType", "addSubview"]
-- !private ["PSs11CVarArgType", "blackColor"]
 - !private ["PSs11CVarArgType", "center"]
 - !private ["PSs11CVarArgType", "color"]
 - !private ["PSs11CVarArgType", "currentUser"]
@@ -86,6 +85,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "startAnimating"]
 - !private ["PSs11CVarArgType", "view"]
 - ["PSs11CVarArgType", "viewDidLoad"]
+- !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs23CustomStringConvertible", "CGRectMake"]
 - !private ["PSs23CustomStringConvertible", "NSTimer"]
@@ -98,7 +98,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "activityIndicator"]
 - !private ["PSs23CustomStringConvertible", "activityIndicatorViewStyle"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
-- !private ["PSs23CustomStringConvertible", "blackColor"]
 - !private ["PSs23CustomStringConvertible", "center"]
 - !private ["PSs23CustomStringConvertible", "color"]
 - !private ["PSs23CustomStringConvertible", "currentUser"]
@@ -116,6 +115,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "startAnimating"]
 - !private ["PSs23CustomStringConvertible", "view"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs9Equatable", "CGRectMake"]
 - !private ["PSs9Equatable", "NSTimer"]
@@ -129,7 +129,6 @@ depends-member:
 - ["PSs9Equatable", "activityIndicator"]
 - !private ["PSs9Equatable", "activityIndicatorViewStyle"]
 - !private ["PSs9Equatable", "addSubview"]
-- !private ["PSs9Equatable", "blackColor"]
 - !private ["PSs9Equatable", "center"]
 - !private ["PSs9Equatable", "color"]
 - !private ["PSs9Equatable", "currentUser"]
@@ -147,6 +146,7 @@ depends-member:
 - !private ["PSs9Equatable", "startAnimating"]
 - !private ["PSs9Equatable", "view"]
 - ["PSs9Equatable", "viewDidLoad"]
+- !private ["PSs9Equatable", "whiteColor"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs8Hashable", "CGRectMake"]
@@ -161,7 +161,6 @@ depends-member:
 - ["PSs8Hashable", "activityIndicator"]
 - !private ["PSs8Hashable", "activityIndicatorViewStyle"]
 - !private ["PSs8Hashable", "addSubview"]
-- !private ["PSs8Hashable", "blackColor"]
 - !private ["PSs8Hashable", "center"]
 - !private ["PSs8Hashable", "color"]
 - !private ["PSs8Hashable", "currentUser"]
@@ -179,6 +178,7 @@ depends-member:
 - !private ["PSs8Hashable", "startAnimating"]
 - !private ["PSs8Hashable", "view"]
 - ["PSs8Hashable", "viewDidLoad"]
+- !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
 - !private ["C7NewsOTG21LoadingViewController", "CGRectMake"]
 - !private ["C7NewsOTG21LoadingViewController", "NSTimer"]
@@ -208,7 +208,6 @@ depends-member:
 - ["PSo8NSCoding", "activityIndicator"]
 - !private ["PSo8NSCoding", "activityIndicatorViewStyle"]
 - !private ["PSo8NSCoding", "addSubview"]
-- !private ["PSo8NSCoding", "blackColor"]
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "color"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -224,8 +223,9 @@ depends-member:
 - !private ["PSo8NSCoding", "startAnimating"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTimer"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
@@ -255,7 +255,6 @@ depends-member:
 - ["CSo8NSObject", "activityIndicator"]
 - !private ["CSo8NSObject", "activityIndicatorViewStyle"]
 - !private ["CSo8NSObject", "addSubview"]
-- !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "color"]
 - !private ["CSo8NSObject", "currentUser"]
@@ -273,6 +272,7 @@ depends-member:
 - !private ["CSo8NSObject", "startAnimating"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "NSTimer"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
@@ -283,7 +283,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "activityIndicator"]
 - !private ["PSo16NSObjectProtocol", "activityIndicatorViewStyle"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
-- !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "color"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
@@ -301,8 +300,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "startAnimating"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
 - !private ["PSs21NilLiteralConvertible", "init"]
 - !private ["Sq", "deinit"]
@@ -358,7 +358,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "NSTimer"]
 - !private ["PSo18UIContentContainer", "PFUser"]
@@ -515,7 +515,7 @@ depends-member:
 - ["CSo16UIViewController", ""]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs24_ColorLiteralConvertible", "blackColor"]
+- !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]

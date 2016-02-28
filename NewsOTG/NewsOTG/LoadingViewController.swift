@@ -29,11 +29,11 @@ class LoadingViewController: UIViewController {
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
-        activityIndicator.color = UIColor.blackColor()
+        activityIndicator.color = UIColor.whiteColor()
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("nextpage"), userInfo: nil, repeats: false)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("nextpage"), userInfo: nil, repeats: false)
         print("THis is working")
     }
     
