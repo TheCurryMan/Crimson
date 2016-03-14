@@ -1,0 +1,536 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Log"
+provides-nominal:
+- "C20WatsonDeveloperCloud3Log"
+provides-member:
+- ["C20WatsonDeveloperCloud3Log", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "NSError"
+- "StringLiteralType"
+- !private "NSLog"
+- !private "NSFileManager"
+- "NSURL"
+- "BooleanLiteralType"
+- "Dictionary"
+- "XCGLogger"
+- !private ">"
+- !private "NSSearchPathForDirectoriesInDomains"
+- "UIColor"
+- "Log"
+depends-member:
+- ["PSs9AnyObject", "Log"]
+- ["PSs9AnyObject", "LogLevel"]
+- !private ["PSs9AnyObject", "NSFileManager"]
+- !private ["PSs9AnyObject", "NSLog"]
+- !private ["PSs9AnyObject", "NSSearchPathForDirectoriesInDomains"]
+- ["PSs9AnyObject", "NSURL"]
+- ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "URLByAppendingPathComponent"]
+- ["PSs9AnyObject", "XCGLogger"]
+- ["PSs9AnyObject", "XcodeColor"]
+- !private ["PSs9AnyObject", "characters"]
+- ["PSs9AnyObject", "consoleLogLevel"]
+- !private ["PSs9AnyObject", "createDirectoryAtPath"]
+- !private ["PSs9AnyObject", "debugDescription"]
+- !private ["PSs9AnyObject", "defaultManager"]
+- ["PSs9AnyObject", "fileLogLevel"]
+- ["PSs9AnyObject", "fileName"]
+- ["PSs9AnyObject", "getLogDirectory"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "otherLogFileLocation"]
+- !private ["PSs9AnyObject", "path"]
+- ["PSs9AnyObject", "redColor"]
+- ["PSs9AnyObject", "setup"]
+- ["PSs9AnyObject", "whiteColor"]
+- ["PSs9AnyObject", "xcodeColors"]
+- ["PSs9AnyObject", "xcodeColorsEnabled"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Index"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "UserDomainMask"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "URLByAppendingPathComponent"]
+- !private ["PSs11CVarArgType", "characters"]
+- !private ["PSs11CVarArgType", "createDirectoryAtPath"]
+- !private ["PSs11CVarArgType", "debugDescription"]
+- !private ["PSs11CVarArgType", "defaultManager"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "path"]
+- ["PSs11CVarArgType", "redColor"]
+- ["PSs11CVarArgType", "whiteColor"]
+- !private ["VSs9Character", "deinit"]
+- !private ["VSS13CharacterView", "Generator"]
+- !private ["VSS13CharacterView", "Index"]
+- !private ["VSS13CharacterView", "SubSequence"]
+- !private ["VSS13CharacterView", "count"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "subscript"]
+- ["PSs10Comparable", "Debug"]
+- !private ["PSs10Comparable", "Distance"]
+- ["PSs10Comparable", "Error"]
+- ["PSs10Comparable", "Info"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- ["PSs10Comparable", "Severe"]
+- ["PSs10Comparable", "Verbose"]
+- ["PSs10Comparable", "Warning"]
+- !private ["PSs10Comparable", "characters"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "LogLevel"]
+- ["PSs28CustomDebugStringConvertible", "Value"]
+- ["PSs28CustomDebugStringConvertible", "XcodeColor"]
+- !private ["PSs28CustomDebugStringConvertible", "characters"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- ["PSs28CustomDebugStringConvertible", "setup"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- ["PSs28CustomDebugStringConvertible", "xcodeColors"]
+- ["PSs28CustomDebugStringConvertible", "xcodeColorsEnabled"]
+- ["PSs23CustomStringConvertible", "Debug"]
+- ["PSs23CustomStringConvertible", "Error"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- ["PSs23CustomStringConvertible", "Info"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- ["PSs23CustomStringConvertible", "Key"]
+- ["PSs23CustomStringConvertible", "Severe"]
+- !private ["PSs23CustomStringConvertible", "URLByAppendingPathComponent"]
+- ["PSs23CustomStringConvertible", "Value"]
+- ["PSs23CustomStringConvertible", "Verbose"]
+- ["PSs23CustomStringConvertible", "Warning"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "characters"]
+- !private ["PSs23CustomStringConvertible", "createDirectoryAtPath"]
+- !private ["PSs23CustomStringConvertible", "debugDescription"]
+- !private ["PSs23CustomStringConvertible", "defaultManager"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "path"]
+- ["PSs23CustomStringConvertible", "redColor"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "whiteColor"]
+- ["VSs10Dictionary", "Key"]
+- ["VSs10Dictionary", "Value"]
+- ["PSs28DictionaryLiteralConvertible", "Key"]
+- ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["Sd", "deinit"]
+- ["PSs9Equatable", "Debug"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "DocumentDirectory"]
+- ["PSs9Equatable", "Error"]
+- ["PSs9Equatable", "Info"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- ["PSs9Equatable", "Severe"]
+- !private ["PSs9Equatable", "URLByAppendingPathComponent"]
+- !private ["PSs9Equatable", "UserDomainMask"]
+- ["PSs9Equatable", "Verbose"]
+- ["PSs9Equatable", "Warning"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "characters"]
+- !private ["PSs9Equatable", "createDirectoryAtPath"]
+- !private ["PSs9Equatable", "debugDescription"]
+- !private ["PSs9Equatable", "defaultManager"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "path"]
+- ["PSs9Equatable", "redColor"]
+- ["PSs9Equatable", "whiteColor"]
+- !private ["PSs9ErrorType", "debugDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "characters"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- ["PSs8Hashable", "Debug"]
+- !private ["PSs8Hashable", "DocumentDirectory"]
+- ["PSs8Hashable", "Error"]
+- ["PSs8Hashable", "Info"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- ["PSs8Hashable", "Severe"]
+- !private ["PSs8Hashable", "URLByAppendingPathComponent"]
+- ["PSs8Hashable", "Verbose"]
+- ["PSs8Hashable", "Warning"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "characters"]
+- !private ["PSs8Hashable", "createDirectoryAtPath"]
+- !private ["PSs8Hashable", "debugDescription"]
+- !private ["PSs8Hashable", "defaultManager"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "path"]
+- ["PSs8Hashable", "redColor"]
+- ["PSs8Hashable", "whiteColor"]
+- !private ["VVSS13CharacterView5Index", "Distance"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- ["C20WatsonDeveloperCloud3Log", "Log"]
+- !private ["C20WatsonDeveloperCloud3Log", "NSError"]
+- !private ["C20WatsonDeveloperCloud3Log", "NSFileManager"]
+- !private ["C20WatsonDeveloperCloud3Log", "NSLog"]
+- !private ["C20WatsonDeveloperCloud3Log", "NSSearchPathForDirectoriesInDomains"]
+- ["C20WatsonDeveloperCloud3Log", "NSURL"]
+- ["C20WatsonDeveloperCloud3Log", "UIColor"]
+- ["C20WatsonDeveloperCloud3Log", "XCGLogger"]
+- ["C20WatsonDeveloperCloud3Log", "consoleLogLevel"]
+- !private ["C20WatsonDeveloperCloud3Log", "consoleLogLevelKey"]
+- ["C20WatsonDeveloperCloud3Log", "deinit"]
+- ["C20WatsonDeveloperCloud3Log", "fileLogLevel"]
+- !private ["C20WatsonDeveloperCloud3Log", "fileLogLevelKey"]
+- ["C20WatsonDeveloperCloud3Log", "fileName"]
+- ["C20WatsonDeveloperCloud3Log", "getLogDirectory"]
+- ["C20WatsonDeveloperCloud3Log", "init"]
+- !private ["C20WatsonDeveloperCloud3Log", "logfileLocationKey"]
+- !private ["C20WatsonDeveloperCloud3Log", "logfileNameKey"]
+- ["C20WatsonDeveloperCloud3Log", "otherLogFileLocation"]
+- ["C20WatsonDeveloperCloud3Log", "sharedLogger"]
+- ["OC9XCGLogger9XCGLogger8LogLevel", "Debug"]
+- ["OC9XCGLogger9XCGLogger8LogLevel", "Error"]
+- ["OC9XCGLogger9XCGLogger8LogLevel", "Info"]
+- ["OC9XCGLogger9XCGLogger8LogLevel", "Severe"]
+- ["OC9XCGLogger9XCGLogger8LogLevel", "Verbose"]
+- ["OC9XCGLogger9XCGLogger8LogLevel", "Warning"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "characters"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
+- !private ["PSo8NSCoding", "characters"]
+- !private ["PSo8NSCoding", "debugDescription"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "path"]
+- ["PSo8NSCoding", "redColor"]
+- ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
+- !private ["PSo9NSCopying", "characters"]
+- !private ["PSo9NSCopying", "debugDescription"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "path"]
+- ["PSo9NSCopying", "redColor"]
+- ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo7NSError", "debugDescription"]
+- !private ["CSo13NSFileManager", "createDirectoryAtPath"]
+- !private ["CSo13NSFileManager", "defaultManager"]
+- !private ["PSo16NSMutableCopying", "characters"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "URLByAppendingPathComponent"]
+- !private ["CSo8NSObject", "characters"]
+- !private ["CSo8NSObject", "createDirectoryAtPath"]
+- !private ["CSo8NSObject", "debugDescription"]
+- !private ["CSo8NSObject", "defaultManager"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "path"]
+- ["CSo8NSObject", "redColor"]
+- ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
+- !private ["PSo16NSObjectProtocol", "characters"]
+- !private ["PSo16NSObjectProtocol", "createDirectoryAtPath"]
+- !private ["PSo16NSObjectProtocol", "debugDescription"]
+- !private ["PSo16NSObjectProtocol", "defaultManager"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "path"]
+- ["PSo16NSObjectProtocol", "redColor"]
+- ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["OSC21NSSearchPathDirectory", "DocumentDirectory"]
+- !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
+- !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "characters"]
+- !private ["PSo14NSSecureCoding", "debugDescription"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "path"]
+- ["PSo14NSSecureCoding", "redColor"]
+- ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "characters"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "URLByAppendingPathComponent"]
+- ["CSo5NSURL", "init"]
+- !private ["CSo5NSURL", "path"]
+- !private ["PSs13OptionSetType", "UserDomainMask"]
+- !private ["PSs16OutputStreamType", "characters"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- ["PSs16RawRepresentable", "Debug"]
+- !private ["PSs16RawRepresentable", "DocumentDirectory"]
+- ["PSs16RawRepresentable", "Error"]
+- ["PSs16RawRepresentable", "Info"]
+- ["PSs16RawRepresentable", "Severe"]
+- !private ["PSs16RawRepresentable", "UserDomainMask"]
+- ["PSs16RawRepresentable", "Verbose"]
+- ["PSs16RawRepresentable", "Warning"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "UserDomainMask"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "characters"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "characters"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "characters"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "characters"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- ["CSo7UIColor", "redColor"]
+- ["CSo7UIColor", "whiteColor"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "URLByAppendingPathComponent"]
+- !private ["P9Alamofire20URLStringConvertible", "characters"]
+- ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "path"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "characters"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- ["C9XCGLogger9XCGLogger", "LogLevel"]
+- ["C9XCGLogger9XCGLogger", "XcodeColor"]
+- ["C9XCGLogger9XCGLogger", "init"]
+- ["C9XCGLogger9XCGLogger", "setup"]
+- ["C9XCGLogger9XCGLogger", "xcodeColors"]
+- ["C9XCGLogger9XCGLogger", "xcodeColorsEnabled"]
+- ["VC9XCGLogger9XCGLogger10XcodeColor", "darkGreen"]
+- ["VC9XCGLogger9XCGLogger10XcodeColor", "darkGrey"]
+- ["VC9XCGLogger9XCGLogger10XcodeColor", "init"]
+- ["VC9XCGLogger9XCGLogger10XcodeColor", "lightGrey"]
+- ["VC9XCGLogger9XCGLogger10XcodeColor", "orange"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "characters"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "characters"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "characters"]
+- !private ["PSs16_CocoaStringType", "init"]
+- ["PSs24_ColorLiteralConvertible", "redColor"]
+- ["PSs24_ColorLiteralConvertible", "whiteColor"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "path"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- ["PSs21_ObjectiveCBridgeable", "Key"]
+- ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "characters"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "URLByAppendingPathComponent"]
+- ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "characters"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "path"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "VSS13CharacterView"
+- "PSs14CollectionType"
+- "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "VSs10Dictionary"
+- "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "VVSS13CharacterView5Index"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- "C20WatsonDeveloperCloud3Log"
+- "OC9XCGLogger9XCGLogger8LogLevel"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "CSo13NSFileManager"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "OSC21NSSearchPathDirectory"
+- !private "VSC22NSSearchPathDomainMask"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo5NSURL"
+- !private "PSs13OptionSetType"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- "PSs16RawRepresentable"
+- "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- "CSo7UIColor"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "C9XCGLogger9XCGLogger"
+- "VC9XCGLogger9XCGLogger10XcodeColor"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- "PSs24_ColorLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "3d2dda5c150bd5818031c81950100c7c"

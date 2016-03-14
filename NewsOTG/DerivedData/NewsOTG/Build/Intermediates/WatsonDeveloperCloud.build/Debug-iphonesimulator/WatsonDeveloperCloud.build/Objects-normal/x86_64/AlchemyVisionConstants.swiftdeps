@@ -35,14 +35,14 @@ provides-member:
 - ["OC20WatsonDeveloperCloud15VisionConstants9VisionURI", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "VisionConstants"
-- "UnicodeScalarType"
+- "String"
 - !private "IntegerLiteralType"
-- !private "FloatLiteralType"
 - "=="
 - !private "~="
-- "String"
+- "VisionConstants"
+- "StringLiteralType"
+- "UnicodeScalarType"
+- !private "FloatLiteralType"
 depends-member:
 - ["PSs9AnyObject", ""]
 - !private ["PSs22BidirectionalIndexType", "hashValue"]

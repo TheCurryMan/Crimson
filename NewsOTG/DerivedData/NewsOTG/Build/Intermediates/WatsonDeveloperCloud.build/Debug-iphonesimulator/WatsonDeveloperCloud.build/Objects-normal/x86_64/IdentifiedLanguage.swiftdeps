@@ -10,11 +10,11 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Map"
 - "Mappable"
-- "Double"
-- !private "StringLiteralType"
-- "LanguageTranslation"
-- !private "<-"
 - "String"
+- "LanguageTranslation"
+- !private "StringLiteralType"
+- "Double"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sd", "deinit"]

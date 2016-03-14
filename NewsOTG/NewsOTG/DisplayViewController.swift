@@ -199,9 +199,18 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         
         print(all)
         
+        // TRYING OUT GOOGLE APP ENGINE
+        
+        if self.wiki == false {
+            articleURL = "http://crimson-1250.appspot.com/cnn?url=" + articleURL
+        }
+        
+        // REMOVE ABOVE CODE IF IT DOESN'T WORK
+        
         if listOfArticles == [""] {
         
             articleTitle.text = articleName
+            
         
             url = NSURL(string: articleURL)!}
         
@@ -243,6 +252,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                     
                     
                     if self.wiki == false {
+                        
+                        
+                        
+                    self.articleText = urlContent.stringByReplacingOccurrencesOfString(".", withString: ". ")
+                        
+                    /*
                     
                    
                     var urlContentArray = urlContent.componentsSeparatedByString("el-editorial-source\">")
@@ -282,8 +297,11 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                         
                         print(str)
                     
-                        self.articleText = str.stringByReplacingOccurrencesOfString(".", withString: ". ")
+                        
                         }
+                        */
+                        
+                        
                         
                     
                     }
@@ -378,6 +396,12 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             
             do {
                 
+                if listOfText == [] {
+                    print("converted strings length: " + String(listOfText.count))
+                    viewDidLoad()
+                }
+                
+                else {
                 
                 var i = listOfText[counter1]
                 
@@ -399,8 +423,18 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                             self.getAudioData()
                         }
                         
-                    }})
+                    }
+                
+                    else {
+                        print("Error - Unable to get data due to bad inernet connectivity. ")
+                        
+                    }
+                
+                })
+                    
                 self.pvSpeechProgress.setProgress(0.0, animated: false)
+                    
+                }
             }
         catch {
             self.btnSpeak.enabled = false
@@ -477,35 +511,18 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
     
     @IBAction func speak(sender: AnyObject) {
         listOfData = uniq(listOfData)
-        
-        print(speechSynthesizer.speaking)
-        
-        print(sender)
-        
-        print("Value of bar: " + String(Float((counter+1)/(listOfText.count))))
-        
         self.pvSpeechProgress.setProgress(Float(counter+1)/Float(listOfText.count), animated: true)
-        
-        //print(listOfData)
-        print(listOfData.count)
-        print("THE LENGTH OF THE ARRAY OF DATA IS ABOVE \n\n\n\n\n\n\n")
-        
         if sender as! NSObject == btnSpeak as! NSObject &&  pause == true && startedPlaying == true{
             self.pauseSpeech(self)
         }
-        
         else {
-        
         if pause == false {
             btnSpeak.setImage(UIImage(named: "pause1"), forState: .Normal)
             pause = true }
         
         print(startedPlaying)
-        
         if startedPlaying == false {playAudio()}
-            
         else if startedPlaying == true {audioPlayer.play()}
-            
         else {
         
         if !speechSynthesizer.speaking {
@@ -515,8 +532,6 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             currentUtterance = 0
             totalTextLength = 0
             spokenTextLengths = 0
-            
-            print("Should play audio")
             
             for pieceOfText in textParagraphs {
             
@@ -531,10 +546,7 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
             self.totalTextLength = self.totalTextLength + pieceOfText.characters.count
             self.speechSynthesizer.speakUtterance(speechUtterance)
 
-            
             }
-            
-            
         }
             
             
@@ -545,28 +557,15 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
         }
             
         }
-            
         }
-        
-        
-        
-        
-        
-        //animateActionButtonAppearance(true)
-            
-            
     }
-    
     func audioPlayerDidFinishPlaying( audioPlayer: AVAudioPlayer,
         successfully flag: Bool) {
             if counter < listOfData.count - 1 && all == false{
-                
-            
             counter = counter + 1
             startedPlaying = false
             speak(self)
             }
-            
             else {
                 if all == false {
                 pauseSpeech(self)
@@ -581,7 +580,6 @@ class DisplayViewController: UIViewController, AVSpeechSynthesizerDelegate, Sett
                     listOfData = []
                     listOfText = [""]
                         btnSpeak.setImage(UIImage(named: "play1"), forState: .Normal)
-
                     viewDidLoad()
                     }
                     else {

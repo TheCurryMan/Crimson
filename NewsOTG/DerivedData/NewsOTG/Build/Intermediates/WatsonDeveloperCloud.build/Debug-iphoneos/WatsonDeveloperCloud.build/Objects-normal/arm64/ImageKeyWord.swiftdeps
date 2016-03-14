@@ -7,14 +7,14 @@ provides-member:
 - ["V20WatsonDeveloperCloud12ImageKeyWord", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ImageKeyWord"
-- "Mappable"
-- !private "StringLiteralType"
-- "String"
-- !private "Transformation"
 - !private "<-"
 - "Map"
+- !private "StringLiteralType"
+- !private "Transformation"
+- "Mappable"
+- "ImageKeyWord"
 - "Double"
+- "String"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]
 - !private ["PSs9AnyObject", "stringToDouble"]

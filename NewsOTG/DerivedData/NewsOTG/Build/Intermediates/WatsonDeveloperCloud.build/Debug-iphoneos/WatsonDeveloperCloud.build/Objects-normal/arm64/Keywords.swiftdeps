@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud8Keywords", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AlchemyLanguageGenericModel"
-- "String"
-- "Mappable"
 - "Int"
-- "Keywords"
-- !private "StringLiteralType"
 - !private "<-"
-- "Map"
-- "Keyword"
+- "String"
 - !private "Transformation"
+- "AlchemyLanguageGenericModel"
+- !private "StringLiteralType"
+- "Mappable"
+- "Map"
+- "Keywords"
+- "Keyword"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - ["P20WatsonDeveloperCloud19AlchemyGenericModel", "init"]

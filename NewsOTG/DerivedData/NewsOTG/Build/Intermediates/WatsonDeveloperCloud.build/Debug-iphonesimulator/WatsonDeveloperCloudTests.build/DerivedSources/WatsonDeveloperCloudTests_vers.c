@@ -1,0 +1,1 @@
+ const unsigned char WatsonDeveloperCloudTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:WatsonDeveloperCloudTests  PROJECT:WatsonDeveloperCloud-1" "\n"; const double WatsonDeveloperCloudTestsVersionNumber __attribute__ ((used)) = (double)1.;

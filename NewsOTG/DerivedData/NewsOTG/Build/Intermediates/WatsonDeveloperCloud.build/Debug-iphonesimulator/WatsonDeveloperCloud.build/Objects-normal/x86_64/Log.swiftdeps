@@ -7,17 +7,17 @@ provides-member:
 - ["C20WatsonDeveloperCloud3Log", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "XCGLogger"
+- "UIColor"
+- "Log"
 - "NSURL"
 - !private "NSFileManager"
-- !private ">"
-- "UIColor"
-- "StringLiteralType"
-- "Log"
 - !private "NSSearchPathForDirectoriesInDomains"
-- !private "NSError"
+- "StringLiteralType"
+- "XCGLogger"
 - "Dictionary"
 - !private "NSLog"
+- !private "NSError"
+- !private ">"
 - "BooleanLiteralType"
 depends-member:
 - ["PSs9AnyObject", "Log"]

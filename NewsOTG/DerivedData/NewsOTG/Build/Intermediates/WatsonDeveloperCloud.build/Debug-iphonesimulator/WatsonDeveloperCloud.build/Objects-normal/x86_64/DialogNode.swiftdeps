@@ -9,9 +9,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Dialog"
-- "String"
-- "Map"
 - "Mappable"
+- "Map"
+- "String"
 - !private "StringLiteralType"
 - !private "<-"
 depends-member:

@@ -8,11 +8,11 @@ provides-member:
 - ["P20WatsonDeveloperCloud14AlchemyService", "getEndpoint"]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
+- "AlchemyService"
+- !private "StringLiteralType"
 - "AuthenticationStrategy"
 - !private "+"
-- "AlchemyService"
-- "String"
-- !private "StringLiteralType"
 depends-member:
 - ["P20WatsonDeveloperCloud14AlchemyService", "AuthenticationStrategy"]
 - ["P20WatsonDeveloperCloud14AlchemyService", "String"]

@@ -11,10 +11,10 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "=="
 - !private "~="
-- "StringLiteralType"
 - "MediaType"
-- "String"
+- "StringLiteralType"
 - "Dialog"
+- "String"
 - !private "FloatLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "MediaType"]

@@ -7,10 +7,10 @@ provides-member:
 - ["C7NewsOTG12CustomSlider", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- "CustomSlider"
-- "Int"
 - "UISlider"
+- "Int"
+- "CustomSlider"
+- !private "StringLiteralType"
 - "NSCoder"
 depends-member:
 - ["PSs9AnyObject", "init"]

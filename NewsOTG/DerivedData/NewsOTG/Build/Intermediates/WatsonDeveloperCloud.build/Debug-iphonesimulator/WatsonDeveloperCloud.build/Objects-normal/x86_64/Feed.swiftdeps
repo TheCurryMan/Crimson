@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "Transformation"
+- "Feed"
 - "AlchemyGenericModel"
 - "Map"
-- "String"
-- "Mappable"
 - !private "StringLiteralType"
-- "Feed"
+- "Mappable"
+- "String"
 - "Int"
 - !private "<-"
 depends-member:

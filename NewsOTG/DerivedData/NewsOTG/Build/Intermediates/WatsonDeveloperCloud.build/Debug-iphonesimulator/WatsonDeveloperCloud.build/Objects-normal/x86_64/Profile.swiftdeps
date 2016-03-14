@@ -9,9 +9,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Mappable"
+- "Int"
 - !private "<-"
 - "String"
-- "Int"
 - !private "StringLiteralType"
 - "PersonalityInsights"
 - "Map"

@@ -7,23 +7,23 @@ provides-member:
 - ["V20WatsonDeveloperCloud15CombinedResults", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "Keywords"
-- "Concept"
-- "Taxonomy"
-- "Sentiment"
-- !private "Transformation"
-- "Map"
-- "Feeds"
-- "PublicationDate"
-- "CombinedResults"
-- !private "<-"
-- "Entities"
-- "Int"
-- "Mappable"
 - !private "StringLiteralType"
-- "AlchemyLanguageGenericModel"
+- "Int"
+- !private "<-"
+- "String"
 - "SAORelations"
+- "PublicationDate"
+- "Concept"
+- !private "Transformation"
+- "Feeds"
+- "Map"
+- "Mappable"
+- "AlchemyLanguageGenericModel"
+- "CombinedResults"
+- "Sentiment"
+- "Entities"
+- "Keywords"
+- "Taxonomy"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "author"]

@@ -7,14 +7,14 @@ provides-member:
 - ["V20WatsonDeveloperCloud13ImageFaceTags", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- !private "<-"
-- !private "StringLiteralType"
 - "Mappable"
-- "ImageFaceTags"
 - "ImageFace"
-- "Map"
+- "ImageFaceTags"
 - !private "Transformation"
+- !private "StringLiteralType"
+- "Map"
+- !private "<-"
+- "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]
 - !private ["PSs9AnyObject", "stringToInt"]

@@ -14,8 +14,8 @@ depends-top-level:
 - "MediaType"
 - "StringLiteralType"
 - "String"
-- "Dialog"
 - !private "FloatLiteralType"
+- "Dialog"
 depends-member:
 - !private ["PSs9AnyObject", "MediaType"]
 - !private ["PSs22BidirectionalIndexType", "hashValue"]

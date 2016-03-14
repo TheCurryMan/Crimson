@@ -8,8 +8,8 @@ provides-member:
 - ["C20WatsonDeveloperCloud19PersonalityInsights", "Constants"]
 provides-dynamic-lookup:
 depends-top-level:
-- "PersonalityInsights"
 - "StringLiteralType"
+- "PersonalityInsights"
 depends-member:
 - ["VC20WatsonDeveloperCloud19PersonalityInsights9Constants", "errorDomain"]
 - ["VC20WatsonDeveloperCloud19PersonalityInsights9Constants", "init"]

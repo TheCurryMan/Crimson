@@ -1,0 +1,250 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status"
+- "VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier"
+provides-member:
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", ""]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", ""]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", ""]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Status"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Classifier"]
+provides-dynamic-lookup:
+depends-top-level:
+- "NSDate"
+- "=="
+- !private "~="
+- !private "<-"
+- "Map"
+- "StringLiteralType"
+- !private "EnumTransform"
+- !private "DateTransform"
+- "NaturalLanguageClassifier"
+- "String"
+- "Mappable"
+depends-member:
+- !private ["PSs9AnyObject", "DateTransform"]
+- !private ["PSs9AnyObject", "EnumTransform"]
+- ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "Object"]
+- ["PSs9AnyObject", "Status"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- ["PSs11CVarArgType", "init"]
+- !private ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "DateTransform"]
+- !private ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "EnumTransform"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "Map"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "NSDate"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "Status"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "String"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "created"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "deinit"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "id"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "init"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "language"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "mapping"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "name"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "status"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "statusDescription"]
+- ["VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier", "url"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["C12ObjectMapper13DateTransform", "Object"]
+- !private ["C12ObjectMapper13DateTransform", "init"]
+- !private ["C12ObjectMapper13EnumTransform", "Object"]
+- !private ["C12ObjectMapper13EnumTransform", "init"]
+- ["PSs9Equatable", "NonExistent"]
+- ["PSs9Equatable", "RawValue"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "hashValue"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "rawValue"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- ["PSs8Hashable", "NonExistent"]
+- ["PSs8Hashable", "RawValue"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "hashValue"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "rawValue"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs11IntegerType", "hashValue"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "DateTransform"]
+- !private ["P12ObjectMapper8Mappable", "EnumTransform"]
+- ["P12ObjectMapper8Mappable", "NSDate"]
+- ["P12ObjectMapper8Mappable", "Status"]
+- !private ["P12ObjectMapper8Mappable", "created"]
+- !private ["P12ObjectMapper8Mappable", "id"]
+- ["P12ObjectMapper8Mappable", "init"]
+- !private ["P12ObjectMapper8Mappable", "language"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- !private ["P12ObjectMapper8Mappable", "name"]
+- !private ["P12ObjectMapper8Mappable", "status"]
+- !private ["P12ObjectMapper8Mappable", "statusDescription"]
+- !private ["P12ObjectMapper8Mappable", "url"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["CSo6NSDate", "init"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Classifier"]
+- !private ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "DateTransform"]
+- !private ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "EnumTransform"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Map"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Mappable"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "NSDate"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Status"]
+- ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "String"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["VSs5Range", "deinit"]
+- ["PSs16RawRepresentable", "NonExistent"]
+- ["PSs16RawRepresentable", "RawValue"]
+- ["PSs16RawRepresentable", "hashValue"]
+- ["PSs16RawRepresentable", "init"]
+- ["PSs16RawRepresentable", "rawValue"]
+- ["PSs16RawRepresentable", ""]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "Available"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "Failed"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "NonExistent"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "RawValue"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "Training"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "Unavailable"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "deinit"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "hashValue"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "init"]
+- ["OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status", "rawValue"]
+- !private ["PSs10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- !private ["P12ObjectMapper13TransformType", "Object"]
+- !private ["P12ObjectMapper13TransformType", "init"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "DateTransform"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "EnumTransform"]
+- ["P20WatsonDeveloperCloud13WatsonService", "NSDate"]
+- ["P20WatsonDeveloperCloud13WatsonService", "Status"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "VC20WatsonDeveloperCloud25NaturalLanguageClassifier10Classifier"
+- !private "PSs10Comparable"
+- "PSs23CustomStringConvertible"
+- !private "C12ObjectMapper13DateTransform"
+- !private "C12ObjectMapper13EnumTransform"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo6NSDate"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "C20WatsonDeveloperCloud25NaturalLanguageClassifier"
+- !private "Sq"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- "PSs16RawRepresentable"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- "OC20WatsonDeveloperCloud25NaturalLanguageClassifier6Status"
+- !private "PSs10Strideable"
+- "SS"
+- !private "P12ObjectMapper13TransformType"
+- "P20WatsonDeveloperCloud13WatsonService"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "5bc79728e4fa418465d988d061caa177"

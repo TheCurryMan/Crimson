@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
 - "Map"
-- "DisambiguatedLinks"
-- !private "Transformation"
 - !private "StringLiteralType"
-- "Mappable"
-- "AlchemyLanguageGenericModel"
 - "String"
+- !private "Transformation"
+- "Mappable"
+- "DisambiguatedLinks"
+- "AlchemyLanguageGenericModel"
 - "Int"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]

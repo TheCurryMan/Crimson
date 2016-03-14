@@ -7,11 +7,11 @@ provides-member:
 - ["V20WatsonDeveloperCloud9ImageLink", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ImageLink"
-- !private "<-"
 - "Map"
+- !private "<-"
 - !private "StringLiteralType"
 - "Mappable"
+- "ImageLink"
 - "String"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]

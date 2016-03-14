@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "IntegerLiteralType"
-- "APIKeyAuthenticationStrategy"
 - "Void"
-- "String"
-- "NSError"
-- "BooleanLiteralType"
 - "AuthenticationStrategy"
+- "NSError"
+- "String"
 - "FloatLiteralType"
+- "BooleanLiteralType"
+- "APIKeyAuthenticationStrategy"
 depends-member:
 - ["C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy", "NSError"]
 - ["C20WatsonDeveloperCloud28APIKeyAuthenticationStrategy", "String"]

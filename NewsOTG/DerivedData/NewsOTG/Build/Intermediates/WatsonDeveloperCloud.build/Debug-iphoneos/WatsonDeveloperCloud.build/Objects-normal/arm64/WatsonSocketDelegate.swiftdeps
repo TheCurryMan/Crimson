@@ -7,8 +7,8 @@ provides-member:
 - ["P20WatsonDeveloperCloud20WatsonSocketDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "SpeechToText"
 - "WatsonSocketDelegate"
+- "SpeechToText"
 depends-member:
 - ["PSs9AnyObject", "SpeechToTextResponse"]
 - ["C20WatsonDeveloperCloud12SpeechToText", "SpeechToTextResponse"]

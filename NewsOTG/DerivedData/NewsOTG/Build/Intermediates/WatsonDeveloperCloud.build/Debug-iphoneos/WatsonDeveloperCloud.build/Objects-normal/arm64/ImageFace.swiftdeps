@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud9ImageFace", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Int"
+- "ImageFace"
+- "Mappable"
+- !private "StringLiteralType"
+- !private "Transformation"
+- "Map"
+- "String"
 - !private "Log"
 - !private "<-"
-- "String"
-- !private "Transformation"
-- !private "StringLiteralType"
-- "Map"
-- "Mappable"
 - "AnyObject"
-- "ImageFace"
-- "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]
 - !private ["PSs9AnyObject", "anyObjectToInt"]

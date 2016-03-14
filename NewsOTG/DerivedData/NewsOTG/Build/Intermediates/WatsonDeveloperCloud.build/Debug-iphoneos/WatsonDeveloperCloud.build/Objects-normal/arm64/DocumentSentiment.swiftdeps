@@ -7,11 +7,11 @@ provides-member:
 - ["V20WatsonDeveloperCloud17DocumentSentiment", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
 - "Mappable"
 - !private "StringLiteralType"
-- "Sentiment"
 - "DocumentSentiment"
-- "String"
+- "Sentiment"
 - !private "<-"
 - "Map"
 depends-member:

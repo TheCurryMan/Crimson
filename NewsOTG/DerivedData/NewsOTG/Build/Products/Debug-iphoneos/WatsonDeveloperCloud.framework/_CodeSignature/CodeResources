@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		muuqqshE2NKOfzlLdJlCqCqgr+E=
+		N0F+cSa173p9JdSWNpL8tr8EZFw=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/AlamofireObjectMapper</key>
 		<data>
-		3inDy3n4yGbM52UwOlapcKFiGFY=
+		ZDVs2W7HYLLqeKZGbxpFrCb+C4w=
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/Info.plist</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/HTTPStatusCodes</key>
 		<data>
-		CFM6ca2ti80O+//8PhtLobKWqy4=
+		YSWx7DD2YSDUO/nN3BjwJalVj6c=
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/Info.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
 		<data>
-		KerdWTsvNi8IVeHFWVQ4QM89aCU=
+		ux9x6gDRi9nz63CSBr0nx+eA+rk=
 		</data>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Frameworks/Starscream.framework/Starscream</key>
 		<data>
-		JTXZEGnN4tE8C9ZkYBNWAQE/v1Q=
+		xn7CjuP5WecDbI4ruJbLqsNes60=
 		</data>
 		<key>Frameworks/Starscream.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/XCGLogger.framework/XCGLogger</key>
 		<data>
-		MdCusyA2jIHvTlPcrJJfmxHzD+g=
+		JyPvSvsxAeVl1vqkXrp64+BJAbc=
 		</data>
 		<key>Frameworks/XCGLogger.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -104,6 +104,14 @@
 		<data>
 		O4byyDaZPY2wvbC5hfcNyHgEVHA=
 		</data>
+		<key>Modules/WatsonDeveloperCloud.swiftmodule/arm.swiftdoc</key>
+		<data>
+		GRovrsqp6E2O7skohreox51XM38=
+		</data>
+		<key>Modules/WatsonDeveloperCloud.swiftmodule/arm.swiftmodule</key>
+		<data>
+		goecmn7pOzl0ivk4HtFLm5AmuW4=
+		</data>
 		<key>Modules/WatsonDeveloperCloud.swiftmodule/arm64.swiftdoc</key>
 		<data>
 		fIkF1UB1BYyxcS77SxdXnaMY08s=
@@ -133,7 +141,7 @@
 	<dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		muuqqshE2NKOfzlLdJlCqCqgr+E=
+		N0F+cSa173p9JdSWNpL8tr8EZFw=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -145,7 +153,7 @@
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/AlamofireObjectMapper</key>
 		<data>
-		3inDy3n4yGbM52UwOlapcKFiGFY=
+		ZDVs2W7HYLLqeKZGbxpFrCb+C4w=
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/Info.plist</key>
 		<data>
@@ -157,7 +165,7 @@
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/HTTPStatusCodes</key>
 		<data>
-		CFM6ca2ti80O+//8PhtLobKWqy4=
+		YSWx7DD2YSDUO/nN3BjwJalVj6c=
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/Info.plist</key>
 		<data>
@@ -173,7 +181,7 @@
 		</data>
 		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
 		<data>
-		KerdWTsvNi8IVeHFWVQ4QM89aCU=
+		ux9x6gDRi9nz63CSBr0nx+eA+rk=
 		</data>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -185,7 +193,7 @@
 		</data>
 		<key>Frameworks/Starscream.framework/Starscream</key>
 		<data>
-		JTXZEGnN4tE8C9ZkYBNWAQE/v1Q=
+		xn7CjuP5WecDbI4ruJbLqsNes60=
 		</data>
 		<key>Frameworks/Starscream.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -197,7 +205,7 @@
 		</data>
 		<key>Frameworks/XCGLogger.framework/XCGLogger</key>
 		<data>
-		MdCusyA2jIHvTlPcrJJfmxHzD+g=
+		JyPvSvsxAeVl1vqkXrp64+BJAbc=
 		</data>
 		<key>Frameworks/XCGLogger.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -226,6 +234,14 @@
 		<key>Headers/os_types.h</key>
 		<data>
 		91ZpZfMzJMNoPm4YEwzBhTVdyek=
+		</data>
+		<key>Modules/WatsonDeveloperCloud.swiftmodule/arm.swiftdoc</key>
+		<data>
+		GRovrsqp6E2O7skohreox51XM38=
+		</data>
+		<key>Modules/WatsonDeveloperCloud.swiftmodule/arm.swiftmodule</key>
+		<data>
+		goecmn7pOzl0ivk4HtFLm5AmuW4=
 		</data>
 		<key>Modules/WatsonDeveloperCloud.swiftmodule/arm64.swiftdoc</key>
 		<data>

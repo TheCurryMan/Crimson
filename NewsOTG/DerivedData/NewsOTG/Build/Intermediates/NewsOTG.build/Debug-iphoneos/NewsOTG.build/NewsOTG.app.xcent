@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>DHN7LYMA22.CodeDay.NewsOTG</string>
+	<string>3V593WX43L.CodeDay.NewsOTG</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>DHN7LYMA22</string>
+	<string>3V593WX43L</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>DHN7LYMA22.CodeDay.NewsOTG</string>
+		<string>3V593WX43L.CodeDay.NewsOTG</string>
 	</array>
 </dict>
 </plist>

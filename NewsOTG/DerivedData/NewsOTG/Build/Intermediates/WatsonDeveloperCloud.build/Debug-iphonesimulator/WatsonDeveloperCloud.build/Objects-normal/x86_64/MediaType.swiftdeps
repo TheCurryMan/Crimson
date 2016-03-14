@@ -7,10 +7,10 @@ provides-member:
 - ["O20WatsonDeveloperCloud9MediaType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "MediaType"
 - !private "IntegerLiteralType"
 - "=="
 - !private "~="
+- "MediaType"
 - "StringLiteralType"
 - "String"
 - !private "FloatLiteralType"

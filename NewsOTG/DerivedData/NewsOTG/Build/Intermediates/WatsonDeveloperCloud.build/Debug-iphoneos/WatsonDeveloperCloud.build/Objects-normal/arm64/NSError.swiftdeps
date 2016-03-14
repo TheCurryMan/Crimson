@@ -7,11 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 - "createWatsonError"
 depends-top-level:
-- !private "StringLiteralType"
 - "Int"
+- !private "StringLiteralType"
 - "NSError"
-- "String"
 - !private "AnyObject"
+- "String"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "NSError"]

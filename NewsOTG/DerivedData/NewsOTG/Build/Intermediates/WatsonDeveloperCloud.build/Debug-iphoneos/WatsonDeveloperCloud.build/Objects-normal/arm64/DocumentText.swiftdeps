@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Map"
-- "DocumentText"
 - !private "Transformation"
 - "String"
-- !private "<-"
 - !private "StringLiteralType"
+- !private "<-"
 - "Int"
 - "Mappable"
+- "DocumentText"
 - "AlchemyLanguageGenericModel"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]

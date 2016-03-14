@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "MediaType"
-- "URLRequestConvertible"
+- "Method"
 - "String"
+- "URLRequestConvertible"
 - !private "NSURLComponents"
 - !private "+"
 - !private "StringLiteralType"
 - "AuthenticationStrategy"
-- "WatsonRequest"
-- "NSMutableURLRequest"
 - "NSURLQueryItem"
-- "Method"
+- "WatsonRequest"
 - "NSData"
+- "NSMutableURLRequest"
 - !private "!"
 depends-member:
 - !private ["PSs9AnyObject", "HTTPBody"]

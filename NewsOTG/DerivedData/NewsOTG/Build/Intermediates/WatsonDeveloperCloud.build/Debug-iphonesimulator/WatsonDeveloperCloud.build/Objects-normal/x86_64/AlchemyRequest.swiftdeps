@@ -7,18 +7,18 @@ provides-member:
 - ["C20WatsonDeveloperCloud14AlchemyRequest", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "URLRequestConvertible"
-- "NSData"
 - "AlchemyRequest"
+- !private "NSURLComponents"
+- "NSData"
+- !private "StringLiteralType"
 - "MediaType"
-- !private "+"
+- "String"
+- "URLRequestConvertible"
+- "Method"
 - "NSURLQueryItem"
 - "AuthenticationStrategy"
 - "NSMutableURLRequest"
-- !private "StringLiteralType"
-- !private "NSURLComponents"
-- "Method"
-- "String"
+- !private "+"
 depends-member:
 - ["C20WatsonDeveloperCloud14AlchemyRequest", "AuthenticationStrategy"]
 - ["C20WatsonDeveloperCloud14AlchemyRequest", "MediaType"]

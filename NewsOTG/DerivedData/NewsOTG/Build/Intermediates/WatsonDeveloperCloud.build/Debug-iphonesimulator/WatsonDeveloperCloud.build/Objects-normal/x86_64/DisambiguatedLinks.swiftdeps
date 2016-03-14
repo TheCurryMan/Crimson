@@ -7,15 +7,15 @@ provides-member:
 - ["V20WatsonDeveloperCloud18DisambiguatedLinks", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<-"
-- "DisambiguatedLinks"
-- !private "StringLiteralType"
-- "Int"
-- "AlchemyLanguageGenericModel"
-- "Mappable"
-- "String"
 - !private "Transformation"
+- "Int"
+- !private "StringLiteralType"
+- "DisambiguatedLinks"
+- "Mappable"
+- "AlchemyLanguageGenericModel"
 - "Map"
+- "String"
+- !private "<-"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "census"]

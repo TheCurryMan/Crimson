@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "ImageURL"
 - "NSURL"
+- "ImageURL"
 depends-member:
 - ["V20WatsonDeveloperCloud8ImageURL", "NSURL"]
 - ["V20WatsonDeveloperCloud8ImageURL", "String"]

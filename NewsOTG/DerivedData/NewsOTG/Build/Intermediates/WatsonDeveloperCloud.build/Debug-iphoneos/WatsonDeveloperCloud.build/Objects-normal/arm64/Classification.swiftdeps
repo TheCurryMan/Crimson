@@ -8,15 +8,15 @@ provides-member:
 - ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Classification"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NaturalLanguageClassifier"
-- !private "StringLiteralType"
-- "Mappable"
-- "String"
-- !private "FloatLiteralType"
 - !private "=="
 - !private "<-"
 - "Map"
+- !private "StringLiteralType"
+- "NaturalLanguageClassifier"
+- "String"
+- "Mappable"
 - "Double"
+- !private "FloatLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sa", "Generator"]

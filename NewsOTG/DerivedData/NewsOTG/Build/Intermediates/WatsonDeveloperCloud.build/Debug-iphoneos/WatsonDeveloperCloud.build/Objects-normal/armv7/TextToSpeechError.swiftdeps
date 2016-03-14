@@ -1,0 +1,181 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError"
+provides-member:
+- ["C20WatsonDeveloperCloud12TextToSpeech", ""]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", ""]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "TextToSpeechError"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "NSLocalizedFailureReasonErrorKey"
+- "Int"
+- "WatsonError"
+- !private "Dictionary"
+- "NSError"
+- "TextToSpeech"
+- !private "<-"
+- "Map"
+- !private "NSLocalizedDescriptionKey"
+- "String"
+depends-member:
+- !private ["PSs9AnyObject", "Constants"]
+- !private ["PSs9AnyObject", "NSError"]
+- !private ["PSs9AnyObject", "NSLocalizedDescriptionKey"]
+- !private ["PSs9AnyObject", "NSLocalizedFailureReasonErrorKey"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["VC20WatsonDeveloperCloud12TextToSpeech9Constants", "errorDomain"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9ErrorType", "init"]
+- !private ["PSs8Hashable", "init"]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["Si", "deinit"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "Constants"]
+- !private ["P12ObjectMapper8Mappable", "NSError"]
+- !private ["P12ObjectMapper8Mappable", "NSLocalizedDescriptionKey"]
+- !private ["P12ObjectMapper8Mappable", "NSLocalizedFailureReasonErrorKey"]
+- !private ["P12ObjectMapper8Mappable", "code"]
+- !private ["P12ObjectMapper8Mappable", "codeDescription"]
+- !private ["P12ObjectMapper8Mappable", "error"]
+- ["P12ObjectMapper8Mappable", "init"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- ["P12ObjectMapper8Mappable", "nsError"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo7NSError", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["SS", "deinit"]
+- !private ["C20WatsonDeveloperCloud12TextToSpeech", "Constants"]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "Int"]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "Map"]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "NSError"]
+- !private ["C20WatsonDeveloperCloud12TextToSpeech", "NSLocalizedDescriptionKey"]
+- !private ["C20WatsonDeveloperCloud12TextToSpeech", "NSLocalizedFailureReasonErrorKey"]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "String"]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "TextToSpeechError"]
+- ["C20WatsonDeveloperCloud12TextToSpeech", "WatsonError"]
+- !private ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "Constants"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "Int"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "Map"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "NSError"]
+- !private ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "NSLocalizedDescriptionKey"]
+- !private ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "NSLocalizedFailureReasonErrorKey"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "String"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "code"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "codeDescription"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "deinit"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "error"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "init"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "mapping"]
+- ["VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError", "nsError"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "Constants"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "NSError"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "NSLocalizedDescriptionKey"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "NSLocalizedFailureReasonErrorKey"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "code"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "codeDescription"]
+- !private ["P20WatsonDeveloperCloud11WatsonError", "error"]
+- ["P20WatsonDeveloperCloud11WatsonError", "init"]
+- ["P20WatsonDeveloperCloud11WatsonError", "mapping"]
+- ["P20WatsonDeveloperCloud11WatsonError", "nsError"]
+- ["P20WatsonDeveloperCloud11WatsonError", ""]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "Constants"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "NSError"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "NSLocalizedDescriptionKey"]
+- !private ["P20WatsonDeveloperCloud13WatsonService", "NSLocalizedFailureReasonErrorKey"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "VC20WatsonDeveloperCloud12TextToSpeech9Constants"
+- !private "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSs12SequenceType"
+- !private "SS"
+- "C20WatsonDeveloperCloud12TextToSpeech"
+- "VC20WatsonDeveloperCloud12TextToSpeech17TextToSpeechError"
+- "P20WatsonDeveloperCloud11WatsonError"
+- !private "P20WatsonDeveloperCloud13WatsonService"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/os_types.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/ogg.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/ogg/OggHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/TextToSpeech/Libraries/opus/OpusHelper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/WatsonDeveloperCloud/WatsonDeveloperCloud.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/DerivedData/NewsOTG/Build/Intermediates/WatsonDeveloperCloud.build/Debug-iphoneos/WatsonDeveloperCloud.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/ObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/AlamofireObjectMapper.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Headers/AlamofireObjectMapper.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/AlamofireObjectMapper.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/XCGLogger.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/Starscream.swiftmodule/arm.swiftmodule"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Headers/Starscream.h"
+- "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/Starscream.framework/Modules/module.modulemap"
+interface-hash: "8f7cb82d299b8b19a4db6977cfe68503"

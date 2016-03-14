@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud7Keyword", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<-"
-- "Double"
-- "Keyword"
 - !private "Transformation"
-- "Mappable"
-- !private "StringLiteralType"
-- "Map"
-- "KnowledgeGraph"
 - "Sentiment"
+- !private "<-"
+- "Map"
+- !private "StringLiteralType"
+- "Keyword"
 - "String"
+- "Mappable"
+- "KnowledgeGraph"
+- "Double"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]
 - !private ["PSs9AnyObject", "stringToDouble"]

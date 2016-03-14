@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud17SentimentResponse", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- !private "<-"
-- "String"
-- !private "Transformation"
-- "SentimentResponse"
-- "Map"
-- "AlchemyLanguageGenericModel"
-- "DocumentSentiment"
-- "Mappable"
 - "Sentiment"
+- "DocumentSentiment"
+- "String"
+- !private "<-"
+- !private "Transformation"
+- !private "StringLiteralType"
+- "Map"
+- "Mappable"
+- "AlchemyLanguageGenericModel"
+- "SentimentResponse"
 - "Int"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]

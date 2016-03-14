@@ -7,12 +7,12 @@ provides-member:
 - ["O20WatsonDeveloperCloud9MediaType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "IntegerLiteralType"
-- "=="
-- !private "~="
 - "StringLiteralType"
 - "MediaType"
+- !private "IntegerLiteralType"
 - !private "FloatLiteralType"
+- "=="
+- !private "~="
 - "String"
 depends-member:
 - !private ["PSs22BidirectionalIndexType", "hashValue"]

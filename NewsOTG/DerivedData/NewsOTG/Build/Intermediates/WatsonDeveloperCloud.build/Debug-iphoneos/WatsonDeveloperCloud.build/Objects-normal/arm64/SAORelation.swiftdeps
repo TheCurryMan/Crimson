@@ -19,16 +19,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud11SAORelation", "Subject"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Keywords"
 - !private "Transformation"
 - "Map"
+- "SAORelation"
 - "Entity"
 - "String"
 - !private "<-"
 - !private "StringLiteralType"
-- "Int"
-- "SAORelation"
+- "Keywords"
 - "Mappable"
+- "Int"
 - "Sentiment"
 depends-member:
 - ["VV20WatsonDeveloperCloud11SAORelation6Action", "Map"]

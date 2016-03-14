@@ -8,15 +8,15 @@ provides-member:
 - ["C20WatsonDeveloperCloud19LanguageTranslation", "LanguageTranslationError"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Map"
 - "NSError"
+- "Map"
+- "LanguageTranslation"
+- !private "Dictionary"
 - "WatsonError"
 - !private "NSLocalizedDescriptionKey"
-- "LanguageTranslation"
+- "Int"
 - !private "<-"
 - "String"
-- !private "Dictionary"
-- "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Constants"]
 - !private ["PSs9AnyObject", "NSError"]

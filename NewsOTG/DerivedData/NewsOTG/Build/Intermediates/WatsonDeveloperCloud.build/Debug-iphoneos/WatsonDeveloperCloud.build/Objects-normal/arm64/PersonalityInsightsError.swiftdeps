@@ -8,15 +8,15 @@ provides-member:
 - ["C20WatsonDeveloperCloud19PersonalityInsights", "PersonalityInsightsError"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSLocalizedDescriptionKey"
 - "String"
+- !private "Dictionary"
 - !private "<-"
 - "Map"
-- "PersonalityInsights"
+- !private "NSLocalizedRecoverySuggestionErrorKey"
+- !private "NSLocalizedDescriptionKey"
 - "NSError"
 - "WatsonError"
-- !private "NSLocalizedRecoverySuggestionErrorKey"
-- !private "Dictionary"
+- "PersonalityInsights"
 - "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Constants"]

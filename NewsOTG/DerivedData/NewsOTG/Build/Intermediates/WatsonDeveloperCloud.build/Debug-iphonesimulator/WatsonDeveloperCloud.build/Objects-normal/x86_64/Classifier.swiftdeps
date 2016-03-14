@@ -11,17 +11,17 @@ provides-member:
 - ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "Classifier"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NaturalLanguageClassifier"
-- !private "<-"
-- "NSDate"
-- !private "DateTransform"
+- !private "EnumTransform"
+- "Mappable"
 - "=="
 - !private "~="
-- !private "EnumTransform"
-- "Map"
-- "String"
-- "Mappable"
+- !private "<-"
+- "NaturalLanguageClassifier"
 - "StringLiteralType"
+- "String"
+- "Map"
+- !private "DateTransform"
+- "NSDate"
 depends-member:
 - !private ["PSs9AnyObject", "DateTransform"]
 - !private ["PSs9AnyObject", "EnumTransform"]
