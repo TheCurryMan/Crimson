@@ -38,9 +38,9 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "=="
 - !private "~="
-- "String"
-- "StringLiteralType"
 - "VisionConstants"
+- "StringLiteralType"
+- "String"
 - "UnicodeScalarType"
 - !private "FloatLiteralType"
 depends-member:

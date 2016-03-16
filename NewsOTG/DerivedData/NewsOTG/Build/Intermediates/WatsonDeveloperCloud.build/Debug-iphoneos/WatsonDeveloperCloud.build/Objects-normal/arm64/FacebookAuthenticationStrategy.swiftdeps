@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "Void"
 - "IntegerLiteralType"
-- "FacebookAuthenticationStrategy"
 - !private "StringLiteralType"
-- "AuthenticationStrategy"
 - "NSError"
-- !private "Alamofire"
-- "BooleanLiteralType"
+- "Void"
 - !private "NSDictionary"
+- !private "Alamofire"
+- "AuthenticationStrategy"
+- "BooleanLiteralType"
 - "FloatLiteralType"
+- "FacebookAuthenticationStrategy"
 depends-member:
 - !private ["PSs9AnyObject", "Alamofire"]
 - !private ["PSs9AnyObject", "NSError"]

@@ -9,11 +9,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Mappable"
-- "Map"
-- "LanguageTranslation"
 - "String"
-- !private "<-"
+- "Map"
 - !private "StringLiteralType"
+- "LanguageTranslation"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - ["VC20WatsonDeveloperCloud19LanguageTranslation20IdentifiableLanguage", "Map"]

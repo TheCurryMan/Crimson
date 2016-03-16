@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		76W+ev64hI2lECkBAO346kWWgJA=
+		7xvhIGgHe4chpyOc4jOn2RuMhps=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/AlamofireObjectMapper</key>
 		<data>
-		1yJim5b69fD2ZuusfIXB2qNwtis=
+		UsS/8YtBcpSOhS5dnybeSdQ43Tc=
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/Info.plist</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/HTTPStatusCodes</key>
 		<data>
-		ljBinAmXszrKQdTxhfd9MqbNZd4=
+		r9uxNqJFTsR+hmd6cld9zZnk1Ho=
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/Info.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
 		<data>
-		Nazbq1F6FIk84vgqb/EdhvNvu+0=
+		32do2HK/GAM+d2HGvz8988vXdEY=
 		</data>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Frameworks/Starscream.framework/Starscream</key>
 		<data>
-		bl6nD3grSE0R10p8piI6epCFSec=
+		yaPrAMRcSFv81m8nWrlD4mTPknc=
 		</data>
 		<key>Frameworks/Starscream.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/XCGLogger.framework/XCGLogger</key>
 		<data>
-		vSrLt7TP16613inung7wZd+lpGo=
+		8OQpa4eDhAAPoz4bBIkitt+Hsgg=
 		</data>
 		<key>Frameworks/XCGLogger.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -97,7 +97,7 @@
 	<dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		76W+ev64hI2lECkBAO346kWWgJA=
+		7xvhIGgHe4chpyOc4jOn2RuMhps=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -109,7 +109,7 @@
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/AlamofireObjectMapper</key>
 		<data>
-		1yJim5b69fD2ZuusfIXB2qNwtis=
+		UsS/8YtBcpSOhS5dnybeSdQ43Tc=
 		</data>
 		<key>Frameworks/AlamofireObjectMapper.framework/Info.plist</key>
 		<data>
@@ -121,7 +121,7 @@
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/HTTPStatusCodes</key>
 		<data>
-		ljBinAmXszrKQdTxhfd9MqbNZd4=
+		r9uxNqJFTsR+hmd6cld9zZnk1Ho=
 		</data>
 		<key>Frameworks/HTTPStatusCodes.framework/Info.plist</key>
 		<data>
@@ -137,7 +137,7 @@
 		</data>
 		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
 		<data>
-		Nazbq1F6FIk84vgqb/EdhvNvu+0=
+		32do2HK/GAM+d2HGvz8988vXdEY=
 		</data>
 		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -149,7 +149,7 @@
 		</data>
 		<key>Frameworks/Starscream.framework/Starscream</key>
 		<data>
-		bl6nD3grSE0R10p8piI6epCFSec=
+		yaPrAMRcSFv81m8nWrlD4mTPknc=
 		</data>
 		<key>Frameworks/Starscream.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -161,7 +161,7 @@
 		</data>
 		<key>Frameworks/XCGLogger.framework/XCGLogger</key>
 		<data>
-		vSrLt7TP16613inung7wZd+lpGo=
+		8OQpa4eDhAAPoz4bBIkitt+Hsgg=
 		</data>
 		<key>Frameworks/XCGLogger.framework/_CodeSignature/CodeResources</key>
 		<data>

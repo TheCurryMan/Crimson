@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG21LoadingViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
 - "activityIndicator"
 - "nextpage"
+- "viewDidLoad"
 depends-top-level:
-- !private "UIActivityIndicatorViewStyle"
-- !private "StringLiteralType"
-- "UIViewController"
-- "LoadingViewController"
-- !private "NSTimer"
-- !private "print"
-- "UIActivityIndicatorView"
-- !private "!="
-- !private "UIColor"
 - !private "BooleanLiteralType"
 - !private "CGRectMake"
-- !private "PFUser"
+- !private "NSTimer"
+- !private "print"
+- !private "UIColor"
+- !private "!="
 - !private "Selector"
+- "LoadingViewController"
+- "UIViewController"
+- !private "UIActivityIndicatorViewStyle"
+- "UIActivityIndicatorView"
+- !private "StringLiteralType"
+- !private "PFUser"
 depends-member:
 - !private ["PSs9AnyObject", "CGRectMake"]
 - !private ["PSs9AnyObject", "NSTimer"]

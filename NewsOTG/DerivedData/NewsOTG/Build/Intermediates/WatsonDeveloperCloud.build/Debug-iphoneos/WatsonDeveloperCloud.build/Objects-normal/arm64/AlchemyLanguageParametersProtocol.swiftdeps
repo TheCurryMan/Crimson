@@ -9,14 +9,14 @@ provides-member:
 - ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "unwrap"]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - !private "StringLiteralType"
+- !private "!="
+- !private "Mirror"
+- "String"
+- !private "=="
+- "Any"
 - !private "NSNull"
 - "AlchemyLanguageParameters"
-- "Any"
-- !private "=="
-- !private "Mirror"
-- !private "!="
 depends-member:
 - ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "Any"]
 - !private ["P20WatsonDeveloperCloud25AlchemyLanguageParameters", "Mirror"]

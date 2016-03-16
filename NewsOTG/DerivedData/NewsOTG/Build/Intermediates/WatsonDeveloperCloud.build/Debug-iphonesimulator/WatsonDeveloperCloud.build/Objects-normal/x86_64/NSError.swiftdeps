@@ -8,10 +8,10 @@ provides-dynamic-lookup:
 - "createWatsonError"
 depends-top-level:
 - "NSError"
-- !private "StringLiteralType"
-- "String"
-- "Int"
 - !private "AnyObject"
+- "Int"
+- "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "NSError"]

@@ -13,13 +13,13 @@ provides-member:
 - ["C12ObjectMapper6Mapper", "mapDataArray"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSUTF8StringEncoding"
-- "String"
-- !private "StringLiteralType"
-- "NSData"
-- !private "NSJSONSerialization"
-- !private "AnyObject"
 - "Mapper"
+- !private "NSUTF8StringEncoding"
+- !private "StringLiteralType"
+- !private "AnyObject"
+- "NSData"
+- "String"
+- !private "NSJSONSerialization"
 - !private "!"
 depends-member:
 - !private ["PSs9AnyObject", "JSONObjectWithData"]

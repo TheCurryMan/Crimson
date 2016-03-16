@@ -15,12 +15,12 @@ provides-member:
 - ["C20WatsonDeveloperCloud6Dialog", "DialogIDModel"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<-"
-- !private "StringLiteralType"
-- "Dialog"
-- "String"
 - "Map"
+- "Dialog"
+- !private "StringLiteralType"
+- "String"
 - "Mappable"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sa", "deinit"]

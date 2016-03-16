@@ -7,9 +7,9 @@ provides-member:
 - ["P20WatsonDeveloperCloud27AlchemyLanguageGenericModel", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AlchemyGenericModel"
 - "String"
 - "AlchemyLanguageGenericModel"
-- "AlchemyGenericModel"
 depends-member:
 - ["P20WatsonDeveloperCloud19AlchemyGenericModel", "String"]
 - ["P20WatsonDeveloperCloud19AlchemyGenericModel", ""]

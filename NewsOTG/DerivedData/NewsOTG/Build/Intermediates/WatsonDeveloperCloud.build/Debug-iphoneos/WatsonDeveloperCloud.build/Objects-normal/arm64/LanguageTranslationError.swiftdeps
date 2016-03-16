@@ -9,14 +9,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
-- "Map"
 - "WatsonError"
 - !private "Dictionary"
-- "LanguageTranslation"
-- "NSError"
+- "Map"
 - !private "NSLocalizedDescriptionKey"
-- "Int"
+- "NSError"
+- "LanguageTranslation"
 - "String"
+- "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Constants"]
 - !private ["PSs9AnyObject", "NSError"]

@@ -8,8 +8,8 @@ provides-member:
 - ["C20WatsonDeveloperCloud19LanguageTranslation", "Constants"]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "LanguageTranslation"
+- "String"
 - "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "init"]

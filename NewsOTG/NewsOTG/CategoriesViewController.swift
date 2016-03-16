@@ -203,12 +203,12 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     func addWords() {
         //add any thing here that you want to be recognized. Must be in capital letters
         words.append("WORLD")
-        words.append("TOP STORIES")
+        words.append("TOPSTORIES")
         words.append("TECH")
         words.append("BUSINESS")
         words.append("POLITICS")
         words.append("HEALTH")
-        words.append("GO BACK")
+        words.append("GOBACK")
         
         //["World", "Top Stories", "Tech", "Business", "Politics", "Health"]
     }
@@ -240,7 +240,7 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
             World(self)
         }
             
-        else if hypothesis == "TOP STORIES"{
+        else if hypothesis == "TOPSTORIES"{
             topStories(self)
             
         }
@@ -261,7 +261,7 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
             Health(self)
         }
             
-        else if hypothesis == "GO BACK" {
+        else if hypothesis == "GOBACK" {
             navigationController?.popViewControllerAnimated(true)
         }
     }

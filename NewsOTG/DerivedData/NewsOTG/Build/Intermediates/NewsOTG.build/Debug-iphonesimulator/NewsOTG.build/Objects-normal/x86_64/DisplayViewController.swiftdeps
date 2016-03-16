@@ -11,160 +11,160 @@ provides-member:
 - ["SS", "subscript"]
 - ["SS", "subscript"]
 provides-dynamic-lookup:
-- "viewWillDisappear"
-- "pvSpeechProgress"
-- "counterForArticle"
-- "pocketsphinxFailedNoMicPermissions"
-- "btnPause"
-- "counter1"
-- "wiki"
-- "pocketSphinxContinuousSetupDidFailWithReason"
-- "dicPath"
-- "btnForward"
-- "prepareForSegue"
-- "counter"
-- "addWords"
-- "btnRewind"
-- "lmPath"
-- "articleURL"
-- "viewDidLoad"
+- "kLevelUpdatesPerSecond"
+- "listOfArticles"
 - "getAudioData"
-- "convertedStrings"
-- "forward"
+- "articleText"
+- "btnRewind"
+- "btnForward"
+- "pocketSphinxContinuousTeardownDidFailWithReason"
+- "currentWord"
+- "stopListening"
+- "listOfUrls"
+- "pvSpeechProgress"
+- "viewDidLoad"
+- "loadOpenEars"
+- "totalTime"
+- "viewDidDisappear"
+- "startListening"
+- "unselectLastWord"
 - "currentTime"
 - "scrollView"
-- "settingsPressed"
-- "totalTime"
-- "activityIndicator"
-- "listOfArticles"
-- "pauseSpeech"
-- "rewind"
-- "pocketsphinxDidChangeLanguageModelToFile"
-- "testRecognitionCompleted"
-- "pocketsphinxDidReceiveHypothesis"
-- "articleTitle"
-- "listOfUrls"
-- "startListening"
-- "animateActionButtonAppearance"
-- "articleContent"
-- "speechSynthesizer"
-- "speechSynthesizer"
-- "speechSynthesizer"
-- "speechSynthesizer"
-- "audioPlayerDidFinishPlaying"
-- "speak"
-- "articleText"
-- "getData"
-- "openEarsEventsObserver"
-- "startedPlaying"
-- "all"
-- "listOfText"
-- "pocketSphinxContinuousTeardownDidFailWithReason"
-- "viewDidAppear"
-- "startupFailedDueToLackOfPermissions"
-- "loadOpenEars"
-- "articleName"
-- "multiple"
-- "didSaveSettings"
-- "content"
-- "accent"
-- "audioPlayer"
-- "setInitialFontAttribute"
-- "playAudio"
 - "pause"
-- "btnStop"
-- "newVersion"
-- "viewDidDisappear"
-- "listOfData"
-- "spokenTextLengths"
-- "registerDefaultSettings"
-- "stopListening"
-- "kLevelUpdatesPerSecond"
-- "words"
-- "unselectLastWord"
+- "getData"
 - "loadSettings"
-- "currentWord"
-- "btnSpeak"
-- "totalTextLength"
+- "forward"
+- "all"
+- "registerDefaultSettings"
+- "multiple"
+- "articleTitle"
+- "audioPlayer"
+- "startupFailedDueToLackOfPermissions"
+- "articleName"
+- "articleContent"
 - "audioData"
+- "listOfData"
+- "pauseSpeech"
+- "openEarsEventsObserver"
+- "animateActionButtonAppearance"
+- "startedPlaying"
+- "totalTextLength"
+- "speak"
+- "spokenTextLengths"
+- "viewDidAppear"
+- "setInitialFontAttribute"
+- "prepareForSegue"
+- "newVersion"
+- "articleURL"
+- "words"
+- "audioPlayerDidFinishPlaying"
+- "accent"
+- "listOfText"
+- "content"
+- "pocketsphinxFailedNoMicPermissions"
+- "pocketSphinxContinuousSetupDidFailWithReason"
+- "btnStop"
+- "speechSynthesizer"
+- "speechSynthesizer"
+- "speechSynthesizer"
+- "speechSynthesizer"
+- "dicPath"
+- "pocketsphinxDidChangeLanguageModelToFile"
+- "addWords"
+- "pocketsphinxDidReceiveHypothesis"
+- "lmPath"
+- "btnSpeak"
+- "testRecognitionCompleted"
+- "playAudio"
+- "convertedStrings"
+- "counter"
+- "settingsPressed"
+- "didSaveSettings"
+- "btnPause"
+- "viewWillDisappear"
+- "counter1"
+- "activityIndicator"
+- "wiki"
+- "rewind"
+- "counterForArticle"
 depends-top-level:
+- "StringLiteralType"
+- !private "NSMakeRange"
+- !private "NSString"
+- !private "UIFont"
+- !private "UIImage"
+- !private "-"
 - !private "NSFontAttributeName"
-- !private "OELanguageModelGenerator"
-- !private "<"
-- !private "NSObject"
+- "UILabel"
+- "OEEventsObserverDelegate"
+- "BooleanLiteralType"
+- "UIProgressView"
+- "AVSpeechSynthesizer"
+- !private "..."
+- !private "UIActivityIndicatorViewStyle"
+- "Int"
+- !private "NSURLSession"
+- !private "UIColor"
+- "Bool"
+- !private "Set"
+- !private "OEAcousticModel"
+- !private "NSUTF8StringEncoding"
+- !private "/"
+- !private "=="
+- !private "Void"
+- "AnyObject"
+- "UIViewController"
+- !private "SequenceType"
+- !private "AVSpeechBoundary"
+- "AVSpeechSynthesizerDelegate"
+- "NSData"
+- !private "*"
+- "AVAudioPlayerDelegate"
 - "AVSpeechUtterance"
-- "OEEventsObserver"
+- !private "+"
+- "TextToSpeech"
+- !private "&&"
 - !private "OEPocketsphinxController"
 - !private "NSLog"
 - "Character"
-- "UIScrollView"
-- "Int"
-- "AnyObject"
-- !private "NSString"
-- !private "SequenceType"
-- !private "*"
-- !private "NSURL"
-- "UIViewController"
-- !private "=="
-- !private "CGFloat"
-- "uniq"
-- "ExtendedGraphemeClusterType"
-- !private "UIView"
-- !private "AVSpeechUtteranceDefaultSpeechRate"
-- !private ">"
-- "SettingsViewControllerDelegate"
-- "BooleanLiteralType"
-- "Range"
-- "UIStoryboardSegue"
-- !private "Dictionary"
-- "OEEventsObserverDelegate"
-- "TextToSpeech"
-- "DisplayViewController"
-- !private "NSMutableAttributedString"
-- !private "UIImage"
-- !private "Void"
-- "UIButton"
-- !private "NSUTF8StringEncoding"
-- !private "/"
-- "UIActivityIndicatorView"
-- !private "OEAcousticModel"
-- "AVAudioPlayerDelegate"
-- "UIProgressView"
-- !private "UIFont"
-- !private "print"
-- !private "Hashable"
-- "AVSpeechSynthesizerDelegate"
-- "StringLiteralType"
-- !private "NSURLSession"
-- "NSRange"
-- !private "UIColor"
-- !private "CGRectMake"
-- !private "NSForegroundColorAttributeName"
-- "Float"
-- !private "dispatch_get_main_queue"
-- "UILabel"
-- !private "&&"
-- !private "!="
-- !private "..."
-- !private "dispatch_async"
-- !private "UIActivityIndicatorViewStyle"
-- !private "SettingsViewController"
-- "Array"
-- "String"
-- !private "-"
-- !private "AVSpeechBoundary"
-- "UnicodeScalarType"
-- !private "||"
-- "UITextView"
-- !private "NSUserDefaults"
-- !private "+"
-- !private "NSMakeRange"
-- "NSData"
-- "AVSpeechSynthesizer"
-- !private "Set"
-- "Bool"
-- !private "!"
 - "AVAudioPlayer"
+- "Float"
+- !private "NSObject"
+- !private ">"
+- !private "SettingsViewController"
+- "NSRange"
+- "ExtendedGraphemeClusterType"
+- !private "CGFloat"
+- "Range"
+- !private "!="
+- "SettingsViewControllerDelegate"
+- !private "Dictionary"
+- "UIButton"
+- !private "||"
+- "DisplayViewController"
+- !private "!"
+- !private "NSMutableAttributedString"
+- !private "<"
+- "UITextView"
+- "OEEventsObserver"
+- !private "OELanguageModelGenerator"
+- "UIScrollView"
+- "UIStoryboardSegue"
+- !private "AVSpeechUtteranceDefaultSpeechRate"
+- !private "NSURL"
+- "Array"
+- !private "CGRectMake"
+- "String"
+- "UnicodeScalarType"
+- !private "UIView"
+- !private "dispatch_get_main_queue"
+- !private "Hashable"
+- "UIActivityIndicatorView"
+- "uniq"
+- !private "NSUserDefaults"
+- !private "NSForegroundColorAttributeName"
+- !private "dispatch_async"
+- !private "print"
 depends-member:
 - !private ["CSo13AVAudioPlayer", "delegate"]
 - !private ["CSo13AVAudioPlayer", "enableRate"]
@@ -657,7 +657,6 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "init"]
-- !private ["Sa", "removeAtIndex"]
 - !private ["Sa", "removeLast"]
 - !private ["Sa", "subscript"]
 - ["PSs23ArrayLiteralConvertible", "Element"]
@@ -672,7 +671,6 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - !private ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "insert"]
-- !private ["PSs23ArrayLiteralConvertible", "removeAtIndex"]
 - !private ["PSs23ArrayLiteralConvertible", "removeLast"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
@@ -922,7 +920,6 @@ depends-member:
 - !private ["PSs14CollectionType", "endIndex"]
 - !private ["PSs14CollectionType", "init"]
 - !private ["PSs14CollectionType", "insert"]
-- !private ["PSs14CollectionType", "removeAtIndex"]
 - !private ["PSs14CollectionType", "removeLast"]
 - !private ["PSs14CollectionType", "startIndex"]
 - !private ["PSs14CollectionType", "subscript"]
@@ -957,7 +954,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "endIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "insert"]
-- !private ["PSs28CustomDebugStringConvertible", "removeAtIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "removeLast"]
 - !private ["PSs28CustomDebugStringConvertible", "startIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "stringByReplacingOccurrencesOfString"]
@@ -1133,7 +1129,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "redColor"]
 - ["PSs23CustomStringConvertible", "registerDefaultSettings"]
 - !private ["PSs23CustomStringConvertible", "registerDefaults"]
-- !private ["PSs23CustomStringConvertible", "removeAtIndex"]
 - !private ["PSs23CustomStringConvertible", "removeLast"]
 - !private ["PSs23CustomStringConvertible", "replaceCharactersInRange"]
 - !private ["PSs23CustomStringConvertible", "resume"]
@@ -1833,7 +1828,6 @@ depends-member:
 - !private ["PSs9Indexable", "endIndex"]
 - !private ["PSs9Indexable", "init"]
 - !private ["PSs9Indexable", "insert"]
-- !private ["PSs9Indexable", "removeAtIndex"]
 - !private ["PSs9Indexable", "removeLast"]
 - !private ["PSs9Indexable", "startIndex"]
 - !private ["PSs9Indexable", "subscript"]
@@ -1882,7 +1876,6 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "append"]
 - !private ["PSs21MutableCollectionType", "count"]
 - !private ["PSs21MutableCollectionType", "init"]
-- !private ["PSs21MutableCollectionType", "removeAtIndex"]
 - !private ["PSs21MutableCollectionType", "removeLast"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - ["PSs16MutableIndexable", "Element"]
@@ -1893,7 +1886,6 @@ depends-member:
 - !private ["PSs16MutableIndexable", "append"]
 - !private ["PSs16MutableIndexable", "count"]
 - !private ["PSs16MutableIndexable", "init"]
-- !private ["PSs16MutableIndexable", "removeAtIndex"]
 - !private ["PSs16MutableIndexable", "removeLast"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - ["PSs16MutableSliceable", "Element"]
@@ -1904,7 +1896,6 @@ depends-member:
 - !private ["PSs16MutableSliceable", "append"]
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "init"]
-- !private ["PSs16MutableSliceable", "removeAtIndex"]
 - !private ["PSs16MutableSliceable", "removeLast"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["CSo18NSAttributedString", "addAttribute"]
@@ -2926,7 +2917,6 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "init"]
-- !private ["PSs30RangeReplaceableCollectionType", "removeAtIndex"]
 - !private ["PSs30RangeReplaceableCollectionType", "removeLast"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Immediate"]
@@ -2946,7 +2936,6 @@ depends-member:
 - !private ["PSs12SequenceType", "endIndex"]
 - !private ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "insert"]
-- !private ["PSs12SequenceType", "removeAtIndex"]
 - !private ["PSs12SequenceType", "removeLast"]
 - !private ["PSs12SequenceType", "startIndex"]
 - !private ["PSs12SequenceType", "subscript"]
@@ -4442,8 +4431,6 @@ depends-member:
 - !private ["PSs31UnicodeScalarLiteralConvertible", "startIndex"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "subscript"]
-- !private ["VSs20UnsafeMutablePointer", "deinit"]
-- !private ["VSs13UnsafePointer", "deinit"]
 - !private ["PSs19UnsignedIntegerType", "Distance"]
 - !private ["PSs19UnsignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs19UnsignedIntegerType", "Stride"]
@@ -4458,7 +4445,6 @@ depends-member:
 - !private ["PSs10_ArrayType", "append"]
 - !private ["PSs10_ArrayType", "count"]
 - !private ["PSs10_ArrayType", "init"]
-- !private ["PSs10_ArrayType", "removeAtIndex"]
 - !private ["PSs10_ArrayType", "removeLast"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -4528,7 +4514,6 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "append"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "init"]
-- !private ["PSs24_DestructorSafeContainer", "removeAtIndex"]
 - !private ["PSs24_DestructorSafeContainer", "removeLast"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs28_DisallowMixedSignArithmetic", "Distance"]
@@ -4576,7 +4561,6 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "insert"]
 - !private ["PSs21_ObjectiveCBridgeable", "length"]
 - !private ["PSs21_ObjectiveCBridgeable", "location"]
-- !private ["PSs21_ObjectiveCBridgeable", "removeAtIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "removeLast"]
 - !private ["PSs21_ObjectiveCBridgeable", "startIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "stringByReplacingOccurrencesOfString"]
@@ -4623,7 +4607,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "length"]
 - !private ["PSs12_Reflectable", "location"]
 - !private ["PSs12_Reflectable", "progress"]
-- !private ["PSs12_Reflectable", "removeAtIndex"]
 - !private ["PSs12_Reflectable", "removeLast"]
 - !private ["PSs12_Reflectable", "scrollRangeToVisible"]
 - !private ["PSs12_Reflectable", "selectedRange"]
@@ -4793,8 +4776,6 @@ depends-nominal:
 - !private "P9Alamofire20URLStringConvertible"
 - !private "Sc"
 - !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "VSs20UnsafeMutablePointer"
-- !private "VSs13UnsafePointer"
 - !private "PSs19UnsignedIntegerType"
 - "P20WatsonDeveloperCloud13WatsonService"
 - "PSs10_ArrayType"

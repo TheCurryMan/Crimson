@@ -7,12 +7,12 @@ provides-member:
 - ["V20WatsonDeveloperCloud9Quotation", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Quotation"
-- "Mappable"
+- !private "<-"
 - !private "StringLiteralType"
 - "Map"
-- !private "<-"
+- "Quotation"
 - "String"
+- "Mappable"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["SQ", "deinit"]

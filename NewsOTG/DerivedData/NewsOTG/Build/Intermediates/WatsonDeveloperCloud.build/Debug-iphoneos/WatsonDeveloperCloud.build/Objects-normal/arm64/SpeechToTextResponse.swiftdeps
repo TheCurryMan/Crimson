@@ -8,15 +8,15 @@ provides-member:
 - ["C20WatsonDeveloperCloud12SpeechToText", "SpeechToTextResponse"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "IntegerLiteralType"
+- !private "<-"
+- "Map"
+- "SpeechToText"
+- !private "StringLiteralType"
+- "String"
+- !private ">"
 - "Mappable"
 - !private "FloatLiteralType"
-- !private "IntegerLiteralType"
-- !private ">"
-- "SpeechToText"
-- !private "<-"
-- "String"
-- "Map"
-- !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sa", "Generator"]

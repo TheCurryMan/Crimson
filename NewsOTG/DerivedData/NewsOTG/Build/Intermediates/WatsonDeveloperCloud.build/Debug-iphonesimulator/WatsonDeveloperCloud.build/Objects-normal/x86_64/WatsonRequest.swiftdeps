@@ -7,19 +7,19 @@ provides-member:
 - ["C20WatsonDeveloperCloud13WatsonRequest", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "URLRequestConvertible"
-- "AuthenticationStrategy"
-- "WatsonRequest"
-- !private "NSURLComponents"
-- "NSMutableURLRequest"
-- !private "StringLiteralType"
 - "NSURLQueryItem"
-- "Method"
-- "NSData"
+- "NSMutableURLRequest"
 - !private "!"
-- "String"
+- "NSData"
 - !private "+"
+- "URLRequestConvertible"
+- !private "StringLiteralType"
+- "WatsonRequest"
+- "String"
+- "AuthenticationStrategy"
 - "MediaType"
+- "Method"
+- !private "NSURLComponents"
 depends-member:
 - !private ["PSs9AnyObject", "HTTPBody"]
 - !private ["PSs9AnyObject", "HTTPMethod"]

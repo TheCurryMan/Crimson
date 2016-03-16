@@ -7,10 +7,10 @@ provides-member:
 - ["P20WatsonDeveloperCloud13WatsonService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "AuthenticationStrategy"
 - "WatsonService"
 - "WatsonGateway"
+- "String"
 depends-member:
 - ["P20WatsonDeveloperCloud13WatsonService", "AuthenticationStrategy"]
 - ["P20WatsonDeveloperCloud13WatsonService", "String"]

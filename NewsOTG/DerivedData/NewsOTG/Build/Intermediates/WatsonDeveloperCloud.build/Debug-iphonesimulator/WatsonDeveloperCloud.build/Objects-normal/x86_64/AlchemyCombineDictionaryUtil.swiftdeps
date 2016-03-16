@@ -7,8 +7,8 @@ provides-member:
 - ["C20WatsonDeveloperCloud28AlchemyCombineDictionaryUtil", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "AlchemyCombineDictionaryUtil"
+- "String"
 depends-member:
 - ["C20WatsonDeveloperCloud28AlchemyCombineDictionaryUtil", "String"]
 - ["C20WatsonDeveloperCloud28AlchemyCombineDictionaryUtil", "combineParameterDictionary"]

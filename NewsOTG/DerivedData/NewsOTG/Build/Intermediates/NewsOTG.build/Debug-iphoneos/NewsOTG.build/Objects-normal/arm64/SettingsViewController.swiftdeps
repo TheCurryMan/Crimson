@@ -9,57 +9,55 @@ provides-member:
 - ["P7NewsOTG30SettingsViewControllerDelegate", ""]
 - ["C7NewsOTG22SettingsViewController", ""]
 provides-dynamic-lookup:
-- "saveSettings"
-- "speechSettings"
-- "selectedVoiceLanguage"
-- "numberOfSectionsInTableView"
-- "numberOfComponentsInPickerView"
-- "viewDidLoad"
-- "handleSliderValueChange"
-- "pickerData"
 - "didReceiveMemoryWarning"
-- "arrVoiceLanguages"
+- "tableView"
+- "tableView"
+- "tableView"
+- "speechSettings"
+- "numberOfSectionsInTableView"
+- "saveSettings"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "selectedVoiceLanguage"
+- "numberOfComponentsInPickerView"
+- "pickerData"
+- "picked"
 - "tbSettings"
-- "pickerView"
-- "pickerView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "arrVoiceLanguages"
+- "handleSliderValueChange"
+- "viewDidLoad"
 depends-top-level:
-- "NSUserDefaults"
-- !private "AVSpeechUtteranceMinimumSpeechRate"
-- "UIViewController"
-- "AnyObject"
-- "Int"
 - !private "UILabel"
-- !private "AVSpeechUtteranceMaximumSpeechRate"
-- "SettingsViewControllerDelegate"
-- "StringLiteralType"
+- "AnyObject"
+- "Array"
+- "String"
+- "NSUserDefaults"
+- "UIViewController"
 - "UITableViewCell"
+- "Dictionary"
+- "SettingsViewControllerDelegate"
+- "UIPickerViewDelegate"
+- "NSIndexPath"
+- "CustomSlider"
+- !private "UIControlEvents"
+- !private "print"
+- "UIPickerViewDataSource"
+- !private "BooleanLiteralType"
+- !private "<"
+- !private "NSString"
 - "UIPickerView"
 - !private "~="
-- "UIPickerViewDataSource"
 - "CGFloat"
-- !private "UIControlEvents"
-- "CustomSlider"
-- "String"
-- "Array"
-- "UIPickerViewDelegate"
-- !private "<"
-- !private "BooleanLiteralType"
 - "UITableView"
-- "NSIndexPath"
-- "UITableViewDataSource"
-- !private "NSString"
-- !private "!="
-- "Float"
-- !private "/"
-- "Dictionary"
-- "SettingsViewController"
+- "StringLiteralType"
 - "UITableViewDelegate"
+- "UITableViewDataSource"
+- "Float"
+- !private "!="
+- "Int"
+- "SettingsViewController"
 depends-member:
-- !private ["PSs9AnyObject", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSs9AnyObject", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSs9AnyObject", "NSString"]
 - ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
@@ -80,10 +78,12 @@ depends-member:
 - !private ["PSs9AnyObject", "navigationController"]
 - ["PSs9AnyObject", "numberOfComponentsInPickerView"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- ["PSs9AnyObject", "picked"]
 - ["PSs9AnyObject", "pickerData"]
 - ["PSs9AnyObject", "pickerView"]
 - ["PSs9AnyObject", "pitch"]
 - !private ["PSs9AnyObject", "popViewControllerAnimated"]
+- !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "rate"]
 - !private ["PSs9AnyObject", "reloadData"]
 - !private ["PSs9AnyObject", "row"]
@@ -103,6 +103,7 @@ depends-member:
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - ["PSs9AnyObject", "selectedVoiceLanguage"]
 - !private ["PSs9AnyObject", "setFloat"]
+- !private ["PSs9AnyObject", "setObject"]
 - !private ["PSs9AnyObject", "sliderIdentifier"]
 - ["PSs9AnyObject", "speechSettings"]
 - ["PSs9AnyObject", "standardUserDefaults"]
@@ -144,8 +145,6 @@ depends-member:
 - !private ["CSo7CALayer", "cornerRadius"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["PSs11CVarArgType", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSs11CVarArgType", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSString"]
@@ -168,10 +167,12 @@ depends-member:
 - !private ["PSs11CVarArgType", "navigationController"]
 - ["PSs11CVarArgType", "numberOfComponentsInPickerView"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- ["PSs11CVarArgType", "picked"]
 - ["PSs11CVarArgType", "pickerData"]
 - ["PSs11CVarArgType", "pickerView"]
 - ["PSs11CVarArgType", "pitch"]
 - !private ["PSs11CVarArgType", "popViewControllerAnimated"]
+- !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "rate"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - !private ["PSs11CVarArgType", "row"]
@@ -191,6 +192,7 @@ depends-member:
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - ["PSs11CVarArgType", "selectedVoiceLanguage"]
 - !private ["PSs11CVarArgType", "setFloat"]
+- !private ["PSs11CVarArgType", "setObject"]
 - !private ["PSs11CVarArgType", "sliderIdentifier"]
 - ["PSs11CVarArgType", "speechSettings"]
 - ["PSs11CVarArgType", "standardUserDefaults"]
@@ -225,8 +227,6 @@ depends-member:
 - !private ["C7NewsOTG12CustomSlider", "minimumValue"]
 - !private ["C7NewsOTG12CustomSlider", "sliderIdentifier"]
 - !private ["C7NewsOTG12CustomSlider", "value"]
-- !private ["PSs23CustomStringConvertible", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSs23CustomStringConvertible", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
@@ -255,10 +255,12 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "navigationController"]
 - ["PSs23CustomStringConvertible", "numberOfComponentsInPickerView"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- ["PSs23CustomStringConvertible", "picked"]
 - ["PSs23CustomStringConvertible", "pickerData"]
 - ["PSs23CustomStringConvertible", "pickerView"]
 - ["PSs23CustomStringConvertible", "pitch"]
 - !private ["PSs23CustomStringConvertible", "popViewControllerAnimated"]
+- !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "rate"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "row"]
@@ -278,6 +280,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - ["PSs23CustomStringConvertible", "selectedVoiceLanguage"]
 - !private ["PSs23CustomStringConvertible", "setFloat"]
+- !private ["PSs23CustomStringConvertible", "setObject"]
 - !private ["PSs23CustomStringConvertible", "sliderIdentifier"]
 - ["PSs23CustomStringConvertible", "speechSettings"]
 - ["PSs23CustomStringConvertible", "standardUserDefaults"]
@@ -294,8 +297,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "volume"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
-- !private ["PSs9Equatable", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSs9Equatable", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSString"]
@@ -320,10 +321,12 @@ depends-member:
 - !private ["PSs9Equatable", "navigationController"]
 - ["PSs9Equatable", "numberOfComponentsInPickerView"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
+- ["PSs9Equatable", "picked"]
 - ["PSs9Equatable", "pickerData"]
 - ["PSs9Equatable", "pickerView"]
 - ["PSs9Equatable", "pitch"]
 - !private ["PSs9Equatable", "popViewControllerAnimated"]
+- !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "rate"]
 - !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "row"]
@@ -343,6 +346,7 @@ depends-member:
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - ["PSs9Equatable", "selectedVoiceLanguage"]
 - !private ["PSs9Equatable", "setFloat"]
+- !private ["PSs9Equatable", "setObject"]
 - !private ["PSs9Equatable", "sliderIdentifier"]
 - ["PSs9Equatable", "speechSettings"]
 - ["PSs9Equatable", "standardUserDefaults"]
@@ -361,8 +365,6 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSs8Hashable", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSString"]
@@ -386,10 +388,12 @@ depends-member:
 - !private ["PSs8Hashable", "navigationController"]
 - ["PSs8Hashable", "numberOfComponentsInPickerView"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
+- ["PSs8Hashable", "picked"]
 - ["PSs8Hashable", "pickerData"]
 - ["PSs8Hashable", "pickerView"]
 - ["PSs8Hashable", "pitch"]
 - !private ["PSs8Hashable", "popViewControllerAnimated"]
+- !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "rate"]
 - !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "row"]
@@ -409,6 +413,7 @@ depends-member:
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - ["PSs8Hashable", "selectedVoiceLanguage"]
 - !private ["PSs8Hashable", "setFloat"]
+- !private ["PSs8Hashable", "setObject"]
 - !private ["PSs8Hashable", "sliderIdentifier"]
 - ["PSs8Hashable", "speechSettings"]
 - ["PSs8Hashable", "standardUserDefaults"]
@@ -463,8 +468,6 @@ depends-member:
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["V10Foundation12NSCocoaError", "deinit"]
-- !private ["PSo8NSCoding", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo8NSCoding", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo8NSCoding", "NSString"]
 - ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
@@ -485,10 +488,12 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfComponentsInPickerView"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- ["PSo8NSCoding", "picked"]
 - ["PSo8NSCoding", "pickerData"]
 - ["PSo8NSCoding", "pickerView"]
 - ["PSo8NSCoding", "pitch"]
 - !private ["PSo8NSCoding", "popViewControllerAnimated"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "rate"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
@@ -520,8 +525,6 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
-- !private ["PSo26NSExtensionRequestHandling", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo26NSExtensionRequestHandling", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSString"]
 - ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
@@ -534,10 +537,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfComponentsInPickerView"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "picked"]
 - ["PSo26NSExtensionRequestHandling", "pickerData"]
 - ["PSo26NSExtensionRequestHandling", "pickerView"]
 - ["PSo26NSExtensionRequestHandling", "pitch"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "rate"]
 - ["PSo26NSExtensionRequestHandling", "saveSettings"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -564,8 +569,6 @@ depends-member:
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSNumber", "deinit"]
-- !private ["CSo8NSObject", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["CSo8NSObject", "AVSpeechUtteranceMinimumSpeechRate"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CustomSlider"]
@@ -600,10 +603,12 @@ depends-member:
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfComponentsInPickerView"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- ["CSo8NSObject", "picked"]
 - ["CSo8NSObject", "pickerData"]
 - ["CSo8NSObject", "pickerView"]
 - ["CSo8NSObject", "pitch"]
 - !private ["CSo8NSObject", "popViewControllerAnimated"]
+- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "rate"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
@@ -623,6 +628,7 @@ depends-member:
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - ["CSo8NSObject", "selectedVoiceLanguage"]
 - !private ["CSo8NSObject", "setFloat"]
+- !private ["CSo8NSObject", "setObject"]
 - !private ["CSo8NSObject", "sliderIdentifier"]
 - ["CSo8NSObject", "speechSettings"]
 - ["CSo8NSObject", "standardUserDefaults"]
@@ -636,8 +642,6 @@ depends-member:
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "viewWithTag"]
 - ["CSo8NSObject", "volume"]
-- !private ["PSo16NSObjectProtocol", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo16NSObjectProtocol", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo16NSObjectProtocol", "NSString"]
 - ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
@@ -658,10 +662,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfComponentsInPickerView"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- ["PSo16NSObjectProtocol", "picked"]
 - ["PSo16NSObjectProtocol", "pickerData"]
 - ["PSo16NSObjectProtocol", "pickerView"]
 - ["PSo16NSObjectProtocol", "pitch"]
 - !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "rate"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
@@ -681,6 +687,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - ["PSo16NSObjectProtocol", "selectedVoiceLanguage"]
 - !private ["PSo16NSObjectProtocol", "setFloat"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
 - !private ["PSo16NSObjectProtocol", "sliderIdentifier"]
 - ["PSo16NSObjectProtocol", "speechSettings"]
 - ["PSo16NSObjectProtocol", "standardUserDefaults"]
@@ -700,6 +707,7 @@ depends-member:
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo14NSUserDefaults", "setFloat"]
+- !private ["CSo14NSUserDefaults", "setObject"]
 - ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["CSo14NSUserDefaults", "synchronize"]
 - !private ["CSo14NSUserDefaults", "valueForKey"]
@@ -725,8 +733,6 @@ depends-member:
 - !private ["PSs12SequenceType", "count"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "ValueChanged"]
-- !private ["C7NewsOTG22SettingsViewController", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["C7NewsOTG22SettingsViewController", "AVSpeechUtteranceMinimumSpeechRate"]
 - ["C7NewsOTG22SettingsViewController", "AnyObject"]
 - ["C7NewsOTG22SettingsViewController", "CGFloat"]
 - ["C7NewsOTG22SettingsViewController", "CustomSlider"]
@@ -753,9 +759,11 @@ depends-member:
 - !private ["C7NewsOTG22SettingsViewController", "navigationController"]
 - ["C7NewsOTG22SettingsViewController", "numberOfComponentsInPickerView"]
 - ["C7NewsOTG22SettingsViewController", "numberOfSectionsInTableView"]
+- ["C7NewsOTG22SettingsViewController", "picked"]
 - ["C7NewsOTG22SettingsViewController", "pickerData"]
 - ["C7NewsOTG22SettingsViewController", "pickerView"]
 - ["C7NewsOTG22SettingsViewController", "pitch"]
+- !private ["C7NewsOTG22SettingsViewController", "print"]
 - ["C7NewsOTG22SettingsViewController", "rate"]
 - ["C7NewsOTG22SettingsViewController", "saveSettings"]
 - ["C7NewsOTG22SettingsViewController", "scrollViewDidEndDecelerating"]
@@ -789,6 +797,7 @@ depends-member:
 - !private ["VSs5Slice", "_Element"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "contentView"]
@@ -816,8 +825,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "value"]
 - !private ["PSo12UIAppearance", "viewWithTag"]
-- !private ["PSo21UIAppearanceContainer", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo21UIAppearanceContainer", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo21UIAppearanceContainer", "NSString"]
 - ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
@@ -837,10 +844,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfComponentsInPickerView"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- ["PSo21UIAppearanceContainer", "picked"]
 - ["PSo21UIAppearanceContainer", "pickerData"]
 - ["PSo21UIAppearanceContainer", "pickerView"]
 - ["PSo21UIAppearanceContainer", "pitch"]
 - !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "rate"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "saveSettings"]
@@ -869,8 +878,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "viewWithTag"]
 - ["PSo21UIAppearanceContainer", "volume"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo18UIContentContainer", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo18UIContentContainer", "NSString"]
 - ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
@@ -883,10 +890,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfComponentsInPickerView"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "picked"]
 - ["PSo18UIContentContainer", "pickerData"]
 - ["PSo18UIContentContainer", "pickerView"]
 - ["PSo18UIContentContainer", "pitch"]
 - !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "rate"]
 - ["PSo18UIContentContainer", "saveSettings"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -942,8 +951,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "value"]
 - !private ["PSo13UIDynamicItem", "viewWithTag"]
-- !private ["PSo18UIFocusEnvironment", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo18UIFocusEnvironment", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo18UIFocusEnvironment", "NSString"]
 - ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
@@ -963,10 +970,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfComponentsInPickerView"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UIFocusEnvironment", "picked"]
 - ["PSo18UIFocusEnvironment", "pickerData"]
 - ["PSo18UIFocusEnvironment", "pickerView"]
 - ["PSo18UIFocusEnvironment", "pitch"]
 - !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "rate"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - ["PSo18UIFocusEnvironment", "saveSettings"]
@@ -1000,8 +1009,6 @@ depends-member:
 - !private ["CSo22UINavigationController", "popViewControllerAnimated"]
 - !private ["CSo12UIPickerView", "dataSource"]
 - !private ["CSo12UIPickerView", "delegate"]
-- !private ["PSo22UIPickerViewDataSource", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo22UIPickerViewDataSource", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo22UIPickerViewDataSource", "NSString"]
 - ["PSo22UIPickerViewDataSource", "NSUserDefaults"]
 - !private ["PSo22UIPickerViewDataSource", "UIControlEvents"]
@@ -1010,9 +1017,11 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "navigationController"]
 - ["PSo22UIPickerViewDataSource", "numberOfComponentsInPickerView"]
 - ["PSo22UIPickerViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo22UIPickerViewDataSource", "picked"]
 - !private ["PSo22UIPickerViewDataSource", "pickerData"]
 - ["PSo22UIPickerViewDataSource", "pickerView"]
 - !private ["PSo22UIPickerViewDataSource", "pitch"]
+- !private ["PSo22UIPickerViewDataSource", "print"]
 - !private ["PSo22UIPickerViewDataSource", "rate"]
 - ["PSo22UIPickerViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo22UIPickerViewDataSource", "scrollViewDidEndDragging"]
@@ -1033,8 +1042,6 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo22UIPickerViewDataSource", "volume"]
 - ["PSo22UIPickerViewDataSource", ""]
-- !private ["PSo20UIPickerViewDelegate", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo20UIPickerViewDelegate", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo20UIPickerViewDelegate", "NSString"]
 - ["PSo20UIPickerViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIPickerViewDelegate", "UIControlEvents"]
@@ -1043,9 +1050,11 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "navigationController"]
 - ["PSo20UIPickerViewDelegate", "numberOfComponentsInPickerView"]
 - ["PSo20UIPickerViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIPickerViewDelegate", "picked"]
 - !private ["PSo20UIPickerViewDelegate", "pickerData"]
 - ["PSo20UIPickerViewDelegate", "pickerView"]
 - !private ["PSo20UIPickerViewDelegate", "pitch"]
+- !private ["PSo20UIPickerViewDelegate", "print"]
 - !private ["PSo20UIPickerViewDelegate", "rate"]
 - ["PSo20UIPickerViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIPickerViewDelegate", "scrollViewDidEndDragging"]
@@ -1066,8 +1075,6 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIPickerViewDelegate", "volume"]
 - ["PSo20UIPickerViewDelegate", ""]
-- !private ["CSo11UIResponder", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["CSo11UIResponder", "AVSpeechUtteranceMinimumSpeechRate"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CustomSlider"]
@@ -1100,10 +1107,12 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfComponentsInPickerView"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- ["CSo11UIResponder", "picked"]
 - ["CSo11UIResponder", "pickerData"]
 - ["CSo11UIResponder", "pickerView"]
 - ["CSo11UIResponder", "pitch"]
 - !private ["CSo11UIResponder", "popViewControllerAnimated"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "rate"]
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "saveSettings"]
@@ -1136,8 +1145,6 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "layer"]
 - !private ["CSo12UIScrollView", "reloadData"]
-- !private ["PSo20UIScrollViewDelegate", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo20UIScrollViewDelegate", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo20UIScrollViewDelegate", "NSString"]
 - ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
@@ -1146,9 +1153,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfComponentsInPickerView"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "picked"]
 - !private ["PSo20UIScrollViewDelegate", "pickerData"]
 - ["PSo20UIScrollViewDelegate", "pickerView"]
 - !private ["PSo20UIScrollViewDelegate", "pitch"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "rate"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -1174,8 +1183,6 @@ depends-member:
 - !private ["CSo8UISlider", "minimumValue"]
 - !private ["CSo8UISlider", "sliderIdentifier"]
 - !private ["CSo8UISlider", "value"]
-- !private ["PSo16UIStateRestoring", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo16UIStateRestoring", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo16UIStateRestoring", "NSString"]
 - ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
@@ -1188,10 +1195,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfComponentsInPickerView"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "picked"]
 - ["PSo16UIStateRestoring", "pickerData"]
 - ["PSo16UIStateRestoring", "pickerView"]
 - ["PSo16UIStateRestoring", "pitch"]
 - !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "rate"]
 - ["PSo16UIStateRestoring", "saveSettings"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -1221,8 +1230,6 @@ depends-member:
 - !private ["CSo11UITableView", "layer"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "contentView"]
-- !private ["PSo21UITableViewDataSource", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo21UITableViewDataSource", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo21UITableViewDataSource", "NSString"]
 - ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
@@ -1232,9 +1239,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfComponentsInPickerView"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "picked"]
 - !private ["PSo21UITableViewDataSource", "pickerData"]
 - ["PSo21UITableViewDataSource", "pickerView"]
 - !private ["PSo21UITableViewDataSource", "pitch"]
+- !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "rate"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
@@ -1255,8 +1264,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo21UITableViewDataSource", "volume"]
 - ["PSo21UITableViewDataSource", ""]
-- !private ["PSo19UITableViewDelegate", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo19UITableViewDelegate", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo19UITableViewDelegate", "NSString"]
 - ["PSo19UITableViewDelegate", "NSUserDefaults"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
@@ -1265,9 +1272,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfComponentsInPickerView"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "picked"]
 - !private ["PSo19UITableViewDelegate", "pickerData"]
 - ["PSo19UITableViewDelegate", "pickerView"]
 - !private ["PSo19UITableViewDelegate", "pitch"]
+- !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "rate"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
@@ -1288,8 +1297,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo19UITableViewDelegate", "volume"]
 - ["PSo19UITableViewDelegate", ""]
-- !private ["PSo18UITraitEnvironment", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["PSo18UITraitEnvironment", "AVSpeechUtteranceMinimumSpeechRate"]
 - !private ["PSo18UITraitEnvironment", "NSString"]
 - ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
@@ -1309,10 +1316,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfComponentsInPickerView"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UITraitEnvironment", "picked"]
 - ["PSo18UITraitEnvironment", "pickerData"]
 - ["PSo18UITraitEnvironment", "pickerView"]
 - ["PSo18UITraitEnvironment", "pitch"]
 - !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "rate"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "saveSettings"]
@@ -1354,8 +1363,6 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "value"]
 - !private ["CSo6UIView", "viewWithTag"]
-- !private ["CSo16UIViewController", "AVSpeechUtteranceMaximumSpeechRate"]
-- !private ["CSo16UIViewController", "AVSpeechUtteranceMinimumSpeechRate"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CustomSlider"]
@@ -1381,10 +1388,12 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfComponentsInPickerView"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "picked"]
 - ["CSo16UIViewController", "pickerData"]
 - ["CSo16UIViewController", "pickerView"]
 - ["CSo16UIViewController", "pitch"]
 - !private ["CSo16UIViewController", "popViewControllerAnimated"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "rate"]
 - ["CSo16UIViewController", "saveSettings"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -1535,6 +1544,7 @@ depends-nominal:
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
 - !private "PSs10Strideable"
+- !private "SS"
 - !private "PSs24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
@@ -1636,6 +1646,15 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_sts.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteVoice.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/Slt.framework/Headers/Slt.h"
+- "./SpeechKit.framework/Headers/SKTransaction.h"
+- "./SpeechKit.framework/Headers/SKSession.h"
+- "./SpeechKit.framework/Headers/SKRecognition.h"
+- "./SpeechKit.framework/Headers/SKOptions.h"
+- "./SpeechKit.framework/Headers/SKInterpretation.h"
+- "./SpeechKit.framework/Headers/SKAudioPlayer.h"
+- "./SpeechKit.framework/Headers/SKAudio.h"
+- "./SpeechKit.framework/Headers/SpeechKit.h"
+- "./SpeechKit.framework/Modules/module.modulemap"
 - "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "./Bolts.framework/Headers/BFURL.h"
 - "./Bolts.framework/Headers/BFMeasurementEvent.h"
@@ -1709,4 +1728,4 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger-Swift.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Headers/XCGLogger.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Carthage/Build/iOS/XCGLogger.framework/Modules/module.modulemap"
-interface-hash: "e1459c613c2d458d9f21b2a5b0d7e2d9"
+interface-hash: "5de553bb528f51ea9da034c7cc6c7da1"

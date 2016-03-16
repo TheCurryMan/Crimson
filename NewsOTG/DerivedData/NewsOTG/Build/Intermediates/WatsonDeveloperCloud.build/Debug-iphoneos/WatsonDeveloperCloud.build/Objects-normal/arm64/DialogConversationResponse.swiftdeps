@@ -8,14 +8,14 @@ provides-member:
 - ["C20WatsonDeveloperCloud6Dialog", "ConversationResponse"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Mappable"
-- "Int"
-- !private "StringLiteralType"
-- !private "<-"
-- "String"
 - "Double"
+- "Int"
 - "Dialog"
+- "Mappable"
+- !private "StringLiteralType"
+- "String"
 - "Map"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sa", "deinit"]

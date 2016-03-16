@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG22StartingViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
-- "viewWillAppear"
 - "viewWillDisappear"
+- "viewWillAppear"
+- "viewDidLoad"
 depends-top-level:
+- !private "StringLiteralType"
 - !private "print"
 - !private "!="
+- "StartingViewController"
 - "Bool"
 - "UIViewController"
-- !private "StringLiteralType"
-- !private "PFUser"
 - !private "BooleanLiteralType"
-- "StartingViewController"
+- !private "PFUser"
 depends-member:
 - !private ["PSs9AnyObject", "PFUser"]
 - !private ["PSs9AnyObject", "currentUser"]
@@ -345,6 +345,15 @@ depends-external:
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/cst_sts.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/OpenEars.framework/Headers/OEFliteVoice.h"
 - "/Users/Avinash/Documents/NewsOTG/NewsOTG/Framework/Slt.framework/Headers/Slt.h"
+- "./SpeechKit.framework/Headers/SKTransaction.h"
+- "./SpeechKit.framework/Headers/SKSession.h"
+- "./SpeechKit.framework/Headers/SKRecognition.h"
+- "./SpeechKit.framework/Headers/SKOptions.h"
+- "./SpeechKit.framework/Headers/SKInterpretation.h"
+- "./SpeechKit.framework/Headers/SKAudioPlayer.h"
+- "./SpeechKit.framework/Headers/SKAudio.h"
+- "./SpeechKit.framework/Headers/SpeechKit.h"
+- "./SpeechKit.framework/Modules/module.modulemap"
 - "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "./Bolts.framework/Headers/BFURL.h"
 - "./Bolts.framework/Headers/BFMeasurementEvent.h"

@@ -7,16 +7,16 @@ provides-member:
 - ["V20WatsonDeveloperCloud10Taxonomies", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AlchemyLanguageGenericModel"
-- "Taxonomy"
-- "Mappable"
-- !private "Transformation"
 - "Map"
+- !private "Transformation"
+- "Taxonomy"
 - "Taxonomies"
 - !private "StringLiteralType"
-- "String"
+- "AlchemyLanguageGenericModel"
 - "Int"
 - !private "<-"
+- "Mappable"
+- "String"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - ["P20WatsonDeveloperCloud19AlchemyGenericModel", "init"]

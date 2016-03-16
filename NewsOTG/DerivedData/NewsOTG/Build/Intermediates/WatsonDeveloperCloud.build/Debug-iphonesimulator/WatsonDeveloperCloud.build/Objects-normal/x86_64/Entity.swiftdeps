@@ -7,21 +7,21 @@ provides-member:
 - ["V20WatsonDeveloperCloud6Entity", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Array"
-- !private "<-"
-- "Sentiment"
-- "AlchemyGenericModel"
-- "Entity"
-- "String"
-- !private "StringLiteralType"
-- "Int"
 - "DisambiguatedLinks"
-- "Map"
-- "Double"
-- "Mappable"
 - "Quotation"
 - "KnowledgeGraph"
+- "Mappable"
+- "Sentiment"
+- "String"
+- !private "<-"
+- "Array"
+- !private "StringLiteralType"
+- "AlchemyGenericModel"
+- "Entity"
 - !private "Transformation"
+- "Int"
+- "Map"
+- "Double"
 depends-member:
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "Transformation"]
 - !private ["P20WatsonDeveloperCloud19AlchemyGenericModel", "count"]

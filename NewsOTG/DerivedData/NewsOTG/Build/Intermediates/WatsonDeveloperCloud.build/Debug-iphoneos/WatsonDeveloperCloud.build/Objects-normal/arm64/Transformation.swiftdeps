@@ -7,12 +7,12 @@ provides-member:
 - ["C20WatsonDeveloperCloud14Transformation", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Double"
-- "Transformation"
-- "String"
-- "Int"
-- "AnyObject"
 - "TransformOf"
+- "AnyObject"
+- "Int"
+- "String"
+- "Transformation"
+- "Double"
 depends-member:
 - ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "Double"]

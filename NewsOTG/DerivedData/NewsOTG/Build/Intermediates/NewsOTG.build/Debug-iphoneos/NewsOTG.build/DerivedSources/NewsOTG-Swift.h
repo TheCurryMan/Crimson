@@ -90,6 +90,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import AVFoundation;
 @import Foundation;
+@import SpeechKit;
 #endif
 
 #import "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/Bridging-Header.h"
@@ -149,8 +150,8 @@ SWIFT_CLASS("_TtC7NewsOTG22ArticlesViewController")
 - (void)getRectangle;
 - (void)getSummaryOfArticle:(NSString * __nonnull)url;
 - (void)didReceiveMemoryWarning;
-- (void)getRecentPlaylist:(NSInteger)num info:(NSString * __nonnull)info url:(NSString * __nonnull)url;
-- (void)addToPlaylist:(NSInteger)num info:(NSString * __nonnull)info url:(NSString * __nonnull)url;
+- (void)getRecentPlaylist:(NSInteger)num info:(NSString * __nonnull)info body:(NSString * __nonnull)body date:(NSString * __nonnull)date url:(NSString * __nonnull)url;
+- (void)addToPlaylist:(NSInteger)num info:(NSString * __nonnull)info body:(NSString * __nonnull)body date:(NSString * __nonnull)date url:(NSString * __nonnull)url;
 @property (nonatomic, copy) NSString * __nonnull finalArticle;
 @property (nonatomic, copy) NSString * __nonnull finalURL;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -172,13 +173,15 @@ SWIFT_CLASS("_TtC7NewsOTG23CategoriesTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class OEEventsObserver;
 
 SWIFT_CLASS("_TtC7NewsOTG24CategoriesViewController")
-@interface CategoriesViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface CategoriesViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, OEEventsObserverDelegate, UITableViewDataSource>
 @property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, copy) NSString * __nonnull source;
 @property (nonatomic, copy) NSString * __nonnull link;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull categories;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
@@ -192,6 +195,24 @@ SWIFT_CLASS("_TtC7NewsOTG24CategoriesViewController")
 - (IBAction)Politics:(id __nonnull)sender;
 - (IBAction)Health:(id __nonnull)sender;
 - (void)getData:(NSString * __nonnull)source cat:(NSString * __nonnull)cat;
+@property (nonatomic, copy) NSString * __null_unspecified lmPath;
+@property (nonatomic, copy) NSString * __null_unspecified dicPath;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull words;
+@property (nonatomic, copy) NSString * __null_unspecified currentWord;
+@property (nonatomic) NSInteger kLevelUpdatesPerSecond;
+@property (nonatomic, strong) OEEventsObserver * __nonnull openEarsEventsObserver;
+@property (nonatomic) BOOL startupFailedDueToLackOfPermissions;
+- (void)loadOpenEars;
+- (void)pocketsphinxDidChangeLanguageModelToFile:(NSString * __nonnull)newLanguageModelPathAsString newDictionaryPathAsString:(NSString * __nonnull)newDictionaryPathAsString;
+- (void)pocketSphinxContinuousSetupDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)pocketSphinxContinuousTeardownDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)testRecognitionCompleted;
+- (void)startListening;
+- (void)stopListening;
+- (void)addWords;
+- (void)pocketsphinxFailedNoMicPermissions;
+- (void)pocketsphinxDidReceiveHypothesis:(NSString * __null_unspecified)hypothesis recognitionScore:(NSString * __null_unspecified)recognitionScore utteranceID:(NSString * __null_unspecified)utteranceID;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -205,38 +226,83 @@ SWIFT_CLASS("_TtC7NewsOTG12CustomSlider")
 
 @class UIScrollView;
 @class UITextView;
+@class NSData;
+@class UIActivityIndicatorView;
 @class UIProgressView;
 @class AVAudioPlayer;
 @class AVSpeechSynthesizer;
 @class AVSpeechUtterance;
 
 SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
-@interface DisplayViewController : UIViewController <AVSpeechSynthesizerDelegate>
+@interface DisplayViewController : UIViewController <AVAudioPlayerDelegate, AVSpeechSynthesizerDelegate, OEEventsObserverDelegate>
 @property (nonatomic, strong) IBOutlet UIScrollView * __null_unspecified scrollView;
 @property (nonatomic, strong) IBOutlet UILabel * __null_unspecified articleTitle;
 @property (nonatomic, strong) IBOutlet UITextView * __null_unspecified articleContent;
 @property (nonatomic, copy) NSString * __nonnull articleName;
 @property (nonatomic, copy) NSString * __nonnull articleURL;
 @property (nonatomic, copy) NSString * __nonnull articleText;
+@property (nonatomic, copy) NSString * __nonnull accent;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnStop;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnSpeak;
 @property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnPause;
+@property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnRewind;
+@property (nonatomic, strong) IBOutlet UIButton * __null_unspecified btnForward;
 @property (nonatomic) NSInteger totalTime;
 @property (nonatomic) NSInteger currentTime;
 @property (nonatomic) NSInteger totalTextLength;
 @property (nonatomic) NSInteger spokenTextLengths;
 @property (nonatomic) BOOL newVersion;
+@property (nonatomic, copy) NSString * __nonnull content;
+@property (nonatomic) NSInteger counter;
+@property (nonatomic) NSInteger counter1;
+@property (nonatomic) NSInteger counterForArticle;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfArticles;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfUrls;
+@property (nonatomic) BOOL all;
+@property (nonatomic) BOOL multiple;
+@property (nonatomic) BOOL pause;
+@property (nonatomic, copy) NSArray<NSData *> * __nonnull listOfData;
+@property (nonatomic, strong) NSData * __nonnull audioData;
+@property (nonatomic) BOOL startedPlaying;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull listOfText;
+@property (nonatomic) BOOL wiki;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull convertedStrings;
+@property (nonatomic, strong) UIActivityIndicatorView * __nonnull activityIndicator;
 @property (nonatomic, strong) IBOutlet UIProgressView * __null_unspecified pvSpeechProgress;
 @property (nonatomic, strong) AVAudioPlayer * __nonnull audioPlayer;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)getData:(NSString * __nonnull)content;
+- (void)getAudioData;
 @property (nonatomic, readonly, strong) AVSpeechSynthesizer * __nonnull speechSynthesizer;
 - (void)registerDefaultSettings;
 - (BOOL)loadSettings;
 - (void)animateActionButtonAppearance:(BOOL)shouldHideSpeakButton;
 - (IBAction)speak:(id __nonnull)sender;
-- (IBAction)stopSpeech:(id __nonnull)sender;
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer * __nonnull)audioPlayer successfully:(BOOL)flag;
+- (void)playAudio;
 - (IBAction)pauseSpeech:(id __nonnull)sender;
+- (IBAction)forward:(id __nonnull)sender;
+- (IBAction)rewind:(id __nonnull)sender;
+- (void)viewDidDisappear:(BOOL)animated;
+@property (nonatomic, copy) NSString * __null_unspecified lmPath;
+@property (nonatomic, copy) NSString * __null_unspecified dicPath;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull words;
+@property (nonatomic, copy) NSString * __null_unspecified currentWord;
+@property (nonatomic) NSInteger kLevelUpdatesPerSecond;
+@property (nonatomic, strong) OEEventsObserver * __nonnull openEarsEventsObserver;
+@property (nonatomic) BOOL startupFailedDueToLackOfPermissions;
+- (void)loadOpenEars;
+- (void)pocketsphinxDidChangeLanguageModelToFile:(NSString * __nonnull)newLanguageModelPathAsString newDictionaryPathAsString:(NSString * __nonnull)newDictionaryPathAsString;
+- (void)pocketSphinxContinuousSetupDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)pocketSphinxContinuousTeardownDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)testRecognitionCompleted;
+- (void)startListening;
+- (void)stopListening;
+- (void)addWords;
+- (void)pocketsphinxFailedNoMicPermissions;
+- (void)pocketsphinxDidReceiveHypothesis:(NSString * __null_unspecified)hypothesis recognitionScore:(NSString * __null_unspecified)recognitionScore utteranceID:(NSString * __null_unspecified)utteranceID;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer didStartSpeechUtterance:(AVSpeechUtterance * __null_unspecified)utterance;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance * __null_unspecified)utterance;
 - (void)speechSynthesizer:(AVSpeechSynthesizer * __null_unspecified)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance * __null_unspecified)utterance;
@@ -249,7 +315,6 @@ SWIFT_CLASS("_TtC7NewsOTG21DisplayViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC7NewsOTG21LoadingViewController")
 @interface LoadingViewController : UIViewController
@@ -269,6 +334,7 @@ SWIFT_CLASS("_TtC7NewsOTG22PlaylistViewController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull articlesNames;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull articlesURL;
 @property (nonatomic, copy) NSArray<NSArray<NSString *> *> * __nonnull playlist;
+@property (nonatomic) BOOL all;
 @property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -281,6 +347,7 @@ SWIFT_CLASS("_TtC7NewsOTG22PlaylistViewController")
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (BOOL)tableView:(UITableView * __nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (IBAction)playAll:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -292,6 +359,7 @@ SWIFT_CLASS("_TtC7NewsOTG22SettingsViewController")
 @interface SettingsViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tbSettings;
 @property (nonatomic, readonly, strong) NSUserDefaults * __nonnull speechSettings;
+@property (nonatomic, copy) NSString * __nonnull picked;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arrVoiceLanguages;
 @property (nonatomic) NSInteger selectedVoiceLanguage;
 @property (nonatomic, copy) NSArray<NSArray<NSString *> *> * __nonnull pickerData;
@@ -299,13 +367,14 @@ SWIFT_CLASS("_TtC7NewsOTG22SettingsViewController")
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
-- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
-- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (IBAction)saveSettings:(id __nonnull)sender;
 - (void)handleSliderValueChange:(CustomSlider * __nonnull)sender;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -348,7 +417,6 @@ SWIFT_CLASS("_TtC7NewsOTG22StartingViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class OEEventsObserver;
 
 SWIFT_CLASS("_TtC7NewsOTG18TestViewController")
 @interface TestViewController : UIViewController <OEEventsObserverDelegate>
@@ -386,7 +454,7 @@ SWIFT_CLASS("_TtC7NewsOTG18TestViewController")
 @class NSNotification;
 
 SWIFT_CLASS("_TtC7NewsOTG14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, OEEventsObserverDelegate, UITableViewDelegate>
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, SKTransactionDelegate, OEEventsObserverDelegate, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, copy) NSString * __nonnull finalSource;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull sources;
@@ -417,6 +485,53 @@ SWIFT_CLASS("_TtC7NewsOTG14ViewController")
 - (void)pocketsphinxFailedNoMicPermissions;
 - (void)pocketsphinxDidReceiveHypothesis:(NSString * __null_unspecified)hypothesis recognitionScore:(NSString * __null_unspecified)recognitionScore utteranceID:(NSString * __null_unspecified)utteranceID;
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISearchController;
+@class UIFont;
+@class UIColor;
+@class UISearchBar;
+
+SWIFT_CLASS("_TtC7NewsOTG24WikiSearchViewController")
+@interface WikiSearchViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate, OEEventsObserverDelegate, UIScrollViewDelegate, UITableViewDelegate>
+@property (nonatomic, strong) UISearchController * __null_unspecified searchController;
+@property (nonatomic, strong) UIFont * __null_unspecified preferredFont;
+@property (nonatomic, strong) UIColor * __null_unspecified preferredTextColor;
+@property (nonatomic, copy) NSString * __nonnull wikiText;
+@property (nonatomic) BOOL startedListening;
+@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)loadLists;
+- (void)viewDidLoad;
+- (void)configureSearchController;
+- (void)searchBarTextDidBeginEditing:(UISearchBar * __nonnull)searchBar;
+- (void)searchBarCancelButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)searchBarSearchButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)updateSearchResultsForSearchController:(UISearchController * __nonnull)searchController;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+@property (nonatomic, copy) NSString * __null_unspecified lmPath;
+@property (nonatomic, copy) NSString * __null_unspecified dicPath;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull words;
+@property (nonatomic, copy) NSString * __null_unspecified currentWord;
+@property (nonatomic) NSInteger kLevelUpdatesPerSecond;
+@property (nonatomic, strong) OEEventsObserver * __nonnull openEarsEventsObserver;
+@property (nonatomic) BOOL startupFailedDueToLackOfPermissions;
+- (void)loadOpenEars;
+- (void)pocketsphinxDidChangeLanguageModelToFile:(NSString * __nonnull)newLanguageModelPathAsString newDictionaryPathAsString:(NSString * __nonnull)newDictionaryPathAsString;
+- (void)pocketSphinxContinuousSetupDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)pocketSphinxContinuousTeardownDidFailWithReason:(NSString * __nonnull)reasonForFailure;
+- (void)testRecognitionCompleted;
+- (void)startListening;
+- (void)stopListening;
+- (void)addWords;
+- (void)pocketsphinxFailedNoMicPermissions;
+- (void)pocketsphinxDidReceiveHypothesis:(NSString * __null_unspecified)hypothesis recognitionScore:(NSString * __null_unspecified)recognitionScore utteranceID:(NSString * __null_unspecified)utteranceID;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

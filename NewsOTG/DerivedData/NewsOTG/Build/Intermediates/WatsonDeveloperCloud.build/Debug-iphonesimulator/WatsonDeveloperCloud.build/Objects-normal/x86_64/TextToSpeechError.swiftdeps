@@ -8,16 +8,16 @@ provides-member:
 - ["C20WatsonDeveloperCloud12TextToSpeech", "TextToSpeechError"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSLocalizedFailureReasonErrorKey"
-- "Int"
-- !private "NSLocalizedDescriptionKey"
+- "Map"
 - !private "<-"
 - "TextToSpeech"
-- !private "Dictionary"
-- "String"
-- "Map"
-- "NSError"
+- !private "NSLocalizedFailureReasonErrorKey"
 - "WatsonError"
+- !private "NSLocalizedDescriptionKey"
+- "String"
+- !private "Dictionary"
+- "NSError"
+- "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Constants"]
 - !private ["PSs9AnyObject", "NSError"]

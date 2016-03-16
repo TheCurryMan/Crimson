@@ -7,18 +7,18 @@ provides-member:
 - ["C7NewsOTG22StartingViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "viewWillDisappear"
 - "didReceiveMemoryWarning"
 - "viewWillAppear"
+- "viewWillDisappear"
 depends-top-level:
+- "UIViewController"
+- !private "BooleanLiteralType"
+- "Bool"
 - !private "print"
 - "StartingViewController"
-- !private "StringLiteralType"
 - !private "!="
+- !private "StringLiteralType"
 - !private "PFUser"
-- "Bool"
-- !private "BooleanLiteralType"
-- "UIViewController"
 depends-member:
 - !private ["PSs9AnyObject", "PFUser"]
 - !private ["PSs9AnyObject", "currentUser"]

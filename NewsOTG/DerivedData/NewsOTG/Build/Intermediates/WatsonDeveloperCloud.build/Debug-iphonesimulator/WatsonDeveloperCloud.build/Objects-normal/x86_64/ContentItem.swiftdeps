@@ -8,14 +8,14 @@ provides-member:
 - ["C20WatsonDeveloperCloud19PersonalityInsights", "ContentItem"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
 - "Mappable"
-- "Int"
-- !private "<-"
-- "String"
-- !private "StringLiteralType"
+- "Bool"
 - "PersonalityInsights"
 - "Map"
+- !private "StringLiteralType"
+- "String"
+- "Int"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["Sb", "deinit"]

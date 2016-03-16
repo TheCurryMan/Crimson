@@ -8,16 +8,16 @@ provides-member:
 - ["C20WatsonDeveloperCloud25NaturalLanguageClassifier", "NLCError"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NaturalLanguageClassifier"
 - !private "Dictionary"
 - "String"
-- "Map"
-- !private "<-"
-- !private "NSLocalizedRecoverySuggestionErrorKey"
-- !private "NSLocalizedDescriptionKey"
-- "NSError"
-- "Int"
 - "WatsonError"
+- "NaturalLanguageClassifier"
+- "Int"
+- !private "NSLocalizedRecoverySuggestionErrorKey"
+- "Map"
+- "NSError"
+- !private "NSLocalizedDescriptionKey"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "Constants"]
 - !private ["PSs9AnyObject", "NSError"]

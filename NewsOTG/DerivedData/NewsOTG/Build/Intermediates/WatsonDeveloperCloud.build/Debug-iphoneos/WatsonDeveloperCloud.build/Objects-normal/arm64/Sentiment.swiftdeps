@@ -7,15 +7,15 @@ provides-member:
 - ["V20WatsonDeveloperCloud9Sentiment", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Transformation"
-- "Map"
-- "Sentiment"
-- !private "<-"
 - !private "StringLiteralType"
 - "Double"
 - "String"
-- "Mappable"
+- !private "<-"
 - "Int"
+- !private "Transformation"
+- "Mappable"
+- "Map"
+- "Sentiment"
 depends-member:
 - !private ["PSs9AnyObject", "Object"]
 - !private ["PSs9AnyObject", "stringToDouble"]

@@ -7,12 +7,12 @@ provides-member:
 - ["V20WatsonDeveloperCloud11Microformat", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "Microformat"
+- !private "<-"
+- "String"
+- !private "StringLiteralType"
 - "Mappable"
 - "Map"
-- !private "StringLiteralType"
-- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["C12ObjectMapper3Map", "subscript"]

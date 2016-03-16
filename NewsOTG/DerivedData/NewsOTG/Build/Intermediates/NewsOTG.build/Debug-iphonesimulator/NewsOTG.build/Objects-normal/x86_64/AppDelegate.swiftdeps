@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C7NewsOTG11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "applicationWillResignActive"
 - "application"
-- "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
-- "window"
 - "applicationWillTerminate"
+- "applicationDidEnterBackground"
+- "applicationWillResignActive"
+- "window"
+- "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "Parse"
-- "NSObject"
-- "UIResponder"
-- "AppDelegate"
 - "UIApplication"
-- "AnyObject"
-- !private "PFAnalytics"
-- !private "BooleanLiteralType"
 - "UIWindow"
+- !private "Parse"
+- "AppDelegate"
+- !private "PFAnalytics"
+- "NSObject"
 - "Bool"
+- "AnyObject"
+- !private "StringLiteralType"
 - "UIApplicationDelegate"
+- "UIResponder"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "PFAnalytics"]
 - !private ["PSs9AnyObject", "Parse"]

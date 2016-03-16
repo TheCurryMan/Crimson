@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Concept"
-- "Int"
-- "Map"
-- !private "StringLiteralType"
-- "KnowledgeGraph"
-- !private "<-"
-- "Mappable"
 - "String"
+- !private "StringLiteralType"
+- "Map"
+- "Mappable"
+- "KnowledgeGraph"
+- "Int"
+- !private "<-"
 depends-member:
 - !private ["PSs9AnyObject", "subscript"]
 - ["V20WatsonDeveloperCloud7Concept", "Int"]

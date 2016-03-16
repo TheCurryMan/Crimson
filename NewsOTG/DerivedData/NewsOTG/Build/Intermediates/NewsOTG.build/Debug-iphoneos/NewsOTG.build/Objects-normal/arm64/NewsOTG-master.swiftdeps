@@ -1,16 +1,17 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "d47eb38e845adb57c4c9b07d84c5dfba"
-build_time: [508744808, 893498000]
+options: "6b70ca6af3b82f728167c1518f0806a2"
+build_time: [510483226, 884229000]
 inputs:
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/DisplayViewController.swift": [508462902, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/StartingViewController.swift": [505214387, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/WikiSearchViewController.swift": [509611647, 0]
   "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/CustomSlider.swift": [505316947, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/ViewController.swift": [508743808, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/PlaylistViewController.swift": [508393395, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/ArticlesViewController.swift": [508393395, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/AppDelegate.swift": [502349228, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/DisplayViewController.swift": [509611840, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/SettingsViewController.swift": [509315831, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/StartingViewController.swift": [505214387, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/ViewController.swift": [509671925, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/PlaylistViewController.swift": [509090193, 0]
   "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/SignUpViewController.swift": [502351831, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/CategoriesViewController.swift": [508393395, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/SettingsViewController.swift": [508743636, 0]
-  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/LoadingViewController.swift": [505213903, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/AppDelegate.swift": [509608121, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/ArticlesViewController.swift": [509612805, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/LoadingViewController.swift": [509933082, 0]
+  "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/CategoriesViewController.swift": [509612428, 0]
   "/Users/Avinash/Documents/NewsOTG/NewsOTG/NewsOTG/TestViewController.swift": [505300144, 0]
